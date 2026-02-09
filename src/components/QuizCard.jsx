@@ -103,7 +103,9 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
 
     if (option.isCorrect) {
       playCorrect();
-      playPronunciation(cardData.arabic);
+      if (cardData.arabic) {
+        playPronunciation(cardData.arabic);
+      }
       // Delay before moving on to let user see feedback
       setTimeout(() => {
         onRate('correct'); // Maps to SRS Grade 4-5
@@ -150,7 +152,7 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
         }}>
           {questionConfig.prompt}
         </h2>
-        <span style={{ fontSize: '0.8rem', color: '#999' }}>({type})</span>
+        {type && <span style={{ fontSize: '0.8rem', color: '#999' }}>({type})</span>}
       </div>
 
       {/* Options Grid */}

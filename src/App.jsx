@@ -134,6 +134,8 @@ function App() {
         verb,
         correctConjugation,
         options,
+        arabic: correctConjugation,  // For audio playback
+        type: 'verb',                 // For display consistency
         srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
       });
     }
@@ -153,6 +155,7 @@ function App() {
         correctAnswer: cloze.correctAnswer,
         options,
         explanation: cloze.explanation,
+        type: 'phrase',               // For display consistency
         srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
       });
     }

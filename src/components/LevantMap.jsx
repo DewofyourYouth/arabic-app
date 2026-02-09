@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import mapImage from '../assets/map_levant_stylized.png';
+// Import artifact images properly for production builds
+import artifactWadiRum from '../assets/artifacts/wadi_rum.png';
+import artifactPetra from '../assets/artifacts/petra.png';
+import artifactJerusalem from '../assets/artifacts/jerusalem.png';
+import artifactJericho from '../assets/artifacts/jericho.png';
+import artifactAmman from '../assets/artifacts/amman.png';
 
 // CSS for Animations (injected here for simplicity)
 const animationKeyframes = `
@@ -68,13 +74,6 @@ const animationKeyframes = `
 }
 `;
 
-// Artifact Imports (using placeholders until generated)
-const ARTIFACT_WADI_RUM = '/src/assets/artifacts/wadi_rum.png';
-const ARTIFACT_PETRA = '/src/assets/artifacts/petra.png';
-const ARTIFACT_JERUSALEM = '/src/assets/artifacts/jerusalem.png';
-const ARTIFACT_JERICHO = '/src/assets/artifacts/jericho.png';
-const ARTIFACT_AMMAN = '/src/assets/artifacts/amman.png';
-
 const CITIES = [
   { 
     id: 'wadi_rum', 
@@ -84,7 +83,7 @@ const CITIES = [
     x: 60, 
     y: 90,
     artifact: {
-      image: ARTIFACT_WADI_RUM,
+      image: artifactWadiRum,
       name: 'Dallah (Coffee Pot)',
       description: 'A symbol of hospitality. Always served with the right hand!'
     }
@@ -97,7 +96,7 @@ const CITIES = [
     x: 50,
     y: 92,
     artifact: {
-      image: ARTIFACT_WADI_RUM,
+      image: artifactWadiRum,
       name: 'Coral Diving Mask',
       description: 'Gateway to Jordan\'s Red Sea coast.'
     }
@@ -110,7 +109,7 @@ const CITIES = [
     x: 68,
     y: 48,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'Byzantine Mosaic',
       description: 'Ancient map of the Holy Land.'
     }
@@ -123,7 +122,7 @@ const CITIES = [
     x: 62,
     y: 58,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Castle Key',
       description: 'Fortress along the King\'s Highway.'
     }
@@ -136,7 +135,7 @@ const CITIES = [
     x: 40, 
     y: 89,
     artifact: {
-      image: ARTIFACT_WADI_RUM, 
+      image: artifactWadiRum, 
       name: 'Coral Reef',
       description: 'Beautiful underwater gardens of the Red Sea.'
     }
@@ -149,7 +148,7 @@ const CITIES = [
     x: 55, 
     y: 75,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Nabatean Coin',
       description: 'Ancient currency from the rose-red city.'
     }
@@ -162,7 +161,7 @@ const CITIES = [
     x: 35, 
     y: 65,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Abraham\'s Well',
       description: 'Ancient well associated with the patriarch.'
     }
@@ -175,7 +174,7 @@ const CITIES = [
     x: 70,
     y: 28,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Roman Column Fragment',
       description: 'Piece of the extensive Roman architecture.'
     }
@@ -188,7 +187,7 @@ const CITIES = [
     x: 32, 
     y: 18,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Cedar Tree',
       description: 'Symbol of Lebanon\'s resilience.'
     }
@@ -201,7 +200,7 @@ const CITIES = [
     x: 30,
     y: 12,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Crusader Citadel',
       description: 'Medieval fortress overlooking the sea.'
     }
@@ -214,7 +213,7 @@ const CITIES = [
     x: 33,
     y: 22,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'Phoenician Harbor',
       description: 'Ancient trading port of the Phoenicians.'
     }
@@ -227,7 +226,7 @@ const CITIES = [
     x: 34,
     y: 26,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Royal Purple Shell',
       description: 'Source of the legendary Tyrian purple.'
     }
@@ -240,7 +239,7 @@ const CITIES = [
     x: 48,
     y: 60,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Roman Scroll',
       description: 'Ancient texts preserved in the desert climate.'
     }
@@ -253,7 +252,7 @@ const CITIES = [
     x: 70, 
     y: 35,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Roman Dagger',
       description: 'Relic from Philadelphia (ancient Amman).'
     }
@@ -266,7 +265,7 @@ const CITIES = [
     x: 45, 
     y: 58,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'Glass Blowing',
       description: 'Famous Hebron glass art.'
     }
@@ -279,7 +278,7 @@ const CITIES = [
     x: 35,
     y: 35,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Mount Carmel Flora',
       description: 'Unique species from the holy mountain.'
     }
@@ -292,7 +291,7 @@ const CITIES = [
     x: 48,
     y: 32,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'St. Peter\'s Fish',
       description: 'Famous fish from the Sea of Galilee.'
     }
@@ -305,7 +304,7 @@ const CITIES = [
     x: 48, 
     y: 25,
     artifact: {
-      image: ARTIFACT_JERICHO, 
+      image: artifactJericho, 
       name: 'Nabulsi Soap',
       description: 'Handmade olive oil soap, a tradition for centuries.'
     }
@@ -318,7 +317,7 @@ const CITIES = [
     x: 45,
     y: 45,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'Debke Scarf',
       description: 'Symbol of traditional Palestinian dance.'
     }
@@ -331,7 +330,7 @@ const CITIES = [
     x: 35,
     y: 30,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'Knight\'s Helmet',
       description: 'Relic from the Crusader period.'
     }
@@ -344,7 +343,7 @@ const CITIES = [
     x: 80, 
     y: 25,
     artifact: {
-      image: ARTIFACT_WADI_RUM,
+      image: artifactWadiRum,
       name: 'Basalt Stone',
       description: 'Volcanic rock used in local architecture.'
     }
@@ -357,7 +356,7 @@ const CITIES = [
     x: 55,
     y: 10,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Phoenician Alphabet',
       description: 'Birthplace of the modern alphabet.'
     }
@@ -370,7 +369,7 @@ const CITIES = [
     x: 68, 
     y: 20,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Damascus Steel',
       description: 'Legendary sword-making technique.'
     }
@@ -383,7 +382,7 @@ const CITIES = [
     x: 85,
     y: 30,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Temple Columns',
       description: 'Zenobia\'s legendary desert kingdom.'
     }
@@ -396,7 +395,7 @@ const CITIES = [
     x: 60,
     y: 18,
     artifact: {
-      image: ARTIFACT_AMMAN,
+      image: artifactAmman,
       name: 'Crusader Castle',
       description: 'Krak des Chevaliers overlooks the valley.'
     }
@@ -409,7 +408,7 @@ const CITIES = [
     x: 65,
     y: 12,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Keystone Fragment',
       description: 'Massive stone from the temple complex.'
     }
@@ -422,7 +421,7 @@ const CITIES = [
     x: 75, 
     y: 5,
     artifact: {
-      image: ARTIFACT_PETRA,
+      image: artifactPetra,
       name: 'Aleppo Soap',
       description: 'Famous laurel soap.'
     }
@@ -435,7 +434,7 @@ const CITIES = [
     x: 45, 
     y: 50,
     artifact: {
-      image: ARTIFACT_JERUSALEM,
+      image: artifactJerusalem,
       name: 'City Key',
       description: 'Iron key to the ancient gates.'
     }
