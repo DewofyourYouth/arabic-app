@@ -6,6 +6,7 @@ import Library from './components/Library';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
+import FennecFeedback from './components/FennecFeedback';
 import curriculumData from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
@@ -55,6 +56,7 @@ function App() {
   const [stats, setStats] = useState({ correct: 0, incorrect: 0 });
   const [xpGainedSession, setXpGainedSession] = useState(0);
   const [introducedIds, setIntroducedIds] = useState(new Set()); // Track IDs shown in Intro
+  const [showFeedback, setShowFeedback] = useState(null); // { type: 'correct' | 'incorrect', message: '...' }
   
   const { playCorrect, playIncorrect } = useAudio();
 
@@ -141,10 +143,12 @@ function App() {
       playCorrect();
       grade = 4;
       xpGain = 10;
+      setShowFeedback({ type: 'correct', message: 'رائع! (Amazing!)' });
     } else {
       playIncorrect();
       grade = 1;
       xpGain = 2; // Small pity XP
+      setShowFeedback({ type: 'incorrect', message: 'لا بأس! (No worries!)' });
     }
 
     // Update Data
@@ -156,13 +160,18 @@ function App() {
     // Update Session Stats
     setStats(prev => ({ ...prev, [result]: prev[result] + 1 }));
 
-    // Navigation
-    if (currentIndex < sessionQueue.length - 1) {
-      setIsFlipped(false);
-      setTimeout(() => setCurrentIndex(prev => prev + 1), 300);
-    } else {
-      setView('summary');
-    }
+    // Delay navigation to show feedback
+    setTimeout(() => {
+      setShowFeedback(null);
+      
+      // Navigation
+      if (currentIndex < sessionQueue.length - 1) {
+        setIsFlipped(false);
+        setTimeout(() => setCurrentIndex(prev => prev + 1), 100);
+      } else {
+        setView('summary');
+      }
+    }, 1500);
   };
 
   const handleNavigation = (targetView) => {
@@ -317,75 +326,86 @@ function App() {
   if (!currentCard) return <Layout activeView="session" onNavigate={handleNavigation}><div>Loading...</div></Layout>;
 
   return (
-    <Layout activeView="session" onNavigate={handleNavigation}>
-      <div style={{
-        display: 'flex', flexDirection: 'column', gap: 'var(--spacing-6)', height: '100%', justifyContent: 'center', padding: '0 var(--spacing-4)'
-      }}>
-        {/* Header / Progress */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-2)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-light)' }}>
-            <button onClick={() => setView('map')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>← Exit</button>
-            <span>{currentIndex + 1} / {sessionQueue.length}</span>
-          </div>
-          <div style={{ height: '8px', background: '#E0E0E0', borderRadius: 'var(--radius-full)', overflow: 'hidden' }}>
-            <div style={{ width: `${progress}%`, height: '100%', background: 'var(--color-primary)', transition: 'all 0.3s' }} />
-          </div>
-        </div>
-
-        {/* Card Area (Intro, Flashcard, or Quiz) */}
-        {currentCard.srs.repetition === 0 && !introducedIds.has(currentCard.id) ? (
-           <IntroCard 
-             key={currentCard.id || currentIndex}
-             cardData={currentCard}
-             onNext={handleIntroNext}
-           />
-        ) : currentCard.srs.repetition === 0 ? (
-          <>
-            <Flashcard 
-              key={currentCard.id || currentIndex}
-              cardData={currentCard} 
-              isFlipped={isFlipped} 
-              onFlip={() => setIsFlipped(true)}
-            />
-            
-            {/* Controls (Only for Flashcard) */}
-            <div style={{ 
-              height: '80px', display: 'flex', justifyContent: 'center', gap: 'var(--spacing-4)',
-              opacity: isFlipped ? 1 : 0, pointerEvents: isFlipped ? 'auto' : 'none',
-              transition: 'opacity 0.2s', transform: isFlipped ? 'translateY(0)' : 'translateY(10px)'
-            }}>
-              <button 
-                onClick={() => handleRate('incorrect')}
-                style={{
-                  flex: 1, background: 'white', border: '2px solid var(--color-error)', color: 'var(--color-error)',
-                  borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 #ffcdd2', cursor: 'pointer'
-                }}
-              >
-                Hard 😓
-              </button>
-              
-              <button 
-                onClick={() => handleRate('correct')}
-                style={{
-                  flex: 1, background: 'var(--color-success)', border: 'none', color: 'white',
-                  borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 var(--color-accent-dark)', cursor: 'pointer'
-                }}
-              >
-                Easy! 🤩
-              </button>
+    <>
+      <Layout activeView="session" onNavigate={handleNavigation}>
+        <div style={{
+          display: 'flex', flexDirection: 'column', gap: 'var(--spacing-6)', height: '100%', justifyContent: 'center', padding: '0 var(--spacing-4)'
+        }}>
+          {/* Header / Progress */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-2)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-light)' }}>
+              <button onClick={() => setView('map')} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'inherit' }}>← Exit</button>
+              <span>{currentIndex + 1} / {sessionQueue.length}</span>
             </div>
-          </>
-        ) : (
-          <QuizCard 
-            key={currentCard.id || currentIndex}
-            cardData={currentCard}
-            allCards={allCards}
-            onRate={handleRate}
-            quizType={currentCard.quizType}
-          />
-        )}
-      </div>
-    </Layout>
+            <div style={{ height: '8px', background: '#E0E0E0', borderRadius: 'var(--radius-full)', overflow: 'hidden' }}>
+              <div style={{ width: `${progress}%`, height: '100%', background: 'var(--color-primary)', transition: 'all 0.3s' }} />
+            </div>
+          </div>
+
+          {/* Card Area (Intro, Flashcard, or Quiz) */}
+          {currentCard.srs.repetition === 0 && !introducedIds.has(currentCard.id) ? (
+             <IntroCard 
+               key={currentCard.id || currentIndex}
+               cardData={currentCard}
+               onNext={handleIntroNext}
+             />
+          ) : currentCard.srs.repetition === 0 ? (
+            <>
+              <Flashcard 
+                key={currentCard.id || currentIndex}
+                cardData={currentCard} 
+                isFlipped={isFlipped} 
+                onFlip={() => setIsFlipped(true)}
+              />
+              
+              {/* Controls (Only for Flashcard) */}
+              <div style={{ 
+                height: '80px', display: 'flex', justifyContent: 'center', gap: 'var(--spacing-4)',
+                opacity: isFlipped ? 1 : 0, pointerEvents: isFlipped ? 'auto' : 'none',
+                transition: 'opacity 0.2s', transform: isFlipped ? 'translateY(0)' : 'translateY(10px)'
+              }}>
+                <button 
+                  onClick={() => handleRate('incorrect')}
+                  style={{
+                    flex: 1, background: 'white', border: '2px solid var(--color-error)', color: 'var(--color-error)',
+                    borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 #ffcdd2', cursor: 'pointer'
+                  }}
+                >
+                  Hard 😓
+                </button>
+                
+                <button 
+                  onClick={() => handleRate('correct')}
+                  style={{
+                    flex: 1, background: 'var(--color-success)', border: 'none', color: 'white',
+                    borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 var(--color-accent-dark)', cursor: 'pointer'
+                  }}
+                >
+                  Easy! 🤩
+                </button>
+              </div>
+            </>
+          ) : (
+            <QuizCard 
+              key={currentCard.id || currentIndex}
+              cardData={currentCard}
+              allCards={allCards}
+              onRate={handleRate}
+              quizType={currentCard.quizType}
+            />
+          )}
+        </div>
+      </Layout>
+
+      {/* Global Feedback Overlay */}
+      {showFeedback && (
+        <FennecFeedback
+          type={showFeedback.type}
+          message={showFeedback.message}
+          onClose={() => setShowFeedback(null)}
+        />
+      )}
+    </>
   );
 }
 

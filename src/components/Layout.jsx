@@ -1,4 +1,5 @@
 import React from 'react';
+import Fennec from './Fennec';
 
 const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
   return (
@@ -47,22 +48,21 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
           </span>
         </div>
         
-        {/* Mascot / Profile Placeholder */}
+        {/* Animated Fennec Mascot */}
         <div style={{
-          width: '40px',
-          height: '40px',
+          width: '50px',
+          height: '50px',
           borderRadius: 'var(--radius-full)',
-          backgroundColor: 'var(--color-accent)',
+          backgroundColor: 'rgba(244, 241, 222, 0.5)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          color: 'white',
-          fontWeight: 'bold',
-          border: '2px solid white',
+          border: '2px solid var(--color-primary-light)',
           boxShadow: 'var(--shadow-md)',
-          fontSize: '1.2rem'
+          overflow: 'visible',
+          padding: '4px'
         }}>
-          🦊
+          <Fennec mood="idle" size={45} />
         </div>
       </header>
 
