@@ -1,0 +1,276 @@
+import React, { useState, useEffect } from 'react';
+import Layout from './components/Layout';
+import Flashcard from './components/Flashcard';
+import curriculumData from './data/curriculum/level-1-basics.json';
+import { useAudio } from './hooks/useAudio';
+import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
+
+const SESSION_LENGTH = 10;
+const STORAGE_KEY = 'haki_user_progress_v1';
+
+function App() {
+  // 1. Load User Progress from LocalStorage
+  const [allCards, setAllCards] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const initialData = curriculumData.map((card, index) => ({
+      ...card,
+      id: card.id || `card-${index}`, // Ensure ID exists
+      srs: INITIAL_SRS_STATE
+    }));
+
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        // Merge saved SRS data with current curriculum (in case content updated)
+        return initialData.map(card => {
+          const savedCard = parsed.find(p => p.id === card.id);
+          return savedCard ? { ...card, srs: savedCard.srs } : card;
+        });
+      } catch (e) {
+        console.error("Failed to load progress", e);
+        return initialData;
+      }
+    }
+    return initialData;
+  });
+
+  // 2. Session State
+  const [sessionQueue, setSessionQueue] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+  const [stats, setStats] = useState({ correct: 0, incorrect: 0 });
+  const [sessionComplete, setSessionComplete] = useState(false);
+  
+  const { playCorrect, playIncorrect } = useAudio();
+
+  // 3. Initialize Session (On Load or New Session)
+  useEffect(() => {
+    if (sessionQueue.length === 0 && !sessionComplete) {
+      startNewSession();
+    }
+  }, []);
+
+  // Save progress whenever allCards changes
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(allCards.map(c => ({ id: c.id, srs: c.srs }))));
+  }, [allCards]);
+
+  const startNewSession = () => {
+    // Priority: Due cards -> New cards
+    const due = getDueCards(allCards);
+    const newCards = allCards.filter(c => c.srs.repetition === 0 && !due.includes(c));
+    
+    // Mix: mostly due cards, some new ones. 
+    // For MVP: Just take top due + new up to limit
+    let pool = [...due, ...newCards];
+    
+    // Shuffle pool
+    pool = pool.sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
+
+    if (pool.length === 0) {
+      // Logic for "No cards due"? For now just review random ones.
+      pool = [...allCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
+    }
+
+    setSessionQueue(pool);
+    setCurrentIndex(0);
+    setIsFlipped(false);
+    setStats({ correct: 0, incorrect: 0 });
+    setSessionComplete(false);
+  };
+
+  const handleRate = (result) => {
+    const currentCard = sessionQueue[currentIndex];
+    
+    // 1. Play Sound & Map to Grade (0-5)
+    // Simple mapping: 'incorrect' -> 1 (Fail), 'correct' -> 4 (Good/Easy)
+    let grade = 0;
+    if (result === 'correct') {
+      playCorrect();
+      grade = 4;
+    } else {
+      playIncorrect();
+      grade = 1;
+    }
+
+    // 2. Update SRS State for this card
+    const newSrs = calculateSrs(currentCard.srs, grade);
+    
+    // Update global state
+    setAllCards(prev => prev.map(c => 
+      c.id === currentCard.id ? { ...c, srs: newSrs } : c
+    ));
+
+    // 3. Update Session Stats
+    setStats(prev => ({
+      ...prev,
+      [result]: prev[result] + 1
+    }));
+
+    // 4. Move to next
+    if (currentIndex < sessionQueue.length - 1) {
+      setIsFlipped(false);
+      setTimeout(() => setCurrentIndex(prev => prev + 1), 300);
+    } else {
+      setSessionComplete(true);
+    }
+  };
+
+  // --- RENDER HELPERS ---
+  const currentCard = sessionQueue[currentIndex];
+  const progress = sessionQueue.length > 0 ? ((currentIndex) / sessionQueue.length) * 100 : 0;
+
+  if (!currentCard && !sessionComplete) return <Layout><div>Loading...</div></Layout>;
+
+  if (sessionComplete) {
+    return (
+      <Layout>
+        <div style={{
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center', 
+          justifyContent: 'center', 
+          height: '100%',
+          textAlign: 'center',
+          gap: 'var(--spacing-6)'
+        }}>
+          <h2 style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-primary)' }}>Session Complete! 🎉</h2>
+          
+          <div style={{ 
+            background: 'white', 
+            padding: 'var(--spacing-8)', 
+            borderRadius: 'var(--radius-lg)',
+            boxShadow: 'var(--shadow-card)',
+            width: '100%',
+            maxWidth: '400px'
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: 'var(--spacing-4)' }}>
+              <div>
+                <p style={{ color: 'var(--color-success)', fontSize: '2rem', fontWeight: 'bold' }}>{stats.correct}</p>
+                <p>Retained</p>
+              </div>
+              <div>
+                <p style={{ color: 'var(--color-error)', fontSize: '2rem', fontWeight: 'bold' }}>{stats.incorrect}</p>
+                <p>Needs Work</p>
+              </div>
+            </div>
+            <p style={{ color: 'var(--color-text-light)' }}>
+              Your progress has been saved.
+              <br/>
+              Cards you missed will appear sooner!
+            </p>
+          </div>
+
+          <button 
+            onClick={startNewSession}
+            style={{
+              background: 'var(--color-primary)',
+              color: 'white',
+              border: 'none',
+              padding: 'var(--spacing-4) var(--spacing-8)',
+              borderRadius: 'var(--radius-full)',
+              fontSize: 'var(--font-size-lg)',
+              fontWeight: 'bold',
+              cursor: 'pointer',
+              boxShadow: '0 4px 0 var(--color-primary-dark)',
+            }}
+          >
+            Start New Session ➜
+          </button>
+        </div>
+      </Layout>
+    );
+  }
+
+  return (
+    <Layout>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 'var(--spacing-6)',
+        height: '100%',
+        justifyContent: 'center',
+        padding: '0 var(--spacing-4)'
+      }}>
+        
+        {/* Header / Progress */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-2)' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--color-text-light)' }}>
+            <span>Level 1: The Basics</span>
+            <span>{currentIndex + 1} / {sessionQueue.length}</span>
+          </div>
+          <div style={{ 
+            height: '8px', 
+            background: '#E0E0E0', 
+            borderRadius: 'var(--radius-full)',
+            overflow: 'hidden' 
+          }}>
+            <div style={{ 
+              width: `${progress}%`, 
+              height: '100%', 
+              background: 'var(--color-primary)',
+              transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+            }} />
+          </div>
+        </div>
+
+        {/* Flashcard Area */}
+        <Flashcard 
+          key={currentCard.id || currentIndex}
+          cardData={currentCard} 
+          isFlipped={isFlipped} 
+          onFlip={() => setIsFlipped(true)}
+        />
+
+        {/* Controls */}
+        <div style={{ 
+          height: '80px', 
+          display: 'flex', 
+          justifyContent: 'center', 
+          gap: 'var(--spacing-4)',
+          opacity: isFlipped ? 1 : 0,
+          pointerEvents: isFlipped ? 'auto' : 'none',
+          transition: 'opacity 0.2s',
+          transform: isFlipped ? 'translateY(0)' : 'translateY(10px)'
+        }}>
+          <button 
+            onClick={() => handleRate('incorrect')}
+            style={{
+              flex: 1,
+              background: 'white',
+              border: '2px solid var(--color-error)',
+              color: 'var(--color-error)',
+              borderRadius: 'var(--radius-lg)',
+              fontWeight: 'bold',
+              fontSize: 'var(--font-size-lg)',
+              boxShadow: '0 4px 0 #ffcdd2',
+              cursor: 'pointer'
+            }}
+          >
+            Hard 😓
+          </button>
+          
+          <button 
+            onClick={() => handleRate('correct')}
+            style={{
+              flex: 1,
+              background: 'var(--color-success)',
+              border: 'none',
+              color: 'white',
+              borderRadius: 'var(--radius-lg)',
+              fontWeight: 'bold',
+              fontSize: 'var(--font-size-lg)',
+              boxShadow: '0 4px 0 var(--color-accent-dark)',
+              cursor: 'pointer'
+            }}
+          >
+            Easy! 🤩
+          </button>
+        </div>
+
+      </div>
+    </Layout>
+  );
+}
+
+export default App;

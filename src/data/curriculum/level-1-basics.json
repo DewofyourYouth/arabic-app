@@ -1,0 +1,125 @@
+[
+  {
+    "id": "l1_g_hello",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "مرحبا",
+    "transliteration": "Marhaba",
+    "english": "Hello",
+    "audio": "/audio/marhaba.mp3",
+    "alternatives": ["Ahlan"],
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_welcome",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "أهلاً",
+    "transliteration": "Ahlan",
+    "english": "Welcome / Hello",
+    "audio": "/audio/ahlan.mp3",
+    "tags": ["greeting"]
+  },
+  {
+    "id": "l1_res_thankyou",
+    "level": 1,
+    "topic": "essentials",
+    "type": "phrase",
+    "arabic": "شكراً",
+    "transliteration": "Shukran",
+    "english": "Thank you",
+    "tags": ["polite"]
+  },
+  {
+    "id": "l1_res_yourewelcome",
+    "level": 1,
+    "topic": "essentials",
+    "type": "phrase",
+    "arabic": "عفواً",
+    "transliteration": "Afwan",
+    "english": "You're welcome / Excuse me",
+    "tags": ["polite"]
+  },
+  {
+    "id": "l1_pro_i",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "أَنَا",
+    "transliteration": "Ana",
+    "english": "I",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_you_m",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "إِنْتَ",
+    "transliteration": "Inte",
+    "english": "You (male)",
+    "tags": ["grammar", "pronoun"]
+  },
+    {
+    "id": "l1_pro_you_f",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "إِنْتِ",
+    "transliteration": "Inti",
+    "english": "You (female)",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_he",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "هُوَّ",
+    "transliteration": "Huwwe",
+    "english": "He",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_she",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "هِيَّ",
+    "transliteration": "Hiyye",
+    "english": "She",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_we",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "إِحْنَا",
+    "transliteration": "Ihna",
+    "english": "We",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_you_pl",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "إِنْتُو",
+    "transliteration": "Intu",
+    "english": "You (plural)",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_pro_they",
+    "level": 1,
+    "topic": "pronouns",
+    "type": "word",
+    "arabic": "هُمَّ",
+    "transliteration": "Humme",
+    "english": "They",
+    "tags": ["grammar", "pronoun"]
+  }
+]

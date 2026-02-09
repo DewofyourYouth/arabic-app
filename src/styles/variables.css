@@ -1,0 +1,70 @@
+/* HAKI Design Tokens */
+:root {
+  /* Colors - Levantine Mood Palette */
+  --color-primary: #E07A5F; /* Terracotta */
+  --color-primary-dark: #C66248;
+  --color-primary-light: #F2CC8F; /* Sunset Yellow */
+  
+  --color-secondary: #3D405B; /* Deep Blue */
+  --color-secondary-dark: #2A2C3E;
+  --color-secondary-light: #6D708B;
+  
+  --color-accent: #81B29A; /* Sage/Olive */
+  --color-accent-dark: #5F8D75;
+  
+  --color-background: #F4F1DE; /* Warm Sand */
+  --color-surface: #FFFFFF;
+  --color-text: #3D405B; /* Deep Blue as text */
+  --color-text-light: #7D8096;
+  
+  --color-error: #D64045;
+  --color-success: #81B29A;
+  --color-warning: #F2CC8F;
+
+  /* Typography */
+  --font-family-english: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-family-arabic: 'IBM Plex Sans Arabic', 'Noto Sans Arabic', sans-serif;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 3rem;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+
+  /* Shadows - Gamified depth */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-card: 0 8px 0 rgba(0,0,0,0.1); /* Chunky shadow for cards */
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  /* Animations */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* Dark Mode Support (Future proofing) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #1a1a1a;
+    --color-surface: #2d2d2d;
+    --color-text: #ececec;
+    --color-text-light: #a0a0a0;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "levels": [
+    {
+      "id": 1,
+      "title": "The Basics (Survival)",
+      "description": "Master greetings, pronouns, and polite expressions."
+    },
+    {
+      "id": 2,
+      "title": "The Street (Getting Around)",
+      "description": "Navigate taxis, directions, and find your way."
+    },
+    {
+      "id": 3,
+      "title": "The Cafe (Fuel & Socializing)",
+      "description": "Order coffee, food, and chat with locals."
+    },
+    {
+      "id": 4,
+      "title": "Verb Power (Active Tense)",
+      "description": "Start expressing actions with the continuous tense."
+    }
+  ],
+  "topics": {
+    "greetings": "Greetings & Salutations",
+    "essentials": "Daily Essentials",
+    "pronouns": "Pronouns & Grammar",
+    "transport": "Transportation",
+    "places": "Places & Directions"
+  }
+}

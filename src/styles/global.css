@@ -1,0 +1,53 @@
+@import './variables.css';
+
+/* Modern CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-family-english);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Arabic Text Handling */
+[lang="ar"] {
+  font-family: var(--font-family-arabic);
+  direction: rtl;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Mobile-first container */
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-2xl);
+}
+
+@media (min-width: 640px) {
+  #root {
+    margin: 2rem auto;
+    border-radius: var(--radius-lg);
+    min-height: calc(100vh - 4rem);
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}

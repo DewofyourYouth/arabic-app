@@ -1,0 +1,99 @@
+/* Flashcard Container - Holds the 3D space */
+.flashcard-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+
+/* The Card - The actual element flipping */
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-xl);
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Common styles for Front and Back */
+.flashcard-front, .flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-8);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
+
+/* FRONT - English Side */
+.flashcard-front {
+  background-color: white;
+  color: var(--color-text);
+}
+
+.front-hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--spacing-4);
+}
+
+.front-word {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+/* BACK - Arabic Side */
+.flashcard-back {
+  background-color: var(--color-primary-light); 
+  transform: rotateY(180deg);
+  border-color: var(--color-primary);
+}
+
+.back-arabic {
+  font-family: var(--font-family-arabic);
+  font-size: var(--font-size-5xl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--spacing-2);
+}
+
+.back-transliteration {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  font-style: italic;
+  margin-bottom: var(--spacing-6);
+}
+
+.audio-btn {
+  background: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  transition: all 0.2s ease;
+}
+
+.audio-btn:hover {
+  background: var(--color-primary);
+  color: white;
+}
