@@ -95,7 +95,14 @@ function App() {
       pool = [...allCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
     }
 
-    setSessionQueue(pool);
+    // Assign random quiz types to cards that will use QuizCard
+    const quizTypes = ['en-to-ar', 'ar-to-en', 'en-to-trans'];
+    const poolWithQuizTypes = pool.map(card => ({
+      ...card,
+      quizType: quizTypes[Math.floor(Math.random() * quizTypes.length)]
+    }));
+
+    setSessionQueue(poolWithQuizTypes);
     setCurrentIndex(0);
     setIsFlipped(false);
     setStats({ correct: 0, incorrect: 0 });
@@ -374,6 +381,7 @@ function App() {
             cardData={currentCard}
             allCards={allCards}
             onRate={handleRate}
+            quizType={currentCard.quizType}
           />
         )}
       </div>

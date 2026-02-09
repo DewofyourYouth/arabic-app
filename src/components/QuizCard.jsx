@@ -1,12 +1,46 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useAudio } from '../hooks/useAudio';
 
-const QuizCard = ({ cardData, allCards, onRate }) => {
-  const { arabic, english, type } = cardData;
+const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
+  const { arabic, transliteration, english, type } = cardData;
   const { playCorrect, playIncorrect, playPronunciation } = useAudio();
   
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
+
+  // Determine question and answer based on quiz type
+  const questionConfig = useMemo(() => {
+    switch (quizType) {
+      case 'ar-to-en':
+        return {
+          prompt: arabic,
+          promptLabel: 'Translate this',
+          correctAnswer: english,
+          getDistractorText: (card) => card.english,
+          promptStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '2.5rem' },
+          optionStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.1rem' }
+        };
+      case 'en-to-trans':
+        return {
+          prompt: english,
+          promptLabel: 'How do you pronounce this?',
+          correctAnswer: transliteration,
+          getDistractorText: (card) => card.transliteration,
+          promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '2rem' },
+          optionStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.1rem', fontStyle: 'italic' }
+        };
+      case 'en-to-ar':
+      default:
+        return {
+          prompt: english,
+          promptLabel: 'Translate this',
+          correctAnswer: arabic,
+          getDistractorText: (card) => card.arabic,
+          promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '2rem' },
+          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' }
+        };
+    }
+  }, [quizType, arabic, transliteration, english]);
 
   // Generate options (1 correct + 3 distractors)
   const options = useMemo(() => {
@@ -20,13 +54,13 @@ const QuizCard = ({ cardData, allCards, onRate }) => {
       
     // Combine with correct answer
     const allOptions = [
-      { id: cardData.id, text: arabic, isCorrect: true },
-      ...distractors.map(d => ({ id: d.id, text: d.arabic, isCorrect: false }))
+      { id: cardData.id, text: questionConfig.correctAnswer, isCorrect: true },
+      ...distractors.map(d => ({ id: d.id, text: questionConfig.getDistractorText(d), isCorrect: false }))
     ];
 
     // Shuffle options so correct answer isn't always first
     return allOptions.sort(() => 0.5 - Math.random());
-  }, [cardData.id, allCards]); // Re-run when card changes
+  }, [cardData.id, allCards, questionConfig]); // Re-run when card or quiz type changes
 
   const handleOptionClick = (option) => {
     if (isAnswered) return; // Prevent multiple clicks
@@ -74,15 +108,14 @@ const QuizCard = ({ cardData, allCards, onRate }) => {
           textTransform: 'uppercase', 
           letterSpacing: '1px' 
         }}>
-          Translate this
+          {questionConfig.promptLabel}
         </span>
         <h2 style={{ 
-          fontSize: '2.5rem', 
+          ...questionConfig.promptStyle,
           color: 'var(--color-text)', 
           margin: 'var(--spacing-4) 0',
-          fontFamily: 'var(--font-family-english)'
         }}>
-          {english}
+          {questionConfig.prompt}
         </h2>
         <span style={{ fontSize: '0.8rem', color: '#999' }}>({type})</span>
       </div>
@@ -95,8 +128,7 @@ const QuizCard = ({ cardData, allCards, onRate }) => {
             borderRadius: 'var(--radius-md)',
             border: '2px solid #eee',
             background: 'white',
-            fontSize: '1.25rem',
-            fontFamily: 'var(--font-family-arabic)',
+            ...questionConfig.optionStyle,
             cursor: 'pointer',
             transition: 'all 0.2s',
             textAlign: 'center',
