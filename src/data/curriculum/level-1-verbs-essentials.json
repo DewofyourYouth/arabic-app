@@ -1,0 +1,52 @@
+[
+  {
+    "id": "l1_verb_want",
+    "level": 1,
+    "topic": "verbs",
+    "type": "phrase",
+    "arabic": "بِدِّي",
+    "transliteration": "Biddi",
+    "english": "I want",
+    "tags": ["verb", "essential"]
+  },
+  {
+    "id": "l1_verb_go",
+    "level": 1,
+    "topic": "verbs",
+    "type": "phrase",
+    "arabic": "بَرُوح",
+    "transliteration": "Baruh",
+    "english": "I go",
+    "tags": ["verb", "essential"]
+  },
+  {
+    "id": "l1_verb_see",
+    "level": 1,
+    "topic": "verbs",
+    "type": "phrase",
+    "arabic": "بَشُوف",
+    "transliteration": "Bashuf",
+    "english": "I see",
+    "tags": ["verb", "essential"]
+  },
+  {
+    "id": "l1_verb_eat",
+    "level": 1,
+    "topic": "verbs",
+    "type": "phrase",
+    "arabic": "بَاكُل",
+    "transliteration": "Bakol",
+    "english": "I eat",
+    "tags": ["verb", "essential"]
+  },
+  {
+    "id": "l1_verb_drink",
+    "level": 1,
+    "topic": "verbs",
+    "type": "phrase",
+    "arabic": "بَشْرَب",
+    "transliteration": "Bashrab",
+    "english": "I drink",
+    "tags": ["verb", "essential"]
+  }
+]

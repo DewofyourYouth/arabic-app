@@ -1,0 +1,102 @@
+[
+  {
+    "id": "l1_fam_father",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "أَب",
+    "transliteration": "Ab",
+    "english": "Father",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_mother",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "إِم",
+    "transliteration": "Imm",
+    "english": "Mother",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_brother",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "أَخ",
+    "transliteration": "Akh",
+    "english": "Brother",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_sister",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "أُخْت",
+    "transliteration": "Ukht",
+    "english": "Sister",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_friend_m",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "صَاحِب",
+    "transliteration": "Sahib",
+    "english": "Friend (male)",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_friend_f",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "صَاحْبِة",
+    "transliteration": "Sahbeh",
+    "english": "Friend (female)",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_boy",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "وَلَد",
+    "transliteration": "Walad",
+    "english": "Boy",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_girl",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "بِنْت",
+    "transliteration": "Bint",
+    "english": "Girl / Daughter",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_man",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "زَلَمِة",
+    "transliteration": "Zalameh",
+    "english": "Man",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_woman",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "مَرَة",
+    "transliteration": "Mara",
+    "english": "Woman",
+    "tags": ["people", "noun"]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "l1_food_water",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "مَيّ",
+    "transliteration": "Mayy",
+    "english": "Water",
+    "tags": ["food", "drink"]
+  },
+  {
+    "id": "l1_food_coffee",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "قَهْوَة",
+    "transliteration": "Ahweh",
+    "english": "Coffee",
+    "tags": ["food", "drink"]
+  },
+  {
+    "id": "l1_food_tea",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "شَاي",
+    "transliteration": "Shai",
+    "english": "Tea",
+    "tags": ["food", "drink"]
+  },
+  {
+    "id": "l1_food_bread",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "خُبِز",
+    "transliteration": "Khubez",
+    "english": "Bread",
+    "tags": ["food", "staple"]
+  },
+  {
+    "id": "l1_food_chicken",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "جَاج",
+    "transliteration": "Djal / Jaj",
+    "english": "Chicken",
+    "tags": ["food", "meat"]
+  },
+  {
+    "id": "l1_food_meat",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "لَحْمِة",
+    "transliteration": "Lahmeh",
+    "english": "Meat",
+    "tags": ["food", "meat"]
+  },
+  {
+    "id": "l1_food_delicious",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "زَاكِي",
+    "transliteration": "Zaki",
+    "english": "Delicious",
+    "tags": ["food", "adjective"]
+  }
+]

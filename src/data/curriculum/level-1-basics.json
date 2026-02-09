@@ -121,5 +121,65 @@
     "transliteration": "Humme",
     "english": "They",
     "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l1_g_morning",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "صَبَاح الْخَيْر",
+    "transliteration": "Sabah el-kheir",
+    "english": "Good morning",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_evening",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "مَسَا الْخَيْر",
+    "transliteration": "Masa el-kheir",
+    "english": "Good evening",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_howareyou_m",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "كِيفَك؟",
+    "transliteration": "Kifak?",
+    "english": "How are you? (male)",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_howareyou_f",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "كِيفِك؟",
+    "transliteration": "Kifik?",
+    "english": "How are you? (female)",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_goodbye",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "مَع السَّلَامِة",
+    "transliteration": "Ma'assalama",
+    "english": "Goodbye",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_seeyou",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "بَشُوفَك",
+    "transliteration": "Bashufak",
+    "english": "See you",
+    "tags": ["greeting", "common"]
   }
 ]

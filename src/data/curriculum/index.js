@@ -1,0 +1,15 @@
+import basics from './level-1-basics.json';
+import family from './level-1-family.json';
+import food from './level-1-food.json';
+import numbers from './level-1-numbers.json';
+import verbs from './level-1-verbs-essentials.json';
+
+const combinedCurriculum = [
+  ...basics,
+  ...family,
+  ...food,
+  ...numbers,
+  ...verbs
+];
+
+export default combinedCurriculum;

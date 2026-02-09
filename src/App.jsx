@@ -6,7 +6,7 @@ import Library from './components/Library';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
-import curriculumData from './data/curriculum/level-1-basics.json';
+import curriculumData from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
 
