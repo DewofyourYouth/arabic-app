@@ -1,12 +1,70 @@
 import React, { useState } from 'react';
 import mapImage from '../assets/map_levant_stylized.png';
 
-// CSS for Pulse Animation (injected here for simplicity)
-const pulseKeyframes = `
+// CSS for Animations (injected here for simplicity)
+const animationKeyframes = `
 @keyframes pulse {
   0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 111, 81, 0.7); }
   70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(231, 111, 81, 0); }
   100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(231, 111, 81, 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { 
+    transform: scale(0.5) rotate(-5deg); 
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% { 
+    transform: scale(1) rotate(0deg); 
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(231, 111, 81, 0.5),
+                0 0 40px rgba(231, 111, 81, 0.3),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  50% { 
+    box-shadow: 0 0 30px rgba(231, 111, 81, 0.8),
+                0 0 60px rgba(231, 111, 81, 0.5),
+                inset 0 0 30px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes particleBurst {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1) rotate(180deg); }
 }
 `;
 
@@ -29,6 +87,45 @@ const CITIES = [
       image: ARTIFACT_WADI_RUM,
       name: 'Dallah (Coffee Pot)',
       description: 'A symbol of hospitality. Always served with the right hand!'
+    }
+  },
+  {
+    id: 'aqaba',
+    name: 'Aqaba',
+    label: 'Red Sea Gateway',
+    minLevel: 3,
+    x: 50,
+    y: 92,
+    artifact: {
+      image: ARTIFACT_WADI_RUM,
+      name: 'Coral Diving Mask',
+      description: 'Gateway to Jordan\'s Red Sea coast.'
+    }
+  },
+  {
+    id: 'madaba',
+    name: 'Madaba',
+    label: 'Mosaic City',
+    minLevel: 6,
+    x: 68,
+    y: 48,
+    artifact: {
+      image: ARTIFACT_JERUSALEM,
+      name: 'Byzantine Mosaic',
+      description: 'Ancient map of the Holy Land.'
+    }
+  },
+  {
+    id: 'karak',
+    name: 'Karak',
+    label: 'Crusader Castle',
+    minLevel: 7,
+    x: 62,
+    y: 58,
+    artifact: {
+      image: ARTIFACT_AMMAN,
+      name: 'Castle Key',
+      description: 'Fortress along the King\'s Highway.'
     }
   },
   { 
@@ -88,12 +185,51 @@ const CITIES = [
     name: 'Beirut', 
     label: 'Coastal Gem', 
     minLevel: 5, 
-    x: 55, 
-    y: 15,
+    x: 32, 
+    y: 18,
     artifact: {
       image: ARTIFACT_AMMAN,
       name: 'Cedar Tree',
       description: 'Symbol of Lebanon\'s resilience.'
+    }
+  },
+  {
+    id: 'tripoli',
+    name: 'Tripoli',
+    label: 'Northern Port',
+    minLevel: 8,
+    x: 30,
+    y: 12,
+    artifact: {
+      image: ARTIFACT_AMMAN,
+      name: 'Crusader Citadel',
+      description: 'Medieval fortress overlooking the sea.'
+    }
+  },
+  {
+    id: 'sidon',
+    name: 'Sidon',
+    label: 'Sea Castle',
+    minLevel: 7,
+    x: 33,
+    y: 22,
+    artifact: {
+      image: ARTIFACT_JERUSALEM,
+      name: 'Phoenician Harbor',
+      description: 'Ancient trading port of the Phoenicians.'
+    }
+  },
+  {
+    id: 'tyre',
+    name: 'Tyre',
+    label: 'Purple Dye',
+    minLevel: 8,
+    x: 34,
+    y: 26,
+    artifact: {
+      image: ARTIFACT_PETRA,
+      name: 'Royal Purple Shell',
+      description: 'Source of the legendary Tyrian purple.'
     }
   },
   { 
@@ -231,12 +367,38 @@ const CITIES = [
     name: 'Damascus', 
     label: 'City of Jasmine', 
     minLevel: 8, 
-    x: 75, 
-    y: 15,
+    x: 68, 
+    y: 20,
     artifact: {
       image: ARTIFACT_AMMAN,
       name: 'Damascus Steel',
       description: 'Legendary sword-making technique.'
+    }
+  },
+  {
+    id: 'palmyra',
+    name: 'Palmyra',
+    label: 'Desert Oasis',
+    minLevel: 9,
+    x: 85,
+    y: 30,
+    artifact: {
+      image: ARTIFACT_PETRA,
+      name: 'Temple Columns',
+      description: 'Zenobia\'s legendary desert kingdom.'
+    }
+  },
+  {
+    id: 'homs',
+    name: 'Homs',
+    label: 'Historic City',
+    minLevel: 8,
+    x: 60,
+    y: 18,
+    artifact: {
+      image: ARTIFACT_AMMAN,
+      name: 'Crusader Castle',
+      description: 'Krak des Chevaliers overlooks the valley.'
     }
   },
   {
@@ -315,7 +477,7 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
       border: '4px solid white'
     }}>
       
-      <style>{pulseKeyframes}</style>
+      <style>{animationKeyframes}</style>
       
       {/* Visibility Toggle */}
       <button 
@@ -413,6 +575,7 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
                  <div style={{ transform: 'rotate(45deg)', fontSize: '18px' }}>
                     {/* Icons */}
                     {city.id === 'wadi_rum' && '🏜️'}
+                    {city.id === 'aqaba' && '🤿'}
                     {city.id === 'eilat' && '🐬'}
                     {city.id === 'petra' && '🏛️'}
                     {city.id === 'beersheba' && '🐫'}
@@ -425,12 +588,19 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
                     {city.id === 'akko' && '⚔️'}
                     {city.id === 'tiberias' && '🐟'}
                     {city.id === 'amman' && '🎭'}
+                    {city.id === 'madaba' && '🎨'}
+                    {city.id === 'karak' && '🏰'}
                     {city.id === 'jerash' && '🏺'}
                     {city.id === 'jericho' && '🌴'}
+                    {city.id === 'tripoli' && '⛵'}
                     {city.id === 'beirut' && '⚓'}
+                    {city.id === 'sidon' && '🏖️'}
+                    {city.id === 'tyre' && '🐚'}
                     {city.id === 'byblos' && '📜'}
+                    {city.id === 'homs' && '🏰'}
                     {city.id === 'baalbek' && '🏛️'}
                     {city.id === 'damascus' && '🌸'}
+                    {city.id === 'palmyra' && '🏜️'}
                     {city.id === 'aleppo' && '🏯'}
                     {city.id === 'suwayda' && '🌋'}
                  </div>
@@ -481,68 +651,216 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
         );
       })}
 
-      {/* Artifact Modal */}
+      {/* Artifact Modal - Enhanced with Premium Graphics */}
       {selectedArtifact && (
         <div style={{
           position: 'absolute', inset: 0, zIndex: 50,
-          background: 'rgba(61, 64, 91, 0.9)', // Secondary color with opacity
+          background: 'radial-gradient(circle at center, rgba(231, 111, 81, 0.3), rgba(61, 64, 91, 0.95))',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          backdropFilter: 'blur(5px)',
-          animation: 'fadeIn 0.3s ease'
+          backdropFilter: 'blur(10px)',
+          animation: 'fadeIn 0.5s ease',
+          overflow: 'hidden'
         }}>
+          
+          {/* Particle Burst Effect */}
+          {[...Array(12)].map((_, i) => {
+            const angle = (i / 12) * Math.PI * 2;
+            const distance = 150;
+            return (
+              <div 
+                key={`particle-${i}`}
+                style={{
+                  position: 'absolute',
+                  width: '20px',
+                  height: '20px',
+                  background: `radial-gradient(circle, ${
+                    i % 3 === 0 ? '#FFD700' : i % 3 === 1 ? '#E76F51' : '#F4A261'
+                  }, transparent)`,
+                  borderRadius: '50%',
+                  top: '50%',
+                  left: '50%',
+                  '--tx': `${Math.cos(angle) * distance}px`,
+                  '--ty': `${Math.sin(angle) * distance}px`,
+                  animation: `particleBurst 1s ease-out ${i * 0.05}s`,
+                  pointerEvents: 'none',
+                  filter: 'blur(2px)',
+                  opacity: 0
+                }}
+              />
+            );
+          })}
+          
+          {/* Floating Sparkles */}
+          {[...Array(8)].map((_, i) => (
+            <div 
+              key={`sparkle-${i}`}
+              style={{
+                position: 'absolute',
+                width: '8px',
+                height: '8px',
+                background: 'gold',
+                clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
+                top: `${20 + Math.random() * 60}%`,
+                left: `${10 + Math.random() * 80}%`,
+                animation: `sparkle ${2 + Math.random() * 2}s ease-in-out infinite ${i * 0.2}s`,
+                pointerEvents: 'none'
+              }}
+            />
+          ))}
+          
+          {/* Main Modal Card */}
           <div style={{
-            background: 'var(--color-background)',
-            padding: 'var(--spacing-6)',
-            borderRadius: 'var(--radius-lg)',
+            background: 'linear-gradient(145deg, #FAF9F6, #F4F1DE)',
+            padding: 'var(--spacing-8)',
+            borderRadius: '24px',
             textAlign: 'center',
-            maxWidth: '300px',
-            border: '4px solid var(--color-primary)',
-            boxShadow: '0 20px 50px rgba(0,0,0,0.5)',
+            maxWidth: '400px',
+            border: '6px solid transparent',
+            backgroundImage: 'linear-gradient(145deg, #FAF9F6, #F4F1DE), linear-gradient(145deg, #FFD700, #E76F51, #264653)',
+            backgroundOrigin: 'border-box',
+            backgroundClip: 'padding-box, border-box',
+            boxShadow: '0 30px 80px rgba(0,0,0,0.4), 0 10px 30px rgba(231, 111, 81, 0.3), inset 0 1px 0 rgba(255,255,255,0.8)',
             transform: 'scale(1)',
-            animation: 'popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+            animation: 'popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+            position: 'relative'
           }}>
-            <h3 style={{ color: 'var(--color-secondary)', fontSize: '1.5rem', marginBottom: 'var(--spacing-2)' }}>
-              Artifact Found!
-            </h3>
-            <div style={{
-              width: '120px', height: '120px', margin: '0 auto var(--spacing-4)',
-              background: 'white', borderRadius: '50%',
-              border: '4px solid var(--color-primary-light)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              overflow: 'hidden'
+            
+            {/* Shimmer Title */}
+            <h3 style={{ 
+              background: 'linear-gradient(90deg, #E76F51, #FFD700, #E76F51, #FFD700)',
+              backgroundSize: '200% auto',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              fontSize: '2rem', 
+              marginBottom: 'var(--spacing-4)',
+              fontWeight: '900',
+              letterSpacing: '1px',
+              textTransform: 'uppercase',
+              animation: 'shimmer 3s linear infinite',
+              filter: 'drop-shadow(0 2px 4px rgba(231, 111, 81, 0.3))'
             }}>
+              ✨ Artifact Unlocked! ✨
+            </h3>
+            
+            {/* Glowing Artifact Container */}
+            <div style={{
+              width: '180px', 
+              height: '180px', 
+              margin: '0 auto var(--spacing-6)',
+              background: 'linear-gradient(145deg, #ffffff, #f0f0f0)',
+              borderRadius: '50%',
+              border: '6px solid #FFD700',
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+              overflow: 'hidden',
+              position: 'relative',
+              animation: 'glow 2s ease-in-out infinite, float 3s ease-in-out infinite',
+              boxShadow: '0 0 20px rgba(231, 111, 81, 0.5), 0 0 40px rgba(231, 111, 81, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1)'
+            }}>
+              {/* Rotating Glow Ring */}
+              <div style={{
+                position: 'absolute',
+                inset: '-10px',
+                background: 'conic-gradient(from 0deg, transparent, rgba(255, 215, 0, 0.5), transparent, rgba(231, 111, 81, 0.5), transparent)',
+                animation: 'spin 4s linear infinite',
+                borderRadius: '50%',
+                filter: 'blur(10px)',
+                zIndex: 0
+              }} />
+              
               {/* Image with fallback */}
               <img 
                 src={selectedArtifact.artifact.image} 
                 alt={selectedArtifact.artifact.name}
-                onError={(e) => {e.target.style.display='none'; e.target.parentNode.innerText='🎁'}}
-                style={{ width: '80%', height: '80%', objectFit: 'contain' }} 
+                onError={(e) => {e.target.style.display='none'; e.target.parentNode.innerHTML += '<div style="font-size: 80px; z-index: 2;">�</div>'}}
+                style={{ 
+                  width: '90%', 
+                  height: '90%', 
+                  objectFit: 'contain',
+                  position: 'relative',
+                  zIndex: 2,
+                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))'
+                }} 
               />
             </div>
-            <h4 style={{ color: 'var(--color-primary-dark)', fontSize: '1.25rem', marginBottom: 'var(--spacing-2)' }}>
-              {selectedArtifact.artifact.name}
-            </h4>
-            <p style={{ color: 'var(--color-text)', marginBottom: 'var(--spacing-6)', fontSize: '0.9rem', lineHeight: '1.4' }}>
+            
+            {/* Artifact Name with Accent */}
+            <div style={{
+              background: 'linear-gradient(90deg, transparent, rgba(231, 111, 81, 0.1), transparent)',
+              padding: 'var(--spacing-2) 0',
+              marginBottom: 'var(--spacing-3)'
+            }}>
+              <h4 style={{ 
+                color: '#264653', 
+                fontSize: '1.5rem', 
+                fontWeight: 'bold',
+                textShadow: '0 1px 2px rgba(255,255,255,0.8)'
+              }}>
+                {selectedArtifact.artifact.name}
+              </h4>
+            </div>
+            
+            {/* Description */}
+            <p style={{ 
+              color: '#3D405B', 
+              marginBottom: 'var(--spacing-6)', 
+              fontSize: '1rem', 
+              lineHeight: '1.6',
+              fontStyle: 'italic',
+              padding: '0 var(--spacing-4)'
+            }}>
               {selectedArtifact.artifact.description}
             </p>
+            
+            {/* Premium CTA Button */}
             <button 
               onClick={closeArtifact}
               style={{
-                background: 'var(--color-primary)',
+                background: 'linear-gradient(145deg, #E76F51, #D6624A)',
                 color: 'white',
                 border: 'none',
-                padding: '12px 24px',
-                borderRadius: 'var(--radius-full)',
+                padding: '16px 40px',
+                borderRadius: '50px',
                 fontWeight: 'bold',
-                fontSize: '1rem',
+                fontSize: '1.1rem',
                 cursor: 'pointer',
-                boxShadow: '0 4px 0 var(--color-primary-dark)',
-                transition: 'transform 0.1s'
+                boxShadow: '0 6px 0 #B85540, 0 8px 20px rgba(231, 111, 81, 0.4)',
+                transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                position: 'relative',
+                overflow: 'hidden'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 8px 0 #B85540, 0 12px 25px rgba(231, 111, 81, 0.5)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = 'translateY(0)';
+                e.target.style.boxShadow = '0 6px 0 #B85540, 0 8px 20px rgba(231, 111, 81, 0.4)';
+              }}
+              onMouseDown={(e) => {
+                e.target.style.transform = 'translateY(4px)';
+                e.target.style.boxShadow = '0 2px 0 #B85540, 0 3px 10px rgba(231, 111, 81, 0.3)';
+              }}
+              onMouseUp={(e) => {
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 8px 0 #B85540, 0 12px 25px rgba(231, 111, 81, 0.5)';
               }}
             >
-              Collect & Start
+              🎯 Collect & Continue
             </button>
           </div>
+
+          {/* Spin animation for rotating glow */}
+          <style>{`
+            @keyframes spin {
+              from { transform: rotate(0deg); }
+              to { transform: rotate(360deg); }
+            }
+          `}</style>
         </div>
       )}
     </div>

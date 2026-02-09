@@ -7,7 +7,7 @@ import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
 import FennecFeedback from './components/FennecFeedback';
-import curriculumData from './data/curriculum/index';
+import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
 
@@ -97,14 +97,79 @@ function App() {
       pool = [...allCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
     }
 
-    // Assign random quiz types to cards that will use QuizCard
+    // Generate verb conjugation quiz cards (2-3 per session)
+    const pronounOptions = ['ana', 'inte', 'inti', 'huwwe', 'hiyye', 'ihna', 'intu', 'humme'];
+    const pronounDisplayMap = {
+      'ana': 'أنا (I)',
+      'inte': 'إنت (You-m)',
+      'inti': 'إنتِ (You-f)',
+      'huwwe': 'هوّ (He)',
+      'hiyye': 'هيّ (She)',
+      'ihna': 'إحنا (We)',
+      'intu': 'إنتو (You-pl)',
+      'humme': 'هُمّ (They)'
+    };
+
+    const conjugationCards = [];
+    const numConjugationQuizzes = Math.min(2, verbsData.length);
+    for (let i = 0; i < numConjugationQuizzes; i++) {
+      const verb = verbsData[Math.floor(Math.random() * verbsData.length)];
+      const pronoun = pronounOptions[Math.floor(Math.random() * pronounOptions.length)];
+      const correctConjugation = verb.conjugations[pronoun]?.arabic || '';
+      
+      // Get 3 other conjugations as distractors
+      const otherConjugations = Object.keys(verb.conjugations)
+        .filter(p => p !== pronoun)
+        .map(p => verb.conjugations[p].arabic)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 3);
+      
+      const options = [correctConjugation, ...otherConjugations].sort(() => 0.5 - Math.random());
+      
+      conjugationCards.push({
+        id: `conj-${verb.id}-${pronoun}-${i}`,
+        quizType: 'conjugation',
+        pronoun,
+        pronounDisplay: pronounDisplayMap[pronoun],
+        verb,
+        correctConjugation,
+        options,
+        srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
+      });
+    }
+
+    // Generate cloze quiz cards (2-3 per session)
+    const clozeCards = [];
+    const numClozeQuizzes = Math.min(3, clozePhrases.length);
+    for (let i = 0; i < numClozeQuizzes; i++) {
+      const cloze = clozePhrases[Math.floor(Math.random() * clozePhrases.length)];
+      const options = [cloze.correctAnswer, ...cloze.distractors].sort(() => 0.5 - Math.random());
+      
+      clozeCards.push({
+        id: `cloze-${cloze.id}-${i}`,
+        quizType: 'cloze',
+        sentence: cloze.sentence,
+        sentenceEnglish: cloze.sentenceEnglish,
+        correctAnswer: cloze.correctAnswer,
+        options,
+        explanation: cloze.explanation,
+        srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
+      });
+    }
+
+    // Assign random quiz types to regular cards
     const quizTypes = ['en-to-ar', 'ar-to-en', 'en-to-trans'];
     const poolWithQuizTypes = pool.map(card => ({
       ...card,
       quizType: quizTypes[Math.floor(Math.random() * quizTypes.length)]
     }));
 
-    setSessionQueue(poolWithQuizTypes);
+    // Mix everything together
+    const finalPool = [...poolWithQuizTypes, ...conjugationCards, ...clozeCards]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, SESSION_LENGTH);
+
+    setSessionQueue(finalPool);
     setCurrentIndex(0);
     setIsFlipped(false);
     setStats({ correct: 0, incorrect: 0 });

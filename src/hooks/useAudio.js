@@ -34,9 +34,18 @@ export const useAudio = () => {
     playBeep(200, 0.3, 'sawtooth'); // Low buzz
   }, []);
 
+  // Preprocess Arabic text for better TTS pronunciation
+  const preprocessArabicForTTS = (text) => {
+    // Replace ta marbouta (ة) with regular ha (ه) to get the correct "eh" sound
+    // instead of "ee". In pausal form (end of word/phrase), ta marbouta should
+    // sound like a short "a" or "eh", which regular ha approximates better.
+    return text.replace(/ة/g, 'ه');
+  };
+
   const playPronunciation = useCallback((text) => {
     if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(text);
+      const processedText = preprocessArabicForTTS(text);
+      const utterance = new SpeechSynthesisUtterance(processedText);
       utterance.lang = 'ar-JO'; // Jordanian Arabic if available, else standard Arabic
       utterance.rate = 0.8; // Slightly slower for learning
       

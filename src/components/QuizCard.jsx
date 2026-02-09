@@ -29,6 +29,30 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '2rem' },
           optionStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.1rem', fontStyle: 'italic' }
         };
+      case 'conjugation':
+        // For verb conjugation quizzes
+        const pronoun = cardData.pronoun || 'ana';
+        const verb = cardData.verb || {};
+        return {
+          prompt: `${cardData.pronounDisplay || pronoun} + ${verb.translation || ''}`,
+          promptLabel: 'Conjugate the verb',
+          correctAnswer: cardData.correctConjugation || '',
+          getDistractorText: () => '', // Distractors provided in cardData
+          promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.5rem' },
+          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' },
+          useProvidedOptions: true
+        };
+      case 'cloze':
+        // For fill-in-blank quizzes
+        return {
+          prompt: cardData.sentence || '',
+          promptLabel: 'Fill in the blank',
+          correctAnswer: cardData.correctAnswer || '',
+          getDistractorText: () => '', // Distractors provided in cardData
+          promptStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.8rem', lineHeight: '1.8' },
+          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' },
+          useProvidedOptions: true
+        };
       case 'en-to-ar':
       default:
         return {
@@ -40,11 +64,20 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' }
         };
     }
-  }, [quizType, arabic, transliteration, english]);
+  }, [quizType, arabic, transliteration, english, cardData]);
 
   // Generate options (1 correct + 3 distractors)
   const options = useMemo(() => {
-    // Filter out the current card to get potential distractors
+    // For quiz types with provided options (conjugation, cloze)
+    if (questionConfig.useProvidedOptions && cardData.options) {
+      return cardData.options.map((opt, idx) => ({
+        id: `opt-${idx}`,
+        text: opt,
+        isCorrect: opt === questionConfig.correctAnswer
+      }));
+    }
+
+    // For standard quiz types, generate distractors
     const potentialDistractors = allCards.filter(c => c.id !== cardData.id);
     
     // Shuffle and pick 3
@@ -60,7 +93,7 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
 
     // Shuffle options so correct answer isn't always first
     return allOptions.sort(() => 0.5 - Math.random());
-  }, [cardData.id, allCards, questionConfig]); // Re-run when card or quiz type changes
+  }, [cardData, allCards, questionConfig]); // Re-run when card or quiz type changes
 
   const handleOptionClick = (option) => {
     if (isAnswered) return; // Prevent multiple clicks
