@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-
-// Assets (Assuming these will be in public/assets or imported if using Vite's asset handling)
-// For now using direct paths assuming they are in public/
-const MAP_BG = '/src/assets/map_levant_stylized.png';
+import mapImage from '../assets/map_levant_stylized.png';
 
 // CSS for Pulse Animation (injected here for simplicity)
 const pulseKeyframes = `
@@ -309,7 +306,7 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
       width: '100%', 
       height: '600px', 
       backgroundColor: 'var(--color-background)',
-      backgroundImage: `url(${MAP_BG})`,
+      backgroundImage: `url(${mapImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       borderRadius: 'var(--radius-lg)',
@@ -317,6 +314,8 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
       boxShadow: 'var(--shadow-lg)',
       border: '4px solid white'
     }}>
+      
+      <style>{pulseKeyframes}</style>
       
       {/* Visibility Toggle */}
       <button 
