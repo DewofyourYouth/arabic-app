@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useAudio } from '../hooks/useAudio';
+import { useSettings } from '../contexts/SettingsContext';
 
 const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
   const { arabic, transliteration, english, type } = cardData;
   const { playCorrect, playIncorrect, playPronunciation } = useAudio();
+  const { settings } = useSettings();
   
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -13,11 +15,15 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
     switch (quizType) {
       case 'ar-to-en':
         return {
-          prompt: arabic,
-          promptLabel: 'Translate this',
+          prompt: settings.showArabicScript ? arabic : transliteration,
+          promptLabel: settings.showArabicScript ? 'Translate this' : 'Translate this (transliteration)',
           correctAnswer: english,
           getDistractorText: (card) => card.english,
-          promptStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '2.5rem' },
+          promptStyle: { 
+            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)', 
+            fontSize: settings.showArabicScript ? '2.5rem' : '2rem',
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+          },
           optionStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.1rem' }
         };
       case 'en-to-trans':
@@ -39,8 +45,13 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           correctAnswer: cardData.correctConjugation || '',
           getDistractorText: () => '', // Distractors provided in cardData
           promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.5rem' },
-          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' },
-          useProvidedOptions: true
+          optionStyle: { 
+            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
+            fontSize: '1.25rem',
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+          },
+          useProvidedOptions: true,
+          showTransliteration: !settings.showArabicScript
         };
       case 'cloze':
         // For fill-in-blank quizzes
@@ -49,22 +60,36 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           promptLabel: 'Fill in the blank',
           correctAnswer: cardData.correctAnswer || '',
           getDistractorText: () => '', // Distractors provided in cardData
-          promptStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.8rem', lineHeight: '1.8' },
-          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' },
-          useProvidedOptions: true
+          promptStyle: { 
+            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
+            fontSize: settings.showArabicScript ? '1.8rem' : '1.5rem',
+            lineHeight: '1.8',
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+          },
+          optionStyle: { 
+            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
+            fontSize: '1.25rem',
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+          },
+          useProvidedOptions: true,
+          showTransliteration: !settings.showArabicScript
         };
       case 'en-to-ar':
       default:
         return {
           prompt: english,
           promptLabel: 'Translate this',
-          correctAnswer: arabic,
-          getDistractorText: (card) => card.arabic,
+          correctAnswer: settings.showArabicScript ? arabic : transliteration,
+          getDistractorText: (card) => settings.showArabicScript ? card.arabic : card.transliteration,
           promptStyle: { fontFamily: 'var(--font-family-english)', fontSize: '2rem' },
-          optionStyle: { fontFamily: 'var(--font-family-arabic)', fontSize: '1.25rem' }
+          optionStyle: { 
+            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
+            fontSize: '1.25rem',
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+          }
         };
     }
-  }, [quizType, arabic, transliteration, english, cardData]);
+  }, [quizType, arabic, transliteration, english, cardData, settings.showArabicScript]);
 
   // Generate options (1 correct + 3 distractors)
   const options = useMemo(() => {

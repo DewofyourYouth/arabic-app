@@ -10,6 +10,7 @@ import FennecFeedback from './components/FennecFeedback';
 import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
+import { SettingsProvider } from './contexts/SettingsContext';
 
 const SESSION_LENGTH = 10;
 const STORAGE_KEY = 'haki_user_progress_v1';
@@ -251,14 +252,19 @@ function App() {
   };
 
   if (!userName) {
-    return <WelcomeScreen onComplete={handleOnboardingComplete} />;
+    return (
+      <SettingsProvider>
+        <WelcomeScreen onComplete={handleOnboardingComplete} />
+      </SettingsProvider>
+    );
   }
 
   // --- VIEWS ---
 
   if (view === 'map') {
     return (
-      <Layout activeView="map" onNavigate={handleNavigation}>
+      <SettingsProvider>
+        <Layout activeView="map" onNavigate={handleNavigation}>
         <div style={{ padding: 'var(--spacing-4)' }}>
            {/* Header with XP Bar */}
           <div style={{ 
@@ -305,20 +311,24 @@ function App() {
           <LevantMap userLevel={userLevel} onCitySelect={startNewSession} />
         </div>
       </Layout>
+      </SettingsProvider>
     );
   }
 
   if (view === 'library') {
     return (
-      <Layout activeView="library" onNavigate={handleNavigation}>
+      <SettingsProvider>
+        <Layout activeView="library" onNavigate={handleNavigation}>
         <Library cards={allCards} />
       </Layout>
+      </SettingsProvider>
     );
   }
 
   if (view === 'summary') {
     return (
-      <Layout activeView="session" onNavigate={handleNavigation}>
+      <SettingsProvider>
+        <Layout activeView="session" onNavigate={handleNavigation}>
         <div style={{
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', gap: 'var(--spacing-6)'
         }}>
@@ -384,6 +394,7 @@ function App() {
           </div>
         </div>
       </Layout>
+      </SettingsProvider>
     );
   }
 
@@ -394,7 +405,8 @@ function App() {
   if (!currentCard) return <Layout activeView="session" onNavigate={handleNavigation}><div>Loading...</div></Layout>;
 
   return (
-    <>
+    <SettingsProvider>
+      <>
       <Layout activeView="session" onNavigate={handleNavigation}>
         <div style={{
           display: 'flex', flexDirection: 'column', gap: 'var(--spacing-6)', height: '100%', justifyContent: 'center', padding: '0 var(--spacing-4)'
@@ -474,6 +486,7 @@ function App() {
         />
       )}
     </>
+    </SettingsProvider>
   );
 }
 

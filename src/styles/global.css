@@ -9,11 +9,13 @@
 
 html, body {
   height: 100%;
-  font-family: var(--font-family-english);
+  font-family: var(--font-family-body);
   background-color: var(--color-background);
   color: var(--color-text);
-  line-height: 1.5;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Arabic Text Handling */
@@ -48,6 +50,61 @@ a {
 }
 
 button {
-  font-family: inherit;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-extrabold);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+/* Text Utilities */
+.text-display {
+  font-family: var(--font-family-display);
+}
+
+.text-body {
+  font-family: var(--font-family-body);
+}
+
+.text-arabic {
+  font-family: var(--font-family-arabic);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-medium);
 }

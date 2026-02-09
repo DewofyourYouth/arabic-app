@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useAudio } from '../hooks/useAudio';
+import { useSettings } from '../contexts/SettingsContext';
 
 const IntroCard = ({ cardData, onNext }) => {
   const { arabic, english, transliteration, type } = cardData;
   const { playPronunciation } = useAudio();
+  const { settings } = useSettings();
 
   // Auto-play audio on mount
   useEffect(() => {
@@ -65,14 +67,16 @@ const IntroCard = ({ cardData, onNext }) => {
             {english}
             </h3>}
 
-            <h2 style={{ 
-            fontSize: '3rem', 
-            color: 'var(--color-primary)', 
-            marginBottom: 'var(--spacing-2)',
-            fontFamily: 'var(--font-family-arabic)'
-            }}>
-            {arabic}
-            </h2>
+            {settings.showArabicScript && (
+              <h2 style={{ 
+              fontSize: '3rem', 
+              color: 'var(--color-primary)', 
+              marginBottom: 'var(--spacing-2)',
+              fontFamily: 'var(--font-family-arabic)'
+              }}>
+              {arabic}
+              </h2>
+            )}
             <p style={{ 
             fontSize: '1.2rem', 
             color: 'var(--color-text-light)',

@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import '../styles/Flashcard.css';
 import { useAudio } from '../hooks/useAudio';
+import { useSettings } from '../contexts/SettingsContext';
 
 const Flashcard = ({ cardData, isFlipped, onFlip }) => {
   const { arabic, transliteration, english, type } = cardData;
   const { playFlip, playPronunciation } = useAudio();
+  const { settings } = useSettings();
 
   // Play pronunciation automatically when flipped? Optional.
   useEffect(() => {
@@ -40,7 +42,9 @@ const Flashcard = ({ cardData, isFlipped, onFlip }) => {
 
         {/* BACK - Arabic Answer */}
         <div className="flashcard-back">
-          <h2 className="back-arabic">{arabic}</h2>
+          {settings.showArabicScript && (
+            <h2 className="back-arabic">{arabic}</h2>
+          )}
           <p className="back-transliteration">{transliteration}</p>
           
           <button 

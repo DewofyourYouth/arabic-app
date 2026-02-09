@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Fennec from './Fennec';
+import { useSettings } from '../contexts/SettingsContext';
 
 const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
+  const [showSettings, setShowSettings] = useState(false);
+  const { settings, toggleArabicScript } = useSettings();
+
   return (
     <div style={{
       display: 'flex',
@@ -47,6 +51,28 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
             حكي
           </span>
         </div>
+        
+        {/* Settings Button */}
+        <button
+          onClick={() => setShowSettings(true)}
+          style={{
+            background: 'none',
+            border: '2px solid var(--color-primary-light)',
+            borderRadius: 'var(--radius-full)',
+            width: '40px',
+            height: '40px',
+            fontSize: '1.2rem',
+            cursor: 'pointer',
+            color: 'var(--color-primary)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s'
+          }}
+          title="Settings"
+        >
+          ⚙️
+        </button>
         
         {/* Animated Fennec Mascot */}
         <div style={{
@@ -101,6 +127,110 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
           onClick={() => onNavigate && onNavigate('session')} 
         />
       </nav>
+
+      {/* Settings Modal */}
+      {showSettings && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 1000
+        }}
+        onClick={() => setShowSettings(false)}
+        >
+          <div style={{
+            background: 'white',
+            borderRadius: 'var(--radius-lg)',
+            padding: 'var(--spacing-8)',
+            maxWidth: '400px',
+            width: '90%',
+            boxShadow: 'var(--shadow-card)'
+          }}
+          onClick={(e) => e.stopPropagation()}
+          >
+            <h2 style={{ 
+              marginTop: 0, 
+              marginBottom: 'var(--spacing-6)',
+              color: 'var(--color-primary)',
+              fontSize: 'var(--font-size-xl)'
+            }}>
+              Display Settings
+            </h2>
+            
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginBottom: 'var(--spacing-6)',
+              padding: 'var(--spacing-4)',
+              background: 'var(--color-background)',
+              borderRadius: 'var(--radius-md)'
+            }}>
+              <div>
+                <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
+                  Show Arabic Script
+                </div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--color-text-light)' }}>
+                  {settings.showArabicScript 
+                    ? 'Arabic text is shown' 
+                    : 'Only transliteration is shown'}
+                </div>
+              </div>
+              
+              <button
+                onClick={toggleArabicScript}
+                style={{
+                  width: '60px',
+                  height: '32px',
+                  borderRadius: 'var(--radius-full)',
+                  border: 'none',
+                  background: settings.showArabicScript 
+                    ? 'var(--color-success)' 
+                    : '#ccc',
+                  cursor: 'pointer',
+                  position: 'relative',
+                  transition: 'background 0.2s'
+                }}
+              >
+                <div style={{
+                  width: '24px',
+                  height: '24px',
+                  borderRadius: '50%',
+                  background: 'white',
+                  position: 'absolute',
+                  top: '4px',
+                  left: settings.showArabicScript ? '32px' : '4px',
+                  transition: 'left 0.2s',
+                  boxShadow: 'var(--shadow-sm)'
+                }} />
+              </button>
+            </div>
+
+            <button
+              onClick={() => setShowSettings(false)}
+              style={{
+                width: '100%',
+                padding: 'var(--spacing-3)',
+                background: 'var(--color-primary)',
+                color: 'white',
+                border: 'none',
+                borderRadius: 'var(--radius-md)',
+                fontSize: '1rem',
+                fontWeight: 'bold',
+                cursor: 'pointer'
+              }}
+            >
+              Done
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
