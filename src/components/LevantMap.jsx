@@ -483,8 +483,8 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
         onClick={() => setShowLabels(!showLabels)}
         style={{
           position: 'absolute',
-          top: '20px',
-          right: '20px',
+          bottom: '20px',
+          left: '20px',
           zIndex: 20,
           background: 'rgba(255, 255, 255, 0.9)',
           border: '2px solid var(--color-primary)',
