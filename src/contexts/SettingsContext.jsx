@@ -5,7 +5,8 @@ const SettingsContext = createContext();
 const SETTINGS_KEY = 'haki_settings_v1';
 
 const defaultSettings = {
-  showArabicScript: true
+  showArabicScript: true,
+  dialect: 'bedouin' // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
 };
 
 export const SettingsProvider = ({ children }) => {
@@ -29,6 +30,10 @@ export const SettingsProvider = ({ children }) => {
     setSettings(prev => ({ ...prev, showArabicScript: !prev.showArabicScript }));
   };
 
+  const setDialect = (dialect) => {
+    setSettings(prev => ({ ...prev, dialect }));
+  };
+
   const resetOnboarding = () => {
       localStorage.removeItem('haki_onboarding_completed');
       window.location.reload(); // Simple way to re-trigger the check in App.jsx
@@ -37,6 +42,7 @@ export const SettingsProvider = ({ children }) => {
   const value = {
     settings,
     toggleArabicScript,
+    setDialect,
     resetOnboarding
   };
 

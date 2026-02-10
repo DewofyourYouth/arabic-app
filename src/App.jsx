@@ -230,9 +230,7 @@ function AppContent() {
 
   if (!currentUser) {
     return (
-      <SettingsProvider>
-        <WelcomeScreen />
-      </SettingsProvider>
+      <WelcomeScreen />
     );
   }
 
@@ -244,8 +242,7 @@ function AppContent() {
 
   if (view === 'map') {
     return (
-      <SettingsProvider>
-        <Layout activeView="map" onNavigate={handleNavigation}>
+      <Layout activeView="map" onNavigate={handleNavigation}>
         <div style={{ padding: 'var(--spacing-4)' }}>
            {/* Header with XP Bar */}
           <div style={{ 
@@ -314,24 +311,20 @@ function AppContent() {
           {showOnboarding && <OnboardingTour onComplete={handleTourComplete} />}
         </div>
       </Layout>
-      </SettingsProvider>
     );
   }
 
   if (view === 'library') {
     return (
-      <SettingsProvider>
-        <Layout activeView="library" onNavigate={handleNavigation}>
+      <Layout activeView="library" onNavigate={handleNavigation}>
         <Library cards={allCards} />
       </Layout>
-      </SettingsProvider>
     );
   }
 
   if (view === 'summary') {
     return (
-      <SettingsProvider>
-        <Layout activeView="session" onNavigate={handleNavigation}>
+      <Layout activeView="session" onNavigate={handleNavigation}>
         <div style={{
           display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', textAlign: 'center', gap: 'var(--spacing-6)'
         }}>
@@ -397,7 +390,6 @@ function AppContent() {
           </div>
         </div>
       </Layout>
-      </SettingsProvider>
     );
   }
 
@@ -408,7 +400,6 @@ function AppContent() {
   if (!currentCard) return <Layout activeView="session" onNavigate={handleNavigation}><div>Loading...</div></Layout>;
 
   return (
-    <SettingsProvider>
       <>
       <Layout activeView="session" onNavigate={handleNavigation}>
         <div style={{
@@ -489,7 +480,6 @@ function AppContent() {
         />
       )}
     </>
-    </SettingsProvider>
   );
 }
 
@@ -553,9 +543,11 @@ export default function App() {
   return (
     <AuthProvider>
       <DataProvider>
-        <ErrorBoundary>
-           <AppContent />
-        </ErrorBoundary>
+        <SettingsProvider>
+          <ErrorBoundary>
+             <AppContent />
+          </ErrorBoundary>
+        </SettingsProvider>
       </DataProvider>
     </AuthProvider>
   );

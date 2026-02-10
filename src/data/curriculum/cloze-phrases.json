@@ -6,7 +6,7 @@
     "sentenceEnglish": "I _____ coffee",
     "correctAnswer": "بدي",
     "correctAnswerEnglish": "want",
-    "distractors": ["بشرب", "باكل", "بروح"],
+    "distractors": ["بنام", "باكل", "بروح"],
     "explanation": "بدي (biddi) means 'I want'"
   },
   {
@@ -16,7 +16,7 @@
     "sentenceEnglish": "I _____ water",
     "correctAnswer": "بشرب",
     "correctAnswerEnglish": "drink",
-    "distractors": ["بدي", "باكل", "بشوف"],
+    "distractors": ["بنام", "باكل", "بشوف"],
     "explanation": "بشرب (bashrab) means 'I drink'"
   },
   {
@@ -36,7 +36,7 @@
     "sentenceEnglish": "Good _____",
     "correctAnswer": "صباح",
     "correctAnswerEnglish": "morning",
-    "distractors": ["مسا", "ليل", "ظهر"],
+    "distractors": ["مرحبا", "ليل", "ظهر"],
     "explanation": "صباح الخير (sabah el-kheir) means 'good morning'"
   },
   {

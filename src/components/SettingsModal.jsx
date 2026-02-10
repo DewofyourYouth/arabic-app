@@ -2,7 +2,7 @@ import React from 'react';
 import { useSettings } from '../contexts/SettingsContext';
 
 const SettingsModal = ({ onClose, onRestartTour }) => {
-  const { settings, toggleArabicScript, resetOnboarding } = useSettings();
+  const { settings, toggleArabicScript, resetOnboarding, setDialect } = useSettings();
 
   const handleRestartTour = () => {
     resetOnboarding(); 
@@ -95,6 +95,50 @@ const SettingsModal = ({ onClose, onRestartTour }) => {
               boxShadow: 'var(--shadow-sm)'
             }} />
           </button>
+        </div>
+
+        {/* Dialect Preference */}
+        <div style={{
+          marginBottom: 'var(--spacing-6)',
+          padding: 'var(--spacing-4)',
+          background: 'var(--color-background)',
+          borderRadius: 'var(--radius-md)'
+        }}>
+           <div style={{ fontWeight: 'bold', marginBottom: '8px' }}>
+              Pronunciation Dialect
+            </div>
+            <div style={{ display: 'flex', gap: '8px' }}>
+                <button
+                    onClick={() => setDialect('urban')}
+                    style={{
+                        flex: 1,
+                        padding: '8px',
+                        borderRadius: 'var(--radius-md)',
+                        border: settings.dialect === 'urban' ? '2px solid var(--color-primary)' : '1px solid #ddd',
+                        background: settings.dialect === 'urban' ? 'var(--color-primary-light)' : 'white',
+                        color: settings.dialect === 'urban' ? 'var(--color-primary)' : 'var(--color-text)',
+                        fontWeight: settings.dialect === 'urban' ? 'bold' : 'normal',
+                        cursor: 'pointer'
+                    }}
+                >
+                    Urban (Ah-weh)
+                </button>
+                <button
+                    onClick={() => setDialect('bedouin')}
+                    style={{
+                        flex: 1,
+                        padding: '8px',
+                        borderRadius: 'var(--radius-md)',
+                        border: settings.dialect === 'bedouin' ? '2px solid var(--color-primary)' : '1px solid #ddd',
+                        background: settings.dialect === 'bedouin' ? 'var(--color-primary-light)' : 'white',
+                        color: settings.dialect === 'bedouin' ? 'var(--color-primary)' : 'var(--color-text)',
+                        fontWeight: settings.dialect === 'bedouin' ? 'bold' : 'normal',
+                        cursor: 'pointer'
+                    }}
+                >
+                    Bedouin (Gah-weh)
+                </button>
+            </div>
         </div>
 
         <div style={{ borderTop: '1px solid #eee', paddingTop: 'var(--spacing-6)', display: 'flex', flexDirection: 'column', gap: 'var(--spacing-3)' }}>
