@@ -8,7 +8,7 @@ const Library = ({ cards }) => {
   const [filterCategory, setFilterCategory] = useState('all');
   const [sortBy, setSortBy] = useState('mastery'); // 'mastery', 'alphabetical', 'recent'
   
-  const { speak } = useAudio();
+  const { playPronunciation } = useAudio();
   const { settings } = useSettings();
 
   // Calculate statistics
@@ -340,7 +340,7 @@ const Library = ({ cards }) => {
               {/* Audio Button & Progress */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <button
-                  onClick={() => speak(card.arabic)}
+                  onClick={() => playPronunciation(card.arabic)}
                   style={{
                     background: 'var(--color-primary)',
                     color: 'white',

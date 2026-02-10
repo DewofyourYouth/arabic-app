@@ -3,6 +3,7 @@ import family from './level-1-family.json';
 import food from './level-1-food.json';
 import numbers from './level-1-numbers.json';
 import verbs from './level-1-verbs-essentials.json';
+import verbsCommon from './level-1-verbs-common.json';
 import verbsData from './verbs.json';
 import clozePhrases from './cloze-phrases.json';
 
@@ -15,4 +16,4 @@ const combinedCurriculum = [
 ];
 
 export default combinedCurriculum;
-export { verbsData, clozePhrases };
+export { verbsData, verbsCommon, clozePhrases };

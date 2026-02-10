@@ -1,0 +1,834 @@
+[
+  {
+    "id": "v_want",
+    "root": "و-د-د",
+    "pattern": "active",
+    "translation": "To Want",
+    "conjugations": {
+      "ana": { "arabic": "بدي", "transliteration": "Biddi" },
+      "inte": { "arabic": "بدك", "transliteration": "Biddak" },
+      "inti": { "arabic": "بدك", "transliteration": "Biddik" },
+      "huwwe": { "arabic": "بدو", "transliteration": "Biddo" },
+      "hiyye": { "arabic": "بدها", "transliteration": "Biddha" },
+      "ihna": { "arabic": "بدنا", "transliteration": "Biddna" },
+      "intu": { "arabic": "بدكم", "transliteration": "Biddkum" },
+      "humme": { "arabic": "بدهم", "transliteration": "Biddhum" }
+    }
+  },
+  {
+    "id": "v_go",
+    "root": "ر-و-ح",
+    "pattern": "active",
+    "translation": "To Go",
+    "conjugations": {
+      "ana": { "arabic": "بروح", "transliteration": "Baruh" },
+      "inte": { "arabic": "بتروح", "transliteration": "Bitruh" },
+      "inti": { "arabic": "بتروحي", "transliteration": "Bitruhi" },
+      "huwwe": { "arabic": "بيروح", "transliteration": "Biruh" },
+      "hiyye": { "arabic": "بتروح", "transliteration": "Bitruh" },
+      "ihna": { "arabic": "بنروح", "transliteration": "Benruh" },
+      "intu": { "arabic": "بتروحوا", "transliteration": "Bitruhu" },
+      "humme": { "arabic": "بيروحوا", "transliteration": "Biruhu" }
+    }
+  },
+  {
+    "id": "v_eat",
+    "root": "أ-ك-ل",
+    "pattern": "active",
+    "translation": "To Eat",
+    "conjugations": {
+      "ana": { "arabic": "باكل", "transliteration": "Bakol" },
+      "inte": { "arabic": "بتاكل", "transliteration": "Btakol" },
+      "inti": { "arabic": "بتاكلي", "transliteration": "Btakli" },
+      "huwwe": { "arabic": "بياكل", "transliteration": "Byakol" },
+      "hiyye": { "arabic": "بتاكل", "transliteration": "Btakol" },
+      "ihna": { "arabic": "بناكل", "transliteration": "Benakol" },
+      "intu": { "arabic": "بتاكلوا", "transliteration": "Btaklu" },
+      "humme": { "arabic": "بياكلوا", "transliteration": "Byaklu" }
+    }
+  },
+  {
+    "id": "v_drink",
+    "root": "ش-ر-ب",
+    "pattern": "active",
+    "translation": "To Drink",
+    "conjugations": {
+      "ana": { "arabic": "بشرب", "transliteration": "Bashrab" },
+      "inte": { "arabic": "بتشرب", "transliteration": "Btishrab" },
+      "inti": { "arabic": "بتشربي", "transliteration": "Btishrabi" },
+      "huwwe": { "arabic": "بيشرب", "transliteration": "Byishrab" },
+      "hiyye": { "arabic": "بتشرب", "transliteration": "Btishrab" },
+      "ihna": { "arabic": "بنشرب", "transliteration": "Binshrab" },
+      "intu": { "arabic": "بتشربوا", "transliteration": "Btishrabu" },
+      "humme": { "arabic": "بيشربوا", "transliteration": "Byishrabu" }
+    }
+  },
+  {
+    "id": "v_see",
+    "root": "ش-و-ف",
+    "pattern": "active",
+    "translation": "To See",
+    "conjugations": {
+      "ana": { "arabic": "بشوف", "transliteration": "Bashuf" },
+      "inte": { "arabic": "بتشوف", "transliteration": "Btishuf" },
+      "inti": { "arabic": "بتشوفي", "transliteration": "Btishufi" },
+      "huwwe": { "arabic": "بيشوف", "transliteration": "Byishuf" },
+      "hiyye": { "arabic": "بتشوف", "transliteration": "Btishuf" },
+      "ihna": { "arabic": "بنشوف", "transliteration": "Binshuf" },
+      "intu": { "arabic": "بتشوفوا", "transliteration": "Btishufu" },
+      "humme": { "arabic": "بيشوفوا", "transliteration": "Byishufu" }
+    }
+  },
+  {
+    "id": "v_know",
+    "root": "ع-ر-ف",
+    "pattern": "active",
+    "translation": "To Know",
+    "conjugations": {
+      "ana": { "arabic": "بعرف", "transliteration": "Ba'raf" },
+      "inte": { "arabic": "بتعرف", "transliteration": "Bti'raf" },
+      "inti": { "arabic": "بتعرفي", "transliteration": "Bti'rafi" },
+      "huwwe": { "arabic": "بيعرف", "transliteration": "Byi'raf" },
+      "hiyye": { "arabic": "بتعرف", "transliteration": "Bti'raf" },
+      "ihna": { "arabic": "بنعرف", "transliteration": "Bin'raf" },
+      "intu": { "arabic": "بتعرفوا", "transliteration": "Bti'rafu" },
+      "humme": { "arabic": "بيعرفوا", "transliteration": "Byi'rafu" }
+    }
+  },
+  {
+    "id": "v_say",
+    "root": "ق-و-ل",
+    "pattern": "active",
+    "translation": "To Say",
+    "conjugations": {
+      "ana": { "arabic": "بقول", "transliteration": "Ba'ul" },
+      "inte": { "arabic": "بتقول", "transliteration": "Bti'ul" },
+      "inti": { "arabic": "بتقولي", "transliteration": "Bti'uli" },
+      "huwwe": { "arabic": "بيقول", "transliteration": "Byi'ul" },
+      "hiyye": { "arabic": "بتقول", "transliteration": "Bti'ul" },
+      "ihna": { "arabic": "بنقول", "transliteration": "Bin'ul" },
+      "intu": { "arabic": "بتقولوا", "transliteration": "Bti'ulu" },
+      "humme": { "arabic": "بيقولوا", "transliteration": "Byi'ulu" }
+    }
+  },
+  {
+    "id": "v_do_make",
+    "root": "ع-م-ل",
+    "pattern": "active",
+    "translation": "To Do/Make",
+    "conjugations": {
+      "ana": { "arabic": "بعمل", "transliteration": "Ba'mal" },
+      "inte": { "arabic": "بتعمل", "transliteration": "Bti'mal" },
+      "inti": { "arabic": "بتعملي", "transliteration": "Bti'mali" },
+      "huwwe": { "arabic": "بيعمل", "transliteration": "Byi'mal" },
+      "hiyye": { "arabic": "بتعمل", "transliteration": "Bti'mal" },
+      "ihna": { "arabic": "بنعمل", "transliteration": "Bin'mal" },
+      "intu": { "arabic": "بتعملوا", "transliteration": "Bti'malu" },
+      "humme": { "arabic": "بيعملوا", "transliteration": "Byi'malu" }
+    }
+  },
+  {
+    "id": "v_come",
+    "root": "ج-ي",
+    "pattern": "active",
+    "translation": "To Come",
+    "conjugations": {
+      "ana": { "arabic": "بجي", "transliteration": "Baji" },
+      "inte": { "arabic": "بتجي", "transliteration": "Btiji" },
+      "inti": { "arabic": "بتجي", "transliteration": "Btiji" },
+      "huwwe": { "arabic": "بيجي", "transliteration": "Byiji" },
+      "hiyye": { "arabic": "بتجي", "transliteration": "Btiji" },
+      "ihna": { "arabic": "بنجي", "transliteration": "Binji" },
+      "intu": { "arabic": "بتجوا", "transliteration": "Btiju" },
+      "humme": { "arabic": "بيجوا", "transliteration": "Byiju" }
+    }
+  },
+  {
+    "id": "v_take",
+    "root": "أ-خ-ذ",
+    "pattern": "active",
+    "translation": "To Take",
+    "conjugations": {
+      "ana": { "arabic": "باخد", "transliteration": "Bakhod" },
+      "inte": { "arabic": "بتاخد", "transliteration": "Btakhod" },
+      "inti": { "arabic": "بتاخدي", "transliteration": "Btakhdi" },
+      "huwwe": { "arabic": "بياخد", "transliteration": "Byakhod" },
+      "hiyye": { "arabic": "بتاخد", "transliteration": "Btakhod" },
+      "ihna": { "arabic": "بناخد", "transliteration": "Binakhod" },
+      "intu": { "arabic": "بتاخدوا", "transliteration": "Btakhdu" },
+      "humme": { "arabic": "بياخدوا", "transliteration": "Byakhdu" }
+    }
+  },
+  {
+    "id": "v_give",
+    "root": "ع-ط-ي",
+    "pattern": "active",
+    "translation": "To Give",
+    "conjugations": {
+      "ana": { "arabic": "بعطي", "transliteration": "Ba'ti" },
+      "inte": { "arabic": "بتعطي", "transliteration": "Bti'ti" },
+      "inti": { "arabic": "بتعطي", "transliteration": "Bti'ti" },
+      "huwwe": { "arabic": "بيعطي", "transliteration": "Byi'ti" },
+      "hiyye": { "arabic": "بتعطي", "transliteration": "Bti'ti" },
+      "ihna": { "arabic": "بنعطي", "transliteration": "Bin'ti" },
+      "intu": { "arabic": "بتعطوا", "transliteration": "Bti'tu" },
+      "humme": { "arabic": "بيعطوا", "transliteration": "Byi'tu" }
+    }
+  },
+  {
+    "id": "v_find",
+    "root": "ل-ق-ي",
+    "pattern": "active",
+    "translation": "To Find",
+    "conjugations": {
+      "ana": { "arabic": "بلاقي", "transliteration": "Bala'i" },
+      "inte": { "arabic": "بتلاقي", "transliteration": "Btila'i" },
+      "inti": { "arabic": "بتلاقي", "transliteration": "Btila'i" },
+      "huwwe": { "arabic": "بيلاقي", "transliteration": "Byila'i" },
+      "hiyye": { "arabic": "بتلاقي", "transliteration": "Btila'i" },
+      "ihna": { "arabic": "بنلاقي", "transliteration": "Binla'i" },
+      "intu": { "arabic": "بتلاقوا", "transliteration": "Btila'u" },
+      "humme": { "arabic": "بيلاقوا", "transliteration": "Byila'u" }
+    }
+  },
+  {
+    "id": "v_work",
+    "root": "ش-غ-ل",
+    "pattern": "active",
+    "translation": "To Work",
+    "conjugations": {
+      "ana": { "arabic": "بشتغل", "transliteration": "Bashtaghel" },
+      "inte": { "arabic": "بتشتغل", "transliteration": "Btishtaghel" },
+      "inti": { "arabic": "بتشتغلي", "transliteration": "Btishtaghli" },
+      "huwwe": { "arabic": "بيشتغل", "transliteration": "Byishtaghel" },
+      "hiyye": { "arabic": "بتشتغل", "transliteration": "Btishtaghel" },
+      "ihna": { "arabic": "بنشتغل", "transliteration": "Binshtaghel" },
+      "intu": { "arabic": "بتشتغلوا", "transliteration": "Btishtaghlu" },
+      "humme": { "arabic": "بيشتغلوا", "transliteration": "Byishtaghlu" }
+    }
+  },
+  {
+    "id": "v_live",
+    "root": "س-ك-ن",
+    "pattern": "active",
+    "translation": "To Live/Reside",
+    "conjugations": {
+      "ana": { "arabic": "بسكن", "transliteration": "Baskun" },
+      "inte": { "arabic": "بتسكن", "transliteration": "Btiskun" },
+      "inti": { "arabic": "بتسكني", "transliteration": "Btiskuni" },
+      "huwwe": { "arabic": "بيسكن", "transliteration": "Byiskun" },
+      "hiyye": { "arabic": "بتسكن", "transliteration": "Btiskun" },
+      "ihna": { "arabic": "بنسكن", "transliteration": "Binskun" },
+      "intu": { "arabic": "بتسكنوا", "transliteration": "Btiskunu" },
+      "humme": { "arabic": "بيسكنوا", "transliteration": "Byiskunu" }
+    }
+  },
+  {
+    "id": "v_speak",
+    "root": "ح-ك-ي",
+    "pattern": "active",
+    "translation": "To Speak/Talk",
+    "conjugations": {
+      "ana": { "arabic": "بحكي", "transliteration": "Bahki" },
+      "inte": { "arabic": "بتحكي", "transliteration": "Btihki" },
+      "inti": { "arabic": "بتحكي", "transliteration": "Btihki" },
+      "huwwe": { "arabic": "بيحكي", "transliteration": "Byihki" },
+      "hiyye": { "arabic": "بتحكي", "transliteration": "Btihki" },
+      "ihna": { "arabic": "بنحكي", "transliteration": "Binhki" },
+      "intu": { "arabic": "بتحكوا", "transliteration": "Btihku" },
+      "humme": { "arabic": "بيحكوا", "transliteration": "Byihku" }
+    }
+  },
+  {
+    "id": "v_write",
+    "root": "ك-ت-ب",
+    "pattern": "active",
+    "translation": "To Write",
+    "conjugations": {
+      "ana": { "arabic": "بكتب", "transliteration": "Baktob" },
+      "inte": { "arabic": "بتكتب", "transliteration": "Btiktob" },
+      "inti": { "arabic": "بتكتبي", "transliteration": "Btiktobi" },
+      "huwwe": { "arabic": "بيكتب", "transliteration": "Byiktob" },
+      "hiyye": { "arabic": "بتكتب", "transliteration": "Btiktob" },
+      "ihna": { "arabic": "بنكتب", "transliteration": "Binktob" },
+      "intu": { "arabic": "بتكتبوا", "transliteration": "Btiktobu" },
+      "humme": { "arabic": "بيكتبوا", "transliteration": "Byiktobu" }
+    }
+  },
+  {
+    "id": "v_read",
+    "root": "ق-ر-أ",
+    "pattern": "active",
+    "translation": "To Read",
+    "conjugations": {
+      "ana": { "arabic": "بقرا", "transliteration": "Ba'ra" },
+      "inte": { "arabic": "بتقرا", "transliteration": "Bti'ra" },
+      "inti": { "arabic": "بتقري", "transliteration": "Bti'ri" },
+      "huwwe": { "arabic": "بيقرا", "transliteration": "Byi'ra" },
+      "hiyye": { "arabic": "بتقرا", "transliteration": "Bti'ra" },
+      "ihna": { "arabic": "بنقرا", "transliteration": "Bin'ra" },
+      "intu": { "arabic": "بتقروا", "transliteration": "Bti'ru" },
+      "humme": { "arabic": "بيقروا", "transliteration": "Byi'ru" }
+    }
+  },
+  {
+    "id": "v_understand",
+    "root": "ف-ه-م",
+    "pattern": "active",
+    "translation": "To Understand",
+    "conjugations": {
+      "ana": { "arabic": "بفهم", "transliteration": "Bafham" },
+      "inte": { "arabic": "بتفهم", "transliteration": "Btifham" },
+      "inti": { "arabic": "بتفهمي", "transliteration": "Btifhami" },
+      "huwwe": { "arabic": "بيفهم", "transliteration": "Byifham" },
+      "hiyye": { "arabic": "بتفهم", "transliteration": "Btifham" },
+      "ihna": { "arabic": "بنفهم", "transliteration": "Binfham" },
+      "intu": { "arabic": "بتفهموا", "transliteration": "Btifhamu" },
+      "humme": { "arabic": "بيفهموا", "transliteration": "Byifhamu" }
+    }
+  },
+  {
+    "id": "v_help",
+    "root": "س-ع-د",
+    "pattern": "active",
+    "translation": "To Help",
+    "conjugations": {
+      "ana": { "arabic": "بساعد", "transliteration": "Bsa'ed" },
+      "inte": { "arabic": "بتساعد", "transliteration": "Btisa'ed" },
+      "inti": { "arabic": "بتساعدي", "transliteration": "Btisa'di" },
+      "huwwe": { "arabic": "بيساعد", "transliteration": "Byisa'ed" },
+      "hiyye": { "arabic": "بتساعد", "transliteration": "Btisa'ed" },
+      "ihna": { "arabic": "بنساعد", "transliteration": "Binsa'ed" },
+      "intu": { "arabic": "بتساعدوا", "transliteration": "Btisa'du" },
+      "humme": { "arabic": "بيساعدوا", "transliteration": "Byisa'du" }
+    }
+  },
+  {
+    "id": "v_learn",
+    "root": "ت-ع-ل-م",
+    "pattern": "active",
+    "translation": "To Learn",
+    "conjugations": {
+      "ana": { "arabic": "بتعلم", "transliteration": "Bta'allam" },
+      "inte": { "arabic": "بتتعلم", "transliteration": "Btit'allam" },
+      "inti": { "arabic": "بتتعلمي", "transliteration": "Btit'allami" },
+      "huwwe": { "arabic": "بيتعلم", "transliteration": "Byit'allam" },
+      "hiyye": { "arabic": "بتتعلم", "transliteration": "Btit'allam" },
+      "ihna": { "arabic": "بنتعلم", "transliteration": "Binit'allam" },
+      "intu": { "arabic": "بتتعلموا", "transliteration": "Btit'allamu" },
+      "humme": { "arabic": "بيتعلموا", "transliteration": "Byit'allamu" }
+    }
+  },
+  {
+    "id": "v_study",
+    "root": "د-ر-س",
+    "pattern": "active",
+    "translation": "To Study",
+    "conjugations": {
+      "ana": { "arabic": "بدرس", "transliteration": "Badrus" },
+      "inte": { "arabic": "بتدرس", "transliteration": "Btidrus" },
+      "inti": { "arabic": "بتدرسي", "transliteration": "Btidrusi" },
+      "huwwe": { "arabic": "بيدرس", "transliteration": "Byidrus" },
+      "hiyye": { "arabic": "بتدرس", "transliteration": "Btidrus" },
+      "ihna": { "arabic": "بندرس", "transliteration": "Bindrus" },
+      "intu": { "arabic": "بتدرسوا", "transliteration": "Btidrusu" },
+      "humme": { "arabic": "بيدرسوا", "transliteration": "Byidrusu" }
+    }
+  },
+  {
+    "id": "v_sleep",
+    "root": "ن-و-م",
+    "pattern": "active",
+    "translation": "To Sleep",
+    "conjugations": {
+      "ana": { "arabic": "بنام", "transliteration": "Banam" },
+      "inte": { "arabic": "بتنام", "transliteration": "Btinam" },
+      "inti": { "arabic": "بتنامي", "transliteration": "Btinami" },
+      "huwwe": { "arabic": "بينام", "transliteration": "Byinam" },
+      "hiyye": { "arabic": "بتنام", "transliteration": "Btinam" },
+      "ihna": { "arabic": "بننام", "transliteration": "Binnam" },
+      "intu": { "arabic": "بتناموا", "transliteration": "Btinamu" },
+      "humme": { "arabic": "بيناموا", "transliteration": "Byinamu" }
+    }
+  },
+  {
+    "id": "v_wake_up",
+    "root": "ص-ح-ي",
+    "pattern": "active",
+    "translation": "To Wake Up",
+    "conjugations": {
+      "ana": { "arabic": "بصحى", "transliteration": "Basha" },
+      "inte": { "arabic": "بتصحى", "transliteration": "Btisha" },
+      "inti": { "arabic": "بتصحي", "transliteration": "Btishi" },
+      "huwwe": { "arabic": "بيصحى", "transliteration": "Byisha" },
+      "hiyye": { "arabic": "بتصحى", "transliteration": "Btisha" },
+      "ihna": { "arabic": "بنصحى", "transliteration": "Binsha" },
+      "intu": { "arabic": "بتصحوا", "transliteration": "Btishu" },
+      "humme": { "arabic": "بيصحوا", "transliteration": "Byishu" }
+    }
+  },
+  {
+    "id": "v_sit",
+    "root": "ق-ع-د",
+    "pattern": "active",
+    "translation": "To Sit",
+    "conjugations": {
+      "ana": { "arabic": "بقعد", "transliteration": "Ba'od" },
+      "inte": { "arabic": "بتقعد", "transliteration": "Bti'od" },
+      "inti": { "arabic": "بتقعدي", "transliteration": "Bti'odi" },
+      "huwwe": { "arabic": "بيقعد", "transliteration": "Byi'od" },
+      "hiyye": { "arabic": "بتقعد", "transliteration": "Bti'od" },
+      "ihna": { "arabic": "بنقعد", "transliteration": "Bin'od" },
+      "intu": { "arabic": "بتقعدوا", "transliteration": "Bti'odu" },
+      "humme": { "arabic": "بيقعدوا", "transliteration": "Byi'odu" }
+    }
+  },
+  {
+    "id": "v_stand",
+    "root": "و-ق-ف",
+    "pattern": "active",
+    "translation": "To Stand",
+    "conjugations": {
+      "ana": { "arabic": "بوقف", "transliteration": "Ba'af" },
+      "inte": { "arabic": "بتوقف", "transliteration": "Bti'af" },
+      "inti": { "arabic": "بتوقفي", "transliteration": "Bti'afi" },
+      "huwwe": { "arabic": "بيوقف", "transliteration": "Byi'af" },
+      "hiyye": { "arabic": "بتوقف", "transliteration": "Bti'af" },
+      "ihna": { "arabic": "بنوقف", "transliteration": "Bin'af" },
+      "intu": { "arabic": "بتوقفوا", "transliteration": "Bti'afu" },
+      "humme": { "arabic": "بيوقفوا", "transliteration": "Byi'afu" }
+    }
+  },
+  {
+    "id": "v_walk",
+    "root": "م-ش-ي",
+    "pattern": "active",
+    "translation": "To Walk",
+    "conjugations": {
+      "ana": { "arabic": "بمشي", "transliteration": "Bamshi" },
+      "inte": { "arabic": "بتمشي", "transliteration": "Btimshi" },
+      "inti": { "arabic": "بتمشي", "transliteration": "Btimshi" },
+      "huwwe": { "arabic": "بيمشي", "transliteration": "Byimshi" },
+      "hiyye": { "arabic": "بتمشي", "transliteration": "Btimshi" },
+      "ihna": { "arabic": "بنمشي", "transliteration": "Binmshi" },
+      "intu": { "arabic": "بتمشوا", "transliteration": "Btimshu" },
+      "humme": { "arabic": "بيمشوا", "transliteration": "Byimshu" }
+    }
+  },
+  {
+    "id": "v_run",
+    "root": "ج-ر-ي",
+    "pattern": "active",
+    "translation": "To Run",
+    "conjugations": {
+      "ana": { "arabic": "بجري", "transliteration": "Bajri" },
+      "inte": { "arabic": "بتجري", "transliteration": "Btijri" },
+      "inti": { "arabic": "بتجري", "transliteration": "Btijri" },
+      "huwwe": { "arabic": "بيجري", "transliteration": "Byijri" },
+      "hiyye": { "arabic": "بتجري", "transliteration": "Btijri" },
+      "ihna": { "arabic": "بنجري", "transliteration": "Binjri" },
+      "intu": { "arabic": "بتجروا", "transliteration": "Btijru" },
+      "humme": { "arabic": "بيجروا", "transliteration": "Byijru" }
+    }
+  },
+  {
+    "id": "v_buy",
+    "root": "ش-ر-ي",
+    "pattern": "active",
+    "translation": "To Buy",
+    "conjugations": {
+      "ana": { "arabic": "بشتري", "transliteration": "Bashtri" },
+      "inte": { "arabic": "بتشتري", "transliteration": "Btishtri" },
+      "inti": { "arabic": "بتشتري", "transliteration": "Btishtri" },
+      "huwwe": { "arabic": "بيشتري", "transliteration": "Byishtri" },
+      "hiyye": { "arabic": "بتشتري", "transliteration": "Btishtri" },
+      "ihna": { "arabic": "بنشتري", "transliteration": "Binshtri" },
+      "intu": { "arabic": "بتشتروا", "transliteration": "Btishtru" },
+      "humme": { "arabic": "بيشتروا", "transliteration": "Byishtru" }
+    }
+  },
+  {
+    "id": "v_sell",
+    "root": "ب-ي-ع",
+    "pattern": "active",
+    "translation": "To Sell",
+    "conjugations": {
+      "ana": { "arabic": "ببيع", "transliteration": "Babi'" },
+      "inte": { "arabic": "بتبيع", "transliteration": "Btibi'" },
+      "inti": { "arabic": "بتبيعي", "transliteration": "Btibi'i" },
+      "huwwe": { "arabic": "بيبيع", "transliteration": "Byibi'" },
+      "hiyye": { "arabic": "بتبيع", "transliteration": "Btibi'" },
+      "ihna": { "arabic": "بنبيع", "transliteration": "Binbi'" },
+      "intu": { "arabic": "بتبيعوا", "transliteration": "Btibi'u" },
+      "humme": { "arabic": "بيبيعوا", "transliteration": "Byibi'u" }
+    }
+  },
+  {
+    "id": "v_pay",
+    "root": "د-ف-ع",
+    "pattern": "active",
+    "translation": "To Pay",
+    "conjugations": {
+      "ana": { "arabic": "بدفع", "transliteration": "Badfa'" },
+      "inte": { "arabic": "بتدفع", "transliteration": "Btidfa'" },
+      "inti": { "arabic": "بتدفعي", "transliteration": "Btidfa'i" },
+      "huwwe": { "arabic": "بيدفع", "transliteration": "Byidfa'" },
+      "hiyye": { "arabic": "بتدفع", "transliteration": "Btidfa'" },
+      "ihna": { "arabic": "بندفع", "transliteration": "Bindfa'" },
+      "intu": { "arabic": "بتدفعوا", "transliteration": "Btidfa'u" },
+      "humme": { "arabic": "بيدفعوا", "transliteration": "Byidfa'u" }
+    }
+  },
+  {
+    "id": "v_open",
+    "root": "ف-ت-ح",
+    "pattern": "active",
+    "translation": "To Open",
+    "conjugations": {
+      "ana": { "arabic": "بفتح", "transliteration": "Baftah" },
+      "inte": { "arabic": "بتفتح", "transliteration": "Btiftah" },
+      "inti": { "arabic": "بتفتحي", "transliteration": "Btiftahi" },
+      "huwwe": { "arabic": "بيفتح", "transliteration": "Byiftah" },
+      "hiyye": { "arabic": "بتفتح", "transliteration": "Btiftah" },
+      "ihna": { "arabic": "بنفتح", "transliteration": "Binftah" },
+      "intu": { "arabic": "بتفتحوا", "transliteration": "Btiftahu" },
+      "humme": { "arabic": "بيفتحوا", "transliteration": "Byiftahu" }
+    }
+  },
+  {
+    "id": "v_close",
+    "root": "س-ك-ر",
+    "pattern": "active",
+    "translation": "To Close",
+    "conjugations": {
+      "ana": { "arabic": "بسكر", "transliteration": "Basker" },
+      "inte": { "arabic": "بتسكر", "transliteration": "Btisker" },
+      "inti": { "arabic": "بتسكري", "transliteration": "Btiskri" },
+      "huwwe": { "arabic": "بيسكر", "transliteration": "Byisker" },
+      "hiyye": { "arabic": "بتسكر", "transliteration": "Btisker" },
+      "ihna": { "arabic": "بنسكر", "transliteration": "Binsker" },
+      "intu": { "arabic": "بتسكروا", "transliteration": "Btiskru" },
+      "humme": { "arabic": "بيسكروا", "transliteration": "Byiskru" }
+    }
+  },
+  {
+    "id": "v_enter",
+    "root": "د-خ-ل",
+    "pattern": "active",
+    "translation": "To Enter",
+    "conjugations": {
+      "ana": { "arabic": "بدخل", "transliteration": "Badkhol" },
+      "inte": { "arabic": "بتدخل", "transliteration": "Btidkhol" },
+      "inti": { "arabic": "بتدخلي", "transliteration": "Btidkhli" },
+      "huwwe": { "arabic": "بيدخل", "transliteration": "Byidkhol" },
+      "hiyye": { "arabic": "بتدخل", "transliteration": "Btidkhol" },
+      "ihna": { "arabic": "بندخل", "transliteration": "Bindkhol" },
+      "intu": { "arabic": "بتدخلوا", "transliteration": "Btidkhlu" },
+      "humme": { "arabic": "بيدخلوا", "transliteration": "Byidkhlu" }
+    }
+  },
+  {
+    "id": "v_exit",
+    "root": "ط-ل-ع",
+    "pattern": "active",
+    "translation": "To Exit/Go Out",
+    "conjugations": {
+      "ana": { "arabic": "بطلع", "transliteration": "Batla'" },
+      "inte": { "arabic": "بتطلع", "transliteration": "Btitla'" },
+      "inti": { "arabic": "بتطلعي", "transliteration": "Btitla'i" },
+      "huwwe": { "arabic": "بيطلع", "transliteration": "Byitla'" },
+      "hiyye": { "arabic": "بتطلع", "transliteration": "Btitla'" },
+      "ihna": { "arabic": "بنطلع", "transliteration": "Bintla'" },
+      "intu": { "arabic": "بتطلعوا", "transliteration": "Btitla'u" },
+      "humme": { "arabic": "بيطلعوا", "transliteration": "Byitla'u" }
+    }
+  },
+  {
+    "id": "v_return",
+    "root": "ر-ج-ع",
+    "pattern": "active",
+    "translation": "To Return",
+    "conjugations": {
+      "ana": { "arabic": "برجع", "transliteration": "Barja'" },
+      "inte": { "arabic": "بترجع", "transliteration": "Btirja'" },
+      "inti": { "arabic": "بترجعي", "transliteration": "Btirja'i" },
+      "huwwe": { "arabic": "بيرجع", "transliteration": "Byirja'" },
+      "hiyye": { "arabic": "بترجع", "transliteration": "Btirja'" },
+      "ihna": { "arabic": "بنرجع", "transliteration": "Binrja'" },
+      "intu": { "arabic": "بترجعوا", "transliteration": "Btirja'u" },
+      "humme": { "arabic": "بيرجعوا", "transliteration": "Byirja'u" }
+    }
+  },
+  {
+    "id": "v_wait",
+    "root": "ن-ط-ر",
+    "pattern": "active",
+    "translation": "To Wait",
+    "conjugations": {
+      "ana": { "arabic": "بنطر", "transliteration": "Bantor" },
+      "inte": { "arabic": "بتنطر", "transliteration": "Btintor" },
+      "inti": { "arabic": "بتنطري", "transliteration": "Btintri" },
+      "huwwe": { "arabic": "بينطر", "transliteration": "Byintor" },
+      "hiyye": { "arabic": "بتنطر", "transliteration": "Btintor" },
+      "ihna": { "arabic": "بننطر", "transliteration": "Binntor" },
+      "intu": { "arabic": "بتنطروا", "transliteration": "Btintru" },
+      "humme": { "arabic": "بينطروا", "transliteration": "Byintru" }
+    }
+  },
+  {
+    "id": "v_leave",
+    "root": "ت-ر-ك",
+    "pattern": "active",
+    "translation": "To Leave",
+    "conjugations": {
+      "ana": { "arabic": "بترك", "transliteration": "Batruk" },
+      "inte": { "arabic": "بتترك", "transliteration": "Btitruk" },
+      "inti": { "arabic": "بتتركي", "transliteration": "Btitruki" },
+      "huwwe": { "arabic": "بيترك", "transliteration": "Byitruk" },
+      "hiyye": { "arabic": "بتترك", "transliteration": "Btitruk" },
+      "ihna": { "arabic": "بنترك", "transliteration": "Bintruk" },
+      "intu": { "arabic": "بتتركوا", "transliteration": "Btitruku" },
+      "humme": { "arabic": "بيتركوا", "transliteration": "Byitruku" }
+    }
+  },
+  {
+    "id": "v_ask",
+    "root": "س-أ-ل",
+    "pattern": "active",
+    "translation": "To Ask",
+    "conjugations": {
+      "ana": { "arabic": "بسأل", "transliteration": "Bas'al" },
+      "inte": { "arabic": "بتسأل", "transliteration": "Btis'al" },
+      "inti": { "arabic": "بتسألي", "transliteration": "Btis'ali" },
+      "huwwe": { "arabic": "بيسأل", "transliteration": "Byis'al" },
+      "hiyye": { "arabic": "بتسأل", "transliteration": "Btis'al" },
+      "ihna": { "arabic": "بنسأل", "transliteration": "Bins'al" },
+      "intu": { "arabic": "بتسألوا", "transliteration": "Btis'alu" },
+      "humme": { "arabic": "بيسألوا", "transliteration": "Byis'alu" }
+    }
+  },
+  {
+    "id": "v_answer",
+    "root": "ج-و-ب",
+    "pattern": "active",
+    "translation": "To Answer",
+    "conjugations": {
+      "ana": { "arabic": "بجاوب", "transliteration": "Bajaweb" },
+      "inte": { "arabic": "بتجاوب", "transliteration": "Btijaweb" },
+      "inti": { "arabic": "بتجاوبي", "transliteration": "Btijawbi" },
+      "huwwe": { "arabic": "بيجاوب", "transliteration": "Byijaweb" },
+      "hiyye": { "arabic": "بتجاوب", "transliteration": "Btijaweb" },
+      "ihna": { "arabic": "بنجاوب", "transliteration": "Binjaweb" },
+      "intu": { "arabic": "بتجاوبوا", "transliteration": "Btijawbu" },
+      "humme": { "arabic": "بيجاوبوا", "transliteration": "Byijawbu" }
+    }
+  },
+  {
+    "id": "v_hear",
+    "root": "س-م-ع",
+    "pattern": "active",
+    "translation": "To Hear",
+    "conjugations": {
+      "ana": { "arabic": "بسمع", "transliteration": "Basma'" },
+      "inte": { "arabic": "بتسمع", "transliteration": "Btisma'" },
+      "inti": { "arabic": "بتسمعي", "transliteration": "Btisma'i" },
+      "huwwe": { "arabic": "بيسمع", "transliteration": "Byisma'" },
+      "hiyye": { "arabic": "بتسمع", "transliteration": "Btisma'" },
+      "ihna": { "arabic": "بنسمع", "transliteration": "Binsma'" },
+      "intu": { "arabic": "بتسمعوا", "transliteration": "Btisma'u" },
+      "humme": { "arabic": "بيسمعوا", "transliteration": "Byisma'u" }
+    }
+  },
+  {
+    "id": "v_listen",
+    "root": "س-م-ع",
+    "pattern": "active",
+    "translation": "To Listen",
+    "conjugations": {
+      "ana": { "arabic": "بسمع", "transliteration": "Basma'" },
+      "inte": { "arabic": "بتسمع", "transliteration": "Btisma'" },
+      "inti": { "arabic": "بتسمعي", "transliteration": "Btisma'i" },
+      "huwwe": { "arabic": "بيسمع", "transliteration": "Byisma'" },
+      "hiyye": { "arabic": "بتسمع", "transliteration": "Btisma'" },
+      "ihna": { "arabic": "بنسمع", "transliteration": "Binsma'" },
+      "intu": { "arabic": "بتسمعوا", "transliteration": "Btisma'u" },
+      "humme": { "arabic": "بيسمعوا", "transliteration": "Byisma'u" }
+    }
+  },
+  {
+    "id": "v_look",
+    "root": "ن-ظ-ر",
+    "pattern": "active",
+    "translation": "To Look",
+    "conjugations": {
+      "ana": { "arabic": "بنظر", "transliteration": "Banzer" },
+      "inte": { "arabic": "بتنظر", "transliteration": "Btinzer" },
+      "inti": { "arabic": "بتنظري", "transliteration": "Btinzri" },
+      "huwwe": { "arabic": "بينظر", "transliteration": "Byinzer" },
+      "hiyye": { "arabic": "بتنظر", "transliteration": "Btinzer" },
+      "ihna": { "arabic": "بننظر", "transliteration": "Binnzer" },
+      "intu": { "arabic": "بتنظروا", "transliteration": "Btinzru" },
+      "humme": { "arabic": "بينظروا", "transliteration": "Byinzru" }
+    }
+  },
+  {
+    "id": "v_think",
+    "root": "ف-ك-ر",
+    "pattern": "active",
+    "translation": "To Think",
+    "conjugations": {
+      "ana": { "arabic": "بفكر", "transliteration": "Bafker" },
+      "inte": { "arabic": "بتفكر", "transliteration": "Btifker" },
+      "inti": { "arabic": "بتفكري", "transliteration": "Btifkri" },
+      "huwwe": { "arabic": "بيفكر", "transliteration": "Byifker" },
+      "hiyye": { "arabic": "بتفكر", "transliteration": "Btifker" },
+      "ihna": { "arabic": "بنفكر", "transliteration": "Binfker" },
+      "intu": { "arabic": "بتفكروا", "transliteration": "Btifkru" },
+      "humme": { "arabic": "بيفكروا", "transliteration": "Byifkru" }
+    }
+  },
+  {
+    "id": "v_remember",
+    "root": "ت-ذ-ك-ر",
+    "pattern": "active",
+    "translation": "To Remember",
+    "conjugations": {
+      "ana": { "arabic": "بتذكر", "transliteration": "Batazakkar" },
+      "inte": { "arabic": "بتتذكر", "transliteration": "Btitazakkar" },
+      "inti": { "arabic": "بتتذكري", "transliteration": "Btitazakkari" },
+      "huwwe": { "arabic": "بيتذكر", "transliteration": "Byitazakkar" },
+      "hiyye": { "arabic": "بتتذكر", "transliteration": "Btitazakkar" },
+      "ihna": { "arabic": "بنتذكر", "transliteration": "Binitazakkar" },
+      "intu": { "arabic": "بتتذكروا", "transliteration": "Btitazakkaru" },
+      "humme": { "arabic": "بيتذكروا", "transliteration": "Byitazakkaru" }
+    }
+  },
+  {
+    "id": "v_forget",
+    "root": "ن-س-ي",
+    "pattern": "active",
+    "translation": "To Forget",
+    "conjugations": {
+      "ana": { "arabic": "بنسى", "transliteration": "Bansa" },
+      "inte": { "arabic": "بتنسى", "transliteration": "Btinsa" },
+      "inti": { "arabic": "بتنسي", "transliteration": "Btinsi" },
+      "huwwe": { "arabic": "بينسى", "transliteration": "Byinsa" },
+      "hiyye": { "arabic": "بتنسى", "transliteration": "Btinsa" },
+      "ihna": { "arabic": "بننسى", "transliteration": "Binnsa" },
+      "intu": { "arabic": "بتنسوا", "transliteration": "Btinsu" },
+      "humme": { "arabic": "بينسوا", "transliteration": "Byinsu" }
+    }
+  },
+  {
+    "id": "v_love",
+    "root": "ح-ب",
+    "pattern": "active",
+    "translation": "To Love",
+    "conjugations": {
+      "ana": { "arabic": "بحب", "transliteration": "Baheb" },
+      "inte": { "arabic": "بتحب", "transliteration": "Btiheb" },
+      "inti": { "arabic": "بتحبي", "transliteration": "Btihebi" },
+      "huwwe": { "arabic": "بيحب", "transliteration": "Byiheb" },
+      "hiyye": { "arabic": "بتحب", "transliteration": "Btiheb" },
+      "ihna": { "arabic": "بنحب", "transliteration": "Binheb" },
+      "intu": { "arabic": "بتحبوا", "transliteration": "Btihebu" },
+      "humme": { "arabic": "بيحبوا", "transliteration": "Byihebu" }
+    }
+  },
+  {
+    "id": "v_like",
+    "root": "ح-ب",
+    "pattern": "active",
+    "translation": "To Like",
+    "conjugations": {
+      "ana": { "arabic": "بحب", "transliteration": "Baheb" },
+      "inte": { "arabic": "بتحب", "transliteration": "Btiheb" },
+      "inti": { "arabic": "بتحبي", "transliteration": "Btihebi" },
+      "huwwe": { "arabic": "بيحب", "transliteration": "Byiheb" },
+      "hiyye": { "arabic": "بتحب", "transliteration": "Btiheb" },
+      "ihna": { "arabic": "بنحب", "transliteration": "Binheb" },
+      "intu": { "arabic": "بتحبوا", "transliteration": "Btihebu" },
+      "humme": { "arabic": "بيحبوا", "transliteration": "Byihebu" }
+    }
+  },
+  {
+    "id": "v_hate",
+    "root": "ك-ر-ه",
+    "pattern": "active",
+    "translation": "To Hate",
+    "conjugations": {
+      "ana": { "arabic": "بكره", "transliteration": "Bakrah" },
+      "inte": { "arabic": "بتكره", "transliteration": "Btikrah" },
+      "inti": { "arabic": "بتكرهي", "transliteration": "Btikrahi" },
+      "huwwe": { "arabic": "بيكره", "transliteration": "Byikrah" },
+      "hiyye": { "arabic": "بتكره", "transliteration": "Btikrah" },
+      "ihna": { "arabic": "بنكره", "transliteration": "Binkrah" },
+      "intu": { "arabic": "بتكرهوا", "transliteration": "Btikrahu" },
+      "humme": { "arabic": "بيكرهوا", "transliteration": "Byikrahu" }
+    }
+  },
+  {
+    "id": "v_need",
+    "root": "ح-ت-ج",
+    "pattern": "active",
+    "translation": "To Need",
+    "conjugations": {
+      "ana": { "arabic": "بحتاج", "transliteration": "Bahtaj" },
+      "inte": { "arabic": "بتحتاج", "transliteration": "Btihtaj" },
+      "inti": { "arabic": "بتحتاجي", "transliteration": "Btihtaji" },
+      "huwwe": { "arabic": "بيحتاج", "transliteration": "Byihtaj" },
+      "hiyye": { "arabic": "بتحتاج", "transliteration": "Btihtaj" },
+      "ihna": { "arabic": "بنحتاج", "transliteration": "Binhtaj" },
+      "intu": { "arabic": "بتحتاجوا", "transliteration": "Btihtaju" },
+      "humme": { "arabic": "بيحتاجوا", "transliteration": "Byihtaju" }
+    }
+  },
+  {
+    "id": "v_try",
+    "root": "ج-ر-ب",
+    "pattern": "active",
+    "translation": "To Try",
+    "conjugations": {
+      "ana": { "arabic": "بجرب", "transliteration": "Bajarreb" },
+      "inte": { "arabic": "بتجرب", "transliteration": "Btijarreb" },
+      "inti": { "arabic": "بتجربي", "transliteration": "Btijarrebi" },
+      "huwwe": { "arabic": "بيجرب", "transliteration": "Byijarreb" },
+      "hiyye": { "arabic": "بتجرب", "transliteration": "Btijarreb" },
+      "ihna": { "arabic": "بنجرب", "transliteration": "Binjarreb" },
+      "intu": { "arabic": "بتجربوا", "transliteration": "Btijarrebu" },
+      "humme": { "arabic": "بيجربوا", "transliteration": "Byijarrebu" }
+    }
+  },
+  {
+    "id": "v_use",
+    "root": "س-ت-خ-د-م",
+    "pattern": "active",
+    "translation": "To Use",
+    "conjugations": {
+      "ana": { "arabic": "بستخدم", "transliteration": "Bastakhdim" },
+      "inte": { "arabic": "بتستخدم", "transliteration": "Btistakhdim" },
+      "inti": { "arabic": "بتستخدمي", "transliteration": "Btistakhdimi" },
+      "huwwe": { "arabic": "بيستخدم", "transliteration": "Byistakhdim" },
+      "hiyye": { "arabic": "بتستخدم", "transliteration": "Btistakhdim" },
+      "ihna": { "arabic": "بنستخدم", "transliteration": "Binstakhdim" },
+      "intu": { "arabic": "بتستخدموا", "transliteration": "Btistakhdimu" },
+      "humme": { "arabic": "بيستخدموا", "transliteration": "Byistakhdimu" }
+    }
+  },
+  {
+    "id": "v_feel",
+    "root": "ح-س",
+    "pattern": "active",
+    "translation": "To Feel",
+    "conjugations": {
+      "ana": { "arabic": "بحس", "transliteration": "Bahess" },
+      "inte": { "arabic": "بتحس", "transliteration": "Btihess" },
+      "inti": { "arabic": "بتحسي", "transliteration": "Btihessi" },
+      "huwwe": { "arabic": "بيحس", "transliteration": "Byihess" },
+      "hiyye": { "arabic": "بتحس", "transliteration": "Btihess" },
+      "ihna": { "arabic": "بنحس", "transliteration": "Binhess" },
+      "intu": { "arabic": "بتحسوا", "transliteration": "Btihessu" },
+      "humme": { "arabic": "بيحسوا", "transliteration": "Byihessu" }
+    }
+  }
+]
