@@ -5,7 +5,7 @@ import artifactWadiRum from '../assets/artifacts/wadi_rum.png';
 import artifactPetra from '../assets/artifacts/petra.png';
 import artifactJerusalem from '../assets/artifacts/jerusalem.png';
 import artifactJericho from '../assets/artifacts/jericho.png';
-import artifactAmman from '../assets/artifacts/cedar.jpg';
+import artifactAmman from '../assets/artifacts/amman.png';
 import artifactBeerSheba from '../assets/artifacts/abrahamsWell.png';
 import eilatArtifact from '../assets/artifacts/eilat.png';
 // CSS for Animations (injected here for simplicity)
