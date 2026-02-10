@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Ancient stone well -->
+  <defs>
+    <radialGradient id="wellGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#3d3d3d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c5a9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#b8a88a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9d8b6f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bucketGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5d4a37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#f4f1de" stroke="#e0d5b7" stroke-width="2"/>
+  
+  <!-- Well base stones - outer ring -->
+  <ellipse cx="100" cy="140" rx="65" ry="20" fill="url(#stoneGradient)" opacity="0.8"/>
+  
+  <!-- Well opening (dark) -->
+  <ellipse cx="100" cy="140" rx="50" ry="15" fill="url(#wellGradient)"/>
+  
+  <!-- Stone blocks around well -->
+  <path d="M 45 140 Q 45 125 55 120 L 65 125 Q 60 130 60 140 Z" fill="#b8a88a" stroke="#9d8b6f" stroke-width="1"/>
+  <path d="M 135 140 Q 135 125 145 120 L 155 125 Q 150 130 150 140 Z" fill="#c5b89a" stroke="#9d8b6f" stroke-width="1"/>
+  <path d="M 70 125 L 80 120 L 90 125 L 85 135 Z" fill="#d4c5a9" stroke="#9d8b6f" stroke-width="1"/>
+  <path d="M 110 125 L 120 120 L 130 125 L 125 135 Z" fill="#c5b89a" stroke="#9d8b6f" stroke-width="1"/>
+  
+  <!-- Rope -->
+  <line x1="100" y1="60" x2="100" y2="135" stroke="#8b7355" stroke-width="2" stroke-dasharray="none"/>
+  
+  <!-- Wooden bucket -->
+  <path d="M 85 50 L 80 70 L 120 70 L 115 50 Z" fill="url(#bucketGradient)" stroke="#5d4a37" stroke-width="2"/>
+  <ellipse cx="100" cy="50" rx="15" ry="5" fill="#6b5644" stroke="#5d4a37" stroke-width="1"/>
+  <ellipse cx="100" cy="70" rx="20" ry="6" fill="#5d4a37"/>
+  
+  <!-- Bucket handle -->
+  <path d="M 85 52 Q 100 45 115 52" fill="none" stroke="#4a3a2a" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Water drops -->
+  <ellipse cx="95" cy="80" rx="2" ry="3" fill="#4a9eff" opacity="0.7"/>
+  <ellipse cx="105" cy="85" rx="2" ry="3" fill="#4a9eff" opacity="0.7"/>
+  <ellipse cx="100" cy="90" rx="2" ry="3" fill="#4a9eff" opacity="0.6"/>
+  
+  <!-- Decorative ancient text/symbols on stones -->
+  <text x="50" y="138" font-family="serif" font-size="12" fill="#8b7355" opacity="0.5">א</text>
+  <text x="145" y="138" font-family="serif" font-size="12" fill="#8b7355" opacity="0.5">ב</text>
+</svg>

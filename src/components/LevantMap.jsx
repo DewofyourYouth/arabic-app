@@ -5,8 +5,9 @@ import artifactWadiRum from '../assets/artifacts/wadi_rum.png';
 import artifactPetra from '../assets/artifacts/petra.png';
 import artifactJerusalem from '../assets/artifacts/jerusalem.png';
 import artifactJericho from '../assets/artifacts/jericho.png';
-import artifactAmman from '../assets/artifacts/amman.png';
-
+import artifactAmman from '../assets/artifacts/cedar.jpg';
+import artifactBeerSheba from '../assets/artifacts/abrahamsWell.png';
+import eilatArtifact from '../assets/artifacts/eilat.png';
 // CSS for Animations (injected here for simplicity)
 const animationKeyframes = `
 @keyframes pulse {
@@ -135,7 +136,7 @@ const CITIES = [
     x: 40, 
     y: 89,
     artifact: {
-      image: artifactWadiRum, 
+      image: eilatArtifact, 
       name: 'Coral Reef',
       description: 'Beautiful underwater gardens of the Red Sea.'
     }
@@ -161,7 +162,7 @@ const CITIES = [
     x: 35, 
     y: 65,
     artifact: {
-      image: artifactPetra,
+      image: artifactBeerSheba,
       name: 'Abraham\'s Well',
       description: 'Ancient well associated with the patriarch.'
     }
