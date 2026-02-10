@@ -72,7 +72,8 @@ const IntroCard = ({ cardData, onNext }) => {
               fontSize: '3rem', 
               color: 'var(--color-primary)', 
               marginBottom: 'var(--spacing-2)',
-              fontFamily: 'var(--font-family-arabic)'
+              fontFamily: 'var(--font-family-arabic)',
+              direction: 'rtl'
               }}>
               {arabic}
               </h2>

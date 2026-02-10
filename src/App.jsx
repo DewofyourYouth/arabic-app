@@ -6,6 +6,7 @@ import Library from './components/Library';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
+import OnboardingTour from './components/OnboardingTour';
 import FennecFeedback from './components/FennecFeedback';
 import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
@@ -13,15 +14,13 @@ import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
 import { SettingsProvider } from './contexts/SettingsContext';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 
+import { useData } from './contexts/DataContext';
+
 const SESSION_LENGTH = 10;
 
 function AppContent() {
-  const { currentUser, loading, logOut } = useAuth();
-
-  // --- STATE: DATA ---
-  const [allCards, setAllCards] = useState([]);
-  const [userXp, setUserXp] = useState(0);
-  const [dataLoaded, setDataLoaded] = useState(false);
+  const { currentUser, logOut } = useAuth(); // removed loading from here as we use DataContext loading
+  const { allCards, userData, loading: dataLoading, updateUserXP, completeLesson } = useData();
 
   // --- STATE: UI ---
   const [view, setView] = useState('map'); // 'map', 'session', 'summary'
@@ -36,64 +35,13 @@ function AppContent() {
   const { playCorrect, playIncorrect } = useAudio();
 
   // Derived State
+  const userXp = userData?.stats?.totalXP || 0;
   const userLevel = Math.floor(userXp / 100) + 1; // Simple Leveling: 100 XP per level
   const userName = currentUser?.displayName || 'Guest';
 
-  // Load Data Effect
-  useEffect(() => {
-    if (!currentUser) return;
-
-    const uid = currentUser.uid;
-    const storageKey = `haki_user_progress_${uid}`;
-    const xpKey = `haki_user_xp_${uid}`;
-
-    // Load Cards
-    const savedCards = localStorage.getItem(storageKey);
-    const initialData = curriculumData.map((card, index) => ({
-      ...card,
-      id: card.id || `card-${index}`,
-      srs: INITIAL_SRS_STATE
-    }));
-
-    if (savedCards) {
-      try {
-        const parsed = JSON.parse(savedCards);
-        const merged = initialData.map(card => {
-          const savedCard = parsed.find(p => p.id === card.id);
-          return savedCard ? { ...card, srs: savedCard.srs } : card;
-        });
-        setAllCards(merged);
-      } catch (e) {
-        setAllCards(initialData);
-      }
-    } else {
-      setAllCards(initialData);
-    }
-
-    // Load XP
-    const savedXp = localStorage.getItem(xpKey);
-    setUserXp(savedXp ? parseInt(savedXp, 10) : 0);
-
-    setDataLoaded(true);
-  }, [currentUser]);
-
-  // Save Effects
-  useEffect(() => {
-    if (!currentUser || !dataLoaded) return;
-    const uid = currentUser.uid;
-    localStorage.setItem(`haki_user_progress_${uid}`, JSON.stringify(allCards.map(c => ({ id: c.id, srs: c.srs }))));
-  }, [allCards, currentUser, dataLoaded]);
-
-  useEffect(() => {
-    if (!currentUser || !dataLoaded) return;
-    const uid = currentUser.uid;
-    localStorage.setItem(`haki_user_xp_${uid}`, userXp.toString());
-  }, [userXp, currentUser, dataLoaded]);
-
-
   // --- ACTIONS ---
   const addDevXp = () => {
-    setUserXp(prev => prev + 100);
+    updateUserXP(100);
   };
 
   const startNewSession = () => {
@@ -207,6 +155,22 @@ function AppContent() {
     setCurrentIndex(prev => prev + 1);
   };
 
+  // --- ONBOARDING ---
+  const [showOnboarding, setShowOnboarding] = useState(false);
+
+  useEffect(() => {
+    const hasCompletedOnboarding = localStorage.getItem('haki_onboarding_completed');
+    if (!hasCompletedOnboarding && view === 'map') {
+      // Small delay to let simple animations finish
+      setTimeout(() => setShowOnboarding(true), 1000);
+    }
+  }, [view]);
+
+  const handleTourComplete = () => {
+    localStorage.setItem('haki_onboarding_completed', 'true');
+    setShowOnboarding(false);
+  };
+  
   const handleRate = (result) => {
     const currentCard = sessionQueue[currentIndex];
     
@@ -227,8 +191,10 @@ function AppContent() {
 
     // Update Data
     const newSrs = calculateSrs(currentCard.srs, grade);
-    setAllCards(prev => prev.map(c => c.id === currentCard.id ? { ...c, srs: newSrs } : c));
-    setUserXp(prev => prev + xpGain);
+    
+    // Call DataContext action
+    completeLesson(currentCard.id, { score: xpGain, stars: result === 'correct' ? 3 : 0 }, newSrs);
+    
     setXpGainedSession(prev => prev + xpGain);
 
     // Update Session Stats
@@ -241,6 +207,8 @@ function AppContent() {
       // Navigation
       if (currentIndex < sessionQueue.length - 1) {
         setIsFlipped(false);
+        // Pre-flip back to front (instant)
+        // Then move to next card
         setTimeout(() => setCurrentIndex(prev => prev + 1), 100);
       } else {
         setView('summary');
@@ -256,7 +224,7 @@ function AppContent() {
     }
   };
 
-  if (loading) {
+  if (dataLoading) {
      return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading...</div>;
   }
 
@@ -268,7 +236,7 @@ function AppContent() {
     );
   }
 
-  if (!dataLoaded) {
+  if (dataLoading) {
       return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading Data...</div>;
   }
 
@@ -316,6 +284,12 @@ function AppContent() {
               >
                 {userXp} XP 🔧
               </div>
+              <div 
+                style={{ fontSize: '0.8rem', color: '#888', cursor: 'pointer', marginTop: '4px' }}
+                onClick={() => import('./utils/seed_db').then(m => m.seedDatabase())}
+              >
+                🛠️ Seed DB
+              </div>
             </div>
             
             <button 
@@ -336,6 +310,8 @@ function AppContent() {
           </div>
 
           <LevantMap userLevel={userLevel} onCitySelect={startNewSession} />
+          
+          {showOnboarding && <OnboardingTour onComplete={handleTourComplete} />}
         </div>
       </Layout>
       </SettingsProvider>
@@ -517,10 +493,70 @@ function AppContent() {
   );
 }
 
+import { Component } from 'react';
+import { DataProvider } from './contexts/DataContext';
+import { seedDatabase } from './utils/seed_db';
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error("Uncaught error:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div style={{ padding: '20px', textAlign: 'center', fontFamily: 'sans-serif' }}>
+          <h1>Something went wrong.</h1>
+          <p style={{ color: 'red' }}>{this.state.error?.toString()}</p>
+          <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
+             <h3>Dev Tools</h3>
+             <p>Since the app crashed, you can try seeding the database here to see if missing data is the cause.</p>
+             <button 
+                onClick={seedDatabase}
+                style={{
+                  background: 'var(--color-primary, #007bff)',
+                  color: 'white',
+                  border: 'none',
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold'
+                }}
+              >
+                (Dev: Seed Database)
+              </button>
+          </div>
+          <button 
+            onClick={() => window.location.reload()} 
+            style={{ marginTop: '20px', padding: '10px' }}
+          >
+            Reload App
+          </button>
+        </div>
+      );
+    }
+
+    return this.props.children; 
+  }
+}
+
 export default function App() {
   return (
     <AuthProvider>
-      <AppContent />
+      <DataProvider>
+        <ErrorBoundary>
+           <AppContent />
+        </ErrorBoundary>
+      </DataProvider>
     </AuthProvider>
   );
 }

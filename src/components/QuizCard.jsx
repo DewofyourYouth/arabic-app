@@ -22,7 +22,8 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           promptStyle: { 
             fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)', 
             fontSize: settings.showArabicScript ? '2.5rem' : '2rem',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
+            direction: settings.showArabicScript ? 'rtl' : 'ltr'
           },
           optionStyle: { fontFamily: 'var(--font-family-english)', fontSize: '1.1rem' }
         };
@@ -48,7 +49,8 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           optionStyle: { 
             fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
             fontSize: '1.25rem',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
+            direction: settings.showArabicScript ? 'rtl' : 'ltr'
           },
           useProvidedOptions: true,
           showTransliteration: !settings.showArabicScript
@@ -64,12 +66,14 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
             fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
             fontSize: settings.showArabicScript ? '1.8rem' : '1.5rem',
             lineHeight: '1.8',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
+            direction: settings.showArabicScript ? 'rtl' : 'ltr'
           },
           optionStyle: { 
             fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
             fontSize: '1.25rem',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
+            direction: settings.showArabicScript ? 'rtl' : 'ltr'
           },
           useProvidedOptions: true,
           showTransliteration: !settings.showArabicScript,
@@ -86,7 +90,8 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           optionStyle: { 
             fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
             fontSize: '1.25rem',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic'
+            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
+            direction: settings.showArabicScript ? 'rtl' : 'ltr'
           }
         };
     }

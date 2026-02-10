@@ -29,9 +29,15 @@ export const SettingsProvider = ({ children }) => {
     setSettings(prev => ({ ...prev, showArabicScript: !prev.showArabicScript }));
   };
 
+  const resetOnboarding = () => {
+      localStorage.removeItem('haki_onboarding_completed');
+      window.location.reload(); // Simple way to re-trigger the check in App.jsx
+  };
+
   const value = {
     settings,
-    toggleArabicScript
+    toggleArabicScript,
+    resetOnboarding
   };
 
   return (

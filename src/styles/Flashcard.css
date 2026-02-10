@@ -71,6 +71,7 @@
   font-size: var(--font-size-5xl);
   color: var(--color-primary-dark);
   margin-bottom: var(--spacing-2);
+  direction: rtl;
 }
 
 .back-transliteration {

@@ -2,11 +2,11 @@ import { initializeApp } from "firebase/app";
 import { 
   getAuth, 
   GoogleAuthProvider, 
-  OAuthProvider,
   signInWithPopup,
   signInAnonymously,
   signOut as firebaseSignOut
 } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 // TODO: Replace with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/setup#config-object
@@ -24,6 +24,9 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Auth
 export const auth = getAuth(app);
+
+// Initialize Firestore
+export const db = getFirestore(app);
 
 // Providers
 export const googleProvider = new GoogleAuthProvider();
