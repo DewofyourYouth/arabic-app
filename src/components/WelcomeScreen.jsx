@@ -22,6 +22,7 @@ const WelcomeScreen = () => {
     }
   };
 
+  /* 
   const handleAppleSignIn = async () => {
     try {
       setError('');
@@ -33,6 +34,7 @@ const WelcomeScreen = () => {
       setLoading(false);
     }
   };
+  */
 
   const handleGuestSubmit = async (e) => {
     e.preventDefault();
@@ -107,12 +109,12 @@ const WelcomeScreen = () => {
                 icon="🇬"
                 style={{ border: '1px solid #ddd' }}
              />
-             <SocialLoginButton 
+             {/* <SocialLoginButton 
                 onClick={handleAppleSignIn}
                 label={loading ? 'Signing in...' : 'Sign in with Apple'}
                 icon=""
                 style={{ background: 'black', color: 'white', border: 'none' }}
-             />
+             /> */}
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--spacing-6)', color: '#aaa', fontSize: '0.9rem' }}>
