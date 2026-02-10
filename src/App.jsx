@@ -11,43 +11,17 @@ import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
 import { SettingsProvider } from './contexts/SettingsContext';
+import { AuthProvider, useAuth } from './contexts/AuthContext';
 
 const SESSION_LENGTH = 10;
-const STORAGE_KEY = 'haki_user_progress_v1';
-const XP_KEY = 'haki_user_xp_v1';
-const USER_NAME_KEY = 'haki_user_name_v1';
 
-function App() {
+function AppContent() {
+  const { currentUser, loading, logOut } = useAuth();
+
   // --- STATE: DATA ---
-  const [userName, setUserName] = useState(() => {
-    return localStorage.getItem(USER_NAME_KEY) || null;
-  });
-
-  const [allCards, setAllCards] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    const initialData = curriculumData.map((card, index) => ({
-      ...card,
-      id: card.id || `card-${index}`,
-      srs: INITIAL_SRS_STATE
-    }));
-
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        return initialData.map(card => {
-          const savedCard = parsed.find(p => p.id === card.id);
-          return savedCard ? { ...card, srs: savedCard.srs } : card;
-        });
-      } catch (e) {
-        return initialData;
-      }
-    }
-    return initialData;
-  });
-
-  const [userXp, setUserXp] = useState(() => {
-    return parseInt(localStorage.getItem(XP_KEY) || '0', 10);
-  });
+  const [allCards, setAllCards] = useState([]);
+  const [userXp, setUserXp] = useState(0);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   // --- STATE: UI ---
   const [view, setView] = useState('map'); // 'map', 'session', 'summary'
@@ -63,28 +37,61 @@ function App() {
 
   // Derived State
   const userLevel = Math.floor(userXp / 100) + 1; // Simple Leveling: 100 XP per level
+  const userName = currentUser?.displayName || 'Guest';
+
+  // Load Data Effect
+  useEffect(() => {
+    if (!currentUser) return;
+
+    const uid = currentUser.uid;
+    const storageKey = `haki_user_progress_${uid}`;
+    const xpKey = `haki_user_xp_${uid}`;
+
+    // Load Cards
+    const savedCards = localStorage.getItem(storageKey);
+    const initialData = curriculumData.map((card, index) => ({
+      ...card,
+      id: card.id || `card-${index}`,
+      srs: INITIAL_SRS_STATE
+    }));
+
+    if (savedCards) {
+      try {
+        const parsed = JSON.parse(savedCards);
+        const merged = initialData.map(card => {
+          const savedCard = parsed.find(p => p.id === card.id);
+          return savedCard ? { ...card, srs: savedCard.srs } : card;
+        });
+        setAllCards(merged);
+      } catch (e) {
+        setAllCards(initialData);
+      }
+    } else {
+      setAllCards(initialData);
+    }
+
+    // Load XP
+    const savedXp = localStorage.getItem(xpKey);
+    setUserXp(savedXp ? parseInt(savedXp, 10) : 0);
+
+    setDataLoaded(true);
+  }, [currentUser]);
 
   // Save Effects
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(allCards.map(c => ({ id: c.id, srs: c.srs }))));
-  }, [allCards]);
+    if (!currentUser || !dataLoaded) return;
+    const uid = currentUser.uid;
+    localStorage.setItem(`haki_user_progress_${uid}`, JSON.stringify(allCards.map(c => ({ id: c.id, srs: c.srs }))));
+  }, [allCards, currentUser, dataLoaded]);
 
   useEffect(() => {
-    localStorage.setItem(XP_KEY, userXp.toString());
-  }, [userXp]);
-
-  useEffect(() => {
-    if (userName) {
-      localStorage.setItem(USER_NAME_KEY, userName);
-    }
-  }, [userName]);
+    if (!currentUser || !dataLoaded) return;
+    const uid = currentUser.uid;
+    localStorage.setItem(`haki_user_xp_${uid}`, userXp.toString());
+  }, [userXp, currentUser, dataLoaded]);
 
 
   // --- ACTIONS ---
-  const handleOnboardingComplete = (name) => {
-    setUserName(name);
-  };
-
   const addDevXp = () => {
     setUserXp(prev => prev + 100);
   };
@@ -116,16 +123,24 @@ function App() {
     for (let i = 0; i < numConjugationQuizzes; i++) {
       const verb = verbsData[Math.floor(Math.random() * verbsData.length)];
       const pronoun = pronounOptions[Math.floor(Math.random() * pronounOptions.length)];
-      const correctConjugation = verb.conjugations[pronoun]?.arabic || '';
+      const correctConjugationObj = verb.conjugations[pronoun] || { arabic: '', transliteration: '' };
+      const correctConjugation = correctConjugationObj.arabic;
       
       // Get 3 other conjugations as distractors
       const otherConjugations = Object.keys(verb.conjugations)
         .filter(p => p !== pronoun)
-        .map(p => verb.conjugations[p].arabic)
+        .map(p => ({
+          arabic: verb.conjugations[p].arabic,
+          transliteration: verb.conjugations[p].transliteration
+        }))
         .sort(() => 0.5 - Math.random())
         .slice(0, 3);
       
-      const options = [correctConjugation, ...otherConjugations].sort(() => 0.5 - Math.random());
+      // Options now contain objects with both scripts
+      const options = [
+        { arabic: correctConjugation, transliteration: correctConjugationObj.transliteration }, 
+        ...otherConjugations
+      ].sort(() => 0.5 - Math.random());
       
       conjugationCards.push({
         id: `conj-${verb.id}-${pronoun}-${i}`,
@@ -134,7 +149,7 @@ function App() {
         pronounDisplay: pronounDisplayMap[pronoun],
         verb,
         correctConjugation,
-        options,
+        options, // Array of { arabic, transliteration }
         arabic: correctConjugation,  // For audio playback
         type: 'verb',                 // For display consistency
         srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
@@ -188,17 +203,7 @@ function App() {
     // Mark as introduced
     setIntroducedIds(prev => new Set(prev).add(currentCard.id));
 
-    // Re-queue logic: Insert copy of this card later in the session
-    // For simplicity, just appending to end, or shuffling in.
-    // Let's just create a new queue with this card added to the end for now.
     setSessionQueue(prev => [...prev, currentCard]);
-
-    // Move to next card immediately (which might be the re-queued one if queue was empty, but it won't be empty)
-    // Actually, we want to show the NEXT card in the queue.
-    // We do NOT increment currentIndex here because we want to advance naturally.
-    // But since we are viewing the SAME index, if we don't increment, we see the same card again immediately if we just re-rendered.
-    // BUT we want to see the NEXT card.
-    
     setCurrentIndex(prev => prev + 1);
   };
 
@@ -251,12 +256,20 @@ function App() {
     }
   };
 
-  if (!userName) {
+  if (loading) {
+     return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading...</div>;
+  }
+
+  if (!currentUser) {
     return (
       <SettingsProvider>
-        <WelcomeScreen onComplete={handleOnboardingComplete} />
+        <WelcomeScreen />
       </SettingsProvider>
     );
+  }
+
+  if (!dataLoaded) {
+      return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading Data...</div>;
   }
 
   // --- VIEWS ---
@@ -281,6 +294,20 @@ function App() {
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
                 <span style={{ fontWeight: 'bold', color: 'var(--color-primary)' }}>Level {userLevel}</span>
                 <span style={{ fontSize: '0.9rem', color: 'var(--color-text)' }}>{userName}</span>
+                <button 
+                  onClick={() => logOut()}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    fontSize: '0.8rem',
+                    color: '#888',
+                    textDecoration: 'underline',
+                    cursor: 'pointer',
+                    marginLeft: '8px'
+                  }}
+                >
+                  (Sign Out)
+                </button>
               </div>
               <div 
                 style={{ fontSize: '0.8rem', color: '#888', cursor: 'pointer' }}
@@ -490,4 +517,10 @@ function App() {
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
+}

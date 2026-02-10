@@ -65,10 +65,6 @@ const FennecFeedback = ({ type = 'correct', message, onClose }) => {
           from { transform: translateY(20px); opacity: 0; }
           to { transform: translateY(0); opacity: 1; }
         }
-        @keyframes bounce {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
       `}</style>
       
       <div
@@ -87,8 +83,8 @@ const FennecFeedback = ({ type = 'correct', message, onClose }) => {
           border: '3px solid white'
         }}
       >
-        {/* Fennec with bounce animation */}
-        <div style={{ animation: 'bounce 1s ease-in-out infinite' }}>
+        {/* Fennec with mood animation */}
+        <div>
           <Fennec mood={current.mood} size={80} />
         </div>
 

@@ -72,7 +72,8 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
             fontStyle: settings.showArabicScript ? 'normal' : 'italic'
           },
           useProvidedOptions: true,
-          showTransliteration: !settings.showArabicScript
+          showTransliteration: !settings.showArabicScript,
+          subtitle: cardData.sentenceEnglish ? cardData.sentenceEnglish.replace('_____', `[${cardData.correctAnswerEnglish}]`) : null
         };
       case 'en-to-ar':
       default:
@@ -94,12 +95,20 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
   // Generate options (1 correct + 3 distractors)
   const options = useMemo(() => {
     // For quiz types with provided options (conjugation, cloze)
+    // For quiz types with provided options (conjugation, cloze)
     if (questionConfig.useProvidedOptions && cardData.options) {
-      return cardData.options.map((opt, idx) => ({
-        id: `opt-${idx}`,
-        text: opt,
-        isCorrect: opt === questionConfig.correctAnswer
-      }));
+      return cardData.options.map((opt, idx) => {
+        // Handle object options (Conjugation) vs string options (Cloze)
+        const isObject = typeof opt === 'object' && opt !== null;
+        const text = isObject ? (settings.showArabicScript ? opt.arabic : opt.transliteration) : opt;
+        const valueToCheck = isObject ? opt.arabic : opt;
+        
+        return {
+          id: `opt-${idx}`,
+          text: text,
+          isCorrect: valueToCheck === questionConfig.correctAnswer
+        };
+      });
     }
 
     // For standard quiz types, generate distractors
@@ -177,6 +186,17 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
         }}>
           {questionConfig.prompt}
         </h2>
+        
+        {questionConfig.subtitle && (
+          <p style={{ 
+            fontSize: '1.1rem',
+            color: 'var(--color-text-light)',
+            marginTop: 'var(--spacing-2)',
+            fontStyle: 'italic'
+          }}>
+            {questionConfig.subtitle}
+          </p>
+        )}
         {type && <span style={{ fontSize: '0.8rem', color: '#999' }}>({type})</span>}
       </div>
 

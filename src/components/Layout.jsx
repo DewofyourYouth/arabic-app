@@ -12,8 +12,6 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
       flexDirection: 'column',
       height: '100%',
       backgroundColor: 'var(--color-background)',
-      backgroundImage: 'radial-gradient(circle at 50% 50%, #ffffff 0%, transparent 10%), radial-gradient(circle at 0% 0%, rgba(224, 122, 95, 0.05) 0%, transparent 50%)',
-      backgroundSize: '20px 20px, 100% 100%',
       fontFamily: 'var(--font-family-english)',
       color: 'var(--color-text)'
     }}>
@@ -78,17 +76,17 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
         <div style={{
           width: '50px',
           height: '50px',
-          borderRadius: 'var(--radius-full)',
-          backgroundColor: 'rgba(244, 241, 222, 0.5)',
+          backgroundColor: 'transparent',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: '2px solid var(--color-primary-light)',
-          boxShadow: 'var(--shadow-md)',
           overflow: 'visible',
-          padding: '4px'
+          padding: '0',
+          position: 'relative' // Ensure it stacks correctly
         }}>
-          <Fennec mood="idle" size={45} />
+          <div style={{ width: '60px', height: '60px', bottom: '-8px', position: 'absolute' }}>
+             <Fennec mood="idle" size={60} />
+          </div>
         </div>
       </header>
 
