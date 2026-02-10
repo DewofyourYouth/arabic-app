@@ -77,7 +77,7 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           },
           useProvidedOptions: true,
           showTransliteration: !settings.showArabicScript,
-          subtitle: cardData.sentenceEnglish ? cardData.sentenceEnglish.replace('_____', `[${cardData.correctAnswerEnglish}]`) : null
+          subtitle: cardData.sentenceEnglish || null
         };
       case 'en-to-ar':
       default:
