@@ -20,6 +20,16 @@ import masadaArtifact from '../assets/artifacts/romanScroll.jpg';
 import nablusSoapArtifact from '../assets/artifacts/nablus_soap.png';
 import haifaArtifact from '../assets/artifacts/haifa.jpg';
 import tiberiasArtifact from '../assets/artifacts/tiberias.jpg';
+import suwaydaArtifact from '../assets/artifacts/assuwayada.jpg';
+import byblosArtifact from '../assets/artifacts/byblos.jpg';
+import homsArtifact from '../assets/artifacts/homs.jpg';
+import palmyraArtifact from '../assets/artifacts/palmyra.jpg';
+import baalbekArtifact from '../assets/artifacts/baalbek.jpg';
+import aleppoArtifact from '../assets/artifacts/aleppo.jpg';
+import akkoArtifact from '../assets/artifacts/akko.jpg';
+import damascusArtifact from '../assets/artifacts/damascus.jpg';
+import ramallahArtifact from '../assets/artifacts/ramallah.jpg';
+import tripoliArtifact from '../assets/artifacts/tripoli.jpg';
 // CSS for Animations (injected here for simplicity)
 const animationKeyframes = `
 @keyframes pulse {
@@ -213,7 +223,7 @@ const CITIES = [
     x: 30,
     y: 12,
     artifact: {
-      image: karakArtifact,
+      image: tripoliArtifact,
       name: 'Crusader Citadel',
       description: 'Medieval fortress overlooking the sea.'
     }
@@ -343,7 +353,7 @@ const CITIES = [
     x: 45,
     y: 45,
     artifact: {
-      image: artifactJerusalem,
+      image: ramallahArtifact,
       name: 'Debke Scarf',
       description: 'Symbol of traditional Palestinian dance.'
     }
@@ -356,7 +366,7 @@ const CITIES = [
     x: 35,
     y: 30,
     artifact: {
-      image: artifactJerusalem,
+      image: akkoArtifact,
       name: 'Knight\'s Helmet',
       description: 'Relic from the Crusader period.'
     }
@@ -369,7 +379,7 @@ const CITIES = [
     x: 80, 
     y: 25,
     artifact: {
-      image: artifactWadiRum,
+      image: suwaydaArtifact,
       name: 'Basalt Stone',
       description: 'Volcanic rock used in local architecture.'
     }
@@ -382,7 +392,7 @@ const CITIES = [
     x: 55,
     y: 10,
     artifact: {
-      image: artifactAmman,
+      image: byblosArtifact,
       name: 'Phoenician Alphabet',
       description: 'Birthplace of the modern alphabet.'
     }
@@ -395,7 +405,7 @@ const CITIES = [
     x: 68, 
     y: 20,
     artifact: {
-      image: artifactAmman,
+      image: damascusArtifact,
       name: 'Damascus Steel',
       description: 'Legendary sword-making technique.'
     }
@@ -408,7 +418,7 @@ const CITIES = [
     x: 85,
     y: 30,
     artifact: {
-      image: artifactPetra,
+      image: palmyraArtifact,
       name: 'Temple Columns',
       description: 'Zenobia\'s legendary desert kingdom.'
     }
@@ -421,7 +431,7 @@ const CITIES = [
     x: 60,
     y: 18,
     artifact: {
-      image: artifactAmman,
+      image: homsArtifact,
       name: 'Crusader Castle',
       description: 'Krak des Chevaliers overlooks the valley.'
     }
@@ -434,7 +444,7 @@ const CITIES = [
     x: 65,
     y: 12,
     artifact: {
-      image: artifactPetra,
+      image: baalbekArtifact,
       name: 'Keystone Fragment',
       description: 'Massive stone from the temple complex.'
     }
@@ -447,7 +457,7 @@ const CITIES = [
     x: 75, 
     y: 5,
     artifact: {
-      image: artifactPetra,
+      image: aleppoArtifact,
       name: 'Aleppo Soap',
       description: 'Famous laurel soap.'
     }

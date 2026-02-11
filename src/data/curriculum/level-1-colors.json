@@ -39,6 +39,7 @@
     "arabic": "أَصْفَر",
     "transliteration": "Asfar",
     "english": "Yellow",
+    "image": "yellow.jpg",
     "tags": ["colors", "adjective"]
   },
   {
@@ -59,6 +60,7 @@
     "arabic": "أَسْوَد",
     "transliteration": "Aswad",
     "english": "Black",
+    "image": "black.jpg",
     "tags": ["colors", "adjective"]
   },
   {

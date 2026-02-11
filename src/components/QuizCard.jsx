@@ -185,8 +185,10 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           {questionConfig.promptLabel}
         </span>
         
-        {/* Vocabulary Image */}
-        {cardData.image && (
+        {/* Vocabulary Image - Only show if the answer isn't English (spoiler!) */}
+        {cardData.image && 
+         (quizType === 'en-to-ar' || quizType === 'en-to-trans') && 
+         questionConfig.correctAnswer !== cardData.english && (
           <div style={{ 
             margin: 'var(--spacing-4) 0',
             display: 'flex',

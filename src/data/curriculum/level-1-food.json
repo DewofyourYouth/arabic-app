@@ -102,6 +102,7 @@
     "arabic": "عنب",
     "transliteration": "Einab",
     "english": "Grapes",
+    "image": "grapes.jpg",
     "tags": ["food", "fruit"]
   },
   {
@@ -112,6 +113,7 @@
     "arabic": "فراولة",
     "transliteration": "Farawla",
     "english": "Strawberry",
+    "image": "strawberry.jpg",
     "tags": ["food", "fruit"]
   },
   {
@@ -133,6 +135,7 @@
     "arabic": "مانجا",
     "transliteration": "Manga",
     "english": "Mango",
+    "image": "mango.jpg",
     "tags": ["food", "fruit"]
   },
   {
@@ -143,6 +146,7 @@
     "arabic": "جوز الهند",
     "transliteration": "Joez Hend",
     "english": "Coconut",
+    "image": "coconut.jpg",
     "tags": ["food", "fruit"]
   },
   {
@@ -163,6 +167,7 @@
     "arabic": "رمان",
     "transliteration": "Ruman",
     "english": "Pomegranate",
+    "image": "pomegranate.jpg",
     "tags": ["food", "fruit"]
   },
   {
@@ -173,6 +178,7 @@
     "arabic": "بَنْدُورَة",
     "transliteration": "Bandora",
     "english": "Tomato",
+    "image": "tomatoes.jpg",
     "tags": ["food", "vegetable"]
   },
   {
