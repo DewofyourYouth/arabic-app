@@ -68,7 +68,7 @@ export function DataProvider({ children }) {
         }
 
         // 2. Check Remote Version
-        const metadataRef = doc(db, 'curriculum', 'metadata');
+        const metadataRef = doc(db, 'published_curriculum', 'metadata');
         const metadataSnap = await getDoc(metadataRef);
 
         if (metadataSnap.exists()) {
@@ -78,24 +78,39 @@ export function DataProvider({ children }) {
           if (remoteVersion > localVersion || !localData) {
             console.log("New curriculum version found. Fetching updates...");
             
-            // 3. Fetch all levels
-            const querySnapshot = await getDocs(collection(db, 'curriculum'));
+            // 3. Fetch published bundles
+            const supportedLevels = remoteMetadata.supportedLevels || [1];
             const newLevels = [];
             
-            querySnapshot.forEach((doc) => {
-              if (doc.id !== 'metadata') {
-                newLevels.push(doc.data());
-              }
+            // Fetch all level bundles in parallel
+            const promises = supportedLevels.map(lvl => getDoc(doc(db, 'published_curriculum', `level_${lvl}`)));
+            const levelSnaps = await Promise.all(promises);
+            
+            // Process bundles
+            // We need to merge this data into the structured 'levels' object (titles/descriptions)
+            // For now, we are recreating the 'level objects' based on the file data?
+            // Actually, we should pull the base structure from staticLevels and just update content.
+            
+            const fetchedContentByLevel = {}; // { 1: [items], 2: [items] }
+            
+            levelSnaps.forEach(snap => {
+                if (snap.exists()) {
+                    const data = snap.data();
+                    fetchedContentByLevel[data.level] = data.items || [];
+                }
             });
 
-            // Sort levels by ID
-            newLevels.sort((a, b) => a.id - b.id);
+            // Construct the full levels array (merging static config with dynamic content)
+            const reconstructedLevels = staticLevels.map(staticLvl => ({
+                ...staticLvl,
+                content: fetchedContentByLevel[staticLvl.id] || staticLvl.content // Fallback to static if missing
+            }));
 
             // 4. Update State & Cache
-            setLevelsData(newLevels);
-            setCurriculum(combinedCurriculumFromLevels(newLevels));
+            setLevelsData(reconstructedLevels);
+            setCurriculum(combinedCurriculumFromLevels(reconstructedLevels));
             
-            localStorage.setItem('curriculum_cache', JSON.stringify(newLevels));
+            localStorage.setItem('curriculum_cache', JSON.stringify(reconstructedLevels));
             localStorage.setItem('curriculum_metadata', JSON.stringify(remoteMetadata));
             console.log("Curriculum updated.");
           } else {

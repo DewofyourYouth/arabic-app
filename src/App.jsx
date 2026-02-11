@@ -10,6 +10,8 @@ import IntroCard from './components/IntroCard';
 import OnboardingTour from './components/OnboardingTour';
 import FennecFeedback from './components/FennecFeedback';
 import LevelUpModal from './components/LevelUpModal';
+import AdminMigration from './components/AdminMigration';
+import AdminDashboard from './components/AdminDashboard';
 import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
@@ -313,6 +315,19 @@ function AppContent() {
                 >
                   (Sign Out)
                 </button>
+                <button 
+                  onClick={() => setView('admin-dashboard')}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    fontSize: '0.8rem',
+                    color: '#ddd',
+                    cursor: 'pointer',
+                    marginLeft: '8px'
+                  }}
+                >
+                  π
+                </button>
               </div>
               
               {/* Progress Bar */}
@@ -444,8 +459,46 @@ function AppContent() {
     );
   }
 
+
+  const ADMIN_UIDS = [
+    import.meta.env.VITE_ADMIN_UID // Jacob Shore (from .env)
+  ];
+
+  if (view === 'admin-migrate') {
+    if (!currentUser || !ADMIN_UIDS.includes(currentUser.uid)) {
+        return (
+            <Layout activeView="map" onNavigate={handleNavigation}>
+                <div style={{ padding: '40px', textAlign: 'center' }}>
+                    <h2>Access Denied</h2>
+                    <p>You do not have permission to view this page.</p>
+                    <p style={{ fontSize: '0.8rem', color: '#999', marginTop: '20px' }}>Your UID: {currentUser?.uid}</p>
+                    <button onClick={() => setView('map')} style={{ marginTop: '20px', padding: '10px 20px' }}>Back to Map</button>
+                </div>
+            </Layout>
+        );
+    }
+    return (
+      <Layout activeView="admin-migrate" onNavigate={handleNavigation}>
+        <AdminMigration onBack={() => setView('map')} />
+      </Layout>
+    );
+  }
+
+  if (view === 'admin-dashboard') {
+    // Re-use same security check or move it to a wrapper? 
+    // For now, simple check.
+    if (!currentUser || !ADMIN_UIDS.includes(currentUser.uid)) return <Layout activeView="map" onNavigate={handleNavigation}>Access Denied</Layout>;
+    
+    return (
+      <Layout activeView="admin-dashboard" onNavigate={handleNavigation}>
+        <AdminDashboard onNavigate={setView} />
+      </Layout>
+    );
+  }
+
   // Session View
   const currentCard = sessionQueue[currentIndex];
+
   const progress = sessionQueue.length > 0 ? ((currentIndex) / sessionQueue.length) * 100 : 0;
 
   if (!currentCard) return <Layout activeView="session" onNavigate={handleNavigation}><div>Loading...</div></Layout>;
