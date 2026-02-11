@@ -66,8 +66,8 @@
     "level": 1,
     "topic": "food",
     "type": "word",
-    "arabic": "مَوْز",
-    "transliteration": "Mawz",
+    "arabic": "موز",
+    "transliteration": "Muz",
     "english": "Banana",
     "image": "banana.png",
     "tags": ["food", "fruit"]
@@ -77,9 +77,10 @@
     "level": 1,
     "topic": "food",
     "type": "word",
-    "arabic": "تُفَّاح",
-    "transliteration": "Tuffah",
+    "arabic": "تفاح",
+    "transliteration": "Tufe7",
     "english": "Apple",
+    "image": "apple.png",
     "tags": ["food", "fruit"]
   },
   {
@@ -87,9 +88,81 @@
     "level": 1,
     "topic": "food",
     "type": "word",
-    "arabic": "بُرْتُقَال",
-    "transliteration": "Burtuqal",
+    "arabic": "برتقال",
+    "transliteration": "Bourtukol",
     "english": "Orange",
+    "image": "orange.png",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_grapes",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "عنب",
+    "transliteration": "Einab",
+    "english": "Grapes",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_strawberry",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "فراولة",
+    "transliteration": "Farawla",
+    "english": "Strawberry",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_watermelon",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "بطيخ",
+    "transliteration": "Bati7",
+    "english": "Watermelon",
+    "image": "watermelon.png",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_mango",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "مانجا",
+    "transliteration": "Manga",
+    "english": "Mango",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_coconut",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "جوز الهند",
+    "transliteration": "Joez Hend",
+    "english": "Coconut",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_melon",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "شمام",
+    "transliteration": "Shummam",
+    "english": "Melon",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_pomegranate",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "رمان",
+    "transliteration": "Ruman",
+    "english": "Pomegranate",
     "tags": ["food", "fruit"]
   },
   {
