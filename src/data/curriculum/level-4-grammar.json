@@ -1,0 +1,22 @@
+[
+  {
+    "id": "l4_pass_it_was_said",
+    "level": 4,
+    "topic": "passive",
+    "type": "phrase",
+    "arabic": "إِنْقَال",
+    "transliteration": "Inqal",
+    "english": "It was said",
+    "tags": ["grammar", "passive"]
+  },
+  {
+    "id": "l4_idiom_hand",
+    "level": 4,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "يِسْلَمُو إِيدِيك",
+    "transliteration": "Yislamu ideik",
+    "english": "Bless your hands (Thank you for work/food)",
+    "tags": ["idiom", "cultural"]
+  }
+]

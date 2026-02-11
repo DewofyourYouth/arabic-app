@@ -1,0 +1,92 @@
+[
+  {
+    "id": "l1_dem_this_m",
+    "level": 1,
+    "topic": "demonstratives",
+    "type": "word",
+    "arabic": "هادا",
+    "transliteration": "Hada",
+    "english": "This (masc.)",
+    "tags": ["grammar", "demonstrative"]
+  },
+  {
+    "id": "l1_dem_this_f",
+    "level": 1,
+    "topic": "demonstratives",
+    "type": "word",
+    "arabic": "هاي",
+    "transliteration": "Hay",
+    "english": "This (fem.)",
+    "tags": ["grammar", "demonstrative"]
+  },
+  {
+    "id": "l1_prep_in",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "بـِ / فِي",
+    "transliteration": "Bi / Fi",
+    "english": "In",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_on",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "عَلَى",
+    "transliteration": "3ala",
+    "english": "On",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_q_what",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "شُو",
+    "transliteration": "Shu",
+    "english": "What?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_q_where",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "وِين",
+    "transliteration": "Wein",
+    "english": "Where?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_adj_big",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "كْبِير",
+    "transliteration": "Kbir",
+    "english": "Big",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_small",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "زْغِير",
+    "transliteration": "Zghir",
+    "english": "Small",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_neg_not",
+    "level": 1,
+    "topic": "negation",
+    "type": "word",
+    "arabic": "مِش",
+    "transliteration": "Mish",
+    "english": "Not (for nouns/adj)",
+    "tags": ["grammar", "negation"]
+  }
+]

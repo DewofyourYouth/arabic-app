@@ -1,0 +1,32 @@
+[
+  {
+    "id": "l3_conn_because",
+    "level": 3,
+    "topic": "connectors",
+    "type": "word",
+    "arabic": "لَأَنُّو",
+    "transliteration": "La'annu",
+    "english": "Because",
+    "tags": ["grammar", "connector"]
+  },
+  {
+    "id": "l3_conn_if",
+    "level": 3,
+    "topic": "connectors",
+    "type": "word",
+    "arabic": "إِزَا",
+    "transliteration": "Iza",
+    "english": "If",
+    "tags": ["grammar", "connector"]
+  },
+  {
+    "id": "l3_rel_who",
+    "level": 3,
+    "topic": "relative_pronouns",
+    "type": "word",
+    "arabic": "إِلِّي",
+    "transliteration": "Illi",
+    "english": "The one who / That / Which",
+    "tags": ["grammar", "relative"]
+  }
+]

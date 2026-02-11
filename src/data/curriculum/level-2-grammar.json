@@ -1,0 +1,52 @@
+[
+  {
+    "id": "l2_be_past_i",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كُنت",
+    "transliteration": "Kunt",
+    "english": "I was",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_pseudo_have",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "عِنْدِي",
+    "transliteration": "3andi",
+    "english": "I have",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l2_pseudo_want",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "بِدِّي",
+    "transliteration": "Biddi",
+    "english": "I want",
+    "tags": ["grammar"]
+  },
+  {
+    "id": "l2_imp_go",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "رُوح",
+    "transliteration": "RuH",
+    "english": "Go! (masc.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_neg_verb",
+    "level": 2,
+    "topic": "negation",
+    "type": "word",
+    "arabic": "مَا",
+    "transliteration": "Ma",
+    "english": "Don't / Didn't (verbal negation prefix)",
+    "tags": ["grammar", "negation"]
+  }
+]
