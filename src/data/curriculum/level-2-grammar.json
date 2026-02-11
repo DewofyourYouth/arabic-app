@@ -10,7 +10,77 @@
     "tags": ["grammar", "verb"]
   },
   {
-    "id": "l2_pseudo_have",
+    "id": "l2_be_past_you_m",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كُنت",
+    "transliteration": "Kunt",
+    "english": "You were (masc.)",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_be_past_you_f",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كُنتِي",
+    "transliteration": "Kunti",
+    "english": "You were (fem.)",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_be_past_he",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كَان",
+    "transliteration": "Kan",
+    "english": "He was",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_be_past_she",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كَانَت",
+    "transliteration": "Kanat",
+    "english": "She was",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_be_past_we",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كُنَّا",
+    "transliteration": "Kunna",
+    "english": "We were",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_be_past_they",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "كَانُوا",
+    "transliteration": "Kanu",
+    "english": "They were",
+    "tags": ["grammar", "verb"]
+  },
+    {
+    "id": "l2_be_fut_i",
+    "level": 2,
+    "topic": "verb_to_be",
+    "type": "phrase",
+    "arabic": "رَح أَكُون",
+    "transliteration": "RaH akun",
+    "english": "I will be",
+    "tags": ["grammar", "verb"]
+  },
+  {
+    "id": "l2_pseudo_have_i",
     "level": 2,
     "topic": "pseudo_verbs",
     "type": "phrase",
@@ -20,7 +90,27 @@
     "tags": ["grammar", "possession"]
   },
   {
-    "id": "l2_pseudo_want",
+    "id": "l2_pseudo_have_you_m",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "عِنْدَك",
+    "transliteration": "3andak",
+    "english": "You have (masc.)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l2_pseudo_have_he",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "عِنْدُو",
+    "transliteration": "3andu",
+    "english": "He has",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l2_pseudo_want_i",
     "level": 2,
     "topic": "pseudo_verbs",
     "type": "phrase",
@@ -30,7 +120,37 @@
     "tags": ["grammar"]
   },
   {
-    "id": "l2_imp_go",
+    "id": "l2_pseudo_want_you_m",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "بِدَّك",
+    "transliteration": "Biddak",
+    "english": "You want (masc.)",
+    "tags": ["grammar"]
+  },
+  {
+    "id": "l2_pseudo_need_i",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "لَازِمْنِي",
+    "transliteration": "Lazimni",
+    "english": "I need",
+    "tags": ["grammar"]
+  },
+  {
+    "id": "l2_pseudo_like_i",
+    "level": 2,
+    "topic": "pseudo_verbs",
+    "type": "phrase",
+    "arabic": "بَحِب",
+    "transliteration": "BaHib",
+    "english": "I like / I love",
+    "tags": ["grammar"]
+  },
+  {
+    "id": "l2_imp_go_m",
     "level": 2,
     "topic": "imperatives",
     "type": "word",
@@ -38,6 +158,86 @@
     "transliteration": "RuH",
     "english": "Go! (masc.)",
     "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_imp_go_f",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "رُوحِي",
+    "transliteration": "RuHi",
+    "english": "Go! (fem.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_imp_come_m",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "تَعَال",
+    "transliteration": "Ta3al",
+    "english": "Come! (masc.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_imp_come_f",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "تَعَالِي",
+    "transliteration": "Ta3ali",
+    "english": "Come! (fem.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_imp_stop_m",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "وَقِّف",
+    "transliteration": "Wa''if",
+    "english": "Stop! (masc.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_imp_sit_m",
+    "level": 2,
+    "topic": "imperatives",
+    "type": "word",
+    "arabic": "اُقْعُد",
+    "transliteration": "U'3ud",
+    "english": "Sit! (masc.)",
+    "tags": ["grammar", "imperative"]
+  },
+  {
+    "id": "l2_obj_me",
+    "level": 2,
+    "topic": "object_pronouns",
+    "type": "suffix",
+    "arabic": "ـنِي",
+    "transliteration": "-ni",
+    "english": "Me (object suffix, e.g. He saw me)",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l2_obj_him",
+    "level": 2,
+    "topic": "object_pronouns",
+    "type": "suffix",
+    "arabic": "ـُو",
+    "transliteration": "-u",
+    "english": "Him (object suffix)",
+    "tags": ["grammar", "pronoun"]
+  },
+  {
+    "id": "l2_obj_her",
+    "level": 2,
+    "topic": "object_pronouns",
+    "type": "suffix",
+    "arabic": "ـهَا",
+    "transliteration": "-ha",
+    "english": "Her (object suffix)",
+    "tags": ["grammar", "pronoun"]
   },
   {
     "id": "l2_neg_verb",
@@ -48,5 +248,155 @@
     "transliteration": "Ma",
     "english": "Don't / Didn't (verbal negation prefix)",
     "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l2_neg_dont_have",
+    "level": 2,
+    "topic": "negation",
+    "type": "phrase",
+    "arabic": "مَا عِنْدِي",
+    "transliteration": "Ma 3andi",
+    "english": "I don't have",
+    "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l2_neg_dont_know",
+    "level": 2,
+    "topic": "negation",
+    "type": "phrase",
+    "arabic": "مَا بَعْرِف",
+    "transliteration": "Ma ba3raf",
+    "english": "I don't know",
+    "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l2_adj_better",
+    "level": 2,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "أَحْسَن",
+    "transliteration": "AHsan",
+    "english": "Better / Best",
+    "tags": ["adjective", "comparative"]
+  },
+  {
+    "id": "l2_adj_bigger",
+    "level": 2,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "أَكْبَر",
+    "transliteration": "Akbar",
+    "english": "Bigger / Biggest",
+    "tags": ["adjective", "comparative"]
+  },
+  {
+    "id": "l2_adj_more",
+    "level": 2,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "أَكْتَر",
+    "transliteration": "Aktar",
+    "english": "More / Most",
+    "tags": ["adjective", "comparative"]
+  },
+  {
+    "id": "l2_time_always",
+    "level": 2,
+    "topic": "frequency",
+    "type": "word",
+    "arabic": "دَايْمًا",
+    "transliteration": "Dayman",
+    "english": "Always",
+    "tags": ["time", "frequency"]
+  },
+  {
+    "id": "l2_time_sometimes",
+    "level": 2,
+    "topic": "frequency",
+    "type": "word",
+    "arabic": "أَحْيَانًا / مَرَّات",
+    "transliteration": "AHyanan / Marrat",
+    "english": "Sometimes",
+    "tags": ["time", "frequency"]
+  },
+  {
+    "id": "l2_time_never",
+    "level": 2,
+    "topic": "frequency",
+    "type": "word",
+    "arabic": "أَبَدًا",
+    "transliteration": "Abadan",
+    "english": "Never",
+    "tags": ["time", "frequency"]
+  },
+  {
+    "id": "l2_time_week",
+    "level": 2,
+    "topic": "time",
+    "type": "word",
+    "arabic": "أُسْبُوع",
+    "transliteration": "Usbu' ",
+    "english": "Week",
+    "tags": ["time"]
+  },
+  {
+    "id": "l2_time_month",
+    "level": 2,
+    "topic": "time",
+    "type": "word",
+    "arabic": "شَهَر",
+    "transliteration": "Shahar",
+    "english": "Month",
+    "tags": ["time"]
+  },
+  {
+    "id": "l2_time_year",
+    "level": 2,
+    "topic": "time",
+    "type": "word",
+    "arabic": "سَنِة",
+    "transliteration": "Sane",
+    "english": "Year",
+    "tags": ["time"]
+  },
+  {
+    "id": "l2_noun_thing",
+    "level": 2,
+    "topic": "vocabulary",
+    "type": "word",
+    "arabic": "إِشِي",
+    "transliteration": "Ishi",
+    "english": "Thing",
+    "tags": ["noun"]
+  },
+  {
+    "id": "l2_noun_people",
+    "level": 2,
+    "topic": "vocabulary",
+    "type": "word",
+    "arabic": "نَاس",
+    "transliteration": "Nas",
+    "english": "People",
+    "tags": ["noun"]
+  },
+  {
+    "id": "l2_noun_place",
+    "level": 2,
+    "topic": "vocabulary",
+    "type": "word",
+    "arabic": "مَحَل / مَكَان",
+    "transliteration": "MaHal / Makan",
+    "english": "Place",
+    "tags": ["noun"]
+  },
+  {
+    "id": "l2_conn_or",
+    "level": 2,
+    "topic": "connectors",
+    "type": "word",
+    "arabic": "وَلَّا / أَو",
+    "transliteration": "Walla / Aw",
+    "english": "Or",
+    "tags": ["connector"]
   }
 ]

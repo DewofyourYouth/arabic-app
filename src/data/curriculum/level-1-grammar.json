@@ -20,6 +20,36 @@
     "tags": ["grammar", "demonstrative"]
   },
   {
+    "id": "l1_dem_that_m",
+    "level": 1,
+    "topic": "demonstratives",
+    "type": "word",
+    "arabic": "هَادَاك",
+    "transliteration": "Hadak",
+    "english": "That (masc.)",
+    "tags": ["grammar", "demonstrative"]
+  },
+  {
+    "id": "l1_dem_that_f",
+    "level": 1,
+    "topic": "demonstratives",
+    "type": "word",
+    "arabic": "هَادِيك",
+    "transliteration": "Hadik",
+    "english": "That (fem.)",
+    "tags": ["grammar", "demonstrative"]
+  },
+  {
+    "id": "l1_dem_these",
+    "level": 1,
+    "topic": "demonstratives",
+    "type": "word",
+    "arabic": "هَدُول",
+    "transliteration": "Hadol",
+    "english": "These / Those",
+    "tags": ["grammar", "demonstrative"]
+  },
+  {
     "id": "l1_prep_in",
     "level": 1,
     "topic": "prepositions",
@@ -37,6 +67,96 @@
     "arabic": "عَلَى",
     "transliteration": "3ala",
     "english": "On",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_with",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "مَع",
+    "transliteration": "Ma3",
+    "english": "With",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_without",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "بِدُون",
+    "transliteration": "Bidun",
+    "english": "Without",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_from",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "مِن",
+    "transliteration": "Min",
+    "english": "From",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_to",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "لَـ / عَ",
+    "transliteration": "La / 3a",
+    "english": "To",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_under",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "تَحِت",
+    "transliteration": "TaHet",
+    "english": "Under",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_above",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "فُوق",
+    "transliteration": "Fo' ",
+    "english": "Above / Up",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_next_to",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "جَنْب",
+    "transliteration": "Janb",
+    "english": "Next to",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_before",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "قَبِل",
+    "transliteration": "Abel",
+    "english": "Before",
+    "tags": ["grammar", "preposition"]
+  },
+  {
+    "id": "l1_prep_after",
+    "level": 1,
+    "topic": "prepositions",
+    "type": "word",
+    "arabic": "بَعِد",
+    "transliteration": "Ba3ed",
+    "english": "After",
     "tags": ["grammar", "preposition"]
   },
   {
@@ -60,6 +180,56 @@
     "tags": ["grammar", "question"]
   },
   {
+    "id": "l1_q_who",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "مِين",
+    "transliteration": "Min",
+    "english": "Who?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_q_when",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "إِيمْتَى",
+    "transliteration": "Emta",
+    "english": "When?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_q_why",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "لِيش",
+    "transliteration": "Leish",
+    "english": "Why?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_q_how",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "كِيف",
+    "transliteration": "Kif",
+    "english": "How?",
+    "tags": ["grammar", "question"]
+  },
+  {
+    "id": "l1_q_how_much",
+    "level": 1,
+    "topic": "questions",
+    "type": "word",
+    "arabic": "قَدِّيش",
+    "transliteration": "Addesh",
+    "english": "How much?",
+    "tags": ["grammar", "question"]
+  },
+  {
     "id": "l1_adj_big",
     "level": 1,
     "topic": "adjectives",
@@ -80,6 +250,126 @@
     "tags": ["adjective"]
   },
   {
+    "id": "l1_adj_good",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "مْنِيح",
+    "transliteration": "MniH",
+    "english": "Good",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_bad",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "سَيِّئ / عَاطل",
+    "transliteration": "Sayyi' / 'Aatel",
+    "english": "Bad",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_beautiful",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "حِلُو",
+    "transliteration": "Helu",
+    "english": "Beautiful / Sweet",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_ugly",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "بِشِع",
+    "transliteration": "Bishe3",
+    "english": "Ugly",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_new",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "جْدِيد",
+    "transliteration": "Jdid",
+    "english": "New",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_old",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "قَدِيم",
+    "transliteration": "Adim",
+    "english": "Old (things)",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_hot",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "سُخُن / شُوب",
+    "transliteration": "Sakhun / Shob",
+    "english": "Hot (food/weather)",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_cold",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "بَارِد / بَرِد",
+    "transliteration": "Bared / Bared",
+    "english": "Cold (food/weather)",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_hungry",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "جُوعَان",
+    "transliteration": "Ju'an",
+    "english": "Hungry",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_tired",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "تَعْبَان",
+    "transliteration": "Ta'ban",
+    "english": "Tired",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_happy",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "مَبْسُوط",
+    "transliteration": "Mabsut",
+    "english": "Happy",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_adj_sad",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "زَعْلَان",
+    "transliteration": "Za'lan",
+    "english": "Sad / Upset",
+    "tags": ["adjective"]
+  },
+  {
     "id": "l1_neg_not",
     "level": 1,
     "topic": "negation",
@@ -88,5 +378,135 @@
     "transliteration": "Mish",
     "english": "Not (for nouns/adj)",
     "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l1_neg_not_yet",
+    "level": 1,
+    "topic": "negation",
+    "type": "word",
+    "arabic": "لِسَّا",
+    "transliteration": "Lissa",
+    "english": "Not yet / Still",
+    "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l1_neg_no",
+    "level": 1,
+    "topic": "negation",
+    "type": "word",
+    "arabic": "لَأ",
+    "transliteration": "La'",
+    "english": "No",
+    "tags": ["grammar", "negation"]
+  },
+  {
+    "id": "l1_poss_my",
+    "level": 1,
+    "topic": "possession",
+    "type": "suffix",
+    "arabic": "ـِي",
+    "transliteration": "-i",
+    "english": "My (suffix)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l1_poss_your_m",
+    "level": 1,
+    "topic": "possession",
+    "type": "suffix",
+    "arabic": "ـَك",
+    "transliteration": "-ak",
+    "english": "Your (masc. suffix)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l1_poss_your_f",
+    "level": 1,
+    "topic": "possession",
+    "type": "suffix",
+    "arabic": "ـِك",
+    "transliteration": "-ik",
+    "english": "Your (fem. suffix)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l1_poss_his",
+    "level": 1,
+    "topic": "possession",
+    "type": "suffix",
+    "arabic": "ـُو",
+    "transliteration": "-u",
+    "english": "His (suffix)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l1_poss_her",
+    "level": 1,
+    "topic": "possession",
+    "type": "suffix",
+    "arabic": "ـهَا",
+    "transliteration": "-ha",
+    "english": "Her (suffix)",
+    "tags": ["grammar", "possession"]
+  },
+  {
+    "id": "l1_conn_and",
+    "level": 1,
+    "topic": "connectors",
+    "type": "word",
+    "arabic": "و",
+    "transliteration": "W",
+    "english": "And",
+    "tags": ["grammar", "connector"]
+  },
+  {
+    "id": "l1_conn_but",
+    "level": 1,
+    "topic": "connectors",
+    "type": "word",
+    "arabic": "بَس",
+    "transliteration": "Bas",
+    "english": "But / Only",
+    "tags": ["grammar", "connector"]
+  },
+  {
+    "id": "l1_time_today",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الْيُوم",
+    "transliteration": "El-yom",
+    "english": "Today",
+    "tags": ["time"]
+  },
+  {
+    "id": "l1_time_tomorrow",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "بُكْرَا",
+    "transliteration": "Bukra",
+    "english": "Tomorrow",
+    "tags": ["time"]
+  },
+  {
+    "id": "l1_time_yesterday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "مْبَارِح",
+    "transliteration": "MbariH",
+    "english": "Yesterday",
+    "tags": ["time"]
+  },
+  {
+    "id": "l1_time_now",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "هَلَّأ",
+    "transliteration": "Halla'",
+    "english": "Now",
+    "tags": ["time"]
   }
 ]

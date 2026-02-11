@@ -23,16 +23,88 @@ export function useData() {
 export function DataProvider({ children }) {
   const { currentUser } = useAuth();
   const [userData, setUserData] = useState(null);
-  const [curriculum, setCurriculum] = useState(null); // Should eventually load from DB
+  const [curriculum, setCurriculum] = useState(null); 
+  const [levelsData, setLevelsData] = useState(null); // Store structured levels
   const [loading, setLoading] = useState(true);
 
-  // Load Curriculum (mixed approach for now: Local JSON + DB override possibility)
+  // Helper to flatten levels back into combined array for old components
+  const combinedCurriculumFromLevels = (levelsArr) => {
+    if (!levelsArr) return [];
+    return levelsArr.flatMap(l => l.content || []);
+  };
+
+  // Load Curriculum (Stale-While-Revalidate Strategy)
   useEffect(() => {
     async function fetchCurriculum() {
-      // For now, we use the local JSON as the source of truth, 
-      // but in the future we can fetch from 'curriculum' collection
-      // TODO: Fetch from Firestore if needed
-      setCurriculum(combinedCurriculum);
+      try {
+        console.log("DataContext: Fetching curriculum...");
+        // 1. Load from Local Storage first (fast render)
+        const localData = localStorage.getItem('curriculum_cache');
+        const localMetadata = localStorage.getItem('curriculum_metadata');
+        
+        console.log("DataContext: staticLevels available:", !!staticLevels);
+
+        let currentLevels = staticLevels || []; // Default to static JSON
+        let localVersion = 0;
+
+        if (localData) {
+          try {
+            currentLevels = JSON.parse(localData);
+          } catch (e) {
+            console.error("Error parsing local curriculum cache:", e);
+          }
+        }
+        
+        // Initialize state with best available data (Static or Cache)
+        setLevelsData(currentLevels);
+        setCurriculum(combinedCurriculumFromLevels(currentLevels));
+
+        if (localMetadata) {
+          try {
+            localVersion = JSON.parse(localMetadata).version || 0;
+          } catch (e) {
+            console.error("Error parsing local metadata:", e);
+          }
+        }
+
+        // 2. Check Remote Version
+        const metadataRef = doc(db, 'curriculum', 'metadata');
+        const metadataSnap = await getDoc(metadataRef);
+
+        if (metadataSnap.exists()) {
+          const remoteMetadata = metadataSnap.data();
+          const remoteVersion = remoteMetadata.version || 0;
+
+          if (remoteVersion > localVersion || !localData) {
+            console.log("New curriculum version found. Fetching updates...");
+            
+            // 3. Fetch all levels
+            const querySnapshot = await getDocs(collection(db, 'curriculum'));
+            const newLevels = [];
+            
+            querySnapshot.forEach((doc) => {
+              if (doc.id !== 'metadata') {
+                newLevels.push(doc.data());
+              }
+            });
+
+            // Sort levels by ID
+            newLevels.sort((a, b) => a.id - b.id);
+
+            // 4. Update State & Cache
+            setLevelsData(newLevels);
+            setCurriculum(combinedCurriculumFromLevels(newLevels));
+            
+            localStorage.setItem('curriculum_cache', JSON.stringify(newLevels));
+            localStorage.setItem('curriculum_metadata', JSON.stringify(remoteMetadata));
+            console.log("Curriculum updated.");
+          } else {
+            console.log("Curriculum is up to date.");
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching curriculum:", error);
+      }
     }
     fetchCurriculum();
   }, []);
@@ -40,6 +112,7 @@ export function DataProvider({ children }) {
   // Sync User Data
   useEffect(() => {
     async function syncUser() {
+      console.log("DataContext: userData available:", !!userData);
       if (!currentUser) {
         setUserData(null);
         setLoading(false);
@@ -234,17 +307,33 @@ export function DataProvider({ children }) {
 
   // Derived State: Levels with Progress
   const levels = useMemo(() => {
-    // Import the static levels structure (we need to import it at the top, or access it from the module)
-    // Since we can't easily change imports inside this function, we'll assume it's available or passed in.
-    // Ideally, we imported { levels as staticLevels } from '../data/curriculum';
+    // Determine which source of levels to use
+    // If we have fetched levels (from Firestore or Cache) which we likely haven't stored in a separate state yet...
+    // Actually, let's reconstruct levels from the flat `curriculum` if possible, OR better, let's just use the staticLevels as a base 
+    // IF we assume structure doesn't change much. 
+    // BUT the goal is dynamic updates.
     
-    // For now, let's access it from the imported module if possible, or just re-import it at top of file. 
-    // Wait, I need to update the import statement first. 
-    // Let's assume I updated the import to: import combinedCurriculum, { levels as staticLevels } from '../data/curriculum';
+    // To support dynamic levels properly, I should have stored the levels array in state.
+    // Since I didn't add a new state variable in the previous step, I'll rely on `curriculum` (flat) to populate the content, 
+    // but I need the Level Title/Descriptions.
     
-    if (!staticLevels) return [];
+    // RETROACTIVE FIX: The best way without adding more state complexity right now is to 
+    // map the staticLevels but REPLACE their content with what's in `curriculum` matching that level ID.
+    // This assumes level metadata (titles) don't change often, or accept that they are static for now 
+    // UNLESS I parse the local storage again here which is bad.
+    
+    // ALTERNATIVE: I will add `levelsData` state in a separate edit blocks.
+    // For now, let's assume `levelsData` exists in scope (I will add it).
+    
+    const baseLevels = levelsData || staticLevels;
 
-    return staticLevels.map(level => {
+    if (!baseLevels) return [];
+
+    return baseLevels.map(level => {
+      // If we are using dynamic data, 'level.content' is already updated.
+      // If we are using staticLevels, we might want to check if 'curriculum' has updates?
+      // Actually, if I update `levelsData` in the effect, then `baseLevels` will be the new data.
+      
       const content = level.content || [];
       const totalItems = content.length;
       let learnedItems = 0;
@@ -253,15 +342,10 @@ export function DataProvider({ children }) {
       content.forEach(item => {
         const itemProgress = userData?.progress?.[item.id];
         if (itemProgress?.srs?.repetition > 0) learnedItems++;
-        if (itemProgress?.srs?.repetition >= 5) masterItems++; // Arbitrary "Master" threshold
+        if (itemProgress?.srs?.repetition >= 5) masterItems++; 
       });
 
       const progress = totalItems > 0 ? Math.round((learnedItems / totalItems) * 100) : 0;
-      const isUnlocked = level.id === 1 || (userData?.stats?.currentLevel >= level.id) || (userData?.levels?.[level.id - 1]?.isComplete); 
-      // Simple unlock logic for now: Level 1 always open. 
-      // Or maybe check if previous level is > 80% done?
-      // Let's stick to simple logic: unlocked if previous level has > X% progress?
-      // For now, let's just say everything is unlocked or use the userLevel prop.
       
       return {
         ...level,
@@ -271,10 +355,10 @@ export function DataProvider({ children }) {
           master: masterItems,
           progress: progress
         },
-        isUnlocked: true // defaulting to true for now, can refine later
+        isUnlocked: true 
       };
     });
-  }, [userData]);
+  }, [userData, levelsData]);
 
   const value = {
     userData,

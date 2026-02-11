@@ -610,7 +610,7 @@ const LevantMap = ({ userLevel, onCitySelect, onViewPath }) => {
           </div>
 
           <div style={{ fontSize: '0.65rem', color: '#666', marginTop: '2px' }}>
-            On: <span style={{ fontWeight: 'bold' }}>{currentLevelObj?.title.split(':')[0]}</span>
+            On: <span style={{ fontWeight: 'bold' }}>{currentLevelObj?.title?.split(':')[0] || 'Unknown'}</span>
           </div>
         </div>
       )}
