@@ -63,17 +63,17 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
           correctAnswer: cardData.correctAnswer || '',
           getDistractorText: () => '', // Distractors provided in cardData
           promptStyle: { 
-            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
-            fontSize: settings.showArabicScript ? '1.8rem' : '1.5rem',
+            fontFamily: 'var(--font-family-arabic)',
+            fontSize: '1.8rem',
             lineHeight: '1.8',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
-            direction: settings.showArabicScript ? 'rtl' : 'ltr'
+            fontStyle: 'normal',
+            direction: 'rtl'
           },
           optionStyle: { 
-            fontFamily: settings.showArabicScript ? 'var(--font-family-arabic)' : 'var(--font-family-english)',
+            fontFamily: 'var(--font-family-arabic)',
             fontSize: '1.25rem',
-            fontStyle: settings.showArabicScript ? 'normal' : 'italic',
-            direction: settings.showArabicScript ? 'rtl' : 'ltr'
+            fontStyle: 'normal',
+            direction: 'rtl'
           },
           useProvidedOptions: true,
           showTransliteration: !settings.showArabicScript,
