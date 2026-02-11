@@ -111,6 +111,7 @@ h4 {
 
 /* Fix for Ko-fi widget covering bottom navigation on mobile */
 @media (max-width: 640px) {
+  .floatingchat-container-wrap,
   .floatingchat-container-wrap-mobi {
     bottom: 85px !important;
   }

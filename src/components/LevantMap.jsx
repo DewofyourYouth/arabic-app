@@ -96,6 +96,39 @@ const animationKeyframes = `
   0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
   50% { opacity: 1; transform: scale(1) rotate(180deg); }
 }
+
+.course-path-summary {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  width: 150px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.course-path-summary:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+  background: white;
+}
+
+@media (max-width: 640px) {
+  .course-path-summary {
+    bottom: 85px;
+    left: 20px;
+    right: auto;
+  }
+}
 `;
 
 const CITIES = [
@@ -555,34 +588,7 @@ const LevantMap = ({ userLevel, onCitySelect, onViewPath }) => {
       {levels && levels.length > 0 && (
         <div 
           onClick={onViewPath}
-          style={{
-            position: 'absolute',
-            bottom: '20px',
-            right: '20px',
-            zIndex: 20,
-            background: 'rgba(255, 255, 255, 0.9)',
-            backdropFilter: 'blur(5px)',
-            border: '2px solid var(--color-accent)',
-            borderRadius: '12px',
-            padding: '10px',
-            cursor: 'pointer',
-            boxShadow: 'var(--shadow-sm)',
-            width: '150px',
-            transition: 'all 0.2s ease',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '4px'
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'scale(1.05)';
-            e.currentTarget.style.boxShadow = 'var(--shadow-md)';
-            e.currentTarget.style.background = 'white';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'scale(1)';
-            e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
-            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.9)';
-          }}
+          className="course-path-summary"
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontSize: '0.7rem', fontWeight: 'bold', color: 'var(--color-secondary)', letterSpacing: '0.5px' }}>COURSE PATH</span>
