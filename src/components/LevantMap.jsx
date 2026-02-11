@@ -14,6 +14,12 @@ import jerashArtifact from '../assets/artifacts/jerash.jpg';
 import tyreArtifact from '../assets/artifacts/tyre.jpg';
 import hebronArtifact from '../assets/artifacts/hebron.jpg';
 import aqabaArtifact from '../assets/artifacts/aqaba.jpg';
+import madabaArtifact from '../assets/artifacts/madaba.png';
+import karakArtifact from '../assets/artifacts/karak.png';
+import masadaArtifact from '../assets/artifacts/romanScroll.jpg';
+import nablusSoapArtifact from '../assets/artifacts/nablus_soap.png';
+import haifaArtifact from '../assets/artifacts/haifa.jpg';
+import tiberiasArtifact from '../assets/artifacts/tiberias.jpg';
 // CSS for Animations (injected here for simplicity)
 const animationKeyframes = `
 @keyframes pulse {
@@ -116,7 +122,7 @@ const CITIES = [
     x: 68,
     y: 48,
     artifact: {
-      image: artifactJerusalem,
+      image: madabaArtifact,
       name: 'Byzantine Mosaic',
       description: 'Ancient map of the Holy Land.'
     }
@@ -129,7 +135,7 @@ const CITIES = [
     x: 62,
     y: 58,
     artifact: {
-      image: artifactAmman,
+      image: karakArtifact,
       name: 'Castle Key',
       description: 'Fortress along the King\'s Highway.'
     }
@@ -207,7 +213,7 @@ const CITIES = [
     x: 30,
     y: 12,
     artifact: {
-      image: artifactAmman,
+      image: karakArtifact,
       name: 'Crusader Citadel',
       description: 'Medieval fortress overlooking the sea.'
     }
@@ -246,7 +252,7 @@ const CITIES = [
     x: 48,
     y: 60,
     artifact: {
-      image: artifactAmman,
+      image: masadaArtifact,
       name: 'Roman Scroll',
       description: 'Ancient texts preserved in the desert climate.'
     }
@@ -285,7 +291,7 @@ const CITIES = [
     x: 35,
     y: 35,
     artifact: {
-      image: artifactAmman,
+      image: haifaArtifact,
       name: 'Mount Carmel Flora',
       description: 'Unique species from the holy mountain.'
     }
@@ -298,9 +304,22 @@ const CITIES = [
     x: 48,
     y: 32,
     artifact: {
-      image: artifactJerusalem,
+      image: tiberiasArtifact,
       name: 'St. Peter\'s Fish',
       description: 'Famous fish from the Sea of Galilee.'
+    }
+  },
+  { 
+    id: 'jericho', 
+    name: 'Jericho', 
+    label: 'Ancient Oasis', 
+    minLevel: 6, 
+    x: 50, 
+    y: 55,
+    artifact: {
+      image: artifactJericho, 
+      name: 'Date Palm',
+      description: 'The oldest continuously inhabited city in the world.'
     }
   },
   { 
@@ -311,7 +330,7 @@ const CITIES = [
     x: 48, 
     y: 25,
     artifact: {
-      image: artifactJericho, 
+      image: nablusSoapArtifact, 
       name: 'Nabulsi Soap',
       description: 'Handmade olive oil soap, a tradition for centuries.'
     }

@@ -184,6 +184,31 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
         }}>
           {questionConfig.promptLabel}
         </span>
+        
+        {/* Vocabulary Image */}
+        {cardData.image && (
+          <div style={{ 
+            margin: 'var(--spacing-4) 0',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <img 
+              src={`/src/assets/vocab/${cardData.image}`}
+              alt={cardData.english}
+              style={{
+                maxWidth: '180px',
+                maxHeight: '180px',
+                borderRadius: 'var(--radius-md)',
+                boxShadow: 'var(--shadow-sm)',
+                objectFit: 'contain'
+              }}
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
+        )}
+        
         <h2 style={{ 
           ...questionConfig.promptStyle,
           color: 'var(--color-text)', 

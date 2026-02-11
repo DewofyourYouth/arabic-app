@@ -7,6 +7,7 @@ import {
   signOut as firebaseSignOut
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 // TODO: Replace with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/setup#config-object
@@ -27,6 +28,38 @@ export const auth = getAuth(app);
 
 // Initialize Firestore
 export const db = getFirestore(app);
+
+// Initialize Analytics
+export const analytics = getAnalytics(app);
+
+// Analytics Helper Functions
+export const trackEvent = (eventName, eventParams = {}) => {
+  try {
+    logEvent(analytics, eventName, eventParams);
+  } catch (error) {
+    console.warn('Analytics tracking failed:', error);
+  }
+};
+
+export const trackSignUp = (method) => {
+  trackEvent('sign_up', { method });
+};
+
+export const trackSessionStart = () => {
+  trackEvent('session_start');
+};
+
+export const trackSessionComplete = (stats) => {
+  trackEvent('session_complete', {
+    correct: stats.correct,
+    incorrect: stats.incorrect,
+    total: stats.correct + stats.incorrect
+  });
+};
+
+export const trackLevelUp = (newLevel) => {
+  trackEvent('level_up', { level: newLevel });
+};
 
 // Providers
 export const googleProvider = new GoogleAuthProvider();

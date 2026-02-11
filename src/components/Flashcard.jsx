@@ -34,6 +34,33 @@ const Flashcard = ({ cardData, isFlipped, onFlip }) => {
         {/* FRONT - English Question */}
         <div className="flashcard-front">
           <span className="front-hint">How do you say...</span>
+          
+          {/* Vocabulary Image */}
+          {cardData.image && (
+            <div style={{ 
+              margin: 'var(--spacing-4) 0',
+              display: 'flex',
+              justifyContent: 'center',
+              flex: 1,
+              alignItems: 'center'
+            }}>
+              <img 
+                src={`/src/assets/vocab/${cardData.image}`}
+                alt={english}
+                style={{
+                  maxWidth: '150px',
+                  maxHeight: '150px',
+                  borderRadius: 'var(--radius-md)',
+                  boxShadow: 'var(--shadow-sm)',
+                  objectFit: 'contain'
+                }}
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
+              />
+            </div>
+          )}
+          
           <h2 className="front-word">{english}</h2>
           <span className="front-hint" style={{ marginTop: 'auto', fontSize: '0.8rem' }}>
             ({type})

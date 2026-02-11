@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { auth, signInWithGoogle, /* signInWithApple, */ signInGuest, logOut } from '../lib/firebase';
+import { trackSignUp } from '../lib/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 
 const AuthContext = createContext();
@@ -19,6 +20,13 @@ export function AuthProvider({ children }) {
         setCurrentUser(user);
         // Clear local guest if we have a real user
         localStorage.removeItem('localGuest');
+        
+        // Track new user sign-up (only on first sign-in)
+        const isNewUser = user.metadata?.creationTime === user.metadata?.lastSignInTime;
+        if (isNewUser) {
+          const method = user.isAnonymous ? 'guest' : 'google';
+          trackSignUp(method);
+        }
       } else {
         // If Firebase has no user, check for local guest
         const localGuest = localStorage.getItem('localGuest');
@@ -49,6 +57,9 @@ export function AuthProvider({ children }) {
     };
     setCurrentUser(localUser);
     localStorage.setItem('localGuest', JSON.stringify(localUser));
+    
+    // Track local guest sign-up
+    trackSignUp('local_guest');
   };
 
   const logOut = async () => {

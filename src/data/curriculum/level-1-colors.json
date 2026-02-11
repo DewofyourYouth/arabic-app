@@ -1,0 +1,84 @@
+[
+  {
+    "id": "l1_color_red",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَحْمَر",
+    "transliteration": "Ahmar",
+    "english": "Red",
+    "image": "red.png",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_blue",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَزْرَق",
+    "transliteration": "Azraq",
+    "english": "Blue",
+    "image": "blue.png",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_green",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَخْضَر",
+    "transliteration": "Akhdar",
+    "english": "Green",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_yellow",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَصْفَر",
+    "transliteration": "Asfar",
+    "english": "Yellow",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_white",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَبْيَض",
+    "transliteration": "Abyad",
+    "english": "White",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_black",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "أَسْوَد",
+    "transliteration": "Aswad",
+    "english": "Black",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_orange",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "بُرْتُقَالِي",
+    "transliteration": "Burtuqali",
+    "english": "Orange",
+    "tags": ["colors", "adjective"]
+  },
+  {
+    "id": "l1_color_brown",
+    "level": 1,
+    "topic": "colors",
+    "type": "word",
+    "arabic": "بُنِّي",
+    "transliteration": "Bunni",
+    "english": "Brown",
+    "tags": ["colors", "adjective"]
+  }
+]

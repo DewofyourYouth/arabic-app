@@ -13,6 +13,7 @@ import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
 import { SettingsProvider } from './contexts/SettingsContext';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { trackSessionStart, trackSessionComplete, trackLevelUp } from './lib/firebase';
 
 import { useData } from './contexts/DataContext';
 
@@ -38,11 +39,17 @@ function AppContent() {
   const userXp = userData?.stats?.totalXP || 0;
   const userLevel = Math.floor(userXp / 100) + 1; // Simple Leveling: 100 XP per level
   const userName = currentUser?.displayName || 'Guest';
+  const [previousLevel, setPreviousLevel] = useState(userLevel);
+
+  // Track level ups
+  useEffect(() => {
+    if (userLevel > previousLevel && previousLevel > 0) {
+      trackLevelUp(userLevel);
+    }
+    setPreviousLevel(userLevel);
+  }, [userLevel]);
 
   // --- ACTIONS ---
-  const addDevXp = () => {
-    updateUserXP(100);
-  };
 
   const startNewSession = () => {
     const due = getDueCards(allCards);
@@ -143,6 +150,9 @@ function AppContent() {
     setXpGainedSession(0);
     setIntroducedIds(new Set()); // Reset for new session
     setView('session');
+    
+    // Track session start
+    trackSessionStart();
   };
 
   const handleIntroNext = () => {
@@ -211,6 +221,8 @@ function AppContent() {
         // Then move to next card
         setTimeout(() => setCurrentIndex(prev => prev + 1), 100);
       } else {
+        // Track session completion
+        trackSessionComplete(stats);
         setView('summary');
       }
     }, 1500);
@@ -274,18 +286,8 @@ function AppContent() {
                   (Sign Out)
                 </button>
               </div>
-              <div 
-                style={{ fontSize: '0.8rem', color: '#888', cursor: 'pointer' }}
-                title="Click to cheat +100 XP (Dev Mode)"
-                onClick={addDevXp}
-              >
-                {userXp} XP 🔧
-              </div>
-              <div 
-                style={{ fontSize: '0.8rem', color: '#888', cursor: 'pointer', marginTop: '4px' }}
-                onClick={() => import('./utils/seed_db').then(m => m.seedDatabase())}
-              >
-                🛠️ Seed DB
+              <div style={{ fontSize: '0.8rem', color: '#888' }}>
+                {userXp} XP
               </div>
             </div>
             
@@ -485,7 +487,6 @@ function AppContent() {
 
 import { Component } from 'react';
 import { DataProvider } from './contexts/DataContext';
-import { seedDatabase } from './utils/seed_db';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -507,24 +508,6 @@ class ErrorBoundary extends Component {
         <div style={{ padding: '20px', textAlign: 'center', fontFamily: 'sans-serif' }}>
           <h1>Something went wrong.</h1>
           <p style={{ color: 'red' }}>{this.state.error?.toString()}</p>
-          <div style={{ marginTop: '20px', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
-             <h3>Dev Tools</h3>
-             <p>Since the app crashed, you can try seeding the database here to see if missing data is the cause.</p>
-             <button 
-                onClick={seedDatabase}
-                style={{
-                  background: 'var(--color-primary, #007bff)',
-                  color: 'white',
-                  border: 'none',
-                  padding: '10px 20px',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                  fontWeight: 'bold'
-                }}
-              >
-                (Dev: Seed Database)
-              </button>
-          </div>
           <button 
             onClick={() => window.location.reload()} 
             style={{ marginTop: '20px', padding: '10px' }}

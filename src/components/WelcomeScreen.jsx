@@ -4,8 +4,6 @@ import { updateProfile } from 'firebase/auth';
 import SocialLoginButton from './SocialLoginButton';
 import Fennec from './Fennec';
 
-import { seedDatabase } from '../utils/seed_db';
-
 const WelcomeScreen = () => {
   const { signInWithGoogle, signInWithApple, signInGuest, signInLocalGuest } = useAuth();
   const [name, setName] = useState('');
@@ -179,24 +177,6 @@ const WelcomeScreen = () => {
             {loading ? 'Please wait...' : 'Start Guest Session 🚀'}
           </button>
         </form>
-        
-        <div style={{ marginTop: '20px' }}>
-          <button 
-            onClick={seedDatabase}
-            style={{ 
-              fontSize: '0.9rem', 
-              color: 'var(--color-text-light)', 
-              background: '#f5f5f5', 
-              border: '1px solid #ddd', 
-              padding: '8px 16px',
-              borderRadius: 'var(--radius-full)',
-              cursor: 'pointer',
-              marginTop: '1rem'
-            }}
-          >
-            🛠️ Seed Database (Dev)
-          </button>
-        </div>
       </div>
     </div>
   );

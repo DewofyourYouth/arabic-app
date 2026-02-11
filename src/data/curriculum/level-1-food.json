@@ -7,6 +7,7 @@
     "arabic": "مَيّ",
     "transliteration": "Mayy",
     "english": "Water",
+    "image": "water.png",
     "tags": ["food", "drink"]
   },
   {
@@ -17,6 +18,7 @@
     "arabic": "قَهْوَة",
     "transliteration": "Ahweh",
     "english": "Coffee",
+    "image": "coffee.png",
     "tags": ["food", "drink"]
   },
   {
@@ -58,6 +60,67 @@
     "transliteration": "Lahmeh",
     "english": "Meat",
     "tags": ["food", "meat"]
+  },
+  {
+    "id": "l1_food_banana",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "مَوْز",
+    "transliteration": "Mawz",
+    "english": "Banana",
+    "image": "banana.png",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_apple",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "تُفَّاح",
+    "transliteration": "Tuffah",
+    "english": "Apple",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_orange",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "بُرْتُقَال",
+    "transliteration": "Burtuqal",
+    "english": "Orange",
+    "tags": ["food", "fruit"]
+  },
+  {
+    "id": "l1_food_tomato",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "بَنْدُورَة",
+    "transliteration": "Bandora",
+    "english": "Tomato",
+    "tags": ["food", "vegetable"]
+  },
+  {
+    "id": "l1_food_cucumber",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "خْيَار",
+    "transliteration": "Khyar",
+    "english": "Cucumber",
+    "tags": ["food", "vegetable"]
+  },
+  {
+    "id": "l1_food_potato",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "بَطَاطَا",
+    "transliteration": "Batata",
+    "english": "Potato",
+    "tags": ["food", "vegetable"]
   },
   {
     "id": "l1_food_delicious",

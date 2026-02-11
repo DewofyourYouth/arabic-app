@@ -57,6 +57,31 @@ const IntroCard = ({ cardData, onNext }) => {
             New Word
         </div>
 
+        {/* Vocabulary Image */}
+        {cardData.image && (
+          <div style={{ 
+            marginTop: 'var(--spacing-6)',
+            marginBottom: 'var(--spacing-2)',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <img 
+              src={`/src/assets/vocab/${cardData.image}`}
+              alt={english}
+              style={{
+                maxWidth: '200px',
+                maxHeight: '200px',
+                borderRadius: 'var(--radius-md)',
+                boxShadow: 'var(--shadow-sm)',
+                objectFit: 'contain'
+              }}
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
+        )}
+
         <div style={{ marginTop: 'var(--spacing-4)' }}>
            {english && <h3 style={{ 
             fontSize: '1.5rem', 
