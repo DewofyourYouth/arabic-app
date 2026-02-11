@@ -581,7 +581,10 @@ const LevantMap = ({ userLevel, onCitySelect, onViewPath }) => {
           gap: '8px'
         }}
       >
-        {showLabels ? '👁️ Hide Labels' : '👁️‍🗨️ Show Labels'}
+        <span>{showLabels ? '👁️' : '👁️‍🗨️'}</span>
+        <span className="hide-text-mobile">
+          {showLabels ? ' Hide Labels' : ' Show Labels'}
+        </span>
       </button>
 
       {/* Subtle Learning Path Summary - Moved to Bottom Right to avoid markers */}

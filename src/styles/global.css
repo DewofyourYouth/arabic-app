@@ -115,4 +115,8 @@ h4 {
   .floatingchat-container-wrap-mobi {
     bottom: 85px !important;
   }
+
+  .hide-text-mobile {
+    display: none;
+  }
 }
