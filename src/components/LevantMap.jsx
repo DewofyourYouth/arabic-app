@@ -8,6 +8,12 @@ import artifactJericho from '../assets/artifacts/jericho.png';
 import artifactAmman from '../assets/artifacts/amman.png';
 import artifactBeerSheba from '../assets/artifacts/abrahamsWell.png';
 import eilatArtifact from '../assets/artifacts/eilat.png';
+import beirutArtifact from '../assets/artifacts/cedar.jpg';
+import sidonArtifact from '../assets/artifacts/sidon.jpg';
+import jerashArtifact from '../assets/artifacts/jerash.jpg';
+import tyreArtifact from '../assets/artifacts/tyre.jpg';
+import hebronArtifact from '../assets/artifacts/hebron.jpg';
+import aqabaArtifact from '../assets/artifacts/aqaba.jpg';
 // CSS for Animations (injected here for simplicity)
 const animationKeyframes = `
 @keyframes pulse {
@@ -97,7 +103,7 @@ const CITIES = [
     x: 50,
     y: 92,
     artifact: {
-      image: artifactWadiRum,
+      image: aqabaArtifact,
       name: 'Coral Diving Mask',
       description: 'Gateway to Jordan\'s Red Sea coast.'
     }
@@ -175,7 +181,7 @@ const CITIES = [
     x: 70,
     y: 28,
     artifact: {
-      image: artifactAmman,
+      image: jerashArtifact,
       name: 'Roman Column Fragment',
       description: 'Piece of the extensive Roman architecture.'
     }
@@ -188,7 +194,7 @@ const CITIES = [
     x: 32, 
     y: 18,
     artifact: {
-      image: artifactAmman,
+      image: beirutArtifact,
       name: 'Cedar Tree',
       description: 'Symbol of Lebanon\'s resilience.'
     }
@@ -214,7 +220,7 @@ const CITIES = [
     x: 33,
     y: 22,
     artifact: {
-      image: artifactJerusalem,
+      image: sidonArtifact,
       name: 'Phoenician Harbor',
       description: 'Ancient trading port of the Phoenicians.'
     }
@@ -227,7 +233,7 @@ const CITIES = [
     x: 34,
     y: 26,
     artifact: {
-      image: artifactPetra,
+      image: tyreArtifact,
       name: 'Royal Purple Shell',
       description: 'Source of the legendary Tyrian purple.'
     }
@@ -266,9 +272,9 @@ const CITIES = [
     x: 45, 
     y: 58,
     artifact: {
-      image: artifactJerusalem,
-      name: 'Glass Blowing',
-      description: 'Famous Hebron glass art.'
+      image: hebronArtifact,
+      name: 'Tomb of the Patriarchs',
+      description: 'Burial site of Abraham, Isaac, and Jacob.'
     }
   },
   {
