@@ -57,7 +57,7 @@ function AppContent() {
 
   const startNewSession = () => {
     const due = getDueCards(allCards);
-    const newCards = allCards.filter(c => c.srs.repetition === 0 && !due.includes(c));
+    const newCards = allCards.filter(c => c.srs.repetition === 0 && !due.includes(c) && (c.level || 1) <= userLevel);
     let pool = [...due, ...newCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
 
     if (pool.length === 0) {

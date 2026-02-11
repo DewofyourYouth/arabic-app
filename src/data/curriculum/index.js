@@ -8,6 +8,8 @@ import verbsExpanded from './level-1-verbs-expanded.json';
 import verbsData from './level-1-verbs-common.json';
 import clozePhrases from './cloze-phrases.json';
 
+import activeParticiples from './level-2-active-participles.json';
+
 // Combine verbs: items from expanded that are NOT in essentials (based on Arabic or English similarity?)
 // Actually, let's just include all. If there are duplicates, the app might handle them or we might see them twice.
 // 'verbsEssentials' has "I want", "I go", "I see", "I eat", "I drink".
@@ -25,7 +27,8 @@ const combinedCurriculum = [
   ...family,
   ...food,
   ...verbsEssentials,
-  ...verbsExpanded
+  ...verbsExpanded,
+  ...activeParticiples
 ];
 
 export default combinedCurriculum;
