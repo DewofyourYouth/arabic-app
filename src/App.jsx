@@ -21,7 +21,7 @@ const SESSION_LENGTH = 10;
 
 function AppContent() {
   const { currentUser, logOut } = useAuth(); // removed loading from here as we use DataContext loading
-  const { allCards, userData, loading: dataLoading, updateUserXP, completeLesson } = useData();
+  const { allCards, userData, loading: dataLoading, updateUserXP, completeLesson, completeOnboarding } = useData();
 
   // --- STATE: UI ---
   const [view, setView] = useState('map'); // 'map', 'session', 'summary'
@@ -169,15 +169,15 @@ function AppContent() {
   const [showOnboarding, setShowOnboarding] = useState(false);
 
   useEffect(() => {
-    const hasCompletedOnboarding = localStorage.getItem('haki_onboarding_completed');
-    if (!hasCompletedOnboarding && view === 'map') {
+    // Only check if data is loaded and we have user data
+    if (!dataLoading && userData && !userData.hasCompletedOnboarding && view === 'map') {
       // Small delay to let simple animations finish
       setTimeout(() => setShowOnboarding(true), 1000);
     }
-  }, [view]);
+  }, [view, dataLoading, userData]);
 
   const handleTourComplete = () => {
-    localStorage.setItem('haki_onboarding_completed', 'true');
+    completeOnboarding();
     setShowOnboarding(false);
   };
   

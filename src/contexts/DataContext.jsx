@@ -88,7 +88,8 @@ export function DataProvider({ children }) {
                 dailyGoal: 50,
                 soundEnabled: true
               },
-              progress: {} // Map of nodeId -> { status, stars, masteryScore, srs }
+              progress: {}, // Map of nodeId -> { status, stars, masteryScore, srs }
+              hasCompletedOnboarding: false // Track onboarding status
             };
             
             // Check for previous guest data to merge?
@@ -194,6 +195,25 @@ export function DataProvider({ children }) {
      }
   };
 
+  const completeOnboarding = async () => {
+    if (!currentUser) return;
+    
+    // Optimistic Update
+    setUserData(prev => ({ ...prev, hasCompletedOnboarding: true }));
+
+    if (currentUser.isLocal) {
+      const key = `guest_data_${currentUser.uid}`;
+      const data = JSON.parse(localStorage.getItem(key) || '{}');
+      data.hasCompletedOnboarding = true;
+      localStorage.setItem(key, JSON.stringify(data));
+    } else {
+      const userRef = doc(db, 'users', currentUser.uid);
+      await updateDoc(userRef, {
+        hasCompletedOnboarding: true
+      });
+    }
+  };
+
   // Derived State: All Cards with User Progress embedded
   const allCards = useMemo(() => {
     if (!curriculum) return [];
@@ -218,6 +238,7 @@ export function DataProvider({ children }) {
     loading,
     updateUserXP,
     completeLesson,
+    completeOnboarding,
     allCards
   };
 
