@@ -8,6 +8,7 @@ import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
 import OnboardingTour from './components/OnboardingTour';
 import FennecFeedback from './components/FennecFeedback';
+import LevelUpModal from './components/LevelUpModal';
 import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
@@ -32,12 +33,14 @@ function AppContent() {
   const [xpGainedSession, setXpGainedSession] = useState(0);
   const [introducedIds, setIntroducedIds] = useState(new Set()); // Track IDs shown in Intro
   const [showFeedback, setShowFeedback] = useState(null); // { type: 'correct' | 'incorrect', message: '...' }
+  const [showLevelUpModal, setShowLevelUpModal] = useState(false);
   
   const { playCorrect, playIncorrect } = useAudio();
 
   // Derived State
   const userXp = userData?.stats?.totalXP || 0;
   const userLevel = Math.floor(userXp / 100) + 1; // Simple Leveling: 100 XP per level
+  const xpTowardsNextLevel = userXp % 100;
   const userName = currentUser?.displayName || 'Guest';
   const [previousLevel, setPreviousLevel] = useState(userLevel);
 
@@ -45,6 +48,7 @@ function AppContent() {
   useEffect(() => {
     if (userLevel > previousLevel && previousLevel > 0) {
       trackLevelUp(userLevel);
+      setShowLevelUpModal(true);
     }
     setPreviousLevel(userLevel);
   }, [userLevel]);
@@ -73,10 +77,17 @@ function AppContent() {
       'humme': 'هُمّ (They)'
     };
 
+    // determine available verbs based on user level
+    let availableVerbs = verbsData;
+    if (userLevel === 1) availableVerbs = verbsData.slice(0, 5); // Essentials
+    else if (userLevel === 2) availableVerbs = verbsData.slice(0, 10);
+    else if (userLevel === 3) availableVerbs = verbsData.slice(0, 20);
+    // Level 4+ gets everything
+
     const conjugationCards = [];
-    const numConjugationQuizzes = Math.min(2, verbsData.length);
+    const numConjugationQuizzes = Math.min(2, availableVerbs.length);
     for (let i = 0; i < numConjugationQuizzes; i++) {
-      const verb = verbsData[Math.floor(Math.random() * verbsData.length)];
+      const verb = availableVerbs[Math.floor(Math.random() * availableVerbs.length)];
       const pronoun = pronounOptions[Math.floor(Math.random() * pronounOptions.length)];
       const correctConjugationObj = verb.conjugations[pronoun] || { arabic: '', transliteration: '' };
       const correctConjugation = correctConjugationObj.arabic;
@@ -267,8 +278,8 @@ function AppContent() {
             borderRadius: 'var(--radius-lg)',
             boxShadow: 'var(--shadow-sm)'
           }}>
-            <div>
-              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+            <div style={{ flex: 1, marginRight: 'var(--spacing-4)' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4px' }}>
                 <span style={{ fontWeight: 'bold', color: 'var(--color-primary)' }}>Level {userLevel}</span>
                 <span style={{ fontSize: '0.9rem', color: 'var(--color-text)' }}>{userName}</span>
                 <button 
@@ -286,8 +297,25 @@ function AppContent() {
                   (Sign Out)
                 </button>
               </div>
-              <div style={{ fontSize: '0.8rem', color: '#888' }}>
-                {userXp} XP
+              
+              {/* Progress Bar */}
+              <div style={{ 
+                height: '8px', 
+                background: '#eee', 
+                borderRadius: '4px', 
+                overflow: 'hidden',
+                width: '100%',
+                maxWidth: '200px'
+              }}>
+                <div style={{ 
+                  height: '100%', 
+                  width: `${xpTowardsNextLevel}%`, 
+                  background: 'var(--color-accent)',
+                  transition: 'width 0.5s ease'
+                }} />
+              </div>
+              <div style={{ fontSize: '0.7rem', color: '#888', marginTop: '2px' }}>
+                {xpTowardsNextLevel} / 100 XP to next level
               </div>
             </div>
             
@@ -479,6 +507,14 @@ function AppContent() {
           type={showFeedback.type}
           message={showFeedback.message}
           onClose={() => setShowFeedback(null)}
+        />
+      )}
+
+      {/* Level Up Modal */}
+      {showLevelUpModal && (
+        <LevelUpModal 
+          level={userLevel} 
+          onContinue={() => setShowLevelUpModal(false)}
         />
       )}
     </>

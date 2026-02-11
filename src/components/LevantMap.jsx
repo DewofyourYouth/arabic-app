@@ -566,6 +566,8 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
       {CITIES.map((city, index) => {
         const isUnlocked = userLevel >= city.minLevel;
         const isNext = !isUnlocked && (index === 0 || userLevel >= CITIES[index-1].minLevel);
+        // Fix for labels getting cut off at the bottom of the map
+        const isBottom = city.y > 80;
         
         return (
           <div 
@@ -655,17 +657,21 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
               background: 'rgba(255, 255, 255, 0.95)',
               padding: '6px 14px',
               borderRadius: '20px',
-              marginTop: '12px',
+              marginTop: isBottom ? 0 : '12px',
+              marginBottom: isBottom ? '12px' : 0,
               boxShadow: 'var(--shadow-md)',
               textAlign: 'center',
               minWidth: '100px',
               border: `1px solid ${isUnlocked ? 'var(--color-primary-light)' : '#ccc'}`,
               opacity: (showLabels || hoveredCityId === city.id) ? 1 : 0,
-              transform: (showLabels || hoveredCityId === city.id) ? 'translateY(0)' : 'translateY(-10px)',
+              transform: (showLabels || hoveredCityId === city.id) 
+                ? 'translateY(0)' 
+                : (isBottom ? 'translateY(10px)' : 'translateY(-10px)'),
               pointerEvents: 'none', // Allow clicking overlapping pins if label is nuisance
               transition: 'all 0.2s ease',
               position: 'absolute', // Float above so it doesn't push layout
-              top: '100%'
+              top: isBottom ? 'auto' : '100%',
+              bottom: isBottom ? '100%' : 'auto'
             }}>
               <div style={{ fontWeight: 'bold', fontSize: '0.9rem', color: 'var(--color-secondary)' }}>
                 {city.name}

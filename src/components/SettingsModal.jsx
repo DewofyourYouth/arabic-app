@@ -1,8 +1,10 @@
 import React from 'react';
+import { useAudio } from '../hooks/useAudio';
 import { useSettings } from '../contexts/SettingsContext';
 
 const SettingsModal = ({ onClose, onRestartTour }) => {
-  const { settings, toggleArabicScript, resetOnboarding, setDialect } = useSettings();
+  const { settings, toggleArabicScript, resetOnboarding, setDialect, setGChar } = useSettings();
+  const { playPronunciation } = useAudio();
 
   const handleRestartTour = () => {
     resetOnboarding(); 
@@ -140,6 +142,69 @@ const SettingsModal = ({ onClose, onRestartTour }) => {
                 </button>
             </div>
         </div>
+
+        {/* Hard G Character Selection (Only if Bedouin is selected) */}
+        {settings.dialect === 'bedouin' && (
+            <div style={{
+                marginBottom: 'var(--spacing-6)',
+                padding: 'var(--spacing-4)',
+                background: 'var(--color-background)',
+                borderRadius: 'var(--radius-md)',
+                animation: 'fadeIn 0.2s ease'
+            }}>
+                <div style={{ fontWeight: 'bold', marginBottom: '8px' }}>
+                    "Hard G" Character
+                </div>
+                <div style={{ fontSize: '0.85rem', color: 'var(--color-text-light)', marginBottom: '12px' }}>
+                    Select the character that sounds like "G" on your device:
+                </div>
+                
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '12px' }}>
+                    {['گ', 'ڨ', 'ق', 'ج', 'g'].map(char => (
+                        <button
+                            key={char}
+                            onClick={() => setGChar(char)}
+                            style={{
+                                width: '40px',
+                                height: '40px',
+                                borderRadius: '50%',
+                                border: settings.gChar === char ? '2px solid var(--color-primary)' : '1px solid #ddd',
+                                background: settings.gChar === char ? 'var(--color-primary)' : 'white',
+                                color: settings.gChar === char ? 'white' : 'var(--color-text)',
+                                fontWeight: 'bold',
+                                cursor: 'pointer',
+                                fontSize: '1.2rem',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                boxShadow: 'var(--shadow-sm)'
+                            }}
+                        >
+                            {char}
+                        </button>
+                    ))}
+                </div>
+
+                <button
+                    onClick={() => playPronunciation('قهوة')}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '8px 16px',
+                        borderRadius: 'var(--radius-full)',
+                        border: '1px solid var(--color-primary)',
+                        background: 'white',
+                        color: 'var(--color-primary)',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        fontWeight: 'bold'
+                    }}
+                >
+                    <span>🔊</span> Test "Coffee" ({settings.gChar}ahweh)
+                </button>
+            </div>
+        )}
 
         <div style={{ borderTop: '1px solid #eee', paddingTop: 'var(--spacing-6)', display: 'flex', flexDirection: 'column', gap: 'var(--spacing-3)' }}>
             <button 

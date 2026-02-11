@@ -6,7 +6,8 @@ const SETTINGS_KEY = 'haki_settings_v1';
 
 const defaultSettings = {
   showArabicScript: true,
-  dialect: 'bedouin' // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
+  dialect: 'bedouin', // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
+  gChar: 'گ' // Character to use for "Hard G" sound (e.g. 'گ', 'ڨ', 'g')
 };
 
 export const SettingsProvider = ({ children }) => {
@@ -43,6 +44,7 @@ export const SettingsProvider = ({ children }) => {
     settings,
     toggleArabicScript,
     setDialect,
+    setGChar: (char) => setSettings(prev => ({ ...prev, gChar: char })),
     resetOnboarding
   };
 

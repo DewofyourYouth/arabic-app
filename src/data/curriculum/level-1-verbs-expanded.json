@@ -1,0 +1,678 @@
+[
+  {
+    "id": "l1_v_want",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بدي",
+    "transliteration": "Biddi",
+    "english": "I want",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_go",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بروح",
+    "transliteration": "Baruh",
+    "english": "I go",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_eat",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "باكل",
+    "transliteration": "Bakol",
+    "english": "I eat",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_drink",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بشرب",
+    "transliteration": "Bashrab",
+    "english": "I drink",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_see",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بشوف",
+    "transliteration": "Bashuf",
+    "english": "I see",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_know",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بعرف",
+    "transliteration": "Ba'raf",
+    "english": "I know",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_say",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بقول",
+    "transliteration": "Ba'ul",
+    "english": "I say",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_do_make",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بعمل",
+    "transliteration": "Ba'mal",
+    "english": "I do/make",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_come",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بجي",
+    "transliteration": "Baji",
+    "english": "I come",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_take",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "باخد",
+    "transliteration": "Bakhod",
+    "english": "I take",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_give",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بعطي",
+    "transliteration": "Ba'ti",
+    "english": "I give",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_find",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بلاقي",
+    "transliteration": "Bala'i",
+    "english": "I find",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_work",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بشتغل",
+    "transliteration": "Bashtaghel",
+    "english": "I work",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_live",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بسكن",
+    "transliteration": "Baskun",
+    "english": "I live/reside",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_speak",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بحكي",
+    "transliteration": "Bahki",
+    "english": "I speak/talk",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_write",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بكتب",
+    "transliteration": "Baktob",
+    "english": "I write",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_read",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بقرا",
+    "transliteration": "Ba'ra",
+    "english": "I read",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_understand",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بفهم",
+    "transliteration": "Bafham",
+    "english": "I understand",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_help",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بساعد",
+    "transliteration": "Bsa'ed",
+    "english": "I help",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_learn",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بتعلم",
+    "transliteration": "Bta'allam",
+    "english": "I learn",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_study",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بدرس",
+    "transliteration": "Badrus",
+    "english": "I study",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_sleep",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بنام",
+    "transliteration": "Banam",
+    "english": "I sleep",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_wake_up",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بصحى",
+    "transliteration": "Basha",
+    "english": "I wake up",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_sit",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بقعد",
+    "transliteration": "Ba'od",
+    "english": "I sit",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_stand",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بوقف",
+    "transliteration": "Ba'af",
+    "english": "I stand",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_walk",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بمشي",
+    "transliteration": "Bamshi",
+    "english": "I walk",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_run",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بجري",
+    "transliteration": "Bajri",
+    "english": "I run",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_buy",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بشتري",
+    "transliteration": "Bashtri",
+    "english": "I buy",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_sell",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "ببيع",
+    "transliteration": "Babi'",
+    "english": "I sell",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_pay",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بدفع",
+    "transliteration": "Badfa'",
+    "english": "I pay",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_open",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بفتح",
+    "transliteration": "Baftah",
+    "english": "I open",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_close",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بسكر",
+    "transliteration": "Basker",
+    "english": "I close",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_enter",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بدخل",
+    "transliteration": "Badkhol",
+    "english": "I enter",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_exit",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بطلع",
+    "transliteration": "Batla'",
+    "english": "I exit/go out",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_return",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "برجع",
+    "transliteration": "Barja'",
+    "english": "I return",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_wait",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بنطر",
+    "transliteration": "Bantor",
+    "english": "I wait",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_leave",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بترك",
+    "transliteration": "Batruk",
+    "english": "I leave",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_ask",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بسأل",
+    "transliteration": "Bas'al",
+    "english": "I ask",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_answer",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بجاوب",
+    "transliteration": "Bajaweb",
+    "english": "I answer",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_hear",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بسمع",
+    "transliteration": "Basma'",
+    "english": "I hear",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_listen",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بسمع",
+    "transliteration": "Basma'",
+    "english": "I listen",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_look",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بنظر",
+    "transliteration": "Banzer",
+    "english": "I look",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_think",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بفكر",
+    "transliteration": "Bafker",
+    "english": "I think",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_remember",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بتذكر",
+    "transliteration": "Batazakkar",
+    "english": "I remember",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_forget",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بنسى",
+    "transliteration": "Bansa",
+    "english": "I forget",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_love",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بحب",
+    "transliteration": "Baheb",
+    "english": "I love",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_like",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بحب",
+    "transliteration": "Baheb",
+    "english": "I like",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_hate",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بكره",
+    "transliteration": "Bakrah",
+    "english": "I hate",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_need",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بحتاج",
+    "transliteration": "Bahtaj",
+    "english": "I need",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_try",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بجرب",
+    "transliteration": "Bajarreb",
+    "english": "I try",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_use",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بستخدم",
+    "transliteration": "Bastakhdim",
+    "english": "I use",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_feel",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بحس",
+    "transliteration": "Bahess",
+    "english": "I feel",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  }
+]

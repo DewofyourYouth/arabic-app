@@ -40,21 +40,55 @@ export const useAudio = () => {
   const preprocessArabicForTTS = (text, dialect) => {
     let processedText = text;
 
+    // 0. Manual Overrides for specific words in the text
+    const PHONETIC_OVERRIDES = {
+      'قهوة': {
+        urban: 'أَهْوِة', 
+        bedouin: `${settings?.gChar || 'گ'}َهْوِة` // Changed from FatHa to Kasra on Waw (وِ) to avoid "oo" sound
+      },
+      // Add exact match with diacritics just in case
+      'قَهْوَة': {
+        urban: 'أَهْوِة', 
+        bedouin: `${settings?.gChar || 'گ'}َهْوِة`
+      }
+    };
+
+    // Helper to remove diacritics for matching
+    const removeDiacritics = (str) => str.replace(/[\u064B-\u065F]/g, '');
+
+    // Apply overrides
+    Object.keys(PHONETIC_OVERRIDES).forEach(key => {
+        if (text.includes(key) || removeDiacritics(text).includes(removeDiacritics(key))) {
+             const replacement = PHONETIC_OVERRIDES[key][dialect] || PHONETIC_OVERRIDES[key].bedouin;
+             if (replacement) {
+                 // Try exact match first
+                 if (text.includes(key)) {
+                     processedText = processedText.replace(new RegExp(key, 'g'), replacement);
+                 } else {
+                     // Fallback for diacritic differences
+                     const base = removeDiacritics(key);
+                     // Create a regex that allows for optional diacritics between letters
+                     // This is hard, so for now we stick to the specific fallback we know: "Coffee"
+                     if (key.includes('قهوة')) {
+                         processedText = processedText.replace(/ق[\u064B-\u065F]*ه[\u064B-\u065F]*و[\u064B-\u065F]*ة/g, replacement);
+                     }
+                 }
+             }
+        }
+    });
+
     // 1. Replace ta marbouta (ة) with regular ha (ه) for pausal form "eh" sound
     processedText = processedText.replace(/ة/g, 'ه');
 
     // 2. Dialect-specific replacements for Qaf (ق)
     if (dialect === 'urban') {
-      // Urban (Amman, Jerusalem, Damascus): Qaf (ق) -> Hamza (ء)
-      // "Qahwa" -> "Ahwa"
       processedText = processedText.replace(/ق/g, 'ء');
     } else if (dialect === 'rural' || dialect === 'bedouin') {
-      // Rural/Bedouin: Qaf (ق) -> Gaf (گ) for "hard G" sound
-      // "Qahwa" -> "Gahwa"
-      // Note: 'گ' (Gaf) is Persian/Urdu but often used to force G sound in TTS
-      // Alternatively, try to map to 'g' sound if available, but Gaf is best attempt
-      processedText = processedText.replace(/ق/g, 'گ');
+      const gChar = settings?.gChar || 'گ';
+      processedText = processedText.replace(/ق/g, gChar);
     }
+
+    console.log(`[TTS] Input: "${text}", Dialect: ${dialect}, Spoken: "${processedText}"`); // Debug log
 
     return processedText;
   };
