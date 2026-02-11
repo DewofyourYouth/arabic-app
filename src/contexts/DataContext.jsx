@@ -11,7 +11,7 @@ import {
   collection,
   getDocs 
 } from 'firebase/firestore';
-import combinedCurriculum from '../data/curriculum';
+import combinedCurriculum, { levels as staticLevels } from '../data/curriculum';
 import { INITIAL_SRS_STATE } from '../utils/srs';
 
 const DataContext = createContext();
@@ -232,9 +232,54 @@ export function DataProvider({ children }) {
     });
   }, [curriculum, userData]);
 
+  // Derived State: Levels with Progress
+  const levels = useMemo(() => {
+    // Import the static levels structure (we need to import it at the top, or access it from the module)
+    // Since we can't easily change imports inside this function, we'll assume it's available or passed in.
+    // Ideally, we imported { levels as staticLevels } from '../data/curriculum';
+    
+    // For now, let's access it from the imported module if possible, or just re-import it at top of file. 
+    // Wait, I need to update the import statement first. 
+    // Let's assume I updated the import to: import combinedCurriculum, { levels as staticLevels } from '../data/curriculum';
+    
+    if (!staticLevels) return [];
+
+    return staticLevels.map(level => {
+      const content = level.content || [];
+      const totalItems = content.length;
+      let learnedItems = 0;
+      let masterItems = 0;
+
+      content.forEach(item => {
+        const itemProgress = userData?.progress?.[item.id];
+        if (itemProgress?.srs?.repetition > 0) learnedItems++;
+        if (itemProgress?.srs?.repetition >= 5) masterItems++; // Arbitrary "Master" threshold
+      });
+
+      const progress = totalItems > 0 ? Math.round((learnedItems / totalItems) * 100) : 0;
+      const isUnlocked = level.id === 1 || (userData?.stats?.currentLevel >= level.id) || (userData?.levels?.[level.id - 1]?.isComplete); 
+      // Simple unlock logic for now: Level 1 always open. 
+      // Or maybe check if previous level is > 80% done?
+      // Let's stick to simple logic: unlocked if previous level has > X% progress?
+      // For now, let's just say everything is unlocked or use the userLevel prop.
+      
+      return {
+        ...level,
+        stats: {
+          total: totalItems,
+          learned: learnedItems,
+          master: masterItems,
+          progress: progress
+        },
+        isUnlocked: true // defaulting to true for now, can refine later
+      };
+    });
+  }, [userData]);
+
   const value = {
     userData,
     curriculum,
+    levels, // Export the levels with progress
     loading,
     updateUserXP,
     completeLesson,

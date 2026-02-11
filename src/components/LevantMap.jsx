@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import { useData } from '../contexts/DataContext';
 import mapImage from '../assets/map_levant_stylized.png';
 // Import artifact images properly for production builds
 import artifactWadiRum from '../assets/artifacts/wadi_rum.png';
@@ -477,10 +478,21 @@ const CITIES = [
   },
 ];
 
-const LevantMap = ({ userLevel, onCitySelect }) => {
+const LevantMap = ({ userLevel, onCitySelect, onViewPath }) => {
+  const { levels } = useData();
   const [selectedArtifact, setSelectedArtifact] = useState(null);
   const [showLabels, setShowLabels] = useState(false); // Default: labels hidden
   const [hoveredCityId, setHoveredCityId] = useState(null);
+
+  // Calculate overall progress across all levels
+  const overallProgress = useMemo(() => {
+    if (!levels || levels.length === 0) return 0;
+    const total = levels.reduce((acc, lvl) => acc + lvl.stats.total, 0);
+    const learned = levels.reduce((acc, lvl) => acc + lvl.stats.learned, 0);
+    return total > 0 ? Math.round((learned / total) * 100) : 0;
+  }, [levels]);
+
+  const currentLevelObj = levels?.find(l => l.stats.progress < 100) || levels?.[levels.length - 1];
 
   const handleCityClick = (city, isUnlocked) => {
     if (isUnlocked) {
@@ -538,6 +550,61 @@ const LevantMap = ({ userLevel, onCitySelect }) => {
       >
         {showLabels ? '👁️ Hide Labels' : '👁️‍🗨️ Show Labels'}
       </button>
+
+      {/* Subtle Learning Path Summary - Moved to Bottom Right to avoid markers */}
+      {levels && levels.length > 0 && (
+        <div 
+          onClick={onViewPath}
+          style={{
+            position: 'absolute',
+            bottom: '20px',
+            right: '20px',
+            zIndex: 20,
+            background: 'rgba(255, 255, 255, 0.9)',
+            backdropFilter: 'blur(5px)',
+            border: '2px solid var(--color-accent)',
+            borderRadius: '12px',
+            padding: '10px',
+            cursor: 'pointer',
+            boxShadow: 'var(--shadow-sm)',
+            width: '150px',
+            transition: 'all 0.2s ease',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '4px'
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = 'scale(1.05)';
+            e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+            e.currentTarget.style.background = 'white';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
+            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.9)';
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 'bold', color: 'var(--color-secondary)', letterSpacing: '0.5px' }}>COURSE PATH</span>
+            <span style={{ fontSize: '0.9rem' }}>🎯</span>
+          </div>
+          
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px' }}>
+            <div style={{ fontSize: '1.1rem', fontWeight: '800', color: 'var(--color-primary)' }}>
+              {overallProgress}%
+            </div>
+            <div style={{ fontSize: '0.65rem', color: '#888' }}>complete</div>
+          </div>
+
+          <div style={{ height: '4px', background: '#eee', borderRadius: '2px', overflow: 'hidden' }}>
+            <div style={{ width: `${overallProgress}%`, height: '100%', background: 'var(--color-accent)', transition: 'width 1s ease' }} />
+          </div>
+
+          <div style={{ fontSize: '0.65rem', color: '#666', marginTop: '2px' }}>
+            On: <span style={{ fontWeight: 'bold' }}>{currentLevelObj?.title.split(':')[0]}</span>
+          </div>
+        </div>
+      )}
       
       {/* Overlay for better text readability if map is busy */}
       <div style={{

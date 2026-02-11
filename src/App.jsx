@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Flashcard from './components/Flashcard';
 import LevantMap from './components/LevantMap';
 import Library from './components/Library';
+import CurriculumPath from './components/CurriculumPath';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
@@ -25,7 +26,8 @@ function AppContent() {
   const { allCards, userData, loading: dataLoading, updateUserXP, completeLesson, completeOnboarding } = useData();
 
   // --- STATE: UI ---
-  const [view, setView] = useState('map'); // 'map', 'session', 'summary'
+  const [view, setView] = useState('map'); // 'path', 'map', 'session', 'summary', 'library'
+  const [selectedLevelId, setSelectedLevelId] = useState(null);
   const [sessionQueue, setSessionQueue] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -55,9 +57,15 @@ function AppContent() {
 
   // --- ACTIONS ---
 
-  const startNewSession = () => {
-    const due = getDueCards(allCards);
-    const newCards = allCards.filter(c => c.srs.repetition === 0 && !due.includes(c) && (c.level || 1) <= userLevel);
+  const startNewSession = (levelId = null) => {
+    // If levelId is provided, filter cards to that level only
+    let availableCards = allCards;
+    if (levelId) {
+      availableCards = allCards.filter(c => c.level === levelId);
+    }
+    
+    const due = getDueCards(availableCards);
+    const newCards = availableCards.filter(c => c.srs.repetition === 0 && !due.includes(c) && (c.level || 1) <= userLevel);
     let pool = [...due, ...newCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
 
     if (pool.length === 0) {
@@ -247,6 +255,11 @@ function AppContent() {
     }
   };
 
+  const handleStartLevel = (levelId) => {
+    setSelectedLevelId(levelId);
+    startNewSession(levelId);
+  };
+
   if (dataLoading) {
      return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading...</div>;
   }
@@ -257,11 +270,15 @@ function AppContent() {
     );
   }
 
-  if (dataLoading) {
-      return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>Loading Data...</div>;
-  }
-
   // --- VIEWS ---
+
+  if (view === 'path') {
+    return (
+      <Layout activeView="path" onNavigate={handleNavigation}>
+        <CurriculumPath onStartLevel={handleStartLevel} />
+      </Layout>
+    );
+  }
 
   if (view === 'map') {
     return (
@@ -336,7 +353,11 @@ function AppContent() {
             </button>
           </div>
 
-          <LevantMap userLevel={userLevel} onCitySelect={startNewSession} />
+          <LevantMap 
+            userLevel={userLevel} 
+            onCitySelect={startNewSession} 
+            onViewPath={() => setView('path')}
+          />
           
           {showOnboarding && <OnboardingTour onComplete={handleTourComplete} />}
         </div>

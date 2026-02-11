@@ -10,25 +10,57 @@ import clozePhrases from './cloze-phrases.json';
 
 import activeParticiples from './level-2-active-participles.json';
 
-// Combine verbs: items from expanded that are NOT in essentials (based on Arabic or English similarity?)
-// Actually, let's just include all. If there are duplicates, the app might handle them or we might see them twice.
-// 'verbsEssentials' has "I want", "I go", "I see", "I eat", "I drink".
-// 'verbsExpanded' has "I want", "I go", ... "I eat", "I drink" ... 
-// Let's rely on the set to be distinct enough or just concatenation for now.
-// However, the ID's in expanded are l1_v_want vs l1_verb_want in essentials. 
-// A quick check: essentials has 5 verbs. expanded has 50+. 
-// Ideally we remove duplicates. 
-// For now, let's just add expanded after essentials. 
+// Helper to apply level
+const withLevel = (data, level) => data.map(item => ({ ...item, level }));
 
-const combinedCurriculum = [
+// Define Curriculum Levels
+// Level 1: Fundamentals (Greetings, Numbers, Colors, Family, Food, Essential Verbs)
+const level1Content = [
   ...basics,
   ...numbers,
-  ...colors, // Colors before family seems easier? Or maybe Family first. The plan said Numbers -> Colors -> Family.
+  ...colors,
   ...family,
   ...food,
-  ...verbsEssentials,
-  ...verbsExpanded,
-  ...activeParticiples
+  ...withLevel(verbsEssentials, 1) // Ensure Level 1
+];
+
+// Level 2: Verbs & Grammar (Expanded Verbs, More complex structures)
+// Note: verbsExpanded was originally level 1 in JSON, we override to Level 2
+const level2Content = [
+  ...withLevel(verbsExpanded, 2)
+];
+
+// Level 3: Active Participles
+// Note: activeParticiples was originally level 2 in JSON, we override to Level 3
+const level3Content = [
+  ...withLevel(activeParticiples, 3)
+];
+
+const combinedCurriculum = [
+  ...level1Content,
+  ...level2Content,
+  ...level3Content
+];
+
+export const levels = [
+  {
+    id: 1,
+    title: "Level 1: Fundamentals",
+    description: "Basic greetings, numbers, family, and essential verbs.",
+    content: level1Content
+  },
+  {
+    id: 2,
+    title: "Level 2: Verbs & Grammar",
+    description: "Expanded verb conjugations and sentence building.",
+    content: level2Content
+  },
+  {
+    id: 3,
+    title: "Level 3: Active Participles",
+    description: "Mastering the active participle form.",
+    content: level3Content
+  }
 ];
 
 export default combinedCurriculum;

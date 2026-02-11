@@ -112,6 +112,11 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
         boxShadow: '0 -4px 20px rgba(0,0,0,0.05)'
       }}>
         <NavButton 
+          icon="🎯" 
+          isActive={activeView === 'path'} 
+          onClick={() => onNavigate && onNavigate('path')} 
+        />
+        <NavButton 
           icon="🏠" 
           isActive={activeView === 'map' || activeView === undefined} 
           onClick={() => onNavigate && onNavigate('map')} 
