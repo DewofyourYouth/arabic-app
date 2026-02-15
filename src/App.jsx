@@ -90,13 +90,18 @@ function AppContent() {
   // --- ACTIONS ---
 
   const startNewSession = (levelId = null) => {
+    // Sanitize input: If called from onClick, levelId is an Event object. Treat as null (Global).
+    if (levelId && (typeof levelId === 'object' || typeof levelId === 'function')) {
+        levelId = null;
+    }
+
     // If levelId is provided, filter cards to that level/location only
     let availableCards = allCards;
     if (levelId) {
       if (typeof levelId === 'string') {
           // It's a specific Level/Location
           availableCards = allCards.filter(c => c.locationId === levelId);
-      } else {
+      } else if (typeof levelId === 'number') {
           availableCards = allCards.filter(c => c.level === levelId);
       }
     } else {
@@ -231,6 +236,13 @@ function AppContent() {
     const finalPool = [...poolWithQuizTypes, ...conjugationCards, ...clozeCards]
       .sort(() => 0.5 - Math.random())
       .slice(0, SESSION_LENGTH);
+
+    // CRITICAL FIX: Prevent "Loading..." freeze if pool is empty
+    if (finalPool.length === 0) {
+        console.error("Session Start Failed: No cards available.", { levelId, availableCount: availableCards.length, allCount: allCards.length });
+        alert(`No content available for this session! (Available: ${availableCards.length}, Total: ${allCards.length}). Please try refreshing.`);
+        return;
+    }
 
     setSessionQueue(finalPool);
     setCurrentIndex(0);
