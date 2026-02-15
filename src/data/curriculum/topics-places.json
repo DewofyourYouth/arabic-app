@@ -1,0 +1,112 @@
+[
+  {
+    "id": "place_house",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "بِيت",
+    "transliteration": "Beit",
+    "english": "House",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_street",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "شَارِع",
+    "transliteration": "Share'",
+    "english": "Street",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_school",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "مَدْرَسِة",
+    "transliteration": "Madrasel",
+    "english": "School",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_hospital",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "مُسْتَشْفَى",
+    "transliteration": "Mustashfa",
+    "english": "Hospital",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_airport",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "مَطَار",
+    "transliteration": "Matar",
+    "english": "Airport",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_hotel",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "فُنْدُق",
+    "transliteration": "Funduq",
+    "english": "Hotel",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_restaurant",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "مَطْعَم",
+    "transliteration": "Mat'am",
+    "english": "Restaurant",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_cafe",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "قَهْوَة",
+    "transliteration": "Ahweh",
+    "english": "Cafe / Coffee Shop",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_market",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "سُوق",
+    "transliteration": "Souq",
+    "english": "Market / Souq",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_pharmacy",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "صَيْدَلِيِّة",
+    "transliteration": "Saydaliyeh",
+    "english": "Pharmacy",
+    "tags": ["places", "noun"]
+  },
+  {
+    "id": "place_university",
+    "level": 1,
+    "topic": "places",
+    "type": "word",
+    "arabic": "جَامْعَة",
+    "transliteration": "Jam'a",
+    "english": "University",
+    "tags": ["places", "noun"]
+  }
+]

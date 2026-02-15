@@ -55,6 +55,8 @@ const combinedCurriculum = [
   ...level4Content
 ];
 
+export { learningPath } from './learningPath';
+
 export const levels = [
   {
     id: 1,

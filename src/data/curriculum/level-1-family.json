@@ -98,5 +98,216 @@
     "transliteration": "Mara",
     "english": "Woman",
     "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_grandfather",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "سِيدُو",
+    "transliteration": "Sido",
+    "english": "Grandfather",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_grandmother",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "تِيتَة",
+    "transliteration": "Teta",
+    "english": "Grandmother",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_uncle_p",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "عَمّ",
+    "transliteration": "'Amm",
+    "english": "Uncle (Paternal)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_aunt_p",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "عَمَّة",
+    "transliteration": "'Ammeh",
+    "english": "Aunt (Paternal)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_uncle_m",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "خَال",
+    "transliteration": "Khal",
+    "english": "Uncle (Maternal)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_aunt_m",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "خَالَة",
+    "transliteration": "Khaleh",
+    "english": "Aunt (Maternal)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_husband",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "جُوز",
+    "transliteration": "Joz",
+    "english": "Husband (Levantine)",
+    "alternatives": ["Zowj"],
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_husband_formal",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "زُوج",
+    "transliteration": "Zowj",
+    "english": "Husband (Formal)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_husband_possessive",
+    "level": 1,
+    "topic": "family",
+    "type": "phrase",
+    "arabic": "جُوزِي / زُوجِي",
+    "transliteration": "Jowzi / Zowji",
+    "english": "My Husband",
+    "tags": ["family", "phrase"]
+  },
+  {
+    "id": "l1_fam_wife_possessive",
+    "level": 1,
+    "topic": "family",
+    "type": "phrase",
+    "arabic": "مَرَتِي / زُوجْتِي",
+    "transliteration": "Marati / Zowjati",
+    "english": "My Wife",
+    "tags": ["family", "phrase"]
+  },
+  {
+    "id": "l1_fam_my_love_m",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "حَبِيبِي",
+    "transliteration": "Habibi",
+    "english": "My Love / My Dear (to male)",
+    "tags": ["family", "endearment"]
+  },
+  {
+    "id": "l1_fam_my_love_f",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "حَبِيبْتِي",
+    "transliteration": "Habibti",
+    "english": "My Love / My Dear (to female)",
+    "tags": ["family", "endearment"]
+  },
+   {
+    "id": "l1_fam_fiance_m",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "خَطِيبِي",
+    "transliteration": "Khateebi",
+    "english": "My Fiance (male)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_fiance_f",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "خَطِيبْتِي",
+    "transliteration": "Khateebti",
+    "english": "My Fiancee (female)",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_ppl_old_man",
+    "level": 1,
+    "topic": "people",
+    "type": "word",
+    "arabic": "خِتْيَار / عَجُوز",
+    "transliteration": "Khityar / 'Ajuz",
+    "english": "Old Man / Elderly",
+    "tags": ["people", "adjective"]
+  },
+  {
+    "id": "l1_ppl_teenager",
+    "level": 1,
+    "topic": "people",
+    "type": "word",
+    "arabic": "مُرَاهِق",
+    "transliteration": "Murahiq",
+    "english": "Teenager",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_ppl_baby",
+    "level": 1,
+    "topic": "people",
+    "type": "word",
+    "arabic": "طِفِل",
+    "transliteration": "Tifel",
+    "english": "Child / Baby",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_ppl_shab",
+    "level": 1,
+    "topic": "people",
+    "type": "word",
+    "arabic": "شَب",
+    "transliteration": "Shab",
+    "english": "Young Man / Guy",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_ppl_sabiyye",
+    "level": 1,
+    "topic": "people",
+    "type": "word",
+    "arabic": "صَبِيِّة",
+    "transliteration": "Sabiyye",
+    "english": "Young Woman / Gal",
+    "tags": ["people", "noun"]
+  },
+  {
+    "id": "l1_fam_wife",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "مَرَة",
+    "transliteration": "Mara",
+    "english": "Wife / Woman",
+    "tags": ["family", "noun"]
+  },
+  {
+    "id": "l1_fam_son",
+    "level": 1,
+    "topic": "family",
+    "type": "word",
+    "arabic": "إِبْن",
+    "transliteration": "Iben",
+    "english": "Son",
+    "tags": ["family", "noun"]
   }
 ]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_wthr_hot",
+    "level": 2,
+    "topic": "weather",
+    "type": "word",
+    "arabic": "شُوب",
+    "transliteration": "Shob",
+    "english": "Hot",
+    "tags": ["weather"]
+  },
+  {
+    "id": "l2_wthr_cold",
+    "level": 2,
+    "topic": "weather",
+    "type": "word",
+    "arabic": "بَرِد",
+    "transliteration": "Barid",
+    "english": "Cold",
+    "tags": ["weather"]
+  },
+  {
+    "id": "l2_wthr_rain",
+    "level": 2,
+    "topic": "weather",
+    "type": "word",
+    "arabic": "شِتَا",
+    "transliteration": "Shita",
+    "english": "Rain / Winter",
+    "tags": ["weather"]
+  },
+  {
+    "id": "l2_wthr_sun",
+    "level": 2,
+    "topic": "weather",
+    "type": "word",
+    "arabic": "شَمِس",
+    "transliteration": "Shamis",
+    "english": "Sun",
+    "tags": ["weather"]
+  },
+  {
+    "id": "l2_wthr_today",
+    "level": 2,
+    "topic": "weather",
+    "type": "phrase",
+    "arabic": "كِيف الطَّقْص الْيُوم؟",
+    "transliteration": "Kif el-taqs el-yom?",
+    "english": "How is the weather today?",
+    "tags": ["weather", "question"]
+  },
+  {
+    "id": "l2_wthr_beautiful",
+    "level": 2,
+    "topic": "weather",
+    "type": "phrase",
+    "arabic": "الْجَوّ حِلُو",
+    "transliteration": "El-jaww hilu",
+    "english": "The weather is beautiful",
+    "tags": ["weather"]
+  }
+]

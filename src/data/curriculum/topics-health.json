@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_body_head",
+    "level": 2,
+    "topic": "health",
+    "type": "word",
+    "arabic": "رَاس",
+    "transliteration": "Ras",
+    "english": "Head",
+    "tags": ["body"]
+  },
+  {
+    "id": "l2_body_hand",
+    "level": 2,
+    "topic": "health",
+    "type": "word",
+    "arabic": "إِيد",
+    "transliteration": "Eid",
+    "english": "Hand",
+    "tags": ["body"]
+  },
+  {
+    "id": "l2_hlt_sick",
+    "level": 2,
+    "topic": "health",
+    "type": "word",
+    "arabic": "مَرِيض",
+    "transliteration": "Mareed",
+    "english": "Sick",
+    "tags": ["health"]
+  },
+  {
+    "id": "l2_hlt_pain",
+    "level": 2,
+    "topic": "health",
+    "type": "word",
+    "arabic": "وَجَع",
+    "transliteration": "Waja'",
+    "english": "Pain",
+    "tags": ["health"]
+  },
+  {
+    "id": "l2_hlt_doctor",
+    "level": 2,
+    "topic": "health",
+    "type": "word",
+    "arabic": "دُكْتُور",
+    "transliteration": "Duktor",
+    "english": "Doctor",
+    "tags": ["health"]
+  },
+  {
+    "id": "l2_hlt_feel",
+    "level": 2,
+    "topic": "health",
+    "type": "phrase",
+    "arabic": "سَلَامْتَك",
+    "transliteration": "Salamtak",
+    "english": "Get well soon (To a male)",
+    "tags": ["health", "polite"]
+  }
+]

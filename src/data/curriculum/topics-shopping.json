@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_shop_howmuch",
+    "level": 2,
+    "topic": "shopping",
+    "type": "phrase",
+    "arabic": "قَدَّيْش حَقُّه؟",
+    "transliteration": "Addeish haqqu?",
+    "english": "How much is this?",
+    "tags": ["shopping", "common"]
+  },
+  {
+    "id": "l2_shop_expensive",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "غَالِي",
+    "transliteration": "Ghali",
+    "english": "Expensive",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "l2_shop_cheap",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "رْخِيص",
+    "transliteration": "Rkhis",
+    "english": "Cheap",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "l2_shop_discount",
+    "level": 2,
+    "topic": "shopping",
+    "type": "phrase",
+    "arabic": "فِي خَصِم؟",
+    "transliteration": "Fi khasim?",
+    "english": "Is there a discount?",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "l2_shop_clothes",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "أَوَاعِي",
+    "transliteration": "Awā'i",
+    "english": "Clothes",
+    "tags": ["shopping"]
+  },
+  {
+    "id": "l2_shop_market",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "سُوق",
+    "transliteration": "Suq",
+    "english": "Market",
+    "tags": ["shopping"]
+  }
+]

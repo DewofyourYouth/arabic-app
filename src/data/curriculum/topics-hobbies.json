@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_hob_sport",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "word",
+    "arabic": "رِيَاضَة",
+    "transliteration": "Riyada",
+    "english": "Sport",
+    "tags": ["hobbies"]
+  },
+  {
+    "id": "l2_hob_reading",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "word",
+    "arabic": "قِرَاءَة",
+    "transliteration": "Qira'a",
+    "english": "Reading",
+    "tags": ["hobbies"]
+  },
+  {
+    "id": "l2_hob_music",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "word",
+    "arabic": "مُوسِيقَى",
+    "transliteration": "Musiqa",
+    "english": "Music",
+    "tags": ["hobbies"]
+  },
+  {
+    "id": "l2_hob_travel",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "word",
+    "arabic": "سَفَر",
+    "transliteration": "Safar",
+    "english": "Travel",
+    "tags": ["hobbies"]
+  },
+  {
+    "id": "l2_hob_freetime",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "phrase",
+    "arabic": "وَقْت فَرَاغ",
+    "transliteration": "Waqt faragh",
+    "english": "Free time",
+    "tags": ["hobbies"]
+  },
+  {
+    "id": "l2_hob_doing",
+    "level": 2,
+    "topic": "hobbies",
+    "type": "phrase",
+    "arabic": "شُو بْتِحِبّ تَعْمَل؟",
+    "transliteration": "Shu btihibb ta'mal?",
+    "english": "What do you like to do?",
+    "tags": ["hobbies", "question"]
+  }
+]

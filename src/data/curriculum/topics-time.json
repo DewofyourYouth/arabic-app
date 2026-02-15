@@ -1,0 +1,182 @@
+[
+  {
+    "id": "time_today",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الْيُوم",
+    "transliteration": "El-yom",
+    "english": "Today",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_tomorrow",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "بُكْرَة",
+    "transliteration": "Bukra",
+    "english": "Tomorrow",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_yesterday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "مْبَارِح",
+    "transliteration": "Mbare7",
+    "english": "Yesterday",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_now",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "هَلَّأ",
+    "transliteration": "Halla'",
+    "english": "Now",
+    "tags": ["time", "adverb"]
+  },
+  {
+    "id": "time_later",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "بَعْدِين",
+    "transliteration": "Ba'den",
+    "english": "Later",
+    "tags": ["time", "adverb"]
+  },
+  {
+    "id": "time_morning",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "صُبُح",
+    "transliteration": "Soboh",
+    "english": "Morning",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_night",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "لِيل",
+    "transliteration": "Leil",
+    "english": "Night",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_day_generic",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "يُوم",
+    "transliteration": "Yom",
+    "english": "Day",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_week",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "أُسْبُوع",
+    "transliteration": "Usbu'",
+    "english": "Week",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_month",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "شَهْر",
+    "transliteration": "Shahr",
+    "english": "Month",
+    "tags": ["time", "noun"]
+  },
+  {
+    "id": "time_year",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "سَنِة",
+    "transliteration": "Saneh",
+    "english": "Year",
+    "tags": ["time", "noun"]
+  },
+    {
+    "id": "time_sunday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الأَحَد",
+    "transliteration": "El-Ahad",
+    "english": "Sunday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_monday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "التِّنِين",
+    "transliteration": "Et-Tanen",
+    "english": "Monday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_tuesday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "التَّلَاتَا",
+    "transliteration": "Et-Talata",
+    "english": "Tuesday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_wednesday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الأَرْبِعَا",
+    "transliteration": "El-Arbi'a",
+    "english": "Wednesday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_thursday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الخَمِيس",
+    "transliteration": "El-Khamis",
+    "english": "Thursday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_friday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "الجمعة",
+    "transliteration": "El-Jum'a",
+    "english": "Friday",
+    "tags": ["time", "day"]
+  },
+  {
+    "id": "time_saturday",
+    "level": 1,
+    "topic": "time",
+    "type": "word",
+    "arabic": "السَّبْت",
+    "transliteration": "Es-Sabt",
+    "english": "Saturday",
+    "tags": ["time", "day"]
+  }
+]

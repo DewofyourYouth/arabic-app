@@ -92,25 +92,55 @@ const IntroCard = ({ cardData, onNext }) => {
             {english}
             </h3>}
 
-            {settings.showArabicScript && (
-              <h2 style={{ 
-              fontSize: '3rem', 
-              color: 'var(--color-primary)', 
-              marginBottom: 'var(--spacing-2)',
-              fontFamily: 'var(--font-family-arabic)',
-              direction: 'rtl'
-              }}>
-              {arabic}
-              </h2>
+            {/* Dynamic Layout based on Card Type */}
+            {cardData.tags && cardData.tags.includes('guide') ? (
+                /* GUIDE LAYOUT: Emphasize English/Transliteration */
+                <>
+                   <h2 style={{ 
+                        fontSize: '3rem', 
+                        color: 'var(--color-primary)', 
+                        marginBottom: 'var(--spacing-2)',
+                        fontFamily: 'var(--font-family-english)',
+                    }}>
+                        {transliteration}
+                    </h2>
+                    
+                    {settings.showArabicScript && (
+                        <h3 style={{ 
+                            fontSize: '2rem', 
+                            color: 'var(--color-text-light)',
+                            marginBottom: 'var(--spacing-4)',
+                            fontFamily: 'var(--font-family-arabic)',
+                            direction: 'rtl'
+                        }}>
+                            {arabic}
+                        </h3>
+                    )}
+                </>
+            ) : (
+                /* STANDARD LAYOUT: Emphasize Arabic */
+                <>
+                    {settings.showArabicScript && (
+                      <h2 style={{ 
+                      fontSize: '3rem', 
+                      color: 'var(--color-primary)', 
+                      marginBottom: 'var(--spacing-2)',
+                      fontFamily: 'var(--font-family-arabic)',
+                      direction: 'rtl'
+                      }}>
+                      {arabic}
+                      </h2>
+                    )}
+                    <p style={{ 
+                    fontSize: '1.2rem', 
+                    color: 'var(--color-text-light)',
+                    marginBottom: 'var(--spacing-4)',
+                    fontStyle: 'italic'
+                    }}>
+                    {transliteration}
+                    </p>
+                </>
             )}
-            <p style={{ 
-            fontSize: '1.2rem', 
-            color: 'var(--color-text-light)',
-            marginBottom: 'var(--spacing-4)',
-            fontStyle: 'italic'
-            }}>
-            {transliteration}
-            </p>
             
             <hr style={{ border: 'none', borderTop: '2px dashed #eee', margin: 'var(--spacing-4) 0' }} />
 

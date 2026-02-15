@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_feel_happy",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "مَبْسُوط",
+    "transliteration": "Mabsut",
+    "english": "Happy",
+    "tags": ["feelings", "adjective"]
+  },
+  {
+    "id": "l2_feel_sad",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "زَعْلَان",
+    "transliteration": "Za'lan",
+    "english": "Sad / Upset",
+    "tags": ["feelings", "adjective"]
+  },
+  {
+    "id": "l2_feel_tired",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "تَعْبَان",
+    "transliteration": "Ta'ban",
+    "english": "Tired",
+    "tags": ["feelings", "adjective"]
+  },
+  {
+    "id": "l2_op_ibd",
+    "level": 2,
+    "topic": "opinions",
+    "type": "phrase",
+    "arabic": "أَنَا بِرَأْيِي...",
+    "transliteration": "Ana bi-ra'yi...",
+    "english": "In my opinion...",
+    "tags": ["opinions"]
+  },
+  {
+    "id": "l2_op_like",
+    "level": 2,
+    "topic": "opinions",
+    "type": "phrase",
+    "arabic": "أَنَا بَحِبّ...",
+    "transliteration": "Ana bahibb...",
+    "english": "I like / I love...",
+    "tags": ["opinions"]
+  },
+  {
+    "id": "l2_op_whatthink",
+    "level": 2,
+    "topic": "opinions",
+    "type": "phrase",
+    "arabic": "شُو رَأْيَك؟",
+    "transliteration": "Shu ra'yak?",
+    "english": "What do you think?",
+    "tags": ["opinions", "question"]
+  }
+]

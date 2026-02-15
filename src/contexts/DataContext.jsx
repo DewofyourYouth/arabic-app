@@ -11,7 +11,7 @@ import {
   collection,
   getDocs 
 } from 'firebase/firestore';
-import combinedCurriculum, { levels as staticLevels } from '../data/curriculum';
+import combinedCurriculum, { levels as staticLevels, learningPath } from '../data/curriculum';
 import { INITIAL_SRS_STATE } from '../utils/srs';
 
 const DataContext = createContext();
@@ -42,9 +42,8 @@ export function DataProvider({ children }) {
         const localData = localStorage.getItem('curriculum_cache');
         const localMetadata = localStorage.getItem('curriculum_metadata');
         
-        console.log("DataContext: staticLevels available:", !!staticLevels);
-
-        let currentLevels = staticLevels || []; // Default to static JSON
+        // Default to static JSON
+        let currentLevels = staticLevels || []; 
         let localVersion = 0;
 
         if (localData) {
@@ -55,7 +54,7 @@ export function DataProvider({ children }) {
           }
         }
         
-        // Initialize state with best available data (Static or Cache)
+        // Initialize state with best available data
         setLevelsData(currentLevels);
         setCurriculum(combinedCurriculumFromLevels(currentLevels));
 
@@ -80,16 +79,10 @@ export function DataProvider({ children }) {
             
             // 3. Fetch published bundles
             const supportedLevels = remoteMetadata.supportedLevels || [1];
-            const newLevels = [];
             
             // Fetch all level bundles in parallel
             const promises = supportedLevels.map(lvl => getDoc(doc(db, 'published_curriculum', `level_${lvl}`)));
             const levelSnaps = await Promise.all(promises);
-            
-            // Process bundles
-            // We need to merge this data into the structured 'levels' object (titles/descriptions)
-            // For now, we are recreating the 'level objects' based on the file data?
-            // Actually, we should pull the base structure from staticLevels and just update content.
             
             const fetchedContentByLevel = {}; // { 1: [items], 2: [items] }
             
@@ -100,10 +93,10 @@ export function DataProvider({ children }) {
                 }
             });
 
-            // Construct the full levels array (merging static config with dynamic content)
+            // Reconstruct levels
             const reconstructedLevels = staticLevels.map(staticLvl => ({
                 ...staticLvl,
-                content: fetchedContentByLevel[staticLvl.id] || staticLvl.content // Fallback to static if missing
+                content: fetchedContentByLevel[staticLvl.id] || staticLvl.content
             }));
 
             // 4. Update State & Cache
@@ -127,7 +120,6 @@ export function DataProvider({ children }) {
   // Sync User Data
   useEffect(() => {
     async function syncUser() {
-      console.log("DataContext: userData available:", !!userData);
       if (!currentUser) {
         setUserData(null);
         setLoading(false);
@@ -180,13 +172,6 @@ export function DataProvider({ children }) {
               hasCompletedOnboarding: false // Track onboarding status
             };
             
-            // Check for previous guest data to merge?
-            const localGuest = localStorage.getItem('localGuest');
-            if (localGuest) {
-               // Logic to merge guest data could go here
-               // For now we just create fresh
-            }
-
             await setDoc(userRef, newUserData);
             setUserData(newUserData);
           }
@@ -231,14 +216,10 @@ export function DataProvider({ children }) {
   };
 
   const completeLesson = async (nodeId, resultData, srsData) => {
-     // resultData: { stars, score }
-     // srsData: { interval, repetition, ef, dueDate }
      if (!currentUser) return;
      
-     // 1. Calculate XP based on stats (if not provided in resultData)
      const xpEarned = resultData.score || 0; 
 
-     // 2. Update Progress
      const completionData = {
        status: 'completed',
        stars: resultData.stars || 0,
@@ -286,7 +267,6 @@ export function DataProvider({ children }) {
   const completeOnboarding = async () => {
     if (!currentUser) return;
     
-    // Optimistic Update
     setUserData(prev => ({ ...prev, hasCompletedOnboarding: true }));
 
     if (currentUser.isLocal) {
@@ -304,9 +284,25 @@ export function DataProvider({ children }) {
 
   // Derived State: All Cards with User Progress embedded
   const allCards = useMemo(() => {
+    // PREFER learningPath if available as it has the latest structure and locationIds
+    if (learningPath) {
+        return learningPath.flatMap(loc => 
+            loc.content.map(card => {
+                const cardId = card.id;
+                const userProgress = userData?.progress?.[cardId];
+                return {
+                    ...card,
+                    id: cardId,
+                    locationId: loc.id, // Ensure locationId is explicit
+                    srs: userProgress?.srs || INITIAL_SRS_STATE,
+                    mastery: userProgress?.masteryScore || 0
+                };
+            })
+        );
+    }
+
     if (!curriculum) return [];
     return curriculum.map((card, index) => {
-        // Ensure ID logic matches App.jsx for now
         const cardId = card.id || `card-${index}`;
         const userProgress = userData?.progress?.[cardId];
         
@@ -314,41 +310,69 @@ export function DataProvider({ children }) {
             ...card,
             id: cardId,
             srs: userProgress?.srs || INITIAL_SRS_STATE,
-            // We can also attach mastery/stars here if needed for UI
             mastery: userProgress?.masteryScore || 0
         };
     });
   }, [curriculum, userData]);
 
-  // Derived State: Levels with Progress
-  const levels = useMemo(() => {
-    // Determine which source of levels to use
-    // If we have fetched levels (from Firestore or Cache) which we likely haven't stored in a separate state yet...
-    // Actually, let's reconstruct levels from the flat `curriculum` if possible, OR better, let's just use the staticLevels as a base 
-    // IF we assume structure doesn't change much. 
-    // BUT the goal is dynamic updates.
-    
-    // To support dynamic levels properly, I should have stored the levels array in state.
-    // Since I didn't add a new state variable in the previous step, I'll rely on `curriculum` (flat) to populate the content, 
-    // but I need the Level Title/Descriptions.
-    
-    // RETROACTIVE FIX: The best way without adding more state complexity right now is to 
-    // map the staticLevels but REPLACE their content with what's in `curriculum` matching that level ID.
-    // This assumes level metadata (titles) don't change often, or accept that they are static for now 
-    // UNLESS I parse the local storage again here which is bad.
-    
-    // ALTERNATIVE: I will add `levelsData` state in a separate edit blocks.
-    // For now, let's assume `levelsData` exists in scope (I will add it).
-    
-    const baseLevels = levelsData || staticLevels;
+// Derived State: Locations (Themed Progression)
+const locations = useMemo(() => {
+    if (!learningPath) return [];
 
+    let previousLocationQualified = true; // First location is always unlocked
+
+    return learningPath.map((location, index) => {
+        const content = location.content || [];
+        const totalItems = content.length;
+        let learnedItems = 0;
+        let masterItems = 0;
+
+        content.forEach(item => {
+            const itemProgress = userData?.progress?.[item.id];
+            
+            // "Learned" = User has seen it at least once (repetition > 0)
+            if (itemProgress?.srs?.repetition > 0) learnedItems++;
+            
+            // "Mastered" = User has reviewed it a few times (repetition >= 3)
+            if (itemProgress?.srs?.repetition >= 3) masterItems++;
+        });
+
+        const progress = totalItems > 0 ? Math.round((learnedItems / totalItems) * 100) : 0;
+        const masteryPercentage = totalItems > 0 ? (masterItems / totalItems) : 0;
+        
+        const isMastered = totalItems > 0 && masterItems >= totalItems; // 100% Mastered (Gold Star)
+        // Unlock Logic: 100% Learned (Seen/Practiced at least once)
+        // This allows "binging" content without waiting for SRS days.
+        const isQualified = totalItems > 0 && learnedItems >= totalItems;
+        
+        // Unlocking Logic: Current is unlocked if Previous was Qualified (50%+)
+        const isUnlocked = previousLocationQualified && (userData?.stats?.totalXP || 0) >= (location.minXP || 0);
+        
+        // Pass qualification to next iteration
+        previousLocationQualified = isQualified;
+
+        return {
+            ...location,
+            stats: {
+                total: totalItems,
+                learned: learnedItems,
+                mastered: masterItems,
+                progress: progress,
+                masteryPercentage: Math.round(masteryPercentage * 100)
+            },
+            isUnlocked,
+            isMastered
+        };
+    });
+}, [userData]);
+
+
+  // Derived State: Levels with Progress (Legacy / Alternative View)
+  const levels = useMemo(() => {
+    const baseLevels = levelsData || staticLevels;
     if (!baseLevels) return [];
 
     return baseLevels.map(level => {
-      // If we are using dynamic data, 'level.content' is already updated.
-      // If we are using staticLevels, we might want to check if 'curriculum' has updates?
-      // Actually, if I update `levelsData` in the effect, then `baseLevels` will be the new data.
-      
       const content = level.content || [];
       const totalItems = content.length;
       let learnedItems = 0;
@@ -378,7 +402,8 @@ export function DataProvider({ children }) {
   const value = {
     userData,
     curriculum,
-    levels, // Export the levels with progress
+    levels, 
+    locations, // New: Themed Locations Path
     loading,
     updateUserXP,
     completeLesson,

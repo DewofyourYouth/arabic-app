@@ -1,5 +1,35 @@
 [
   {
+    "id": "intro_arbizi_welcome",
+    "level": 1,
+    "topic": "intro",
+    "type": "phrase",
+    "arabic": "أرابيزي",
+    "transliteration": "Chat Arabic",
+    "english": "We use numbers to represent Arabic sounds that don't exist in English.",
+    "tags": ["guide", "intro"]
+  },
+  {
+    "id": "intro_arbizi_7",
+    "level": 1,
+    "topic": "intro",
+    "type": "phrase",
+    "arabic": "ح",
+    "transliteration": "7 = Ḥa",
+    "english": "The number 7 represents the deep 'H' sound (like cleaning glasses).",
+    "tags": ["guide", "intro"]
+  },
+  {
+    "id": "intro_arbizi_3",
+    "level": 1,
+    "topic": "intro",
+    "type": "phrase",
+    "arabic": "ع",
+    "transliteration": "3 = 'Ayn",
+    "english": "The number 3 represents the deep throat sound 'Ayn.",
+    "tags": ["guide", "intro"]
+  },
+  {
     "id": "l1_g_hello",
     "level": 1,
     "topic": "greetings",
@@ -9,6 +39,96 @@
     "english": "Hello",
     "audio": "/audio/marhaba.mp3",
     "alternatives": ["Ahlan"],
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_howareyou_formal",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "كِيف حَالَك؟",
+    "transliteration": "Kif 7alak?",
+    "english": "How are you? (General)",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_howareyou_m",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "كِيفَك؟",
+    "transliteration": "Kifak?",
+    "english": "How are you? (to male)",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_howareyou_f",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "كِيفِك؟",
+    "transliteration": "Kifik?",
+    "english": "How are you? (to female)",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_reply_mnih",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "أَنَا مْنِيح",
+    "transliteration": "Ana Mni7",
+    "english": "I am good (male)",
+    "tags": ["greeting", "reply"]
+  },
+  {
+    "id": "l1_g_reply_mniha",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "أَنَا مْنِيحَة",
+    "transliteration": "Ana Mni7a",
+    "english": "I am good (female)",
+    "tags": ["greeting", "reply"]
+  },
+  {
+    "id": "l1_g_reply_tamam",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "تَمَام",
+    "transliteration": "Tamam",
+    "english": "Great / Okay / All good",
+    "tags": ["greeting", "reply", "common"]
+  },
+  {
+    "id": "l1_g_news",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "شُو أَخْبَارَك؟",
+    "transliteration": "Shu a5brak?",
+    "english": "What's your news?",
+    "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_g_sup",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "شُو فِي مَا فِي؟",
+    "transliteration": "Shu fi ma fi?",
+    "english": "What's up? (Literally: What is there, what is not there?)",
+    "tags": ["greeting", "colloquial"]
+  },
+  {
+    "id": "l1_g_morning",
+    "level": 1,
+    "topic": "greetings",
+    "type": "phrase",
+    "arabic": "صَبَاح الْخَيْر",
+    "transliteration": "Sabah el-kheir",
+    "english": "Good morning",
     "tags": ["greeting", "common"]
   },
   {
@@ -123,16 +243,6 @@
     "tags": ["grammar", "pronoun"]
   },
   {
-    "id": "l1_g_morning",
-    "level": 1,
-    "topic": "greetings",
-    "type": "phrase",
-    "arabic": "صَبَاح الْخَيْر",
-    "transliteration": "Sabah el-kheir",
-    "english": "Good morning",
-    "tags": ["greeting", "common"]
-  },
-  {
     "id": "l1_g_evening",
     "level": 1,
     "topic": "greetings",
@@ -140,26 +250,6 @@
     "arabic": "مَسَا الْخَيْر",
     "transliteration": "Masa el-kheir",
     "english": "Good evening",
-    "tags": ["greeting", "common"]
-  },
-  {
-    "id": "l1_g_howareyou_m",
-    "level": 1,
-    "topic": "greetings",
-    "type": "phrase",
-    "arabic": "كِيفَك؟",
-    "transliteration": "Kifak?",
-    "english": "How are you? (male)",
-    "tags": ["greeting", "common"]
-  },
-  {
-    "id": "l1_g_howareyou_f",
-    "level": 1,
-    "topic": "greetings",
-    "type": "phrase",
-    "arabic": "كِيفِك؟",
-    "transliteration": "Kifik?",
-    "english": "How are you? (female)",
     "tags": ["greeting", "common"]
   },
   {

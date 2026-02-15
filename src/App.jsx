@@ -7,11 +7,13 @@ import CurriculumPath from './components/CurriculumPath';
 import WelcomeScreen from './components/WelcomeScreen';
 import QuizCard from './components/QuizCard';
 import IntroCard from './components/IntroCard';
+import LessonIntro from './components/LessonIntro';
 import OnboardingTour from './components/OnboardingTour';
 import FennecFeedback from './components/FennecFeedback';
 import LevelUpModal from './components/LevelUpModal';
 import AdminMigration from './components/AdminMigration';
 import AdminDashboard from './components/AdminDashboard';
+import LocationUnlockModal from './components/LocationUnlockModal';
 import curriculumData, { verbsData, clozePhrases } from './data/curriculum/index';
 import { useAudio } from './hooks/useAudio';
 import { calculateSrs, getDueCards, INITIAL_SRS_STATE } from './utils/srs';
@@ -48,11 +50,39 @@ function AppContent() {
   const userName = currentUser?.displayName || 'Guest';
   const [previousLevel, setPreviousLevel] = useState(userLevel);
 
+  // Track Unlocked Locations for Notifications
+  const { locations } = useData(); // Get locations from context
+  const [unlockedLocationIds, setUnlockedLocationIds] = useState(new Set());
+  const [newlyUnlockedLocation, setNewlyUnlockedLocation] = useState(null);
+
+  // Initialize unlocked state
+  useEffect(() => {
+    if (locations && locations.length > 0) {
+        const currentlyUnlocked = new Set(locations.filter(l => l.isUnlocked).map(l => l.id));
+        
+        // Initial load (don't notify, just set)
+        if (unlockedLocationIds.size === 0 && currentlyUnlocked.size > 0) {
+            setUnlockedLocationIds(currentlyUnlocked);
+        } 
+        // Subsequent updates (check for diff)
+        else if (currentlyUnlocked.size > unlockedLocationIds.size) {
+            // Find the new one
+            const newId = [...currentlyUnlocked].find(id => !unlockedLocationIds.has(id));
+            if (newId) {
+                const newLocation = locations.find(l => l.id === newId);
+                setNewlyUnlockedLocation(newLocation);
+                setUnlockedLocationIds(currentlyUnlocked);
+            }
+        }
+    }
+  }, [locations]); // Relying on locations reference changing from DataContext
+
   // Track level ups
   useEffect(() => {
     if (userLevel > previousLevel && previousLevel > 0) {
       trackLevelUp(userLevel);
-      setShowLevelUpModal(true);
+      // user requested NOT to show this generic level up modal
+      // setShowLevelUpModal(true); 
     }
     setPreviousLevel(userLevel);
   }, [userLevel]);
@@ -60,96 +90,134 @@ function AppContent() {
   // --- ACTIONS ---
 
   const startNewSession = (levelId = null) => {
-    // If levelId is provided, filter cards to that level only
+    // If levelId is provided, filter cards to that level/location only
     let availableCards = allCards;
     if (levelId) {
-      availableCards = allCards.filter(c => c.level === levelId);
+      if (typeof levelId === 'string') {
+          // It's a specific Level/Location
+          availableCards = allCards.filter(c => c.locationId === levelId);
+      } else {
+          availableCards = allCards.filter(c => c.level === levelId);
+      }
+    } else {
+       // Global Practice: ONLY from unlocked locations
+       const unlockedIds = locations.filter(l => l.isUnlocked).map(l => l.id);
+       availableCards = allCards.filter(c => {
+           // If card has a locationId, it must be in the unlocked list
+           if (c.locationId) {
+               return unlockedIds.includes(c.locationId);
+           }
+           // Fallback for legacy items without locationId (allow them if level matches)
+           return (c.level || 1) <= userLevel;
+       });
     }
     
     const due = getDueCards(availableCards);
     const newCards = availableCards.filter(c => c.srs.repetition === 0 && !due.includes(c) && (c.level || 1) <= userLevel);
     let pool = [...due, ...newCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
 
-    if (pool.length === 0) {
-      pool = [...allCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
+    // Fallback: If pool is empty (everything learned, nothing due), review random items from AVAILABLE cards (locked content excluded)
+    if (pool.length === 0 && availableCards.length > 0) {
+      pool = [...availableCards].sort(() => 0.5 - Math.random()).slice(0, SESSION_LENGTH);
     }
 
+    // Determine if we should include advanced quizzes (conjugations/cloze)
+    // Only include if:
+    // 1. It's a general session (levelId is null)
+    // 2. OR the current location/level actually contains verbs (for conjugations)
+    // 3. OR the current location is advanced enough (for cloze)
+    
+    const hasVerbs = availableCards.some(c => c.type === 'verb');
+    const isAdvanced = userLevel >= 2; 
+    
     // Generate verb conjugation quiz cards (2-3 per session)
-    const pronounOptions = ['ana', 'inte', 'inti', 'huwwe', 'hiyye', 'ihna', 'intu', 'humme'];
-    const pronounDisplayMap = {
-      'ana': 'أنا (I)',
-      'inte': 'إنت (You-m)',
-      'inti': 'إنتِ (You-f)',
-      'huwwe': 'هوّ (He)',
-      'hiyye': 'هيّ (She)',
-      'ihna': 'إحنا (We)',
-      'intu': 'إنتو (You-pl)',
-      'humme': 'هُمّ (They)'
-    };
-
-    // determine available verbs based on user level
-    let availableVerbs = verbsData;
-    if (userLevel === 1) availableVerbs = verbsData.slice(0, 5); // Essentials
-    else if (userLevel === 2) availableVerbs = verbsData.slice(0, 10);
-    else if (userLevel === 3) availableVerbs = verbsData.slice(0, 20);
-    // Level 4+ gets everything
-
+    // Generate verb conjugation quiz cards (2-3 per session)
     const conjugationCards = [];
-    const numConjugationQuizzes = Math.min(2, availableVerbs.length);
-    for (let i = 0; i < numConjugationQuizzes; i++) {
-      const verb = availableVerbs[Math.floor(Math.random() * availableVerbs.length)];
-      const pronoun = pronounOptions[Math.floor(Math.random() * pronounOptions.length)];
-      const correctConjugationObj = verb.conjugations[pronoun] || { arabic: '', transliteration: '' };
-      const correctConjugation = correctConjugationObj.arabic;
-      
-      // Get 3 other conjugations as distractors
-      const otherConjugations = Object.keys(verb.conjugations)
-        .filter(p => p !== pronoun)
-        .map(p => ({
-          arabic: verb.conjugations[p].arabic,
-          transliteration: verb.conjugations[p].transliteration
-        }))
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3);
-      
-      // Options now contain objects with both scripts
-      const options = [
-        { arabic: correctConjugation, transliteration: correctConjugationObj.transliteration }, 
-        ...otherConjugations
-      ].sort(() => 0.5 - Math.random());
-      
-      conjugationCards.push({
-        id: `conj-${verb.id}-${pronoun}-${i}`,
-        quizType: 'conjugation',
-        pronoun,
-        pronounDisplay: pronounDisplayMap[pronoun],
-        verb,
-        correctConjugation,
-        options, // Array of { arabic, transliteration }
-        arabic: correctConjugation,  // For audio playback
-        type: 'verb',                 // For display consistency
-        srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
-      });
+    const sessionVerbs = availableCards.filter(c => c.type === 'verb');
+
+    // Strict Mode: ONLY generate conjugation cards if the CURRENT filtered cards contain verbs.
+    if (sessionVerbs.length > 0) {
+        const pronounOptions = ['ana', 'inte', 'inti', 'huwwe', 'hiyye', 'ihna', 'intu', 'humme'];
+        const pronounDisplayMap = {
+          'ana': 'أنا (I)',
+          'inte': 'إنت (You-m)',
+          'inti': 'إنتِ (You-f)',
+          'huwwe': 'هوّ (He)',
+          'hiyye': 'هيّ (She)',
+          'ihna': 'إحنا (We)',
+          'intu': 'إنتو (You-pl)',
+          'humme': 'هُمّ (They)'
+        };
+    
+        const availableVerbs = sessionVerbs;
+    
+        const numConjugationQuizzes = Math.min(2, availableVerbs.length);
+        if (availableVerbs.length > 0) {
+            for (let i = 0; i < numConjugationQuizzes; i++) {
+              const verb = availableVerbs[Math.floor(Math.random() * availableVerbs.length)];
+              // Safety check if verb structure matches expectations
+              if (!verb || !verb.conjugations) continue;
+              
+              const pronoun = pronounOptions[Math.floor(Math.random() * pronounOptions.length)];
+              const correctConjugationObj = verb.conjugations[pronoun] || { arabic: '', transliteration: '' };
+              const correctConjugation = correctConjugationObj.arabic;
+              
+              // Get 3 other conjugations as distractors
+              const otherConjugations = Object.keys(verb.conjugations)
+                .filter(p => p !== pronoun)
+                .map(p => ({
+                  arabic: verb.conjugations[p].arabic,
+                  transliteration: verb.conjugations[p].transliteration
+                }))
+                .sort(() => 0.5 - Math.random())
+                .slice(0, 3);
+              
+              // Options now contain objects with both scripts
+              const options = [
+                { arabic: correctConjugation, transliteration: correctConjugationObj.transliteration }, 
+                ...otherConjugations
+              ].sort(() => 0.5 - Math.random());
+              
+              conjugationCards.push({
+                id: `conj-${verb.id}-${pronoun}-${i}`,
+                quizType: 'conjugation',
+                pronoun,
+                pronounDisplay: pronounDisplayMap[pronoun],
+                verb,
+                correctConjugation,
+                options, // Array of { arabic, transliteration }
+                arabic: correctConjugation,  // For audio playback
+                type: 'verb',                 // For display consistency
+                srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
+              });
+            }
+        }
     }
 
     // Generate cloze quiz cards (2-3 per session)
+    // Only if general session OR if user is advanced and we aren't strict on location
+    // User complaint: "It's the beginning".
+    // So if levelId is present (Location Context), DISABLE Cloze unless card explicitly says so (future feature)
+    // For now: Only General Session or High Levels
     const clozeCards = [];
-    const numClozeQuizzes = Math.min(3, clozePhrases.length);
-    for (let i = 0; i < numClozeQuizzes; i++) {
-      const cloze = clozePhrases[Math.floor(Math.random() * clozePhrases.length)];
-      const options = [cloze.correctAnswer, ...cloze.distractors].sort(() => 0.5 - Math.random());
-      
-      clozeCards.push({
-        id: `cloze-${cloze.id}-${i}`,
-        quizType: 'cloze',
-        sentence: cloze.sentence,
-        sentenceEnglish: cloze.sentenceEnglish,
-        correctAnswer: cloze.correctAnswer,
-        options,
-        explanation: cloze.explanation,
-        type: 'phrase',               // For display consistency
-        srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
-      });
+    if (!levelId && isAdvanced) {
+        const numClozeQuizzes = Math.min(3, clozePhrases.length);
+        for (let i = 0; i < numClozeQuizzes; i++) {
+          const cloze = clozePhrases[Math.floor(Math.random() * clozePhrases.length)];
+          const options = [cloze.correctAnswer, ...cloze.distractors].sort(() => 0.5 - Math.random());
+          
+          clozeCards.push({
+            id: `cloze-${cloze.id}-${i}`,
+            quizType: 'cloze',
+            sentence: cloze.sentence,
+            sentenceEnglish: cloze.sentenceEnglish,
+            correctAnswer: cloze.correctAnswer,
+            options,
+            explanation: cloze.explanation,
+            type: 'phrase',               // For display consistency
+            srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
+          });
+        }
     }
 
     // Assign random quiz types to regular cards
@@ -170,7 +238,15 @@ function AppContent() {
     setStats({ correct: 0, incorrect: 0 });
     setXpGainedSession(0);
     setIntroducedIds(new Set()); // Reset for new session
-    setView('session');
+    
+    // Check if there are new items to introduce
+    const hasNewItems = finalPool.some(c => c.srs.repetition === 0 && !c.id.startsWith('conj') && !c.id.startsWith('cloze'));
+    
+    if (hasNewItems) {
+      setView('intro');
+    } else {
+      setView('session');
+    }
     
     // Track session start
     trackSessionStart();
@@ -208,16 +284,36 @@ function AppContent() {
     let grade = 0;
     let xpGain = 0;
 
-    if (result === 'correct') {
+    if (result === 'correct') { // From Quiz
       playCorrect();
       grade = 4;
       xpGain = 10;
-      setShowFeedback({ type: 'correct', message: 'رائع! (Amazing!)' });
-    } else {
+      setShowFeedback({ type: 'correct', message: 'Correct!' });
+    } else if (result === 'incorrect') { // From Quiz
       playIncorrect();
       grade = 1;
-      xpGain = 2; // Small pity XP
-      setShowFeedback({ type: 'incorrect', message: 'لا بأس! (No worries!)' });
+      xpGain = 2; 
+      setShowFeedback({ type: 'incorrect', message: 'Incorrect' });
+    } else if (result === 'again') {
+      playIncorrect();
+      grade = 1; // Fail / Reset
+      xpGain = 2;
+      setShowFeedback({ type: 'again', message: 'Again' });
+    } else if (result === 'hard') {
+      playCorrect();
+      grade = 3; // Hard
+      xpGain = 5;
+      setShowFeedback({ type: 'hard', message: 'Hard' });
+    } else if (result === 'good') {
+      playCorrect();
+      grade = 4; // Good
+      xpGain = 10;
+      setShowFeedback({ type: 'good', message: 'Good' });
+    } else if (result === 'easy') {
+      playCorrect();
+      grade = 5; // Easy
+      xpGain = 15;
+      setShowFeedback({ type: 'easy', message: 'Easy!' });
     }
 
     // Update Data
@@ -257,9 +353,35 @@ function AppContent() {
     }
   };
 
-  const handleStartLevel = (levelId) => {
+  // State for study mode
+  const [isStudyMode, setIsStudyMode] = useState(false);
+
+  const handleStartLevel = (levelId, studyMode = false) => {
     setSelectedLevelId(levelId);
-    startNewSession(levelId);
+    
+    if (studyMode) {
+        setIsStudyMode(true);
+        // Load all cards for this location to review
+        // Logic similar to startNewSession but we need ALL content for this location
+        // learningPath has the mapping, but we don't have direct access to it easily here without mapping ID back to content
+        // BUT startNewSession filters by levelId...
+        
+        // Actually, let's just use startNewSession logic but grab everything for the intro view
+         let availableCards = allCards;
+        if (levelId) {
+            availableCards = allCards.filter(c => c.level === levelId || c.locationId === levelId);
+        }
+        
+        // Filter out quizzes/conjugations for the guide view if possible, or keep them if they are content
+        // We probably want just 'phrase' and 'word' types
+        const guideContent = availableCards.filter(c => ['word', 'phrase'].includes(c.type));
+        
+        setSessionQueue(guideContent);
+        setView('intro');
+    } else {
+        setIsStudyMode(false);
+        startNewSession(levelId);
+    }
   };
 
   if (dataLoading) {
@@ -370,7 +492,7 @@ function AppContent() {
 
           <LevantMap 
             userLevel={userLevel} 
-            onCitySelect={startNewSession} 
+            onCitySelect={handleStartLevel} 
             onViewPath={() => setView('path')}
           />
           
@@ -521,56 +643,95 @@ function AppContent() {
           </div>
 
           {/* Card Area (Intro, Flashcard, or Quiz) */}
-          {currentCard.srs.repetition === 0 && !introducedIds.has(currentCard.id) ? (
-             <IntroCard 
-               key={currentCard.id || currentIndex}
-               cardData={currentCard}
-               onNext={handleIntroNext}
+          {/* Intro View for New Items Batch */}
+          {view === 'intro' ? (
+             <LessonIntro 
+                newCards={isStudyMode ? sessionQueue : sessionQueue.filter(c => c.srs.repetition === 0 && !c.id.startsWith('conj') && !c.id.startsWith('cloze'))}
+                onStartSession={() => isStudyMode ? startNewSession(selectedLevelId) : setView('session')}
+                onCancel={() => setView('map')}
+                isReviewMode={isStudyMode}
              />
-          ) : currentCard.srs.repetition === 0 ? (
-            <>
-              <Flashcard 
-                key={currentCard.id || currentIndex}
-                cardData={currentCard} 
-                isFlipped={isFlipped} 
-                onFlip={() => setIsFlipped(true)}
-              />
-              
-              {/* Controls (Only for Flashcard) */}
-              <div style={{ 
-                height: '80px', display: 'flex', justifyContent: 'center', gap: 'var(--spacing-4)',
-                opacity: isFlipped ? 1 : 0, pointerEvents: isFlipped ? 'auto' : 'none',
-                transition: 'opacity 0.2s', transform: isFlipped ? 'translateY(0)' : 'translateY(10px)'
-              }}>
-                <button 
-                  onClick={() => handleRate('incorrect')}
-                  style={{
-                    flex: 1, background: 'white', border: '2px solid var(--color-error)', color: 'var(--color-error)',
-                    borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 #ffcdd2', cursor: 'pointer'
-                  }}
-                >
-                  Hard 😓
-                </button>
-                
-                <button 
-                  onClick={() => handleRate('correct')}
-                  style={{
-                    flex: 1, background: 'var(--color-success)', border: 'none', color: 'white',
-                    borderRadius: 'var(--radius-lg)', fontWeight: 'bold', fontSize: 'var(--font-size-lg)', boxShadow: '0 4px 0 var(--color-accent-dark)', cursor: 'pointer'
-                  }}
-                >
-                  Easy! 🤩
-                </button>
-              </div>
-            </>
           ) : (
-            <QuizCard 
-              key={currentCard.id || currentIndex}
-              cardData={currentCard}
-              allCards={allCards}
-              onRate={handleRate}
-              quizType={currentCard.quizType}
-            />
+            /* Regular Session View */
+            currentCard.srs.repetition === 0 && !introducedIds.has(currentCard.id) && !currentCard.id.startsWith('conj') && !currentCard.id.startsWith('cloze') ? (
+               <IntroCard 
+                 key={currentCard.id || currentIndex}
+                 cardData={currentCard}
+                 onNext={handleIntroNext}
+               />
+            ) : currentCard.srs.repetition === 0 ? (
+              <>
+                <Flashcard 
+                  key={currentCard.id || currentIndex}
+                  cardData={currentCard} 
+                  isFlipped={isFlipped} 
+                  onFlip={() => setIsFlipped(true)}
+                />
+                
+                {/* Controls (Only for Flashcard) */}
+                <div style={{ 
+                  display: 'flex', flexDirection: 'column', gap: 'var(--spacing-3)',
+                  opacity: isFlipped ? 1 : 0, pointerEvents: isFlipped ? 'auto' : 'none',
+                  transition: 'opacity 0.2s', transform: isFlipped ? 'translateY(0)' : 'translateY(10px)'
+                }}>
+                  <div style={{ display: 'flex', gap: 'var(--spacing-2)' }}>
+                    <button 
+                      onClick={() => handleRate('again')}
+                      style={{
+                        flex: 1, background: 'white', border: '2px solid var(--color-error)', color: 'var(--color-error)',
+                        borderRadius: 'var(--radius-lg)', fontWeight: 'bold', padding: '12px 0', cursor: 'pointer'
+                      }}
+                    >
+                      Again
+                      <div style={{ fontSize: '0.7rem', fontWeight: 'normal' }}>&lt; 1m</div>
+                    </button>
+                    
+                    <button 
+                      onClick={() => handleRate('hard')}
+                      style={{
+                        flex: 1, background: 'white', border: '2px solid var(--color-warning)', color: 'var(--color-warning)',
+                        borderRadius: 'var(--radius-lg)', fontWeight: 'bold', padding: '12px 0', cursor: 'pointer'
+                      }}
+                    >
+                      Hard
+                      <div style={{ fontSize: '0.7rem', fontWeight: 'normal' }}>2d</div>
+                    </button>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: 'var(--spacing-2)' }}>
+                    <button 
+                      onClick={() => handleRate('good')}
+                      style={{
+                        flex: 1, background: 'white', border: '2px solid var(--color-success)', color: 'var(--color-success)',
+                        borderRadius: 'var(--radius-lg)', fontWeight: 'bold', padding: '12px 0', cursor: 'pointer'
+                      }}
+                    >
+                      Good
+                      <div style={{ fontSize: '0.7rem', fontWeight: 'normal' }}>3d</div>
+                    </button>
+                    
+                    <button 
+                      onClick={() => handleRate('easy')}
+                      style={{
+                        flex: 1, background: 'white', border: '2px solid var(--color-primary)', color: 'var(--color-primary)',
+                        borderRadius: 'var(--radius-lg)', fontWeight: 'bold', padding: '12px 0', cursor: 'pointer'
+                      }}
+                    >
+                      Easy
+                      <div style={{ fontSize: '0.7rem', fontWeight: 'normal' }}>4d</div>
+                    </button>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <QuizCard 
+                key={currentCard.id || currentIndex}
+                cardData={currentCard}
+                allCards={allCards}
+                onRate={handleRate}
+                quizType={currentCard.quizType}
+              />
+            )
           )}
         </div>
       </Layout>
@@ -581,6 +742,14 @@ function AppContent() {
           type={showFeedback.type}
           message={showFeedback.message}
           onClose={() => setShowFeedback(null)}
+        />
+      )}
+
+      {/* Location Unlock Modal */}
+      {newlyUnlockedLocation && (
+        <LocationUnlockModal 
+            location={newlyUnlockedLocation}
+            onContinue={() => setNewlyUnlockedLocation(null)}
         />
       )}
 

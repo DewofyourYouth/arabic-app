@@ -1,0 +1,82 @@
+[
+  {
+    "id": "l2_house_home",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "بِيت",
+    "transliteration": "Beit",
+    "english": "House / Home",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_room",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "غُرْفَة",
+    "transliteration": "Ghurfa",
+    "english": "Room",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_kitchen",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "مَطْبَخ",
+    "transliteration": "Matbakh",
+    "english": "Kitchen",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_bathroom",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "حَمَّام",
+    "transliteration": "Hammam",
+    "english": "Bathroom",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_door",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "بَاب",
+    "transliteration": "Bab",
+    "english": "Door",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_window",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "شُبَّاك",
+    "transliteration": "Shubbak",
+    "english": "Window",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_chair",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "كُرْسِي",
+    "transliteration": "Kursi",
+    "english": "Chair",
+    "tags": ["household"]
+  },
+  {
+    "id": "l2_house_table",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "طَاوْلَة",
+    "transliteration": "Tawla",
+    "english": "Table",
+    "tags": ["household"]
+  }
+]

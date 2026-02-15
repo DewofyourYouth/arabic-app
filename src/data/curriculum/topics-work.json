@@ -1,0 +1,72 @@
+[
+  {
+    "id": "l2_work_job",
+    "level": 2,
+    "topic": "work",
+    "type": "word",
+    "arabic": "شُغُل",
+    "transliteration": "Shughul",
+    "english": "Work / Job",
+    "tags": ["work"]
+  },
+  {
+    "id": "l2_edu_student",
+    "level": 2,
+    "topic": "education",
+    "type": "word",
+    "arabic": "طَالِب",
+    "transliteration": "Talib",
+    "english": "Student",
+    "tags": ["education"]
+  },
+  {
+    "id": "l2_edu_university",
+    "level": 2,
+    "topic": "education",
+    "type": "word",
+    "arabic": "جَامْعَة",
+    "transliteration": "Jam'a",
+    "english": "University",
+    "tags": ["education"]
+  },
+  {
+    "id": "l2_work_office",
+    "level": 2,
+    "topic": "work",
+    "type": "word",
+    "arabic": "مَكْتَب",
+    "transliteration": "Maktab",
+    "english": "Office / Desk",
+    "tags": ["work"]
+  },
+  {
+    "id": "l2_work_engineer",
+    "level": 2,
+    "topic": "work",
+    "type": "word",
+    "arabic": "مُهَنْدِس",
+    "transliteration": "Muhandis",
+    "english": "Engineer",
+    "tags": ["work", "profession"]
+  },
+  {
+    "id": "l2_work_teacher",
+    "level": 2,
+    "topic": "work",
+    "type": "word",
+    "arabic": "إِسْتَاذ",
+    "transliteration": "Ustaz",
+    "english": "Teacher / Professor",
+    "tags": ["work", "profession"]
+  },
+  {
+    "id": "l2_work_whatdo",
+    "level": 2,
+    "topic": "work",
+    "type": "phrase",
+    "arabic": "شُو بِتِشْتِغِل؟",
+    "transliteration": "Shu bitishtighil?",
+    "english": "What do you do (for work)?",
+    "tags": ["work", "question"]
+  }
+]

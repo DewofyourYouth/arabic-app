@@ -34,6 +34,34 @@ const FennecFeedback = ({ type = 'correct', message, onClose }) => {
       textColor: 'white',
       defaultMessage: 'مبروك! (Congratulations!)',
       icon: '🏆'
+    },
+    again: {
+      mood: 'sad',
+      bgColor: 'var(--color-error)',
+      textColor: 'white',
+      defaultMessage: 'Again',
+      icon: '😢'
+    },
+    hard: {
+      mood: 'idle',
+      bgColor: 'var(--color-warning)', // using warning color for 'hard' to match button
+      textColor: 'var(--color-text)',
+      defaultMessage: 'Hard',
+      icon: '😅'
+    },
+    good: {
+      mood: 'happy',
+      bgColor: 'var(--color-success)',
+      textColor: 'white',
+      defaultMessage: 'Good',
+      icon: '👍'
+    },
+    easy: {
+      mood: 'celebrating',
+      bgColor: 'var(--color-primary)',
+      textColor: 'white',
+      defaultMessage: 'Easy!',
+      icon: '🤩'
     }
   };
 

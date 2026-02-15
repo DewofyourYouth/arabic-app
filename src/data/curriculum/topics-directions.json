@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_dir_where",
+    "level": 2,
+    "topic": "directions",
+    "type": "phrase",
+    "arabic": "وِين...؟",
+    "transliteration": "Wein...?",
+    "english": "Where is...?",
+    "tags": ["directions", "common"]
+  },
+  {
+    "id": "l2_dir_straight",
+    "level": 2,
+    "topic": "directions",
+    "type": "phrase",
+    "arabic": "دُغْرِي",
+    "transliteration": "Dughri",
+    "english": "Straight ahead",
+    "tags": ["directions"]
+  },
+  {
+    "id": "l2_dir_right",
+    "level": 2,
+    "topic": "directions",
+    "type": "word",
+    "arabic": "يَمِين",
+    "transliteration": "Yamin",
+    "english": "Right",
+    "tags": ["directions"]
+  },
+  {
+    "id": "l2_dir_left",
+    "level": 2,
+    "topic": "directions",
+    "type": "word",
+    "arabic": "شْمَال",
+    "transliteration": "Shmal",
+    "english": "Left",
+    "tags": ["directions"]
+  },
+  {
+    "id": "l2_dir_here",
+    "level": 2,
+    "topic": "directions",
+    "type": "word",
+    "arabic": "هُون",
+    "transliteration": "Hon",
+    "english": "Here",
+    "tags": ["directions"]
+  },
+  {
+    "id": "l2_dir_there",
+    "level": 2,
+    "topic": "directions",
+    "type": "word",
+    "arabic": "هُنَاك",
+    "transliteration": "Hunāk",
+    "english": "There",
+    "tags": ["directions"]
+  }
+]

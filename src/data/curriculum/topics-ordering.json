@@ -1,0 +1,62 @@
+[
+  {
+    "id": "l2_ord_coffee",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "بِدِّي قَهْوَة لَوْ سَمَحْت",
+    "transliteration": "Biddi qahwe law samaht",
+    "english": "I want coffee, please",
+    "tags": ["restaurant", "common"]
+  },
+  {
+    "id": "l2_ord_tea",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "بِدِّي شَاي مَع سُكَّر",
+    "transliteration": "Biddi shay ma' sukkar",
+    "english": "I want tea with sugar",
+    "tags": ["restaurant"]
+  },
+  {
+    "id": "l2_ord_menu",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "مُمْكِن الْمِنْيُو؟",
+    "transliteration": "Mumkin el-menu?",
+    "english": "Can I have the menu?",
+    "tags": ["restaurant"]
+  },
+  {
+    "id": "l2_ord_bill",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "لِحْسَاب لَوْ سَمَحْت",
+    "transliteration": "L-hsab law samaht",
+    "english": "The bill, please",
+    "tags": ["restaurant", "common"]
+  },
+  {
+    "id": "l2_ord_water",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "قَنِّينِة مَيّ",
+    "transliteration": "Qanninet mayy",
+    "english": "A bottle of water",
+    "tags": ["restaurant"]
+  },
+  {
+    "id": "l2_ord_delicious",
+    "level": 2,
+    "topic": "ordering",
+    "type": "phrase",
+    "arabic": "الْأَكِل زَاكِي كْتِير",
+    "transliteration": "El-akil zaki ktir",
+    "english": "The food is very delicious",
+    "tags": ["restaurant", "compliment"]
+  }
+]
