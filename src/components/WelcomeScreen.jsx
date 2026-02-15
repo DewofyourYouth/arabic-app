@@ -43,8 +43,13 @@ const WelcomeScreen = () => {
     try {
       setError('');
       setLoading(true);
-      // Try Firebase Anonymous Auth first
-      const result = await signInGuest();
+      // Try Firebase Anonymous Auth first with a timeout
+      const signInPromise = signInGuest();
+      const timeoutPromise = new Promise((_, reject) => 
+        setTimeout(() => reject(new Error('Firebase auth timeout')), 5000)
+      );
+
+      const result = await Promise.race([signInPromise, timeoutPromise]);
       await updateProfile(result.user, { displayName: name.trim() });
     } catch (err) {
       console.warn("Firebase Anonymous Auth failed, falling back to local guest mode.", err);

@@ -22,6 +22,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { trackSessionStart, trackSessionComplete, trackLevelUp } from './lib/firebase';
 
 import { useData } from './contexts/DataContext';
+import KofiWidget from './components/KofiWidget';
 
 const SESSION_LENGTH = 10;
 
@@ -419,17 +420,22 @@ function AppContent() {
   if (view === 'map') {
     return (
       <Layout activeView="map" onNavigate={handleNavigation}>
-        <div style={{ padding: 'var(--spacing-4)' }}>
+        <div style={{ 
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 'var(--spacing-4)'
+        }}>
            {/* Header with XP Bar */}
           <div style={{ 
             display: 'flex', 
             justifyContent: 'space-between', 
             alignItems: 'center', 
-            marginBottom: 'var(--spacing-4)',
             background: 'white',
             padding: 'var(--spacing-3)',
             borderRadius: 'var(--radius-lg)',
-            boxShadow: 'var(--shadow-sm)'
+            boxShadow: 'var(--shadow-sm)',
+            flexShrink: 0
           }}>
             <div style={{ flex: 1, marginRight: 'var(--spacing-4)' }}>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px', marginBottom: '4px' }}>
@@ -772,6 +778,9 @@ function AppContent() {
           onContinue={() => setShowLevelUpModal(false)}
         />
       )}
+
+      {/* Ko-fi Widget (Web Only) */}
+      <KofiWidget />
     </>
   );
 }

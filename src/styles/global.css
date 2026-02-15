@@ -25,7 +25,8 @@ html, body {
 }
 
 #root {
-  min-height: 100vh;
+  height: 100dvh; /* Force full viewport height */
+  overflow: hidden; /* Prevent body scroll */
   display: flex;
   flex-direction: column;
   max-width: 600px; /* Mobile-first container */

@@ -19,6 +19,7 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
       {/* Header */}
       <header style={{
         padding: 'var(--spacing-4)',
+        paddingTop: 'calc(var(--spacing-4) + env(safe-area-inset-top))',
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         backdropFilter: 'blur(10px)',
         borderBottom: '1px solid rgba(224, 122, 95, 0.2)',
@@ -103,13 +104,17 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
 
       {/* Bottom Nav */}
       <nav style={{
-        height: '70px',
+        minHeight: '70px',
+        height: 'auto',
+        paddingBottom: 'env(safe-area-inset-bottom)',
         borderTop: '1px solid rgba(0,0,0,0.05)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
         backgroundColor: 'white',
-        boxShadow: '0 -4px 20px rgba(0,0,0,0.05)'
+        boxShadow: '0 -4px 20px rgba(0,0,0,0.05)',
+        zIndex: 100,
+        flexShrink: 0
       }}>
         <NavButton 
           icon="🎯" 

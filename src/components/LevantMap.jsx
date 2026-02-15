@@ -173,10 +173,11 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
     <div style={{ 
       position: 'relative', 
       width: '100%', 
-      height: '600px', 
+      flex: 1,
+      minHeight: 0, /* Important for flex child scrubbing */
       backgroundColor: 'var(--color-background)',
       backgroundImage: `url(${mapImage})`,
-      backgroundSize: 'cover',
+      backgroundSize: '100% 100%', /* Stretch to fit container to ensure alignment */
       backgroundPosition: 'center',
       borderRadius: 'var(--radius-lg)',
       overflow: 'hidden',

@@ -15,6 +15,7 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log("AuthContext: Auth State Changed", user ? user.uid : 'No User');
       // If we have a user from Firebase, use it.
       if (user) {
         setCurrentUser(user);
@@ -30,6 +31,7 @@ export function AuthProvider({ children }) {
       } else {
         // If Firebase has no user, check for local guest
         const localGuest = localStorage.getItem('localGuest');
+        console.log("AuthContext: Checking local guest", localGuest);
         if (localGuest) {
           try {
             setCurrentUser(JSON.parse(localGuest));
@@ -47,6 +49,17 @@ export function AuthProvider({ children }) {
 
     return unsubscribe;
   }, []);
+
+  // Safety fallback: if Firebase doesn't respond in 3 seconds, stop loading
+  useEffect(() => {
+    const timer = setTimeout(() => {
+        if (loading) {
+            console.warn("AuthContext: Firebase auth timed out, forcing load completion.");
+            setLoading(false);
+        }
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [loading]);
 
   const signInLocalGuest = (name) => {
     const localUser = {
