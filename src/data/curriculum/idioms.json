@@ -1,0 +1,164 @@
+[
+  {
+    "id": "idiom_neeman",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "نعيماً",
+    "transliteration": "Na'eeman",
+    "english": "Blessings (said after haircut/shower)",
+    "note": "Reply: Allah yin'am 'alayk (الله ينعم عليك)",
+    "tags": ["idiom", "social", "common"]
+  },
+  {
+    "id": "idiom_tanjara",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "طنجرة ولقت غطاها",
+    "transliteration": "Tanjara w la'et ghataha",
+    "english": "A pot found its lid (Perfect match)",
+    "tags": ["idiom", "funny", "common"]
+  },
+  {
+    "id": "idiom_doq_7adid",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "دق الحديد وهو حامي",
+    "transliteration": "Doq el-7adid w huwwe 7ami",
+    "english": "Strike the iron while it is hot",
+    "tags": ["idiom", "proverb"]
+  },
+  {
+    "id": "idiom_3oqbal",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "عقبال عندك",
+    "transliteration": "3oqbal 3indak",
+    "english": "May it happen for you next (at celebrations)",
+    "tags": ["idiom", "social", "wedding"]
+  },
+  {
+    "id": "idiom_jabal",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "يا جبل ما يهزك ريح",
+    "transliteration": "Ya jabal ma yhizzak ri7",
+    "english": "O mountain, the wind does not shake you (Be strong)",
+    "tags": ["idiom", "proverb", "encouragement"]
+  },
+  {
+    "id": "idiom_mn_3yunii",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "من عيوني",
+    "transliteration": "Min 3yunii",
+    "english": "From my eyes (With pleasure)",
+    "tags": ["idiom", "polite", "common"]
+  },
+  {
+    "id": "idiom_tikram",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "تكرم / تكرمي",
+    "transliteration": "Tikram / Tikrami",
+    "english": "You're welcome / At your service",
+    "tags": ["idiom", "polite", "common"]
+  },
+  {
+    "id": "idiom_ala_rasi",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "على راسي",
+    "transliteration": "3ala rasi",
+    "english": "On my head (At your service/Respect)",
+    "tags": ["idiom", "polite", "common"]
+  },
+  {
+    "id": "idiom_zabbatha",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "زبطها",
+    "transliteration": "Zabbat'ha",
+    "english": "He fixed it / He succeeded",
+    "tags": ["idiom", "slang", "common"]
+  },
+  {
+    "id": "idiom_sa7tein",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "صحتين",
+    "transliteration": "Sa7tein",
+    "english": "Bon Appétit (Two healths)",
+    "note": "Reply: 3ala albak (على قلبك)",
+    "tags": ["idiom", "social", "food"]
+  },
+  {
+    "id": "idiom_yatik_afya",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "يعطيك العافية",
+    "transliteration": "Ya'tik al-afya",
+    "english": "May God give you health (Greeting/Thanks)",
+    "tags": ["idiom", "social", "polite"]
+  },
+  {
+    "id": "idiom_tikrar_hmar",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "التكرار بعلم الحمار",
+    "transliteration": "El-tikrar bi-3allim el-hmar",
+    "english": "Repetition teaches the donkey (Practice makes perfect)",
+    "tags": ["idiom", "funny", "proverb"]
+  },
+  {
+    "id": "idiom_temmak_sama",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "من تمك لباب السما",
+    "transliteration": "Men temmak la bab al-sama",
+    "english": "From your mouth to the sky's door (I hope so)",
+    "tags": ["idiom", "social", "wish"]
+  },
+  {
+    "id": "idiom_faat_maat",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "يلي فات مات",
+    "transliteration": "Yalli faat maat",
+    "english": "What passed died (Let bygones be bygones)",
+    "tags": ["idiom", "proverb", "wisdom"]
+  },
+  {
+    "id": "idiom_dammak_khafif",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "دمك خفيف",
+    "transliteration": "Dammak khafif",
+    "english": "Your blood is light (You are funny/charming)",
+    "tags": ["idiom", "social", "compliment"]
+  },
+  {
+    "id": "idiom_akho_shilite",
+    "level": 2,
+    "topic": "idioms",
+    "type": "phrase",
+    "arabic": "أخو الشليتة",
+    "transliteration": "Akho el-shilite",
+    "english": "Brother of a naughty woman (Rascal/Clever devil)",
+    "tags": ["idiom", "slang", "funny"]
+  }
+]

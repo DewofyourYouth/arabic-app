@@ -14,6 +14,7 @@ import l3Grammar from './level-3-grammar.json';
 import l4Grammar from './level-4-grammar.json';
 
 import activeParticiples from './level-2-active-participles.json';
+import idioms from './idioms.json';
 
 // Helper to apply level
 const withLevel = (data, level) => data.map(item => ({ ...item, level }));
@@ -35,6 +36,7 @@ const level1Content = [
 const level2Content = [
   ...withLevel(verbsExpanded, 2),
   ...withLevel(activeParticiples, 2),
+  ...withLevel(idioms, 2),
   ...l2Grammar
 ];
 

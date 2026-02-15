@@ -11,7 +11,7 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
     <div style={{
       display: 'flex',
       flexDirection: 'column',
-      height: '100%',
+      height: '100dvh', // Use dvh for mobile viewport height fix
       backgroundColor: 'var(--color-background)',
       fontFamily: 'var(--font-family-english)',
       color: 'var(--color-text)'
@@ -97,7 +97,10 @@ const Layout = ({ children, title = "HAKI", activeView, onNavigate }) => {
       <main style={{
         flex: 1,
         padding: 'var(--spacing-4)',
-        overflowY: 'auto'
+        overflowY: activeView === 'map' ? 'hidden' : 'auto',
+        display: 'flex',
+        flexDirection: 'column',
+        position: 'relative' // Ensure relative positioning context
       }}>
         {children}
       </main>
