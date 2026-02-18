@@ -271,5 +271,55 @@
     "transliteration": "Bashufak",
     "english": "See you",
     "tags": ["greeting", "common"]
+  },
+  {
+    "id": "l1_basics_fast",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "سَرِيع",
+    "transliteration": "Sari'",
+    "english": "Fast",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_basics_slow",
+    "level": 1,
+    "topic": "adjectives",
+    "type": "word",
+    "arabic": "بَطِيء",
+    "transliteration": "Bati'",
+    "english": "Slow",
+    "tags": ["adjective"]
+  },
+  {
+    "id": "l1_basics_quickly",
+    "level": 1,
+    "topic": "adverbs",
+    "type": "word",
+    "arabic": "بْسُرْعَة",
+    "transliteration": "B-sur'a",
+    "english": "Quickly / Fast",
+    "tags": ["adverb"]
+  },
+  {
+    "id": "l1_basics_slowly",
+    "level": 1,
+    "topic": "adverbs",
+    "type": "phrase",
+    "arabic": "شْوَي شْوَي",
+    "transliteration": "Shway shway",
+    "english": "Slowly / Slow down",
+    "tags": ["adverb", "common"]
+  },
+  {
+    "id": "l1_basics_kindof",
+    "level": 1,
+    "topic": "fillers",
+    "type": "word",
+    "arabic": "يَعْنِي",
+    "transliteration": "Ya'ni",
+    "english": "Kind of / I mean / That is",
+    "tags": ["filler", "common"]
   }
 ]

@@ -78,5 +78,85 @@
     "transliteration": "Tawla",
     "english": "Table",
     "tags": ["household"]
+  },
+  {
+    "id": "l2_house_yard",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "سَاحَة",
+    "transliteration": "Saha",
+    "english": "Yard / Open space",
+    "tags": ["household", "place"]
+  },
+  {
+    "id": "l2_house_space_storage",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "مَسَاحَة",
+    "transliteration": "Masaha",
+    "english": "Space / Storage / Area",
+    "tags": ["household", "noun"]
+  },
+  {
+    "id": "l2_house_storeroom",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "مَخْزَن",
+    "transliteration": "Makhzan",
+    "english": "Store room / Warehouse",
+    "tags": ["household", "place"]
+  },
+  {
+    "id": "l2_house_store_verb",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "خَزَّن",
+    "transliteration": "Khazzan",
+    "english": "To store / To save",
+    "tags": ["household", "verb"]
+  },
+  {
+    "id": "l2_house_space_room",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "وَسَع",
+    "transliteration": "Wasa'",
+    "english": "Space / Room (to fit something)",
+    "tags": ["household", "noun"]
+  },
+  {
+    "id": "l2_house_wide",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "وَاسِع",
+    "transliteration": "Wasi'",
+    "english": "Wide / Spacious",
+    "tags": ["household", "adjective"]
+  },
+  {
+    "id": "l2_house_wall",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "حِيط",
+    "transliteration": "Hayt",
+    "english": "Wall",
+    "tags": ["household", "noun"]
+  },
+  {
+    "id": "l2_house_walls",
+    "level": 2,
+    "topic": "household",
+    "type": "word",
+    "arabic": "حِيطَان",
+    "transliteration": "Haytan",
+    "english": "Walls",
+    "tags": ["household", "noun", "plural"]
   }
 ]

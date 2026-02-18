@@ -210,5 +210,35 @@
     "transliteration": "Zaki",
     "english": "Delicious",
     "tags": ["food", "adjective"]
+  },
+  {
+    "id": "l1_food_fat",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "دِهِن",
+    "transliteration": "Dihin",
+    "english": "Fat (noun)",
+    "tags": ["food", "noun"]
+  },
+  {
+    "id": "l1_food_fats",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "دُهُون",
+    "transliteration": "Duhun",
+    "english": "Fats",
+    "tags": ["food", "noun", "plural"]
+  },
+  {
+    "id": "l1_food_fatty",
+    "level": 1,
+    "topic": "food",
+    "type": "word",
+    "arabic": "دُهْنِيّ",
+    "transliteration": "Duhni",
+    "english": "Fatty / Oily",
+    "tags": ["food", "adjective"]
   }
 ]

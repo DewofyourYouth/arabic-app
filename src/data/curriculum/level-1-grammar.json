@@ -508,5 +508,55 @@
     "transliteration": "Halla'",
     "english": "Now",
     "tags": ["time"]
+  },
+  {
+    "id": "l1_comp_more",
+    "level": 1,
+    "topic": "comparatives",
+    "type": "word",
+    "arabic": "أَكْثَر",
+    "transliteration": "Aktar",
+    "english": "More",
+    "tags": ["grammar", "comparative"]
+  },
+  {
+    "id": "l1_comp_less",
+    "level": 1,
+    "topic": "comparatives",
+    "type": "word",
+    "arabic": "أَقَلّ",
+    "transliteration": "Aqall",
+    "english": "Less",
+    "tags": ["grammar", "comparative"]
+  },
+  {
+    "id": "l1_comp_bigger",
+    "level": 1,
+    "topic": "comparatives",
+    "type": "word",
+    "arabic": "أَكْبَر",
+    "transliteration": "Akbar",
+    "english": "Bigger",
+    "tags": ["grammar", "comparative"]
+  },
+  {
+    "id": "l1_comp_smaller",
+    "level": 1,
+    "topic": "comparatives",
+    "type": "word",
+    "arabic": "أَصْغَر",
+    "transliteration": "Asghar",
+    "english": "Smaller",
+    "tags": ["grammar", "comparative"]
+  },
+  {
+    "id": "l1_comp_like",
+    "level": 1,
+    "topic": "comparatives",
+    "type": "word",
+    "arabic": "زَيّ / مِثِل",
+    "transliteration": "Zay / Mitl",
+    "english": "Like / As",
+    "tags": ["grammar", "comparative"]
   }
 ]

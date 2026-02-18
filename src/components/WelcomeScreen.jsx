@@ -16,8 +16,18 @@ const WelcomeScreen = () => {
       setLoading(true);
       await signInWithGoogle();
     } catch (err) {
-      console.error(err);
-      setError('Failed to sign in with Google. Check console for details.');
+      console.error("Google Sign-In Error:", err);
+      // More specific error handling
+      let errorMessage = 'Failed to sign in with Google.';
+      if (err.code === 'auth/popup-blocked') {
+        errorMessage = 'Popup blocked. Please allow popups for this site.';
+      } else if (err.code === 'auth/popup-closed-by-user') {
+        errorMessage = 'Sign-in cancelled.';
+      } else if (err.message) {
+        errorMessage += ` (${err.message})`;
+      }
+
+      setError(errorMessage);
       setLoading(false);
     }
   };
@@ -45,7 +55,7 @@ const WelcomeScreen = () => {
       setLoading(true);
       // Try Firebase Anonymous Auth first with a timeout
       const signInPromise = signInGuest();
-      const timeoutPromise = new Promise((_, reject) => 
+      const timeoutPromise = new Promise((_, reject) =>
         setTimeout(() => reject(new Error('Firebase auth timeout')), 5000)
       );
 
@@ -82,9 +92,9 @@ const WelcomeScreen = () => {
         <div style={{ marginBottom: 'var(--spacing-4)', display: 'flex', justifyContent: 'center' }}>
           <Fennec mood="happy" size={120} />
         </div>
-        
-        <h1 style={{ 
-          color: 'var(--color-secondary)', 
+
+        <h1 style={{
+          color: 'var(--color-secondary)',
           marginBottom: 'var(--spacing-2)',
           fontFamily: 'var(--font-family-english)'
         }}>
@@ -95,11 +105,11 @@ const WelcomeScreen = () => {
         </p>
 
         {error && (
-          <div style={{ 
-            color: 'var(--color-error)', 
-            background: '#ffebee', 
-            padding: '8px', 
-            borderRadius: 'var(--radius-md)', 
+          <div style={{
+            color: 'var(--color-error)',
+            background: '#ffebee',
+            padding: '8px',
+            borderRadius: 'var(--radius-md)',
             marginBottom: 'var(--spacing-4)',
             fontSize: '0.9rem'
           }}>
@@ -108,13 +118,13 @@ const WelcomeScreen = () => {
         )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-3)', marginBottom: 'var(--spacing-6)' }}>
-             <SocialLoginButton 
-                onClick={handleGoogleSignIn}
-                label={loading ? 'Signing in...' : 'Sign in with Google'}
-                icon="🇬"
-                style={{ border: '1px solid #ddd' }}
-             />
-             {/* <SocialLoginButton 
+          <SocialLoginButton
+            onClick={handleGoogleSignIn}
+            label={loading ? 'Signing in...' : 'Sign in with Google'}
+            icon="🇬"
+            style={{ border: '1px solid #ddd' }}
+          />
+          {/* <SocialLoginButton 
                 onClick={handleAppleSignIn}
                 label={loading ? 'Signing in...' : 'Sign in with Apple'}
                 icon=""
@@ -130,12 +140,12 @@ const WelcomeScreen = () => {
 
         <form onSubmit={handleGuestSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-4)' }}>
           <div style={{ textAlign: 'left' }}>
-            <label 
-              htmlFor="name" 
-              style={{ 
-                display: 'block', 
-                marginBottom: 'var(--spacing-2)', 
-                fontWeight: 'bold', 
+            <label
+              htmlFor="name"
+              style={{
+                display: 'block',
+                marginBottom: 'var(--spacing-2)',
+                fontWeight: 'bold',
                 color: 'var(--color-text)',
                 fontSize: '0.9rem'
               }}

@@ -58,5 +58,45 @@
     "transliteration": "Suq",
     "english": "Market",
     "tags": ["shopping"]
+  },
+  {
+    "id": "l2_shop_boots",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "جَزْمِة",
+    "transliteration": "Jazme",
+    "english": "Boots",
+    "tags": ["shopping", "clothes"]
+  },
+  {
+    "id": "l2_shop_shoes_sport",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "بُوت",
+    "transliteration": "Bot",
+    "english": "Boots / Sport shoes",
+    "tags": ["shopping", "clothes"]
+  },
+  {
+    "id": "l2_shop_shoes",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "كُنْدَرَة",
+    "transliteration": "Kundara",
+    "english": "Shoes",
+    "tags": ["shopping", "clothes"]
+  },
+  {
+    "id": "l2_shop_shoes_flipped",
+    "level": 2,
+    "topic": "shopping",
+    "type": "word",
+    "arabic": "سَبَّاط",
+    "transliteration": "Sabbat",
+    "english": "Shoes (common)",
+    "tags": ["shopping", "clothes"]
   }
 ]

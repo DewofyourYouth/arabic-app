@@ -674,5 +674,31 @@
       "verb",
       "common"
     ]
+  },
+  {
+    "id": "l1_v_flip",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "بقلب",
+    "transliteration": "Ba'leb",
+    "english": "I flip / turn over",
+    "tags": [
+      "verb",
+      "common"
+    ]
+  },
+  {
+    "id": "l1_v_paint",
+    "level": 1,
+    "topic": "verbs-common",
+    "type": "phrase",
+    "arabic": "bedhen",
+    "transliteration": "Badhan",
+    "english": "I paint",
+    "tags": [
+      "verb",
+      "common"
+    ]
   }
 ]

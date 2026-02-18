@@ -58,5 +58,45 @@
     "transliteration": "Shu ra'yak?",
     "english": "What do you think?",
     "tags": ["opinions", "question"]
+  },
+  {
+    "id": "l2_feel_busy",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "مَشْغُول",
+    "transliteration": "Mashghul",
+    "english": "Busy",
+    "tags": ["feelings", "adjective"]
+  },
+  {
+    "id": "l2_feel_get_tired",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "تِعِب",
+    "transliteration": "Ti'ib",
+    "english": "To get tired",
+    "tags": ["feelings", "verb"]
+  },
+  {
+    "id": "l2_feel_tiring",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "مُتْعِب",
+    "transliteration": "Mut'ib",
+    "english": "Tiring",
+    "tags": ["feelings", "adjective"]
+  },
+  {
+    "id": "l2_feel_get_happy",
+    "level": 2,
+    "topic": "feelings",
+    "type": "word",
+    "arabic": "اِنْبَسَط",
+    "transliteration": "Inbasat",
+    "english": "To get happy / To enjoy",
+    "tags": ["feelings", "verb"]
   }
 ]
