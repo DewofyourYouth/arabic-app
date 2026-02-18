@@ -8,6 +8,7 @@
     "transliteration": "Beit",
     "english": "House / Home",
     "hebrew": "בית",
+    "hebrewTransliteration": "בֵּית",
     "tags": ["household"]
   },
   {
@@ -19,6 +20,7 @@
     "transliteration": "Ghurfa",
     "english": "Room",
     "hebrew": "חדר",
+    "hebrewTransliteration": "עֻ'רְפֶה",
     "tags": ["household"]
   },
   {
@@ -30,6 +32,7 @@
     "transliteration": "Matbakh",
     "english": "Kitchen",
     "hebrew": "מטבח",
+    "hebrewTransliteration": "מַטְבַּח'",
     "tags": ["household"]
   },
   {
@@ -41,6 +44,7 @@
     "transliteration": "Hammam",
     "english": "Bathroom",
     "hebrew": "שירותים / מקלחת",
+    "hebrewTransliteration": "חַמַּאם",
     "tags": ["household"]
   },
   {
@@ -52,6 +56,7 @@
     "transliteration": "Bab",
     "english": "Door",
     "hebrew": "דלת",
+    "hebrewTransliteration": "בַּאבּ",
     "tags": ["household"]
   },
   {
@@ -63,6 +68,7 @@
     "transliteration": "Shubbak",
     "english": "Window",
     "hebrew": "חלון",
+    "hebrewTransliteration": "שֻבַּאכּ",
     "tags": ["household"]
   },
   {
@@ -74,6 +80,7 @@
     "transliteration": "Kursi",
     "english": "Chair",
     "hebrew": "כיסא",
+    "hebrewTransliteration": "כֻּרְסִי",
     "tags": ["household"]
   },
   {
@@ -85,6 +92,7 @@
     "transliteration": "Tawla",
     "english": "Table",
     "hebrew": "שולחן",
+    "hebrewTransliteration": "טַאוּלֶה",
     "tags": ["household"]
   },
   {
@@ -96,6 +104,7 @@
     "transliteration": "Saha",
     "english": "Yard / Open space",
     "hebrew": "חצר / רחבה",
+    "hebrewTransliteration": "סַאחַה",
     "tags": ["household", "place"]
   },
   {
@@ -107,6 +116,7 @@
     "transliteration": "Masaha",
     "english": "Space / Storage / Area",
     "hebrew": "שטח / מקום",
+    "hebrewTransliteration": "מַסַאחַה",
     "tags": ["household", "noun"]
   },
   {
@@ -118,6 +128,7 @@
     "transliteration": "Makhzan",
     "english": "Store room / Warehouse",
     "hebrew": "מחסן",
+    "hebrewTransliteration": "מַחְ'זַן",
     "tags": ["household", "place"]
   },
   {
@@ -129,6 +140,7 @@
     "transliteration": "Khazzan",
     "english": "To store / To save",
     "hebrew": "לאחסן",
+    "hebrewTransliteration": "חַ'זַּן",
     "tags": ["household", "verb"]
   },
   {
@@ -140,6 +152,7 @@
     "transliteration": "Wasa'",
     "english": "Space / Room (to fit something)",
     "hebrew": "מקום (מרחב)",
+    "hebrewTransliteration": "וַסַע",
     "tags": ["household", "noun"]
   },
   {
@@ -151,6 +164,7 @@
     "transliteration": "Wasi'",
     "english": "Wide / Spacious",
     "hebrew": "רחב / מרווח",
+    "hebrewTransliteration": "וַאסִע",
     "tags": ["household", "adjective"]
   },
   {
@@ -162,6 +176,7 @@
     "transliteration": "Hayt",
     "english": "Wall",
     "hebrew": "קיר",
+    "hebrewTransliteration": "חִיט",
     "tags": ["household", "noun"]
   },
   {
@@ -173,6 +188,7 @@
     "transliteration": "Haytan",
     "english": "Walls",
     "hebrew": "קירות",
+    "hebrewTransliteration": "חִיטַאן",
     "tags": ["household", "noun", "plural"]
   }
 ]

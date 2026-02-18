@@ -6,7 +6,8 @@
     "type": "phrase",
     "arabic": "بِدِّي قَهْوَة لَوْ سَمَحْت",
     "transliteration": "Biddi qahwe law samaht",
-    "english": "I want coffee, please",
+    "hebrew": "אני רוצה קפה בבקשה",
+    "hebrewTransliteration": "בִּדִּי קַהְוֶה לַו סַמַחְת",
     "tags": ["restaurant", "common"]
   },
   {
@@ -17,6 +18,8 @@
     "arabic": "بِدِّي شَاي مَع سُكَّر",
     "transliteration": "Biddi shay ma' sukkar",
     "english": "I want tea with sugar",
+    "hebrew": "אני רוצה תה עם סוכר",
+    "hebrewTransliteration": "בִּדִּי שַׁאי מַע סֻכַּר",
     "tags": ["restaurant"]
   },
   {
@@ -27,6 +30,8 @@
     "arabic": "مُمْكِن الْمِنْيُو؟",
     "transliteration": "Mumkin el-menu?",
     "english": "Can I have the menu?",
+    "hebrew": "אפשר את התפריט?",
+    "hebrewTransliteration": "מֻמְכִּן אִל-מֶנְיוּ?",
     "tags": ["restaurant"]
   },
   {
@@ -36,7 +41,8 @@
     "type": "phrase",
     "arabic": "لِحْسَاب لَوْ سَمَحْت",
     "transliteration": "L-hsab law samaht",
-    "english": "The bill, please",
+    "hebrew": "החשבון בבקשה",
+    "hebrewTransliteration": "לִ-חְסַאבּ לַו סַמַחְת",
     "tags": ["restaurant", "common"]
   },
   {
@@ -47,6 +53,8 @@
     "arabic": "قَنِّينِة مَيّ",
     "transliteration": "Qanninet mayy",
     "english": "A bottle of water",
+    "hebrew": "בקבוק מים",
+    "hebrewTransliteration": "קַנִּינֶת מַי",
     "tags": ["restaurant"]
   },
   {
@@ -57,6 +65,8 @@
     "arabic": "الْأَكِل زَاكِي كْتِير",
     "transliteration": "El-akil zaki ktir",
     "english": "The food is very delicious",
+    "hebrew": "האוכל טעים מאוד",
+    "hebrewTransliteration": "אִל-אַכִּל זַאכִּי כְּתִיר",
     "tags": ["restaurant", "compliment"]
   }
 ]

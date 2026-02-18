@@ -8,6 +8,7 @@
     "transliteration": "Ahmar",
     "english": "Red",
     "hebrew": "אדום",
+    "hebrewTransliteration": "אַחְמַר",
     "image": "red.png",
     "tags": ["colors", "adjective"]
   },
@@ -20,6 +21,7 @@
     "transliteration": "Azraq",
     "english": "Blue",
     "hebrew": "כחול",
+    "hebrewTransliteration": "אַזְרַק",
     "image": "blue.png",
     "tags": ["colors", "adjective"]
   },
@@ -32,6 +34,7 @@
     "transliteration": "Akhdar",
     "english": "Green",
     "hebrew": "ירוק",
+    "hebrewTransliteration": "אַחְ'דַר",
     "tags": ["colors", "adjective"]
   },
   {
@@ -43,6 +46,7 @@
     "transliteration": "Asfar",
     "english": "Yellow",
     "hebrew": "צהוב",
+    "hebrewTransliteration": "אַצְפַר",
     "image": "yellow.jpg",
     "tags": ["colors", "adjective"]
   },
@@ -55,6 +59,7 @@
     "transliteration": "Abyad",
     "english": "White",
     "hebrew": "לבן",
+    "hebrewTransliteration": "אַבְּיַד",
     "tags": ["colors", "adjective"]
   },
   {
@@ -66,6 +71,7 @@
     "transliteration": "Aswad",
     "english": "Black",
     "hebrew": "שחור",
+    "hebrewTransliteration": "אַסְוַד",
     "image": "black.jpg",
     "tags": ["colors", "adjective"]
   },
@@ -78,6 +84,7 @@
     "transliteration": "Burtuqali",
     "english": "Orange",
     "hebrew": "כתום",
+    "hebrewTransliteration": "בֻּרְתֻקַאלִי",
     "tags": ["colors", "adjective"]
   },
   {
@@ -89,6 +96,7 @@
     "transliteration": "Bunni",
     "english": "Brown",
     "hebrew": "חום",
+    "hebrewTransliteration": "בֻּנִּי",
     "tags": ["colors", "adjective"]
   }
 ]

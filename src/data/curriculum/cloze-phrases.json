@@ -10,7 +10,7 @@
     "hebrewDistractors": ["יש", "אין", "אוכל"],
     "distractors": ["בنام", "باكل", "بروح"],
     "explanation": "biddi means 'I want'",
-    "hebrewExplanation": "בדי פירושו 'רוצה'"
+    "hebrewExplanation": "בדי פירושו 'אני רוצה'"
   },
   {
     "id": "cloze_drink_water",
@@ -23,7 +23,7 @@
     "hebrewDistractors": ["אוכל", "ישן", "רואה"],
     "distractors": ["בنام", "باكل", "בشوف"],
     "explanation": "bashrab means 'I drink'",
-    "hebrewExplanation": "באשרב פירושו 'שותה'"
+    "hebrewExplanation": "באשרב פירושו 'אני שותה'"
   },
   {
     "id": "cloze_eat_bread",
@@ -35,7 +35,8 @@
     "hebrewTranslation": "אוכל",
     "hebrewDistractors": ["שותה", "ישן", "רואה"],
     "distractors": ["باكل", "بتاكل", "بناكل"],
-    "explanation": "بياكل (byakol) means 'he eats'"
+    "explanation": "بياكل (byakol) means 'he eats'",
+    "hebrewExplanation": "באשרב פירושו 'הוא אוכל'"
   },
   {
     "id": "cloze_morning_greeting",
@@ -47,7 +48,8 @@
     "hebrewTranslation": "בוקר",
     "hebrewDistractors": ["ערב", "צהריים", "לילה"],
     "distractors": ["مرحبا", "ليل", "ظهر"],
-    "explanation": "صباح الخير (sabah el-kheir) means 'good morning'"
+    "explanation": "صباح الخير (sabah el-kheir) means 'good morning'",
+    "hebrewExplanation": "סבאח אל-ח'יר פירושו 'בוקר טוב'"
   },
   {
     "id": "cloze_go_school",
@@ -58,8 +60,9 @@
     "correctAnswerEnglish": "go",
     "hebrewTranslation": "הולכים",
     "hebrewDistractors": ["אוכלים", "ישנים", "רואים"],
-    "distractors": ["بروح", "بتروح", "بيروح"],
-    "explanation": "بنروح (benruh) means 'we go'"
+    "distractors": ["ברوح", "בטרوح", "بيروح"],
+    "explanation": "بنروح (benruh) means 'we go'",
+    "hebrewExplanation": "בנאשרב פירושו 'אנחנו הולכים'"
   },
   {
     "id": "cloze_see_friend",
@@ -83,7 +86,8 @@
     "hebrewTranslation": "תודה רבה",
     "hebrewDistractors": ["בבקשה", "שלום", "להתראות"],
     "distractors": ["عفوا", "أهلا", "مرحبا"],
-    "explanation": "شكرا كتير (shukran ktir) means 'thank you very much'"
+    "explanation": "شكرا كتير (shukran ktir) means 'thank you very much'",
+    "hebrewExplanation": "שוקראן כתירו פירושו 'תודה רבה'"
   },
   {
     "id": "cloze_how_are_you",

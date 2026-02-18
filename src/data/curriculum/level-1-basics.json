@@ -41,6 +41,7 @@
     "transliteration": "Marhaba",
     "english": "Hello",
     "hebrew": "שלום",
+    "hebrewTransliteration": "מַרְחַבַּא",
     "audio": "/audio/marhaba.mp3",
     "alternatives": ["Ahlan"],
     "tags": ["greeting", "common"]
@@ -54,6 +55,7 @@
     "transliteration": "Kif 7alak?",
     "english": "How are you? (General)",
     "hebrew": "מה שלומך? (כללי)",
+    "hebrewTransliteration": "כִיף חַאלַכ?",
     "tags": ["greeting", "common"]
   },
   {
@@ -65,6 +67,7 @@
     "transliteration": "Kifak?",
     "english": "How are you? (to male)",
     "hebrew": "מה שלומך? (לזכר)",
+    "hebrewTransliteration": "כִיפַכ?",
     "tags": ["greeting", "common"]
   },
   {
@@ -76,6 +79,7 @@
     "transliteration": "Kifik?",
     "english": "How are you? (to female)",
     "hebrew": "מה שלומך? (לנקבה)",
+    "hebrewTransliteration": "כִיפִכ?",
     "tags": ["greeting", "common"]
   },
   {
@@ -87,6 +91,7 @@
     "transliteration": "Ana Mni7",
     "english": "I am good (male)",
     "hebrew": "אני בסדר (זכר)",
+    "hebrewTransliteration": "אַנַא מְנִיח",
     "tags": ["greeting", "reply"]
   },
   {
@@ -98,6 +103,7 @@
     "transliteration": "Ana Mni7a",
     "english": "I am good (female)",
     "hebrew": "אני בסדר (נקבה)",
+    "hebrewTransliteration": "אַנַא מְנִיחַה",
     "tags": ["greeting", "reply"]
   },
   {
@@ -109,6 +115,7 @@
     "transliteration": "Tamam",
     "english": "Great / Okay / All good",
     "hebrew": "סבבה / הכל טוב",
+    "hebrewTransliteration": "תַמַאם",
     "tags": ["greeting", "reply", "common"]
   },
   {
@@ -120,6 +127,7 @@
     "transliteration": "Shu a5brak?",
     "english": "What's your news?",
     "hebrew": "מה חדש? / מה נשמע?",
+    "hebrewTransliteration": "שׁוּ אַחְבַּארַכ?",
     "tags": ["greeting", "common"]
   },
   {
@@ -131,6 +139,7 @@
     "transliteration": "Shu fi ma fi?",
     "english": "What's up? (Literally: What is there, what is not there?)",
     "hebrew": "מה קורה? (מילולית: מה יש ומה אין?)",
+    "hebrewTransliteration": "שׁוּ פִי מַא פִי?",
     "tags": ["greeting", "colloquial"]
   },
   {
@@ -142,6 +151,7 @@
     "transliteration": "Sabah el-kheir",
     "english": "Good morning",
     "hebrew": "בוקר טוב",
+    "hebrewTransliteration": "צַבַּאח אִל-חֵ'יר",
     "tags": ["greeting", "common"]
   },
   {
@@ -153,6 +163,7 @@
     "transliteration": "Ahlan",
     "english": "Welcome / Hello",
     "hebrew": "אהלן / ברוכים הבאים",
+    "hebrewTransliteration": "אַהְלָן",
     "audio": "/audio/ahlan.mp3",
     "tags": ["greeting"]
   },
@@ -165,6 +176,7 @@
     "transliteration": "Shukran",
     "english": "Thank you",
     "hebrew": "תודה",
+    "hebrewTransliteration": "שׁוּכְּרַן",
     "tags": ["polite"]
   },
   {
@@ -176,6 +188,7 @@
     "transliteration": "Afwan",
     "english": "You're welcome / Excuse me",
     "hebrew": "על לא דבר / סליחה",
+    "hebrewTransliteration": "עַפְוַאן",
     "tags": ["polite"]
   },
   {
@@ -187,6 +200,7 @@
     "transliteration": "Ana",
     "english": "I",
     "hebrew": "אני",
+    "hebrewTransliteration": "אַנַא",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -198,6 +212,7 @@
     "transliteration": "Inte",
     "english": "You (male)",
     "hebrew": "אתה",
+    "hebrewTransliteration": "אִנְתֶה",
     "tags": ["grammar", "pronoun"]
   },
     {
@@ -209,6 +224,7 @@
     "transliteration": "Inti",
     "english": "You (female)",
     "hebrew": "את",
+    "hebrewTransliteration": "אִנְתִי",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -220,6 +236,7 @@
     "transliteration": "Huwwe",
     "english": "He",
     "hebrew": "הוא",
+    "hebrewTransliteration": "הֻוֶּה",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -231,6 +248,7 @@
     "transliteration": "Hiyye",
     "english": "She",
     "hebrew": "היא",
+    "hebrewTransliteration": "הִייֶה",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -242,6 +260,7 @@
     "transliteration": "Ihna",
     "english": "We",
     "hebrew": "אנחנו",
+    "hebrewTransliteration": "אִחְנַא",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -253,6 +272,7 @@
     "transliteration": "Intu",
     "english": "You (plural)",
     "hebrew": "אתם/אתן",
+    "hebrewTransliteration": "אִנְתוּ",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -264,6 +284,7 @@
     "transliteration": "Humme",
     "english": "They",
     "hebrew": "הם/הן",
+    "hebrewTransliteration": "הֻמֶּה",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -275,6 +296,7 @@
     "transliteration": "Masa el-kheir",
     "english": "Good evening",
     "hebrew": "ערב טוב",
+    "hebrewTransliteration": "מַסַא אִל-חֵ'יר",
     "tags": ["greeting", "common"]
   },
   {
@@ -286,6 +308,7 @@
     "transliteration": "Ma'assalama",
     "english": "Goodbye",
     "hebrew": "להתראות",
+    "hebrewTransliteration": "מַעַ אִ-סַּלַאנֶה",
     "tags": ["greeting", "common"]
   },
   {
@@ -297,6 +320,7 @@
     "transliteration": "Bashufak",
     "english": "See you",
     "hebrew": "נתראה",
+    "hebrewTransliteration": "בְּשׁוּפַכ",
     "tags": ["greeting", "common"]
   },
   {
@@ -308,6 +332,7 @@
     "transliteration": "Sari'",
     "english": "Fast",
     "hebrew": "מהיר",
+    "hebrewTransliteration": "סַרִיע",
     "tags": ["adjective"]
   },
   {
@@ -319,6 +344,7 @@
     "transliteration": "Bati'",
     "english": "Slow",
     "hebrew": "איטי",
+    "hebrewTransliteration": "בָּטִי",
     "tags": ["adjective"]
   },
   {
@@ -330,6 +356,7 @@
     "transliteration": "B-sur'a",
     "english": "Quickly / Fast",
     "hebrew": "מהר",
+    "hebrewTransliteration": "בְּסוּרְעַה",
     "tags": ["adverb"]
   },
   {
@@ -341,6 +368,7 @@
     "transliteration": "Shway shway",
     "english": "Slowly / Slow down",
     "hebrew": "לאט לאט",
+    "hebrewTransliteration": "שְׁוַאי שְׁוַאי",
     "tags": ["adverb", "common"]
   },
   {
@@ -352,6 +380,7 @@
     "transliteration": "Ya'ni",
     "english": "Kind of / I mean / That is",
     "hebrew": "יעני / כלומר",
+    "hebrewTransliteration": "יַעְנִי",
     "tags": ["filler", "common"]
   }
 ]

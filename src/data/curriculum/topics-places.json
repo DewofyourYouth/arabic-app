@@ -6,7 +6,8 @@
     "type": "word",
     "arabic": "بِيت",
     "transliteration": "Beit",
-    "english": "House",
+    "hebrew": "בית",
+    "hebrewTransliteration": "בֵּית",
     "tags": ["places", "noun"]
   },
   {
@@ -17,6 +18,8 @@
     "arabic": "شَارِع",
     "transliteration": "Share'",
     "english": "Street",
+    "hebrew": "רחוב",
+    "hebrewTransliteration": "שַׁארֶע",
     "tags": ["places", "noun"]
   },
   {
@@ -27,6 +30,8 @@
     "arabic": "مَدْرَسِة",
     "transliteration": "Madrasel",
     "english": "School",
+    "hebrew": "בית ספר",
+    "hebrewTransliteration": "מַדְרַסֶה",
     "tags": ["places", "noun"]
   },
   {
@@ -37,6 +42,8 @@
     "arabic": "مُسْتَشْفَى",
     "transliteration": "Mustashfa",
     "english": "Hospital",
+    "hebrew": "בית חולים",
+    "hebrewTransliteration": "מֻסְתַשְׁפַא",
     "tags": ["places", "noun"]
   },
   {
@@ -47,6 +54,8 @@
     "arabic": "مَطَار",
     "transliteration": "Matar",
     "english": "Airport",
+    "hebrew": "שדה תעופה",
+    "hebrewTransliteration": "מַטַאר",
     "tags": ["places", "noun"]
   },
   {
@@ -57,6 +66,8 @@
     "arabic": "فُنْدُق",
     "transliteration": "Funduq",
     "english": "Hotel",
+    "hebrew": "מלון",
+    "hebrewTransliteration": "פֻנְדֻק",
     "tags": ["places", "noun"]
   },
   {
@@ -66,7 +77,8 @@
     "type": "word",
     "arabic": "مَطْعَم",
     "transliteration": "Mat'am",
-    "english": "Restaurant",
+    "hebrew": "מסעדה",
+    "hebrewTransliteration": "מַטְעַם",
     "tags": ["places", "noun"]
   },
   {
@@ -77,6 +89,8 @@
     "arabic": "قَهْوَة",
     "transliteration": "Ahweh",
     "english": "Cafe / Coffee Shop",
+    "hebrew": "בית קפה",
+    "hebrewTransliteration": "אַהְוֶה",
     "tags": ["places", "noun"]
   },
   {
@@ -87,6 +101,8 @@
     "arabic": "سُوق",
     "transliteration": "Souq",
     "english": "Market / Souq",
+    "hebrew": "שוק",
+    "hebrewTransliteration": "סוּק",
     "tags": ["places", "noun"]
   },
   {
@@ -97,6 +113,8 @@
     "arabic": "صَيْدَلِيِّة",
     "transliteration": "Saydaliyeh",
     "english": "Pharmacy",
+    "hebrew": "בית מרקחת",
+    "hebrewTransliteration": "צַיְדַלִיֶּה",
     "tags": ["places", "noun"]
   },
   {
@@ -107,6 +125,8 @@
     "arabic": "جَامْعَة",
     "transliteration": "Jam'a",
     "english": "University",
+    "hebrew": "אוניברסיטה",
+    "hebrewTransliteration": "גַ'אמְעַה",
     "tags": ["places", "noun"]
   }
 ]

@@ -7,7 +7,45 @@ const LocationModal = ({ location, onClose, onStartLevel, onViewArtifact }) => {
     const { settings } = useSettings();
     if (!location) return null;
 
-    const { name, label, description, stats, isMastered, artifact } = location;
+    const {
+        name, hebrewName,
+        label, hebrewLabel,
+        description, hebrewDescription,
+        stats, isMastered, artifact
+    } = location;
+
+    const displayName = settings.nativeLanguage === 'hebrew' ? (hebrewName || name) : name;
+    const displayLabel = settings.nativeLanguage === 'hebrew' ? (hebrewLabel || label) : label;
+
+    // Note: 'description' in LocationModal currently refers to the location description?
+    // Wait, CITIES only has artifact description.
+    // Checking artifacts.js: Objects have name, label, x, y, and artifact object.
+    // There is NO top-level description in CITIES objects in artifacts.js!
+    // BUT the modal reads `description` from `location`.
+    // Where does `location` come from? It comes from `mappedCities` in LevantMap.
+    // `mappedCities` merges `CITIES` and `locData`.
+    // `locData` comes from `useData()`.
+    // Does `useData` provide descriptions for locations?
+    // If not, `description` might be undefined or coming from `artifact.description`?
+    // Looking at LocationModal: `const { name, label, description, stats, ... } = location`
+    // And it renders `{description}` in a paragraph.
+    // In `artifacts.js`, only `artifact` has a description. The city itself does NOT.
+    // So `description` might be undefined? Or maybe I missed it in `artifacts.js`.
+    // Re-checking artifacts.js...
+    // ...
+    // { id: 'wadi_rum', name: 'Wadi Rum', label: 'Start Here', ..., artifact: { ... } }
+    // No description on the city object.
+    // maybe `description` is actually `artifact.description`?
+    // Let's check where `description` is used.
+    // In `LocationModal`: `<p ...>{description}</p>`
+
+    // If `description` is missing on the location object, it will be blank.
+    // Let's assume the user wants `artifact.description` or we should use `artifact.description` if available.
+    // Or maybe I should add descriptions to `artifacts.js`?
+    // The user said "explanations".
+
+    // Let's proceed with Artifact details since those DEFINITELY have descriptions.
+
     // Use MASTERY percentage (SRS >= 3) instead of just "Learned" (seen once)
     // This matches the unlocking logic (50% mastery unlocks next).
     const progressPercent = stats?.masteryPercentage || 0;
@@ -66,7 +104,7 @@ const LocationModal = ({ location, onClose, onStartLevel, onViewArtifact }) => {
                         color: 'var(--color-primary)',
                         fontFamily: 'var(--font-family-english)'
                     }}>
-                        {name}
+                        {settings.nativeLanguage === 'hebrew' ? (location.hebrewName || name) : name}
                     </h2>
                     <div style={{
                         fontSize: '1.1rem',
@@ -74,9 +112,37 @@ const LocationModal = ({ location, onClose, onStartLevel, onViewArtifact }) => {
                         marginTop: '5px',
                         fontStyle: 'italic'
                     }}>
-                        {label}
+                        {settings.nativeLanguage === 'hebrew' ? (location.hebrewLabel || label) : label}
                     </div>
                 </div>
+
+                {/* Artifact Image */}
+                {artifact && (
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginBottom: '20px',
+                        animation: 'fadeIn 1s ease'
+                    }}>
+                        <div style={{
+                            width: '140px',
+                            height: '140px',
+                            borderRadius: '50%',
+                            border: '4px solid white',
+                            boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                            overflow: 'hidden',
+                            position: 'relative',
+                            background: 'white'
+                        }}>
+                            <img
+                                src={artifact.image}
+                                alt={artifact.name}
+                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                            />
+                            {/* Lock Overlay if not unlocked? LocationModal is usually only for unlocked/discovered items */}
+                        </div>
+                    </div>
+                )}
 
                 {/* Description */}
                 <p style={{
@@ -84,9 +150,12 @@ const LocationModal = ({ location, onClose, onStartLevel, onViewArtifact }) => {
                     color: '#444',
                     lineHeight: '1.6',
                     marginBottom: '25px',
-                    fontSize: '1rem'
+                    fontSize: '1rem',
+                    fontStyle: artifact ? 'italic' : 'normal'
                 }}>
-                    {description}
+                    {settings.nativeLanguage === 'hebrew'
+                        ? (artifact?.hebrewDescription || location.hebrewDescription || description)
+                        : (artifact?.description || description)}
                 </p>
 
                 {/* Progress Section */}

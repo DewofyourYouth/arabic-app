@@ -224,6 +224,7 @@ function AppContent() {
           correctAnswer: cloze.correctAnswer,
           options,
           explanation: cloze.explanation,
+          hebrewExplanation: cloze.hebrewExplanation,
           type: 'phrase',               // For display consistency
           srs: { repetition: 1, interval: 1, easeFactor: 2.5, nextReview: new Date() }
         });
@@ -301,37 +302,58 @@ function AppContent() {
     let grade = 0;
     let xpGain = 0;
 
+    let feedbackType = 'correct';
+    let feedbackBaseMessage = 'Correct!';
+
+    const isHebrew = settings.nativeLanguage === 'hebrew';
+
     if (result === 'correct') { // From Quiz
       playCorrect();
       grade = 4;
       xpGain = 10;
-      setShowFeedback({ type: 'correct', message: 'Correct!' });
+      feedbackType = 'correct';
+      feedbackBaseMessage = isHebrew ? 'נכון!' : 'Correct!';
     } else if (result === 'incorrect') { // From Quiz
       playIncorrect();
       grade = 1;
       xpGain = 2;
-      setShowFeedback({ type: 'incorrect', message: 'Incorrect' });
+      feedbackType = 'incorrect';
+      feedbackBaseMessage = isHebrew ? 'לא נכון' : 'Incorrect';
     } else if (result === 'again') {
       playIncorrect();
       grade = 1; // Fail / Reset
       xpGain = 2;
-      setShowFeedback({ type: 'again', message: 'Again' });
+      feedbackType = 'again';
+      feedbackBaseMessage = isHebrew ? 'שוב' : 'Again';
     } else if (result === 'hard') {
       playCorrect();
       grade = 3; // Hard
       xpGain = 5;
-      setShowFeedback({ type: 'hard', message: 'Hard' });
+      feedbackType = 'hard';
+      feedbackBaseMessage = isHebrew ? 'קשה' : 'Hard';
     } else if (result === 'good') {
       playCorrect();
       grade = 4; // Good
       xpGain = 10;
-      setShowFeedback({ type: 'good', message: 'Good' });
+      feedbackType = 'good';
+      feedbackBaseMessage = isHebrew ? 'טוב' : 'Good';
     } else if (result === 'easy') {
       playCorrect();
       grade = 5; // Easy
       xpGain = 15;
-      setShowFeedback({ type: 'easy', message: 'Easy!' });
+      feedbackType = 'easy';
+      feedbackBaseMessage = isHebrew ? 'קל!' : 'Easy!';
     }
+
+    // Determine Explanation
+    const explanation = isHebrew ? (currentCard.hebrewExplanation || currentCard.explanation) : currentCard.explanation;
+    let fullMessage = feedbackBaseMessage;
+
+    if (explanation && (result === 'correct' || result === 'incorrect')) {
+      fullMessage += '\n\n' + explanation;
+    }
+
+    setShowFeedback({ type: feedbackType, message: fullMessage });
 
     // Update Data
     const newSrs = calculateSrs(currentCard.srs, grade);
@@ -345,6 +367,9 @@ function AppContent() {
     setStats(prev => ({ ...prev, [result]: prev[result] + 1 }));
 
     // Delay navigation to show feedback
+    // Increase delay if there is an explanation to read
+    const delay = explanation ? 3500 : 1500;
+
     setTimeout(() => {
       setShowFeedback(null);
 
@@ -359,7 +384,7 @@ function AppContent() {
         trackSessionComplete(stats);
         setView('summary');
       }
-    }, 1500);
+    }, delay);
   };
 
   const handleNavigation = (targetView) => {

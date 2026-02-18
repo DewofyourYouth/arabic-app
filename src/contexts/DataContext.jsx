@@ -40,7 +40,8 @@ export function DataProvider({ children }) {
       try {
         console.log("DataContext: Fetching curriculum...");
         // 1. Load from Local Storage first (fast render)
-        const localData = localStorage.getItem('curriculum_cache');
+        const CACHE_KEY = 'curriculum_cache_v2'; // Bumped version to force Hebrew updates
+        const localData = localStorage.getItem(CACHE_KEY);
         const localMetadata = localStorage.getItem('curriculum_metadata');
 
         // Default to static JSON
@@ -104,7 +105,7 @@ export function DataProvider({ children }) {
             setLevelsData(reconstructedLevels);
             setCurriculum(combinedCurriculumFromLevels(reconstructedLevels));
 
-            localStorage.setItem('curriculum_cache', JSON.stringify(reconstructedLevels));
+            localStorage.setItem('curriculum_cache_v2', JSON.stringify(reconstructedLevels));
             localStorage.setItem('curriculum_metadata', JSON.stringify(remoteMetadata));
             console.log("Curriculum updated.");
           } else {

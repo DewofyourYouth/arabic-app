@@ -166,7 +166,7 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
                 borderRadius: '8px', fontSize: '0.8rem', fontWeight: 'bold',
                 pointerEvents: 'none', whiteSpace: 'nowrap'
               }}>
-                {city.name} {isMastered && '⭐'}
+                {settings.nativeLanguage === 'hebrew' ? (city.hebrewName || city.name) : city.name} {isMastered && '⭐'}
               </div>
             )}
           </div>
