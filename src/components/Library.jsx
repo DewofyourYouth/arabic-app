@@ -1,15 +1,26 @@
 import React, { useState, useMemo } from 'react';
 import { useAudio } from '../hooks/useAudio';
 import { useSettings } from '../contexts/SettingsContext';
+import { useData } from '../contexts/DataContext';
+import { CITIES } from '../data/artifacts';
 
-const Library = ({ cards }) => {
+const Library = ({ cards: rawCards }) => {
+  // Deduplicate cards to ensure unique entries in the library
+  const cards = useMemo(() => {
+    const seen = new Set();
+    return rawCards.filter(c => {
+      if (seen.has(c.id)) return false;
+      seen.add(c.id);
+      return true;
+    });
+  }, [rawCards]);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterLevel, setFilterLevel] = useState('all');
   const [filterCategory, setFilterCategory] = useState('all');
   const [sortBy, setSortBy] = useState('mastery'); // 'mastery', 'alphabetical', 'recent'
-  
   const { playPronunciation } = useAudio();
   const { settings } = useSettings();
+  const { userData } = useData();
 
   // Calculate statistics
   const stats = useMemo(() => {
@@ -18,7 +29,7 @@ const Library = ({ cards }) => {
     const intermediate = cards.filter(c => c.srs.repetition >= 3 && c.srs.repetition <= 5);
     const advanced = cards.filter(c => c.srs.repetition >= 6 && c.srs.repetition <= 8);
     const master = cards.filter(c => c.srs.repetition >= 9);
-    
+
     const categories = {};
     cards.forEach(card => {
       const cat = card.category || card.type || 'general';
@@ -52,9 +63,10 @@ const Library = ({ cards }) => {
     // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
-      filtered = filtered.filter(card => 
+      filtered = filtered.filter(card =>
         card.arabic?.toLowerCase().includes(query) ||
         card.english?.toLowerCase().includes(query) ||
+        card.hebrew?.includes(query) ||
         card.transliteration?.toLowerCase().includes(query)
       );
     }
@@ -112,8 +124,8 @@ const Library = ({ cards }) => {
   return (
     <div style={{ padding: 'var(--spacing-4)', maxWidth: '1200px', margin: '0 auto' }}>
       {/* Header */}
-      <h2 style={{ 
-        color: 'var(--color-primary)', 
+      <h2 style={{
+        color: 'var(--color-primary)',
         marginBottom: 'var(--spacing-4)',
         fontSize: 'var(--font-size-2xl)',
         fontWeight: '800'
@@ -122,8 +134,8 @@ const Library = ({ cards }) => {
       </h2>
 
       {/* Stats Overview */}
-      <div style={{ 
-        display: 'grid', 
+      <div style={{
+        display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
         gap: 'var(--spacing-3)',
         marginBottom: 'var(--spacing-4)'
@@ -173,7 +185,92 @@ const Library = ({ cards }) => {
       )}
 
       {/* Search and Filters */}
-      <div style={{ 
+
+      {/* Artifacts Collection */}
+      <div style={{
+        background: 'linear-gradient(135deg, #FF9966 0%, #FF5E62 100%)',
+        padding: 'var(--spacing-4)',
+        borderRadius: 'var(--radius-lg)',
+        marginBottom: 'var(--spacing-4)',
+        boxShadow: 'var(--shadow-card)',
+        color: 'white'
+      }}>
+        <h3 style={{ margin: '0 0 var(--spacing-3) 0', fontSize: 'var(--font-size-lg)', fontWeight: 'bold' }}>
+          🏺 My Artifacts
+        </h3>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))',
+          gap: 'var(--spacing-3)'
+        }}>
+          {CITIES.map((city) => {
+            const isUnlocked = userData?.artifacts?.includes(city.id);
+
+            return (
+              <div key={city.id}
+                title={isUnlocked ? `${city.artifact.name}: ${city.artifact.description}` : 'Unknown Artifact'}
+                style={{
+                  background: 'rgba(255,255,255,0.2)',
+                  backdropFilter: 'blur(5px)',
+                  padding: 'var(--spacing-2)',
+                  borderRadius: 'var(--radius-md)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '4px',
+                  border: isUnlocked ? '1px solid rgba(255,255,255,0.5)' : '1px solid rgba(255,255,255,0.1)',
+                  opacity: isUnlocked ? 1 : 0.5,
+                  filter: isUnlocked ? 'none' : 'grayscale(1) brightness(0.7)',
+                  transition: 'all 0.3s ease',
+                  cursor: 'help'
+                }}
+                onMouseEnter={(e) => {
+                  if (isUnlocked) {
+                    e.currentTarget.style.transform = 'scale(1.05)';
+                    e.currentTarget.style.background = 'rgba(255,255,255,0.3)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
+                }}
+              >
+                <div style={{
+                  width: '50px',
+                  height: '50px',
+                  borderRadius: '50%',
+                  background: '#fff',
+                  padding: '2px', // Border inside
+                  overflow: 'hidden',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '24px'
+                }}>
+                  {isUnlocked ? (
+                    <img src={city.artifact.image} alt={city.artifact.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                  ) : (
+                    <span>🔒</span>
+                  )}
+                </div>
+                <div style={{
+                  fontSize: '0.7rem',
+                  textAlign: 'center',
+                  whiteSpace: 'nowrap',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  width: '100%'
+                }}>
+                  {isUnlocked ? city.artifact.name : '???'}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Search and Filters */}
+      <div style={{
         background: 'white',
         padding: 'var(--spacing-4)',
         borderRadius: 'var(--radius-lg)',
@@ -202,8 +299,8 @@ const Library = ({ cards }) => {
 
         {/* Filters */}
         <div style={{ display: 'flex', gap: 'var(--spacing-2)', flexWrap: 'wrap' }}>
-          <select 
-            value={filterLevel} 
+          <select
+            value={filterLevel}
             onChange={(e) => setFilterLevel(e.target.value)}
             style={filterSelectStyle}
           >
@@ -215,8 +312,8 @@ const Library = ({ cards }) => {
             <option value="master">Master</option>
           </select>
 
-          <select 
-            value={filterCategory} 
+          <select
+            value={filterCategory}
             onChange={(e) => setFilterCategory(e.target.value)}
             style={filterSelectStyle}
           >
@@ -226,8 +323,8 @@ const Library = ({ cards }) => {
             ))}
           </select>
 
-          <select 
-            value={sortBy} 
+          <select
+            value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
             style={filterSelectStyle}
           >
@@ -238,15 +335,15 @@ const Library = ({ cards }) => {
       </div>
 
       {/* Cards Grid */}
-      <div style={{ 
-        display: 'grid', 
+      <div style={{
+        display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
         gap: 'var(--spacing-3)'
       }}>
         {filteredCards.map((card) => {
           const badge = getMasteryBadge(card.srs.repetition);
           return (
-            <div 
+            <div
               key={card.id}
               style={{
                 backgroundColor: 'white',
@@ -302,8 +399,8 @@ const Library = ({ cards }) => {
 
               {/* Arabic */}
               {settings.showArabicScript && (
-                <div style={{ 
-                  fontSize: 'var(--font-size-2xl)', 
+                <div style={{
+                  fontSize: 'var(--font-size-2xl)',
                   fontFamily: 'Amiri, serif',
                   fontWeight: 'bold',
                   color: 'var(--color-primary)',
@@ -317,8 +414,8 @@ const Library = ({ cards }) => {
 
               {/* Transliteration */}
               {card.transliteration && (
-                <div style={{ 
-                  fontSize: '0.9rem', 
+                <div style={{
+                  fontSize: '0.9rem',
                   color: '#888',
                   fontStyle: 'italic',
                   marginBottom: 'var(--spacing-1)'
@@ -327,14 +424,15 @@ const Library = ({ cards }) => {
                 </div>
               )}
 
-              {/* English */}
-              <div style={{ 
+              {/* English/Hebrew */}
+              <div style={{
                 fontSize: 'var(--font-size-lg)',
                 color: 'var(--color-text)',
                 fontWeight: '600',
-                marginBottom: 'var(--spacing-3)'
+                marginBottom: 'var(--spacing-3)',
+                direction: settings.nativeLanguage === 'hebrew' ? 'rtl' : 'ltr'
               }}>
-                {card.english}
+                {settings.nativeLanguage === 'hebrew' ? (card.hebrew || card.english) : card.english}
               </div>
 
               {/* Audio Button & Progress */}
@@ -361,8 +459,8 @@ const Library = ({ cards }) => {
                   🔊 Play
                 </button>
 
-                <div style={{ 
-                  fontSize: '0.8rem', 
+                <div style={{
+                  fontSize: '0.8rem',
                   color: '#888',
                   fontWeight: '600'
                 }}>
@@ -376,14 +474,14 @@ const Library = ({ cards }) => {
 
       {/* Empty State */}
       {filteredCards.length === 0 && (
-        <div style={{ 
-          textAlign: 'center', 
+        <div style={{
+          textAlign: 'center',
           padding: 'var(--spacing-8)',
-          color: '#888' 
+          color: '#888'
         }}>
           <div style={{ fontSize: '3rem', marginBottom: 'var(--spacing-2)' }}>📭</div>
           <p style={{ fontSize: 'var(--font-size-lg)', fontWeight: '600' }}>
-            {searchQuery || filterLevel !== 'all' || filterCategory !== 'all' 
+            {searchQuery || filterLevel !== 'all' || filterCategory !== 'all'
               ? 'No words match your filters'
               : 'No words yet. Start practicing!'}
           </p>
@@ -404,19 +502,19 @@ const StatCard = ({ label, value, color }) => (
     border: `3px solid ${color}20`,
     transition: 'transform 0.2s'
   }}
-  onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-  onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+    onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+    onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
   >
-    <div style={{ 
-      fontSize: 'var(--font-size-2xl)', 
+    <div style={{
+      fontSize: 'var(--font-size-2xl)',
       fontWeight: 'bold',
       color: color,
       marginBottom: '4px'
     }}>
       {value}
     </div>
-    <div style={{ 
-      fontSize: '0.85rem', 
+    <div style={{
+      fontSize: '0.85rem',
       color: '#666',
       fontWeight: '600'
     }}>

@@ -11,7 +11,7 @@ const IntroCard = ({ cardData, onNext }) => {
   useEffect(() => {
     // Small delay for smoother UX
     const timer = setTimeout(() => {
-        playPronunciation(arabic);
+      playPronunciation(arabic);
     }, 500);
     return () => clearTimeout(timer);
   }, [arabic, playPronunciation]);
@@ -27,7 +27,7 @@ const IntroCard = ({ cardData, onNext }) => {
       alignItems: 'center',
       animation: 'fadeIn 0.5s ease'
     }}>
-      
+
       <div style={{
         background: 'white',
         padding: 'var(--spacing-8)',
@@ -41,31 +41,31 @@ const IntroCard = ({ cardData, onNext }) => {
       }}>
         {/* "New Word" Badge */}
         <div style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            background: 'var(--color-accent)',
-            color: 'white',
-            fontSize: '0.8rem',
-            fontWeight: 'bold',
-            padding: '4px',
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
-            textAlign: 'center'
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          background: 'var(--color-accent)',
+          color: 'white',
+          fontSize: '0.8rem',
+          fontWeight: 'bold',
+          padding: '4px',
+          textTransform: 'uppercase',
+          letterSpacing: '1px',
+          textAlign: 'center'
         }}>
-            New Word
+          {settings.nativeLanguage === 'hebrew' ? 'מילה חדשה' : 'New Word'}
         </div>
 
         {/* Vocabulary Image */}
         {cardData.image && (
-          <div style={{ 
+          <div style={{
             marginTop: 'var(--spacing-6)',
             marginBottom: 'var(--spacing-2)',
             display: 'flex',
             justifyContent: 'center'
           }}>
-            <img 
+            <img
               src={`/src/assets/vocab/${cardData.image}`}
               alt={english}
               style={{
@@ -83,91 +83,92 @@ const IntroCard = ({ cardData, onNext }) => {
         )}
 
         <div style={{ marginTop: 'var(--spacing-4)' }}>
-           {english && <h3 style={{ 
-            fontSize: '1.5rem', 
+          {(english || cardData.hebrew) && <h3 style={{
+            fontSize: '1.5rem',
             color: 'var(--color-text)',
             fontFamily: 'var(--font-family-english)',
-            marginBottom: 'var(--spacing-4)'
-            }}>
-            {english}
-            </h3>}
+            marginBottom: 'var(--spacing-4)',
+            direction: settings.nativeLanguage === 'hebrew' ? 'rtl' : 'ltr'
+          }}>
+            {settings.nativeLanguage === 'hebrew' ? (cardData.hebrew || english) : english}
+          </h3>}
 
-            {/* Dynamic Layout based on Card Type */}
-            {cardData.tags && cardData.tags.includes('guide') ? (
-                /* GUIDE LAYOUT: Emphasize English/Transliteration */
-                <>
-                   <h2 style={{ 
-                        fontSize: '3rem', 
-                        color: 'var(--color-primary)', 
-                        marginBottom: 'var(--spacing-2)',
-                        fontFamily: 'var(--font-family-english)',
-                    }}>
-                        {transliteration}
-                    </h2>
-                    
-                    {settings.showArabicScript && (
-                        <h3 style={{ 
-                            fontSize: '2rem', 
-                            color: 'var(--color-text-light)',
-                            marginBottom: 'var(--spacing-4)',
-                            fontFamily: 'var(--font-family-arabic)',
-                            direction: 'rtl'
-                        }}>
-                            {arabic}
-                        </h3>
-                    )}
-                </>
-            ) : (
-                /* STANDARD LAYOUT: Emphasize Arabic */
-                <>
-                    {settings.showArabicScript && (
-                      <h2 style={{ 
-                      fontSize: '3rem', 
-                      color: 'var(--color-primary)', 
-                      marginBottom: 'var(--spacing-2)',
-                      fontFamily: 'var(--font-family-arabic)',
-                      direction: 'rtl'
-                      }}>
-                      {arabic}
-                      </h2>
-                    )}
-                    <p style={{ 
-                    fontSize: '1.2rem', 
-                    color: 'var(--color-text-light)',
-                    marginBottom: 'var(--spacing-4)',
-                    fontStyle: 'italic'
-                    }}>
-                    {transliteration}
-                    </p>
-                </>
-            )}
-            
-            <hr style={{ border: 'none', borderTop: '2px dashed #eee', margin: 'var(--spacing-4) 0' }} />
+          {/* Dynamic Layout based on Card Type */}
+          {cardData.tags && cardData.tags.includes('guide') ? (
+            /* GUIDE LAYOUT: Emphasize English/Transliteration */
+            <>
+              <h2 style={{
+                fontSize: '3rem',
+                color: 'var(--color-primary)',
+                marginBottom: 'var(--spacing-2)',
+                fontFamily: 'var(--font-family-english)',
+              }}>
+                {transliteration}
+              </h2>
+
+              {settings.showArabicScript && (
+                <h3 style={{
+                  fontSize: '2rem',
+                  color: 'var(--color-text-light)',
+                  marginBottom: 'var(--spacing-4)',
+                  fontFamily: 'var(--font-family-arabic)',
+                  direction: 'rtl'
+                }}>
+                  {arabic}
+                </h3>
+              )}
+            </>
+          ) : (
+            /* STANDARD LAYOUT: Emphasize Arabic */
+            <>
+              {settings.showArabicScript && (
+                <h2 style={{
+                  fontSize: '3rem',
+                  color: 'var(--color-primary)',
+                  marginBottom: 'var(--spacing-2)',
+                  fontFamily: 'var(--font-family-arabic)',
+                  direction: 'rtl'
+                }}>
+                  {arabic}
+                </h2>
+              )}
+              <p style={{
+                fontSize: '1.2rem',
+                color: 'var(--color-text-light)',
+                marginBottom: 'var(--spacing-4)',
+                fontStyle: 'italic'
+              }}>
+                {transliteration}
+              </p>
+            </>
+          )}
+
+          <hr style={{ border: 'none', borderTop: '2px dashed #eee', margin: 'var(--spacing-4) 0' }} />
 
 
-            <span style={{ fontSize: '0.9rem', color: '#999' }}>({type})</span>
+          <span style={{ fontSize: '0.9rem', color: '#999' }}>({type})</span>
         </div>
 
-        <button 
-            onClick={() => playPronunciation(arabic)}
-            style={{
-                marginTop: 'var(--spacing-6)',
-                background: 'var(--color-background)',
-                border: 'none',
-                borderRadius: 'var(--radius-full)',
-                width: '50px',
-                height: '50px',
-                fontSize: '1.5rem',
-                cursor: 'pointer',
-                boxShadow: 'var(--shadow-sm)',
-                color: 'var(--color-primary)'
-            }}
+        <button
+          onClick={() => playPronunciation(arabic)}
+          style={{
+            marginTop: 'var(--spacing-6)',
+            background: 'var(--color-background)',
+            border: 'none',
+            borderRadius: 'var(--radius-full)',
+            width: '50px',
+            height: '50px',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            boxShadow: 'var(--shadow-sm)',
+            color: 'var(--color-primary)'
+          }}
         >
-            🔊
+          🔊
         </button>
       </div>
 
-      <button 
+      <button
         onClick={onNext}
         style={{
           background: 'var(--color-primary)',
@@ -183,7 +184,7 @@ const IntroCard = ({ cardData, onNext }) => {
           width: '100%'
         }}
       >
-        Got it! 👍
+        {settings.nativeLanguage === 'hebrew' ? 'הבנתי! 👍' : 'Got it! 👍'}
       </button>
 
     </div>

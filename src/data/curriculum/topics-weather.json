@@ -6,6 +6,8 @@
     "type": "word",
     "arabic": "شُوب",
     "transliteration": "Shob",
+    "hebrew": "חם",
+    "hebrewTransliteration": "שׁוֹב",
     "english": "Hot",
     "tags": ["weather"]
   },
@@ -16,6 +18,8 @@
     "type": "word",
     "arabic": "بَرِد",
     "transliteration": "Barid",
+    "hebrew": "קר",
+    "hebrewTransliteration": "בָּרִיד",
     "english": "Cold",
     "tags": ["weather"]
   },
@@ -26,6 +30,8 @@
     "type": "word",
     "arabic": "شِتَا",
     "transliteration": "Shita",
+    "hebrew": "גשם / חורף",
+    "hebrewTransliteration": "שִׁיטַא",
     "english": "Rain / Winter",
     "tags": ["weather"]
   },
@@ -37,6 +43,8 @@
     "arabic": "شَمِس",
     "transliteration": "Shamis",
     "english": "Sun",
+    "hebrew": "שמש",
+    "hebrewTransliteration": "שֶׁמֶשׁ",
     "tags": ["weather"]
   },
   {
@@ -47,6 +55,8 @@
     "arabic": "كِيف الطَّقْص الْيُوم؟",
     "transliteration": "Kif el-taqs el-yom?",
     "english": "How is the weather today?",
+    "hebrew": "איך מזג האוויר היום?",
+    "hebrewTransliteration": "אֵיךְ מֶזֶג הָאֲוִיר הַיּוֹם?",
     "tags": ["weather", "question"]
   },
   {
@@ -57,6 +67,8 @@
     "arabic": "الْجَوّ حِلُو",
     "transliteration": "El-jaww hilu",
     "english": "The weather is beautiful",
+    "hebrew": "מזג האוויר יפה",
+    "hebrewTransliteration": "מֶזֶג הָאֲוִיר יָפֶה",
     "tags": ["weather"]
   }
 ]

@@ -7,6 +7,7 @@
     "arabic": "أَب",
     "transliteration": "Ab",
     "english": "Father",
+    "hebrew": "אבא",
     "tags": ["family", "noun"]
   },
   {
@@ -17,6 +18,7 @@
     "arabic": "إِم",
     "transliteration": "Imm",
     "english": "Mother",
+    "hebrew": "אמא",
     "tags": ["family", "noun"]
   },
   {
@@ -27,6 +29,7 @@
     "arabic": "أَخ",
     "transliteration": "Akh",
     "english": "Brother",
+    "hebrew": "אח",
     "tags": ["family", "noun"]
   },
   {
@@ -37,6 +40,7 @@
     "arabic": "أُخْت",
     "transliteration": "Ukht",
     "english": "Sister",
+    "hebrew": "אחות",
     "tags": ["family", "noun"]
   },
   {
@@ -47,6 +51,7 @@
     "arabic": "صَاحِب",
     "transliteration": "Sahib",
     "english": "Friend (male)",
+    "hebrew": "חבר",
     "tags": ["people", "noun"]
   },
   {
@@ -57,6 +62,7 @@
     "arabic": "صَاحْبِة",
     "transliteration": "Sahbeh",
     "english": "Friend (female)",
+    "hebrew": "חברה",
     "tags": ["people", "noun"]
   },
   {
@@ -67,6 +73,7 @@
     "arabic": "وَلَد",
     "transliteration": "Walad",
     "english": "Boy",
+    "hebrew": "ילד",
     "tags": ["people", "noun"]
   },
   {
@@ -77,6 +84,7 @@
     "arabic": "بِنْت",
     "transliteration": "Bint",
     "english": "Girl / Daughter",
+    "hebrew": "ילדה / בת",
     "tags": ["people", "noun"]
   },
   {
@@ -87,6 +95,7 @@
     "arabic": "زَلَمِة",
     "transliteration": "Zalameh",
     "english": "Man",
+    "hebrew": "גבר / איש",
     "tags": ["people", "noun"]
   },
   {
@@ -97,6 +106,7 @@
     "arabic": "مَرَة",
     "transliteration": "Mara",
     "english": "Woman",
+    "hebrew": "אישה",
     "tags": ["people", "noun"]
   },
   {
@@ -107,6 +117,7 @@
     "arabic": "سِيدُو",
     "transliteration": "Sido",
     "english": "Grandfather",
+    "hebrew": "סבא",
     "tags": ["family", "noun"]
   },
   {
@@ -117,6 +128,7 @@
     "arabic": "تِيتَة",
     "transliteration": "Teta",
     "english": "Grandmother",
+    "hebrew": "סבתא",
     "tags": ["family", "noun"]
   },
   {
@@ -127,6 +139,7 @@
     "arabic": "عَمّ",
     "transliteration": "'Amm",
     "english": "Uncle (Paternal)",
+    "hebrew": "דוד (אבא)",
     "tags": ["family", "noun"]
   },
   {
@@ -137,6 +150,7 @@
     "arabic": "عَمَّة",
     "transliteration": "'Ammeh",
     "english": "Aunt (Paternal)",
+    "hebrew": "דודה (אבא)",
     "tags": ["family", "noun"]
   },
   {
@@ -147,6 +161,7 @@
     "arabic": "خَال",
     "transliteration": "Khal",
     "english": "Uncle (Maternal)",
+    "hebrew": "דוד (אמא)",
     "tags": ["family", "noun"]
   },
   {
@@ -157,6 +172,7 @@
     "arabic": "خَالَة",
     "transliteration": "Khaleh",
     "english": "Aunt (Maternal)",
+    "hebrew": "דודה (אמא)",
     "tags": ["family", "noun"]
   },
   {
@@ -167,6 +183,7 @@
     "arabic": "جُوز",
     "transliteration": "Joz",
     "english": "Husband (Levantine)",
+    "hebrew": "בעל",
     "alternatives": ["Zowj"],
     "tags": ["family", "noun"]
   },
@@ -178,6 +195,7 @@
     "arabic": "زُوج",
     "transliteration": "Zowj",
     "english": "Husband (Formal)",
+    "hebrew": "בעל (רשמי)",
     "tags": ["family", "noun"]
   },
   {
@@ -188,6 +206,7 @@
     "arabic": "جُوزِي / زُوجِي",
     "transliteration": "Jowzi / Zowji",
     "english": "My Husband",
+    "hebrew": "בעלי",
     "tags": ["family", "phrase"]
   },
   {
@@ -198,6 +217,7 @@
     "arabic": "مَرَتِي / زُوجْتِي",
     "transliteration": "Marati / Zowjati",
     "english": "My Wife",
+    "hebrew": "אשתי",
     "tags": ["family", "phrase"]
   },
   {
@@ -208,6 +228,7 @@
     "arabic": "حَبِيبِي",
     "transliteration": "Habibi",
     "english": "My Love / My Dear (to male)",
+    "hebrew": "אהובי / חביבי",
     "tags": ["family", "endearment"]
   },
   {
@@ -218,6 +239,7 @@
     "arabic": "حَبِيبْتِي",
     "transliteration": "Habibti",
     "english": "My Love / My Dear (to female)",
+    "hebrew": "אהובתי / חביבתי",
     "tags": ["family", "endearment"]
   },
    {
@@ -228,6 +250,7 @@
     "arabic": "خَطِيبِي",
     "transliteration": "Khateebi",
     "english": "My Fiance (male)",
+    "hebrew": "ארוסי",
     "tags": ["family", "noun"]
   },
   {
@@ -238,6 +261,7 @@
     "arabic": "خَطِيبْتِي",
     "transliteration": "Khateebti",
     "english": "My Fiancee (female)",
+    "hebrew": "ארוסתי",
     "tags": ["family", "noun"]
   },
   {
@@ -248,6 +272,7 @@
     "arabic": "خِتْيَار / عَجُوز",
     "transliteration": "Khityar / 'Ajuz",
     "english": "Old Man / Elderly",
+    "hebrew": "זקן / קשיש",
     "tags": ["people", "adjective"]
   },
   {
@@ -258,6 +283,7 @@
     "arabic": "مُرَاهِق",
     "transliteration": "Murahiq",
     "english": "Teenager",
+    "hebrew": "נער / מתבגר",
     "tags": ["people", "noun"]
   },
   {
@@ -268,6 +294,7 @@
     "arabic": "طِفِل",
     "transliteration": "Tifel",
     "english": "Child / Baby",
+    "hebrew": "תינוק / ילד",
     "tags": ["people", "noun"]
   },
   {
@@ -278,6 +305,7 @@
     "arabic": "شَب",
     "transliteration": "Shab",
     "english": "Young Man / Guy",
+    "hebrew": "בחור",
     "tags": ["people", "noun"]
   },
   {
@@ -288,6 +316,7 @@
     "arabic": "صَبِيِّة",
     "transliteration": "Sabiyye",
     "english": "Young Woman / Gal",
+    "hebrew": "בחורה",
     "tags": ["people", "noun"]
   },
   {
@@ -298,6 +327,7 @@
     "arabic": "مَرَة",
     "transliteration": "Mara",
     "english": "Wife / Woman",
+    "hebrew": "אישה / רעיה",
     "tags": ["family", "noun"]
   },
   {
@@ -308,6 +338,7 @@
     "arabic": "إِبْن",
     "transliteration": "Iben",
     "english": "Son",
+    "hebrew": "בן",
     "tags": ["family", "noun"]
   }
 ]

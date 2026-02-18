@@ -6,8 +6,11 @@
     "sentenceEnglish": "I want coffee",
     "correctAnswer": "بدي",
     "correctAnswerEnglish": "want",
-    "distractors": ["بنام", "باكل", "بروح"],
-    "explanation": "بدي (biddi) means 'I want'"
+    "hebrewTranslation": "רוצה",
+    "hebrewDistractors": ["יש", "אין", "אוכל"],
+    "distractors": ["בنام", "باكل", "بروح"],
+    "explanation": "biddi means 'I want'",
+    "hebrewExplanation": "בדי פירושו 'רוצה'"
   },
   {
     "id": "cloze_drink_water",
@@ -16,8 +19,11 @@
     "sentenceEnglish": "I drink water",
     "correctAnswer": "بشرب",
     "correctAnswerEnglish": "drink",
-    "distractors": ["بنام", "باكل", "بشوف"],
-    "explanation": "بشرب (bashrab) means 'I drink'"
+    "hebrewTranslation": "שותה",
+    "hebrewDistractors": ["אוכל", "ישן", "רואה"],
+    "distractors": ["בنام", "باكل", "בشوف"],
+    "explanation": "bashrab means 'I drink'",
+    "hebrewExplanation": "באשרב פירושו 'שותה'"
   },
   {
     "id": "cloze_eat_bread",
@@ -26,6 +32,8 @@
     "sentenceEnglish": "He eats bread",
     "correctAnswer": "بياكل",
     "correctAnswerEnglish": "eats",
+    "hebrewTranslation": "אוכל",
+    "hebrewDistractors": ["שותה", "ישן", "רואה"],
     "distractors": ["باكل", "بتاكل", "بناكل"],
     "explanation": "بياكل (byakol) means 'he eats'"
   },
@@ -36,6 +44,8 @@
     "sentenceEnglish": "Good morning",
     "correctAnswer": "صباح",
     "correctAnswerEnglish": "morning",
+    "hebrewTranslation": "בוקר",
+    "hebrewDistractors": ["ערב", "צהריים", "לילה"],
     "distractors": ["مرحبا", "ليل", "ظهر"],
     "explanation": "صباح الخير (sabah el-kheir) means 'good morning'"
   },
@@ -46,6 +56,8 @@
     "sentenceEnglish": "We go to school",
     "correctAnswer": "بنروح",
     "correctAnswerEnglish": "go",
+    "hebrewTranslation": "הולכים",
+    "hebrewDistractors": ["אוכלים", "ישנים", "רואים"],
     "distractors": ["بروح", "بتروح", "بيروح"],
     "explanation": "بنروح (benruh) means 'we go'"
   },
@@ -56,6 +68,8 @@
     "sentenceEnglish": "I see my friend",
     "correctAnswer": "بشوف",
     "correctAnswerEnglish": "see",
+    "hebrewTranslation": "רואה",
+    "hebrewDistractors": ["אוכל", "ישן", "שותה"],
     "distractors": ["بروح", "باكل", "بشرب"],
     "explanation": "بشوف (bashuf) means 'I see'"
   },
@@ -66,6 +80,8 @@
     "sentenceEnglish": "Thank you very much!",
     "correctAnswer": "شكرا",
     "correctAnswerEnglish": "Thank you",
+    "hebrewTranslation": "תודה רבה",
+    "hebrewDistractors": ["בבקשה", "שלום", "להתראות"],
     "distractors": ["عفوا", "أهلا", "مرحبا"],
     "explanation": "شكرا كتير (shukran ktir) means 'thank you very much'"
   },
@@ -76,8 +92,11 @@
     "sentenceEnglish": "How are you?",
     "correctAnswer": "كيف",
     "correctAnswerEnglish": "are",
+    "hebrewTranslation": "איך",
+    "hebrewDistractors": ["מה", "איפה", "למה"],
     "distractors": ["شو", "وين", "ليش"],
-    "explanation": "كيف حالك (kif halak) means 'how are you?'"
+    "explanation": "كيف حالك (kif halak) means 'how are you?'",
+    "hebrewExplanation": "כיף חאלק פירושו 'מה שלומך?'"
   },
   {
     "id": "cloze_my_father",
@@ -86,8 +105,11 @@
     "sentenceEnglish": "This is my father",
     "correctAnswer": "هو",
     "correctAnswerEnglish": "my",
+    "hebrewTranslation": "הוא",
+    "hebrewDistractors": ["היא", "אתה", "אנחנו"],
     "distractors": ["هي", "إنت", "إحنا"],
-    "explanation": "Note: In this context 'هو' works with أبي (my father)"
+    "explanation": "Note: In this context 'هو' works with أبي (my father)",
+    "hebrewExplanation": "הערה: בהקשר זה 'הוא' מתאים ל-אבי (אבא שלי)"
   },
   {
     "id": "cloze_delicious_food",
@@ -96,7 +118,10 @@
     "sentenceEnglish": "The food is delicious!",
     "correctAnswer": "زاكي",
     "correctAnswerEnglish": "delicious",
+    "hebrewTranslation": "טעים",
+    "hebrewDistractors": ["גדול", "קטן", "חדש"],
     "distractors": ["كبير", "صغير", "جديد"],
-    "explanation": "زاكي (zaki) means 'delicious'"
+    "explanation": "زاكي (zaki) means 'delicious'",
+    "hebrewExplanation": "זאכי פירושו 'טעים'"
   }
 ]

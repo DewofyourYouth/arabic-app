@@ -7,7 +7,8 @@ const SETTINGS_KEY = 'haki_settings_v1';
 const defaultSettings = {
   showArabicScript: true,
   dialect: 'bedouin', // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
-  gChar: 'گ' // Character to use for "Hard G" sound (e.g. 'گ', 'ڨ', 'g')
+  gChar: 'گ', // Character to use for "Hard G" sound (e.g. 'گ', 'ڨ', 'g')
+  nativeLanguage: 'english' // 'english' or 'hebrew'
 };
 
 export const SettingsProvider = ({ children }) => {
@@ -36,8 +37,8 @@ export const SettingsProvider = ({ children }) => {
   };
 
   const resetOnboarding = () => {
-      localStorage.removeItem('haki_onboarding_completed');
-      window.location.reload(); // Simple way to re-trigger the check in App.jsx
+    localStorage.removeItem('haki_onboarding_completed');
+    window.location.reload(); // Simple way to re-trigger the check in App.jsx
   };
 
   const value = {
@@ -45,6 +46,7 @@ export const SettingsProvider = ({ children }) => {
     toggleArabicScript,
     setDialect,
     setGChar: (char) => setSettings(prev => ({ ...prev, gChar: char })),
+    setNativeLanguage: (lang) => setSettings(prev => ({ ...prev, nativeLanguage: lang })),
     resetOnboarding
   };
 

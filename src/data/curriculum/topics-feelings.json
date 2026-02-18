@@ -7,6 +7,7 @@
     "arabic": "مَبْسُوط",
     "transliteration": "Mabsut",
     "english": "Happy",
+    "hebrew": "מבסוט / שמח",
     "tags": ["feelings", "adjective"]
   },
   {
@@ -17,6 +18,7 @@
     "arabic": "زَعْلَان",
     "transliteration": "Za'lan",
     "english": "Sad / Upset",
+    "hebrew": "עצוב / כועס",
     "tags": ["feelings", "adjective"]
   },
   {
@@ -27,6 +29,7 @@
     "arabic": "تَعْبَان",
     "transliteration": "Ta'ban",
     "english": "Tired",
+    "hebrew": "עייף",
     "tags": ["feelings", "adjective"]
   },
   {
@@ -37,6 +40,7 @@
     "arabic": "أَنَا بِرَأْيِي...",
     "transliteration": "Ana bi-ra'yi...",
     "english": "In my opinion...",
+    "hebrew": "לדעתי...",
     "tags": ["opinions"]
   },
   {
@@ -47,6 +51,7 @@
     "arabic": "أَنَا بَحِبّ...",
     "transliteration": "Ana bahibb...",
     "english": "I like / I love...",
+    "hebrew": "אני אוהב...",
     "tags": ["opinions"]
   },
   {
@@ -57,6 +62,7 @@
     "arabic": "شُو رَأْيَك؟",
     "transliteration": "Shu ra'yak?",
     "english": "What do you think?",
+    "hebrew": "מה דעתך?",
     "tags": ["opinions", "question"]
   },
   {
@@ -67,6 +73,7 @@
     "arabic": "مَشْغُول",
     "transliteration": "Mashghul",
     "english": "Busy",
+    "hebrew": "עסוק",
     "tags": ["feelings", "adjective"]
   },
   {
@@ -77,6 +84,7 @@
     "arabic": "تِعِب",
     "transliteration": "Ti'ib",
     "english": "To get tired",
+    "hebrew": "להתעייף (התעייף)",
     "tags": ["feelings", "verb"]
   },
   {
@@ -87,6 +95,7 @@
     "arabic": "مُتْعِب",
     "transliteration": "Mut'ib",
     "english": "Tiring",
+    "hebrew": "מעייף",
     "tags": ["feelings", "adjective"]
   },
   {
@@ -97,6 +106,7 @@
     "arabic": "اِنْبَسَط",
     "transliteration": "Inbasat",
     "english": "To get happy / To enjoy",
+    "hebrew": "ליהנות (נהנה)",
     "tags": ["feelings", "verb"]
   }
 ]

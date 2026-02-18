@@ -7,6 +7,7 @@
     "arabic": "أرابيزي",
     "transliteration": "Chat Arabic",
     "english": "We use numbers to represent Arabic sounds that don't exist in English.",
+    "hebrew": "אנו משתמשים במספרים כדי לייצג צלילים בערבית שאינם קיימים באנגלית (או בעברית).",
     "tags": ["guide", "intro"]
   },
   {
@@ -17,6 +18,7 @@
     "arabic": "ح",
     "transliteration": "7 = Ḥa",
     "english": "The number 7 represents the deep 'H' sound (like cleaning glasses).",
+    "hebrew": "המספר 7 מייצג את הצליל ״ח״.",
     "tags": ["guide", "intro"]
   },
   {
@@ -27,6 +29,7 @@
     "arabic": "ع",
     "transliteration": "3 = 'Ayn",
     "english": "The number 3 represents the deep throat sound 'Ayn.",
+    "hebrew": "המספר 3 מייצג את הצליל ״ע״.",
     "tags": ["guide", "intro"]
   },
   {
@@ -37,6 +40,7 @@
     "arabic": "مرحبا",
     "transliteration": "Marhaba",
     "english": "Hello",
+    "hebrew": "שלום",
     "audio": "/audio/marhaba.mp3",
     "alternatives": ["Ahlan"],
     "tags": ["greeting", "common"]
@@ -49,6 +53,7 @@
     "arabic": "كِيف حَالَك؟",
     "transliteration": "Kif 7alak?",
     "english": "How are you? (General)",
+    "hebrew": "מה שלומך? (כללי)",
     "tags": ["greeting", "common"]
   },
   {
@@ -59,6 +64,7 @@
     "arabic": "كِيفَك؟",
     "transliteration": "Kifak?",
     "english": "How are you? (to male)",
+    "hebrew": "מה שלומך? (לזכר)",
     "tags": ["greeting", "common"]
   },
   {
@@ -69,6 +75,7 @@
     "arabic": "كِيفِك؟",
     "transliteration": "Kifik?",
     "english": "How are you? (to female)",
+    "hebrew": "מה שלומך? (לנקבה)",
     "tags": ["greeting", "common"]
   },
   {
@@ -79,6 +86,7 @@
     "arabic": "أَنَا مْنِيح",
     "transliteration": "Ana Mni7",
     "english": "I am good (male)",
+    "hebrew": "אני בסדר (זכר)",
     "tags": ["greeting", "reply"]
   },
   {
@@ -89,6 +97,7 @@
     "arabic": "أَنَا مْنِيحَة",
     "transliteration": "Ana Mni7a",
     "english": "I am good (female)",
+    "hebrew": "אני בסדר (נקבה)",
     "tags": ["greeting", "reply"]
   },
   {
@@ -99,6 +108,7 @@
     "arabic": "تَمَام",
     "transliteration": "Tamam",
     "english": "Great / Okay / All good",
+    "hebrew": "סבבה / הכל טוב",
     "tags": ["greeting", "reply", "common"]
   },
   {
@@ -109,6 +119,7 @@
     "arabic": "شُو أَخْبَارَك؟",
     "transliteration": "Shu a5brak?",
     "english": "What's your news?",
+    "hebrew": "מה חדש? / מה נשמע?",
     "tags": ["greeting", "common"]
   },
   {
@@ -119,6 +130,7 @@
     "arabic": "شُو فِي مَا فِي؟",
     "transliteration": "Shu fi ma fi?",
     "english": "What's up? (Literally: What is there, what is not there?)",
+    "hebrew": "מה קורה? (מילולית: מה יש ומה אין?)",
     "tags": ["greeting", "colloquial"]
   },
   {
@@ -129,6 +141,7 @@
     "arabic": "صَبَاح الْخَيْر",
     "transliteration": "Sabah el-kheir",
     "english": "Good morning",
+    "hebrew": "בוקר טוב",
     "tags": ["greeting", "common"]
   },
   {
@@ -139,6 +152,7 @@
     "arabic": "أهلاً",
     "transliteration": "Ahlan",
     "english": "Welcome / Hello",
+    "hebrew": "אהלן / ברוכים הבאים",
     "audio": "/audio/ahlan.mp3",
     "tags": ["greeting"]
   },
@@ -150,6 +164,7 @@
     "arabic": "شكراً",
     "transliteration": "Shukran",
     "english": "Thank you",
+    "hebrew": "תודה",
     "tags": ["polite"]
   },
   {
@@ -160,6 +175,7 @@
     "arabic": "عفواً",
     "transliteration": "Afwan",
     "english": "You're welcome / Excuse me",
+    "hebrew": "על לא דבר / סליחה",
     "tags": ["polite"]
   },
   {
@@ -170,6 +186,7 @@
     "arabic": "أَنَا",
     "transliteration": "Ana",
     "english": "I",
+    "hebrew": "אני",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -180,6 +197,7 @@
     "arabic": "إِنْتَ",
     "transliteration": "Inte",
     "english": "You (male)",
+    "hebrew": "אתה",
     "tags": ["grammar", "pronoun"]
   },
     {
@@ -190,6 +208,7 @@
     "arabic": "إِنْتِ",
     "transliteration": "Inti",
     "english": "You (female)",
+    "hebrew": "את",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -200,6 +219,7 @@
     "arabic": "هُوَّ",
     "transliteration": "Huwwe",
     "english": "He",
+    "hebrew": "הוא",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -210,6 +230,7 @@
     "arabic": "هِيَّ",
     "transliteration": "Hiyye",
     "english": "She",
+    "hebrew": "היא",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -220,6 +241,7 @@
     "arabic": "إِحْنَا",
     "transliteration": "Ihna",
     "english": "We",
+    "hebrew": "אנחנו",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -230,6 +252,7 @@
     "arabic": "إِنْتُو",
     "transliteration": "Intu",
     "english": "You (plural)",
+    "hebrew": "אתם/אתן",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -240,6 +263,7 @@
     "arabic": "هُمَّ",
     "transliteration": "Humme",
     "english": "They",
+    "hebrew": "הם/הן",
     "tags": ["grammar", "pronoun"]
   },
   {
@@ -250,6 +274,7 @@
     "arabic": "مَسَا الْخَيْر",
     "transliteration": "Masa el-kheir",
     "english": "Good evening",
+    "hebrew": "ערב טוב",
     "tags": ["greeting", "common"]
   },
   {
@@ -260,6 +285,7 @@
     "arabic": "مَع السَّلَامِة",
     "transliteration": "Ma'assalama",
     "english": "Goodbye",
+    "hebrew": "להתראות",
     "tags": ["greeting", "common"]
   },
   {
@@ -270,6 +296,7 @@
     "arabic": "بَشُوفَك",
     "transliteration": "Bashufak",
     "english": "See you",
+    "hebrew": "נתראה",
     "tags": ["greeting", "common"]
   },
   {
@@ -280,6 +307,7 @@
     "arabic": "سَرِيع",
     "transliteration": "Sari'",
     "english": "Fast",
+    "hebrew": "מהיר",
     "tags": ["adjective"]
   },
   {
@@ -290,6 +318,7 @@
     "arabic": "بَطِيء",
     "transliteration": "Bati'",
     "english": "Slow",
+    "hebrew": "איטי",
     "tags": ["adjective"]
   },
   {
@@ -300,6 +329,7 @@
     "arabic": "بْسُرْعَة",
     "transliteration": "B-sur'a",
     "english": "Quickly / Fast",
+    "hebrew": "מהר",
     "tags": ["adverb"]
   },
   {
@@ -310,6 +340,7 @@
     "arabic": "شْوَي شْوَي",
     "transliteration": "Shway shway",
     "english": "Slowly / Slow down",
+    "hebrew": "לאט לאט",
     "tags": ["adverb", "common"]
   },
   {
@@ -320,6 +351,7 @@
     "arabic": "يَعْنِي",
     "transliteration": "Ya'ni",
     "english": "Kind of / I mean / That is",
+    "hebrew": "יעני / כלומר",
     "tags": ["filler", "common"]
   }
 ]

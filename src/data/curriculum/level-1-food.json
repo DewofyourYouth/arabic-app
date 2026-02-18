@@ -7,6 +7,7 @@
     "arabic": "مَيّ",
     "transliteration": "Mayy",
     "english": "Water",
+    "hebrew": "מים",
     "image": "water.png",
     "tags": ["food", "drink"]
   },
@@ -18,6 +19,7 @@
     "arabic": "قَهْوَة",
     "transliteration": "Ahweh",
     "english": "Coffee",
+    "hebrew": "קפה",
     "image": "coffee.png",
     "tags": ["food", "drink"]
   },
@@ -29,6 +31,7 @@
     "arabic": "شَاي",
     "transliteration": "Shai",
     "english": "Tea",
+    "hebrew": "תה",
     "tags": ["food", "drink"]
   },
   {
@@ -39,6 +42,7 @@
     "arabic": "خُبِز",
     "transliteration": "Khubez",
     "english": "Bread",
+    "hebrew": "לחם",
     "tags": ["food", "staple"]
   },
   {
@@ -49,6 +53,7 @@
     "arabic": "جَاج",
     "transliteration": "Djal / Jaj",
     "english": "Chicken",
+    "hebrew": "עוף",
     "tags": ["food", "meat"]
   },
   {
@@ -59,6 +64,7 @@
     "arabic": "لَحْمِة",
     "transliteration": "Lahmeh",
     "english": "Meat",
+    "hebrew": "בשר",
     "tags": ["food", "meat"]
   },
   {
@@ -69,6 +75,7 @@
     "arabic": "موز",
     "transliteration": "Muz",
     "english": "Banana",
+    "hebrew": "בננה",
     "image": "banana.png",
     "tags": ["food", "fruit"]
   },
@@ -80,6 +87,7 @@
     "arabic": "تفاح",
     "transliteration": "Tufe7",
     "english": "Apple",
+    "hebrew": "תפוח",
     "image": "apple.png",
     "tags": ["food", "fruit"]
   },
@@ -91,6 +99,7 @@
     "arabic": "برتقال",
     "transliteration": "Bourtukol",
     "english": "Orange",
+    "hebrew": "תפוז",
     "image": "orange.png",
     "tags": ["food", "fruit"]
   },
@@ -102,6 +111,7 @@
     "arabic": "عنب",
     "transliteration": "Einab",
     "english": "Grapes",
+    "hebrew": "ענבים",
     "image": "grapes.jpg",
     "tags": ["food", "fruit"]
   },
@@ -113,6 +123,7 @@
     "arabic": "فراولة",
     "transliteration": "Farawla",
     "english": "Strawberry",
+    "hebrew": "תות",
     "image": "strawberry.jpg",
     "tags": ["food", "fruit"]
   },
@@ -124,6 +135,7 @@
     "arabic": "بطيخ",
     "transliteration": "Bati7",
     "english": "Watermelon",
+    "hebrew": "אבטיח",
     "image": "watermelon.png",
     "tags": ["food", "fruit"]
   },
@@ -135,6 +147,7 @@
     "arabic": "مانجا",
     "transliteration": "Manga",
     "english": "Mango",
+    "hebrew": "מנגו",
     "image": "mango.jpg",
     "tags": ["food", "fruit"]
   },
@@ -146,6 +159,7 @@
     "arabic": "جوز الهند",
     "transliteration": "Joez Hend",
     "english": "Coconut",
+    "hebrew": "קוקוס",
     "image": "coconut.jpg",
     "tags": ["food", "fruit"]
   },
@@ -157,6 +171,7 @@
     "arabic": "شمام",
     "transliteration": "Shummam",
     "english": "Melon",
+    "hebrew": "מלון",
     "tags": ["food", "fruit"]
   },
   {
@@ -167,6 +182,7 @@
     "arabic": "رمان",
     "transliteration": "Ruman",
     "english": "Pomegranate",
+    "hebrew": "רימון",
     "image": "pomegranate.jpg",
     "tags": ["food", "fruit"]
   },
@@ -178,6 +194,7 @@
     "arabic": "بَنْدُورَة",
     "transliteration": "Bandora",
     "english": "Tomato",
+    "hebrew": "עגבניה",
     "image": "tomatoes.jpg",
     "tags": ["food", "vegetable"]
   },
@@ -189,6 +206,7 @@
     "arabic": "خْيَار",
     "transliteration": "Khyar",
     "english": "Cucumber",
+    "hebrew": "מלפפון",
     "tags": ["food", "vegetable"]
   },
   {
@@ -199,6 +217,7 @@
     "arabic": "بَطَاطَا",
     "transliteration": "Batata",
     "english": "Potato",
+    "hebrew": "תפוח אדמה",
     "tags": ["food", "vegetable"]
   },
   {
@@ -209,6 +228,7 @@
     "arabic": "زَاكِي",
     "transliteration": "Zaki",
     "english": "Delicious",
+    "hebrew": "טעים",
     "tags": ["food", "adjective"]
   },
   {
@@ -219,6 +239,7 @@
     "arabic": "دِهِن",
     "transliteration": "Dihin",
     "english": "Fat (noun)",
+    "hebrew": "שומן",
     "tags": ["food", "noun"]
   },
   {
@@ -229,6 +250,7 @@
     "arabic": "دُهُون",
     "transliteration": "Duhun",
     "english": "Fats",
+    "hebrew": "שומנים",
     "tags": ["food", "noun", "plural"]
   },
   {
@@ -239,6 +261,7 @@
     "arabic": "دُهْنِيّ",
     "transliteration": "Duhni",
     "english": "Fatty / Oily",
+    "hebrew": "שומני",
     "tags": ["food", "adjective"]
   }
 ]

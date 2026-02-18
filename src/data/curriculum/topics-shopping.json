@@ -7,6 +7,8 @@
     "arabic": "قَدَّيْش حَقُّه؟",
     "transliteration": "Addeish haqqu?",
     "english": "How much is this?",
+    "hebrew": "כמה זה עולה?",
+    "hebrewTransliteration": "אדֵיש חָקוֹ?",
     "tags": ["shopping", "common"]
   },
   {
@@ -17,6 +19,8 @@
     "arabic": "غَالِي",
     "transliteration": "Ghali",
     "english": "Expensive",
+    "hebrew": "יקר",
+    "hebrewTransliteration": "עָ'אלִי",
     "tags": ["shopping"]
   },
   {
@@ -27,6 +31,8 @@
     "arabic": "رْخِيص",
     "transliteration": "Rkhis",
     "english": "Cheap",
+    "hebrew": "זול",
+    "hebrewTransliteration": "רְחִ'יס",
     "tags": ["shopping"]
   },
   {
@@ -37,6 +43,8 @@
     "arabic": "فِي خَصِم؟",
     "transliteration": "Fi khasim?",
     "english": "Is there a discount?",
+    "hebrew": "יש הנחה?",
+    "hebrewTransliteration": "פִי חַ'סִם?",
     "tags": ["shopping"]
   },
   {
@@ -47,6 +55,8 @@
     "arabic": "أَوَاعِي",
     "transliteration": "Awā'i",
     "english": "Clothes",
+    "hebrew": "בגדים",
+    "hebrewTransliteration": "אַוָואעִי",
     "tags": ["shopping"]
   },
   {
@@ -57,6 +67,8 @@
     "arabic": "سُوق",
     "transliteration": "Suq",
     "english": "Market",
+    "hebrew": "שוק",
+    "hebrewTransliteration": "סוּק",
     "tags": ["shopping"]
   },
   {
@@ -67,6 +79,8 @@
     "arabic": "جَزْمِة",
     "transliteration": "Jazme",
     "english": "Boots",
+    "hebrew": "מגפיים",
+    "hebrewTransliteration": "גַ'זְמֶה",
     "tags": ["shopping", "clothes"]
   },
   {
@@ -77,6 +91,8 @@
     "arabic": "بُوت",
     "transliteration": "Bot",
     "english": "Boots / Sport shoes",
+    "hebrew": "נעלי ספורט",
+    "hebrewTransliteration": "בּוֹט",
     "tags": ["shopping", "clothes"]
   },
   {
@@ -87,6 +103,8 @@
     "arabic": "كُنْدَرَة",
     "transliteration": "Kundara",
     "english": "Shoes",
+    "hebrew": "נעליים",
+    "hebrewTransliteration": "כֻּנְדַרַה",
     "tags": ["shopping", "clothes"]
   },
   {
@@ -97,6 +115,8 @@
     "arabic": "سَبَّاط",
     "transliteration": "Sabbat",
     "english": "Shoes (common)",
+    "hebrew": "נעליים (נפוץ)",
+    "hebrewTransliteration": "סַבַּאט",
     "tags": ["shopping", "clothes"]
   }
 ]
