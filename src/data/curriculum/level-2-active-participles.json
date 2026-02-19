@@ -20,8 +20,9 @@
     "audio": "/audio/active_participle/ap_going.mp3",
     "audio_bedouin": "/audio/active_participle/ap_going_bedouin.mp3",
     "phonetic_arabic": "رايِحْ",
-    "ipa_bedouin": "r aː j i ħ",
-    "gender": "female"
+    "ipa_bedouin": "raːjiħ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_seeing",
@@ -44,8 +45,9 @@
     "audio": "/audio/active_participle/ap_seeing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_seeing_bedouin.mp3",
     "phonetic_arabic": "شايِفْ",
-    "ipa_bedouin": "ʃ aː j i f",
-    "gender": "female"
+    "ipa_bedouin": "ʃaːjif",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_sleeping",
@@ -68,8 +70,9 @@
     "audio": "/audio/active_participle/ap_sleeping.mp3",
     "audio_bedouin": "/audio/active_participle/ap_sleeping_bedouin.mp3",
     "phonetic_arabic": "نايِمْ",
-    "ipa_bedouin": "n aː j i m",
-    "gender": "female"
+    "ipa_bedouin": "naːjim",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_visiting",
@@ -92,8 +95,9 @@
     "audio": "/audio/active_participle/ap_visiting.mp3",
     "audio_bedouin": "/audio/active_participle/ap_visiting_bedouin.mp3",
     "phonetic_arabic": "زايِرْ",
-    "ipa_bedouin": "aː j i r",
-    "gender": "female"
+    "ipa_bedouin": "zaːjir",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_driving",
@@ -142,8 +146,9 @@
     "audio": "/audio/active_participle/ap_living_hollow.mp3",
     "audio_bedouin": "/audio/active_participle/ap_living_hollow_bedouin.mp3",
     "phonetic_arabic": "عايِشْ",
-    "ipa_bedouin": "ʕ aː j i ʃ",
-    "gender": "female"
+    "ipa_bedouin": "ʕaːjiʃ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_scared",
@@ -166,8 +171,9 @@
     "audio": "/audio/active_participle/ap_scared.mp3",
     "audio_bedouin": "/audio/active_participle/ap_scared_bedouin.mp3",
     "phonetic_arabic": "خايِفْ",
-    "ipa_bedouin": "x aː j i f",
-    "gender": "female"
+    "ipa_bedouin": "xaːjif",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_bringing",
@@ -190,8 +196,9 @@
     "audio": "/audio/active_participle/ap_bringing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_bringing_bedouin.mp3",
     "phonetic_arabic": "جايِبْ",
-    "ipa_bedouin": "d͡ʒ aː j i b",
-    "gender": "female"
+    "ipa_bedouin": "d͡ʒaːjib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_selling",
@@ -214,8 +221,9 @@
     "audio": "/audio/active_participle/ap_selling.mp3",
     "audio_bedouin": "/audio/active_participle/ap_selling_bedouin.mp3",
     "phonetic_arabic": "بايِعْ",
-    "ipa_bedouin": "b aː j i ʕ",
-    "gender": "female"
+    "ipa_bedouin": "baːjiʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_fasting",
@@ -238,8 +246,9 @@
     "audio": "/audio/active_participle/ap_fasting.mp3",
     "phonetic_arabic": "صايِمْ",
     "audio_bedouin": "/audio/active_participle/ap_fasting_bedouin.mp3",
-    "ipa_bedouin": "sˤ aː j i m",
-    "gender": "female"
+    "ipa_bedouin": "sˤaːjim",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_walking",
@@ -262,8 +271,9 @@
     "audio": "/audio/active_participle/ap_walking.mp3",
     "audio_bedouin": "/audio/active_participle/ap_walking_bedouin.mp3",
     "phonetic_arabic": "ماشيْ",
-    "ipa_bedouin": "m aː ʃ iː",
-    "gender": "female"
+    "ipa_bedouin": "maːʃiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_speaking",
@@ -286,8 +296,9 @@
     "audio": "/audio/active_participle/ap_speaking.mp3",
     "audio_bedouin": "/audio/active_participle/ap_speaking_bedouin.mp3",
     "phonetic_arabic": "حاكيْ",
-    "ipa_bedouin": "ħ aː k iː",
-    "gender": "female"
+    "ipa_bedouin": "ħaːkiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_buying",
@@ -310,8 +321,9 @@
     "audio": "/audio/active_participle/ap_buying.mp3",
     "audio_bedouin": "/audio/active_participle/ap_buying_bedouin.mp3",
     "phonetic_arabic": "شاريْ",
-    "ipa_bedouin": "ʃ aː r iː",
-    "gender": "female"
+    "ipa_bedouin": "ʃaːriː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_listening",
@@ -334,8 +346,9 @@
     "audio": "/audio/active_participle/ap_listening.mp3",
     "audio_bedouin": "/audio/active_participle/ap_listening_bedouin.mp3",
     "phonetic_arabic": "صاغيْ",
-    "ipa_bedouin": "sˤ aː ɣ iː",
-    "gender": "female"
+    "ipa_bedouin": "sˤaːɣiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_forgetting",
@@ -358,8 +371,9 @@
     "audio": "/audio/active_participle/ap_forgetting.mp3",
     "audio_bedouin": "/audio/active_participle/ap_forgetting_bedouin.mp3",
     "phonetic_arabic": "ناسيْ",
-    "ipa_bedouin": "n aː s iː",
-    "gender": "female"
+    "ipa_bedouin": "naːsiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_crying",
@@ -382,8 +396,9 @@
     "audio": "/audio/active_participle/ap_crying.mp3",
     "audio_bedouin": "/audio/active_participle/ap_crying_bedouin.mp3",
     "phonetic_arabic": "باكيْ",
-    "ipa_bedouin": "b aː k iː",
-    "gender": "female"
+    "ipa_bedouin": "baːkiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_boiling",
@@ -406,8 +421,9 @@
     "audio": "/audio/active_participle/ap_boiling.mp3",
     "audio_bedouin": "/audio/active_participle/ap_boiling_bedouin.mp3",
     "phonetic_arabic": "غاليْ",
-    "ipa_bedouin": "ɣ aː l iː",
-    "gender": "female"
+    "ipa_bedouin": "ɣaːliː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_praying",
@@ -430,8 +446,9 @@
     "audio": "/audio/active_participle/ap_praying.mp3",
     "audio_bedouin": "/audio/active_participle/ap_praying_bedouin.mp3",
     "phonetic_arabic": "مْصَلّيْ",
-    "ipa_bedouin": "m sˤ a l ː iː",
-    "gender": "female"
+    "ipa_bedouin": "msˤalːiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_waiting",
@@ -454,8 +471,9 @@
     "audio": "/audio/active_participle/ap_waiting.mp3",
     "audio_bedouin": "/audio/active_participle/ap_waiting_bedouin.mp3",
     "phonetic_arabic": "مِسْتَنّيْ",
-    "ipa_bedouin": "m i s t a n ː iː",
-    "gender": "female"
+    "ipa_bedouin": "mistanːiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_giving",
@@ -478,8 +496,9 @@
     "audio": "/audio/active_participle/ap_giving.mp3",
     "audio_bedouin": "/audio/active_participle/ap_giving_bedouin.mp3",
     "phonetic_arabic": "مُعْطيْ",
-    "ipa_bedouin": "m u ʕ tˤ iː",
-    "gender": "female"
+    "ipa_bedouin": "muʕtˤiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_knowing",
@@ -502,8 +521,9 @@
     "audio": "/audio/active_participle/ap_knowing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_knowing_bedouin.mp3",
     "phonetic_arabic": "عارِفْ",
-    "ipa_bedouin": "ʕ aː r i f",
-    "gender": "female"
+    "ipa_bedouin": "ʕaːrif",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_understanding",
@@ -526,8 +546,9 @@
     "audio": "/audio/active_participle/ap_understanding.mp3",
     "phonetic_arabic": "فاهِمْ",
     "audio_bedouin": "/audio/active_participle/ap_understanding_bedouin.mp3",
-    "ipa_bedouin": "f aː h i m",
-    "gender": "female"
+    "ipa_bedouin": "faːhim",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_hearing",
@@ -550,8 +571,9 @@
     "audio": "/audio/active_participle/ap_hearing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_hearing_bedouin.mp3",
     "phonetic_arabic": "سامِعْ",
-    "ipa_bedouin": "s aː m i ʕ",
-    "gender": "female"
+    "ipa_bedouin": "saːmiʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_sitting",
@@ -626,8 +648,9 @@
     "audio": "/audio/active_participle/ap_studying.mp3",
     "audio_bedouin": "/audio/active_participle/ap_studying_bedouin.mp3",
     "phonetic_arabic": "دارِسْ",
-    "ipa_bedouin": "d aː r i s",
-    "gender": "female"
+    "ipa_bedouin": "daːris",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_living_standard",
@@ -650,8 +673,9 @@
     "audio": "/audio/active_participle/ap_living_standard.mp3",
     "audio_bedouin": "/audio/active_participle/ap_living_standard_bedouin.mp3",
     "phonetic_arabic": "ساكِنْ",
-    "ipa_bedouin": "s aː k i n",
-    "gender": "female"
+    "ipa_bedouin": "saːkin",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_wearing",
@@ -674,8 +698,9 @@
     "audio": "/audio/active_participle/ap_wearing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_wearing_bedouin.mp3",
     "phonetic_arabic": "لابِسْ",
-    "ipa_bedouin": "l aː b i s",
-    "gender": "female"
+    "ipa_bedouin": "laːbis",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_holding",
@@ -698,8 +723,9 @@
     "audio": "/audio/active_participle/ap_holding.mp3",
     "audio_bedouin": "/audio/active_participle/ap_holding_bedouin.mp3",
     "phonetic_arabic": "حامِلْ",
-    "ipa_bedouin": "ħ aː m i l",
-    "gender": "female"
+    "ipa_bedouin": "ħaːmil",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_writing",
@@ -722,8 +748,9 @@
     "audio": "/audio/active_participle/ap_writing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_writing_bedouin.mp3",
     "phonetic_arabic": "كاتِبْ",
-    "ipa_bedouin": "k aː t i b",
-    "gender": "female"
+    "ipa_bedouin": "kaːtib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_leaving",
@@ -746,8 +773,9 @@
     "audio": "/audio/active_participle/ap_leaving.mp3",
     "audio_bedouin": "/audio/active_participle/ap_leaving_bedouin.mp3",
     "phonetic_arabic": "طالِعْ",
-    "ipa_bedouin": "tˤ aː l i ʕ",
-    "gender": "female"
+    "ipa_bedouin": "tˤaːliʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_entering",
@@ -770,8 +798,9 @@
     "audio": "/audio/active_participle/ap_entering.mp3",
     "audio_bedouin": "/audio/active_participle/ap_entering_bedouin.mp3",
     "phonetic_arabic": "فايِتْ",
-    "ipa_bedouin": "f aː j i t",
-    "gender": "female"
+    "ipa_bedouin": "faːjit",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_returning",
@@ -794,8 +823,9 @@
     "audio": "/audio/active_participle/ap_returning.mp3",
     "audio_bedouin": "/audio/active_participle/ap_returning_bedouin.mp3",
     "phonetic_arabic": "راجِعْ",
-    "ipa_bedouin": "r aː d͡ʒ i ʕ",
-    "gender": "female"
+    "ipa_bedouin": "raːd͡ʒiʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_paying",
@@ -818,8 +848,9 @@
     "audio": "/audio/active_participle/ap_paying.mp3",
     "audio_bedouin": "/audio/active_participle/ap_paying_bedouin.mp3",
     "phonetic_arabic": "دافِعْ",
-    "ipa_bedouin": "d aː f i ʕ",
-    "gender": "female"
+    "ipa_bedouin": "daːfiʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_playing",
@@ -842,8 +873,9 @@
     "audio": "/audio/active_participle/ap_playing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_playing_bedouin.mp3",
     "phonetic_arabic": "لاعِبْ",
-    "ipa_bedouin": "l aː ʕ i b",
-    "gender": "female"
+    "ipa_bedouin": "laːʕib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_drinking",
@@ -866,8 +898,9 @@
     "audio": "/audio/active_participle/ap_drinking.mp3",
     "audio_bedouin": "/audio/active_participle/ap_drinking_bedouin.mp3",
     "phonetic_arabic": "شارِبْ",
-    "ipa_bedouin": "ʃ aː r i b",
-    "gender": "female"
+    "ipa_bedouin": "ʃaːrib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_putting",
@@ -890,8 +923,9 @@
     "audio": "/audio/active_participle/ap_putting.mp3",
     "audio_bedouin": "/audio/active_participle/ap_putting_bedouin.mp3",
     "phonetic_arabic": "حاطِطْ",
-    "ipa_bedouin": "ħ aː tˤ i tˤ",
-    "gender": "female"
+    "ipa_bedouin": "ħaːtˤitˤ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_loving",
@@ -914,8 +948,9 @@
     "audio": "/audio/active_participle/ap_loving.mp3",
     "audio_bedouin": "/audio/active_participle/ap_loving_bedouin.mp3",
     "phonetic_arabic": "حابِبْ",
-    "ipa_bedouin": "ħ aː b i b",
-    "gender": "female"
+    "ipa_bedouin": "ħaːbib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_traveling",
@@ -938,8 +973,9 @@
     "audio": "/audio/active_participle/ap_traveling.mp3",
     "audio_bedouin": "/audio/active_participle/ap_traveling_bedouin.mp3",
     "phonetic_arabic": "مْسافِرْ",
-    "ipa_bedouin": "m s aː f i r",
-    "gender": "female"
+    "ipa_bedouin": "msaːfir",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_working",
@@ -962,8 +998,9 @@
     "audio": "/audio/active_participle/ap_working.mp3",
     "audio_bedouin": "/audio/active_participle/ap_working_bedouin.mp3",
     "phonetic_arabic": "مِشْتَغِلْ",
-    "ipa_bedouin": "m i ʃ t a ɣ i l",
-    "gender": "female"
+    "ipa_bedouin": "miʃtaɣil",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_thinking",
@@ -986,8 +1023,9 @@
     "audio": "/audio/active_participle/ap_thinking.mp3",
     "audio_bedouin": "/audio/active_participle/ap_thinking_bedouin.mp3",
     "phonetic_arabic": "مْفَكِّرْ",
-    "ipa_bedouin": "m f a k i ː r",
-    "gender": "female"
+    "ipa_bedouin": "mfakiːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_closing",
@@ -1010,8 +1048,9 @@
     "audio": "/audio/active_participle/ap_closing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_closing_bedouin.mp3",
     "phonetic_arabic": "مْسَكِّرْ",
-    "ipa_bedouin": "m s a k i ː r",
-    "gender": "female"
+    "ipa_bedouin": "msakiːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_fixing",
@@ -1034,8 +1073,9 @@
     "audio": "/audio/active_participle/ap_fixing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_fixing_bedouin.mp3",
     "phonetic_arabic": "مْصَلِّحْ",
-    "ipa_bedouin": "m sˤ a l i ː ħ",
-    "gender": "female"
+    "ipa_bedouin": "msˤaliːħ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_changing",
@@ -1058,8 +1098,9 @@
     "audio": "/audio/active_participle/ap_changing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_changing_bedouin.mp3",
     "phonetic_arabic": "مْغَيِّرْ",
-    "ipa_bedouin": "m ɣ a j i ː r",
-    "gender": "female"
+    "ipa_bedouin": "mɣajiːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_cleaning",
@@ -1082,8 +1123,9 @@
     "audio": "/audio/active_participle/ap_cleaning.mp3",
     "audio_bedouin": "/audio/active_participle/ap_cleaning_bedouin.mp3",
     "phonetic_arabic": "مْنَدِّفْ",
-    "ipa_bedouin": "m n a d i ː f",
-    "gender": "female"
+    "ipa_bedouin": "mnadiːf",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_believing",
@@ -1132,8 +1174,9 @@
     "audio": "/audio/active_participle/ap_preparing.mp3",
     "audio_bedouin": "/audio/active_participle/ap_preparing_bedouin.mp3",
     "phonetic_arabic": "مْجَهِّزْ",
-    "ipa_bedouin": "m d͡ʒ a h i ː",
-    "gender": "female"
+    "ipa_bedouin": "md͡ʒahiːz",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_helping",
@@ -1156,8 +1199,9 @@
     "audio": "/audio/active_participle/ap_helping.mp3",
     "audio_bedouin": "/audio/active_participle/ap_helping_bedouin.mp3",
     "phonetic_arabic": "مْساعِدْ",
-    "ipa_bedouin": "m s aː ʕ i d",
-    "gender": "female"
+    "ipa_bedouin": "msaːʕid",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_remembering",
@@ -1180,8 +1224,9 @@
     "audio": "/audio/active_participle/ap_remembering.mp3",
     "audio_bedouin": "/audio/active_participle/ap_remembering_bedouin.mp3",
     "phonetic_arabic": "مِتْذَكِّرْ",
-    "ipa_bedouin": "m i t ð a k i ː r",
-    "gender": "female"
+    "ipa_bedouin": "mitðakiːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_using",
@@ -1204,8 +1249,9 @@
     "audio": "/audio/active_participle/ap_using.mp3",
     "audio_bedouin": "/audio/active_participle/ap_using_bedouin.mp3",
     "phonetic_arabic": "مِسْتَعْمِلْ",
-    "ipa_bedouin": "m i s t a ʕ m i l",
-    "gender": "female"
+    "ipa_bedouin": "mistaʕmil",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_eating",
@@ -1228,8 +1274,9 @@
     "audio": "/audio/active_participle/ap_eating.mp3",
     "audio_bedouin": "/audio/active_participle/ap_eating_bedouin.mp3",
     "phonetic_arabic": "ماكِلْ",
-    "ipa_bedouin": "m aː k i l",
-    "gender": "female"
+    "ipa_bedouin": "maːkil",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_taking",
@@ -1252,7 +1299,8 @@
     "audio": "/audio/active_participle/ap_taking.mp3",
     "audio_bedouin": "/audio/active_participle/ap_taking_bedouin.mp3",
     "phonetic_arabic": "ماخِدْ",
-    "ipa_bedouin": "m aː x i d",
-    "gender": "female"
+    "ipa_bedouin": "maːxid",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

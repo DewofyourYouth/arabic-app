@@ -17,7 +17,7 @@
     "phonetic_arabic": "بِدِّي ءَهْوَة لَوْ سَمَحْتْ",
     "phonetic_bedouin": "بِدِّي گَهْوَة لَوْ سَمَحْتْ",
     "gender": "female",
-    "ipa_bedouin": "bidːiiː ɡahwaa lauː samaħt",
+    "ipa_bedouin": "bidːiː ɡahwaa lauː samaħt",
     "ipa_bedouin_auto_generated": true
   },
   {
@@ -36,8 +36,9 @@
     "audio": "/audio/ordering/l2_ord_tea.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_tea_bedouin.mp3",
     "phonetic_arabic": "بِدِّي شَاي مَع سُكَّرْ",
-    "ipa_bedouin": "b i d ː i iː ʃ a aː iː m a ʕ s u k ː a r",
-    "gender": "female"
+    "ipa_bedouin": "bidːiː ʃaːiː maʕ sukːar",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_ord_menu",
@@ -55,8 +56,9 @@
     "audio": "/audio/ordering/l2_ord_menu.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_menu_bedouin.mp3",
     "phonetic_arabic": "مُمْكِن الْمِنْيُو؟ْ",
-    "ipa_bedouin": "m u m k i n aː l m i n j u uː",
-    "gender": "female"
+    "ipa_bedouin": "mumkin aːlminjuː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_ord_bill",
@@ -74,8 +76,9 @@
     "audio": "/audio/ordering/l2_ord_bill.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_bill_bedouin.mp3",
     "phonetic_arabic": "لِحْسَاب لَوْ سَمَحْتْ",
-    "ipa_bedouin": "l i ħ s a aː b l a uː s a m a ħ t",
-    "gender": "female"
+    "ipa_bedouin": "liħsaːb lauː samaħt",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_ord_water",
@@ -95,7 +98,7 @@
     "phonetic_arabic": "ءَنِّينِة مَيّْ",
     "phonetic_bedouin": "گَنِّينِة مَيّْ",
     "gender": "female",
-    "ipa_bedouin": "ɡanːiiːnia maiːː",
+    "ipa_bedouin": "ɡanːiːnia majː",
     "ipa_bedouin_auto_generated": true
   },
   {
@@ -115,7 +118,8 @@
     "audio": "/audio/ordering/l2_ord_delicious.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_delicious_bedouin.mp3",
     "phonetic_arabic": "الْأَكِل زَاكِي كْتِيرْ",
-    "ipa_bedouin": "aː l ʔ a a k i l a aː k i iː k t i iː r",
-    "gender": "female"
+    "ipa_bedouin": "aːlʔ akil zaːkiː ktiːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

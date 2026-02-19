@@ -14,8 +14,9 @@
     "audio": "/audio/verbs/l1_verb_want.mp3",
     "audio_bedouin": "/audio/verbs/l1_verb_want_bedouin.mp3",
     "phonetic_arabic": "بِدِّيْ",
-    "ipa_bedouin": "b i d ː i iː",
-    "gender": "female"
+    "ipa_bedouin": "bidːiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_verb_go",
@@ -32,8 +33,9 @@
     "audio": "/audio/verbs/l1_verb_go.mp3",
     "audio_bedouin": "/audio/verbs/l1_verb_go_bedouin.mp3",
     "phonetic_arabic": "بَرُوحْ",
-    "ipa_bedouin": "b a r u uː ħ",
-    "gender": "female"
+    "ipa_bedouin": "baruːħ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_verb_see",
@@ -50,8 +52,9 @@
     "audio": "/audio/verbs/l1_verb_see.mp3",
     "audio_bedouin": "/audio/verbs/l1_verb_see_bedouin.mp3",
     "phonetic_arabic": "بَشُوفْ",
-    "ipa_bedouin": "b a ʃ u uː f",
-    "gender": "female"
+    "ipa_bedouin": "baʃuːf",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_verb_eat",
@@ -68,8 +71,9 @@
     "audio": "/audio/verbs/l1_verb_eat.mp3",
     "audio_bedouin": "/audio/verbs/l1_verb_eat_bedouin.mp3",
     "phonetic_arabic": "بَاكُلْ",
-    "ipa_bedouin": "b a aː k u l",
-    "gender": "female"
+    "ipa_bedouin": "baːkul",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_verb_drink",
@@ -86,7 +90,8 @@
     "audio": "/audio/verbs/l1_verb_drink.mp3",
     "audio_bedouin": "/audio/verbs/l1_verb_drink_bedouin.mp3",
     "phonetic_arabic": "بَشْرَبْ",
-    "ipa_bedouin": "b a ʃ r a b",
-    "gender": "female"
+    "ipa_bedouin": "baʃrab",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

@@ -15,8 +15,9 @@
     "audio": "/audio/weather/l2_wthr_hot.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_hot_bedouin.mp3",
     "phonetic_arabic": "شُوبْ",
-    "ipa_bedouin": "ʃ u uː b",
-    "gender": "female"
+    "ipa_bedouin": "ʃuːb",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_wthr_cold",
@@ -34,8 +35,9 @@
     "audio": "/audio/weather/l2_wthr_cold.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_cold_bedouin.mp3",
     "phonetic_arabic": "بَرِدْ",
-    "ipa_bedouin": "b a r i d",
-    "gender": "female"
+    "ipa_bedouin": "barid",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_wthr_rain",
@@ -53,8 +55,9 @@
     "audio": "/audio/weather/l2_wthr_rain.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_rain_bedouin.mp3",
     "phonetic_arabic": "شِتَاْ",
-    "ipa_bedouin": "ʃ i t a aː",
-    "gender": "female"
+    "ipa_bedouin": "ʃitaː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_wthr_sun",
@@ -72,8 +75,9 @@
     "audio": "/audio/weather/l2_wthr_sun.mp3",
     "phonetic_arabic": "شَمِسْ",
     "audio_bedouin": "/audio/weather/l2_wthr_sun_bedouin.mp3",
-    "ipa_bedouin": "ʃ a m i s",
-    "gender": "female"
+    "ipa_bedouin": "ʃamis",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_wthr_today",
@@ -94,7 +98,7 @@
     "phonetic_arabic": "كِيف الطَّءْص الْيُوم؟ْ",
     "phonetic_bedouin": "كِيف الطَّگْص الْيُوم؟ْ",
     "gender": "female",
-    "ipa_bedouin": "kiiːf aːltˤːaɡsˤ aːljuuːm",
+    "ipa_bedouin": "kiːf aːltˤːaɡsˤ aːljuːm",
     "ipa_bedouin_auto_generated": true
   },
   {
@@ -113,7 +117,8 @@
     "audio": "/audio/weather/l2_wthr_beautiful.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_beautiful_bedouin.mp3",
     "phonetic_arabic": "الْجَوّ حِلُوْ",
-    "ipa_bedouin": "aː l d͡ʒ a uː ː ħ i l u uː",
-    "gender": "female"
+    "ipa_bedouin": "aːld͡ʒawː ħiluː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

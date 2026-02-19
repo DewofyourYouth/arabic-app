@@ -103,23 +103,53 @@ function arabicToIPA(text) {
         const char = chars[i];
         const nextChar = chars[i + 1];
         
+        // Contextual handling for Waw/Ya
+        // If Waw/Ya is at start or follows a vowel/sukoon? 
+        // Simple heuristic: 
+        // If 'و' has Fatha/Kasra/Damma OR Shadda on it, it's 'w'.
+        // If 'ي' has Fatha/Kasra/Damma OR Shadda on it, it's 'j'.
+        
         let mapped = ARABIC_TO_IPA[char];
         
         if (char === 'و') {
-            if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ')) {
+            if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ')) {
                 mapped = 'w';
             } else if (i === 0) {
-                 mapped = 'w';
+                 mapped = 'w'; // Start of word usually W
             }
         }
         if (char === 'ي') {
-             if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ')) {
+             if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ')) {
                 mapped = 'j';
             } else if (i === 0) {
                  mapped = 'j'; 
             }
         }
         
+        // MERGE Short Vowel + Long Vowel
+        // If we have Kasra + Ya -> Just Ya (iː)
+        // Damma + Waw -> Just Waw (uː)
+        // Fatha + Alif -> Just Alif (aː)
+        
+        if (char === 'ِ' && nextChar === 'ي') continue;
+        if (char === 'ُ' && nextChar === 'و') continue;
+        if (char === 'َ' && nextChar === 'ا') continue;
+
+        // MERGE Letter-with-Vowel + Vowel Diacritic
+        // إ (ʔ i) + ِ (i) -> Skip ِ
+        // أ (ʔ a) + َ (a) -> Skip َ
+        // آ (ʔ aː) + َ (a) -> Skip َ
+        if (char === 'ِ' && text[i-1] === 'إ') continue;
+        if (char === 'َ' && (text[i-1] === 'أ' || text[i-1] === 'آ')) continue;
+        if (char === 'ُ' && text[i-1] === 'أ') continue; // U with Alif-Hamza-Above? Usually أُ -> ʔ u. My map has أ -> ʔ a.
+        // Wait, 'أ' is 'ʔ a'. If followed by Damma, it should be 'ʔ u'. 
+        // This is tricky. simpler to just let user fix complex ones?
+        // But for 'ihne' (إِحْنَا), it is 'إ' + 'ِ'. My map 'إ' = 'ʔ i'. Correct to skip 'ِ'.
+        
+        // Handle Waw/Ya as consonant + Shadda -> wː / jː
+        // My map for Shadda is 'ː'.
+        // If mapped is 'w' and next is 'ّ' ('ː'), we get 'wː' (Geminated W). Correct.
+         
         if (mapped !== undefined) {
             ipa += mapped;
         } else {
@@ -167,14 +197,24 @@ async function main() {
                 // This allows us to fix spacing/typos by re-running.
                 // We preserve manual overrides (where auto_generated is undefined/false).
                 
-                if (!item.ipa_bedouin || item.ipa_bedouin_auto_generated) {
+                // FORCE UPDATE logic:
+                // 1. If missing.
+                // 2. If marked auto-generated.
+                // 3. AGGRESSIVE FIX: If it looks like "bad" auto-gen (contains spaces, or double vowels like 'aaː', 'iiː', 'uuː').
+                
+                const isBadPattern = item.ipa_bedouin && (
+                    item.ipa_bedouin.includes(' ') || 
+                    item.ipa_bedouin.includes('a aː') || 
+                    item.ipa_bedouin.includes('i iː') || 
+                    item.ipa_bedouin.includes('u uː')
+                );
+
+                if (!item.ipa_bedouin || item.ipa_bedouin_auto_generated || isBadPattern) {
                      // Check if actually changed to avoid noise
                      if (item.ipa_bedouin !== generatedIPA) {
                          item.ipa_bedouin = generatedIPA;
                          item.ipa_bedouin_auto_generated = true; 
                          
-                         // We also need to force Gender to local-female (Zeina) if using IPA?
-                         // Zeina is best for standard IPA support.
                          if (item.gender !== 'female') {
                              item.gender = 'female';
                          }

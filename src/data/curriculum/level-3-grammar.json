@@ -14,8 +14,9 @@
     "audio": "/audio/connectors/l3_conn_because.mp3",
     "audio_bedouin": "/audio/connectors/l3_conn_because_bedouin.mp3",
     "phonetic_arabic": "لَأَنُّوْ",
-    "ipa_bedouin": "l a ʔ a a n ː u uː",
-    "gender": "female"
+    "ipa_bedouin": "laʔ anːuː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l3_conn_if",
@@ -32,8 +33,9 @@
     "audio": "/audio/connectors/l3_conn_if.mp3",
     "audio_bedouin": "/audio/connectors/l3_conn_if_bedouin.mp3",
     "phonetic_arabic": "إِزَاْ",
-    "ipa_bedouin": "ʔ i i a aː",
-    "gender": "female"
+    "ipa_bedouin": "ʔ izaː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l3_rel_who",
@@ -50,7 +52,8 @@
     "audio": "/audio/relative_pronouns/l3_rel_who.mp3",
     "phonetic_arabic": "إِلِّيْ",
     "audio_bedouin": "/audio/relative_pronouns/l3_rel_who_bedouin.mp3",
-    "ipa_bedouin": "ʔ i i l ː i iː",
-    "gender": "female"
+    "ipa_bedouin": "ʔ ilːiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

@@ -14,8 +14,9 @@
     "audio": "/audio/directions/l2_dir_where.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_where_bedouin.mp3",
     "phonetic_arabic": "وِين...؟ْ",
-    "ipa_bedouin": "w i iː n",
-    "gender": "female"
+    "ipa_bedouin": "wiːn",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_dir_straight",
@@ -31,8 +32,9 @@
     "audio": "/audio/directions/l2_dir_straight.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_straight_bedouin.mp3",
     "phonetic_arabic": "دُغْرِيْ",
-    "ipa_bedouin": "d u ɣ r i iː",
-    "gender": "female"
+    "ipa_bedouin": "duɣriː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_dir_right",
@@ -48,8 +50,9 @@
     "audio": "/audio/directions/l2_dir_right.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_right_bedouin.mp3",
     "phonetic_arabic": "يَمِينْ",
-    "ipa_bedouin": "j a m i iː n",
-    "gender": "female"
+    "ipa_bedouin": "jamiːn",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_dir_left",
@@ -65,8 +68,9 @@
     "audio": "/audio/directions/l2_dir_left.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_left_bedouin.mp3",
     "phonetic_arabic": "شْمَالْ",
-    "ipa_bedouin": "ʃ m a aː l",
-    "gender": "female"
+    "ipa_bedouin": "ʃmaːl",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_dir_here",
@@ -82,8 +86,9 @@
     "audio": "/audio/directions/l2_dir_here.mp3",
     "phonetic_arabic": "هُونْ",
     "audio_bedouin": "/audio/directions/l2_dir_here_bedouin.mp3",
-    "ipa_bedouin": "h u uː n",
-    "gender": "female"
+    "ipa_bedouin": "huːn",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_dir_there",
@@ -99,7 +104,8 @@
     "audio": "/audio/directions/l2_dir_there.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_there_bedouin.mp3",
     "phonetic_arabic": "هُنَاكْ",
-    "ipa_bedouin": "h u n a aː k",
-    "gender": "female"
+    "ipa_bedouin": "hunaːk",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

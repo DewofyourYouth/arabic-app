@@ -16,8 +16,9 @@
     "audio": "/audio/idioms/idiom_neeman.mp3",
     "audio_bedouin": "/audio/idioms/idiom_neeman_bedouin.mp3",
     "phonetic_arabic": "نعيماًْ",
-    "ipa_bedouin": "n ʕ iː m aː",
-    "gender": "female"
+    "ipa_bedouin": "nʕiːmaː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_tanjara",
@@ -97,8 +98,9 @@
     "audio": "/audio/idioms/idiom_jabal.mp3",
     "audio_bedouin": "/audio/idioms/idiom_jabal_bedouin.mp3",
     "phonetic_arabic": "يا جبل ما يهزك ريحْ",
-    "ipa_bedouin": "j aː d͡ʒ b l m aː iː h k r iː ħ",
-    "gender": "female"
+    "ipa_bedouin": "jaː d͡ʒbl maː iːhzk riːħ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_mn_3yunii",
@@ -116,8 +118,9 @@
     "audio": "/audio/idioms/idiom_mn_3yunii.mp3",
     "audio_bedouin": "/audio/idioms/idiom_mn_3yunii_bedouin.mp3",
     "phonetic_arabic": "من عيونيْ",
-    "ipa_bedouin": "m n ʕ iː uː n iː",
-    "gender": "female"
+    "ipa_bedouin": "mn ʕiːuːniː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_tikram",
@@ -135,8 +138,9 @@
     "audio": "/audio/idioms/idiom_tikram.mp3",
     "audio_bedouin": "/audio/idioms/idiom_tikram_bedouin.mp3",
     "phonetic_arabic": "تكرمْ / تكرميْ",
-    "ipa_bedouin": "t k r m t k r m iː",
-    "gender": "female"
+    "ipa_bedouin": "tkrm  tkrmiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_ala_rasi",
@@ -154,8 +158,9 @@
     "audio": "/audio/idioms/idiom_ala_rasi.mp3",
     "audio_bedouin": "/audio/idioms/idiom_ala_rasi_bedouin.mp3",
     "phonetic_arabic": "على راسيْ",
-    "ipa_bedouin": "ʕ l r aː s iː",
-    "gender": "female"
+    "ipa_bedouin": "ʕla raːsiː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_zabbatha",
@@ -173,8 +178,9 @@
     "audio": "/audio/idioms/idiom_zabbatha.mp3",
     "audio_bedouin": "/audio/idioms/idiom_zabbatha_bedouin.mp3",
     "phonetic_arabic": "زبطهاْ",
-    "ipa_bedouin": "b tˤ h aː",
-    "gender": "female"
+    "ipa_bedouin": "zbtˤhaː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_sa7tein",
@@ -193,8 +199,9 @@
     "audio": "/audio/idioms/idiom_sa7tein.mp3",
     "audio_bedouin": "/audio/idioms/idiom_sa7tein_bedouin.mp3",
     "phonetic_arabic": "صحتينْ",
-    "ipa_bedouin": "sˤ ħ t iː n",
-    "gender": "female"
+    "ipa_bedouin": "sˤħtiːn",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_yatik_afya",
@@ -212,8 +219,9 @@
     "audio": "/audio/idioms/idiom_yatik_afya.mp3",
     "audio_bedouin": "/audio/idioms/idiom_yatik_afya_bedouin.mp3",
     "phonetic_arabic": "يعطيك العافيهْ",
-    "ipa_bedouin": "j ʕ tˤ iː k aː l ʕ aː f iː a",
-    "gender": "female"
+    "ipa_bedouin": "jʕtˤiːk aːlʕaːfiːa",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_tikrar_hmar",
@@ -231,8 +239,9 @@
     "audio": "/audio/idioms/idiom_tikrar_hmar.mp3",
     "audio_bedouin": "/audio/idioms/idiom_tikrar_hmar_bedouin.mp3",
     "phonetic_arabic": "التكرار بعلم الحمارْ",
-    "ipa_bedouin": "aː l t k r aː r b ʕ l m aː l ħ m aː r",
-    "gender": "female"
+    "ipa_bedouin": "aːltkraːr bʕlm aːlħmaːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_temmak_sama",
@@ -250,8 +259,9 @@
     "audio": "/audio/idioms/idiom_temmak_sama.mp3",
     "audio_bedouin": "/audio/idioms/idiom_temmak_sama_bedouin.mp3",
     "phonetic_arabic": "من تمك لباب السماْ",
-    "ipa_bedouin": "m n t m k l b aː b aː l s m aː",
-    "gender": "female"
+    "ipa_bedouin": "mn tmk lbaːb aːlsmaː",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_faat_maat",
@@ -269,8 +279,9 @@
     "audio": "/audio/idioms/idiom_faat_maat.mp3",
     "audio_bedouin": "/audio/idioms/idiom_faat_maat_bedouin.mp3",
     "phonetic_arabic": "يلي فات ماتْ",
-    "ipa_bedouin": "j l iː f aː t m aː t",
-    "gender": "female"
+    "ipa_bedouin": "jliː faːt maːt",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_dammak_khafif",
@@ -288,8 +299,9 @@
     "audio": "/audio/idioms/idiom_dammak_khafif.mp3",
     "audio_bedouin": "/audio/idioms/idiom_dammak_khafif_bedouin.mp3",
     "phonetic_arabic": "دمك خفيفْ",
-    "ipa_bedouin": "d m k x f iː f",
-    "gender": "female"
+    "ipa_bedouin": "dmk xfiːf",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_akho_shilite",
@@ -307,7 +319,8 @@
     "audio": "/audio/idioms/idiom_akho_shilite.mp3",
     "audio_bedouin": "/audio/idioms/idiom_akho_shilite_bedouin.mp3",
     "phonetic_arabic": "أخو الشليتهْ",
-    "ipa_bedouin": "ʔ a x uː aː l ʃ l iː t a",
-    "gender": "female"
+    "ipa_bedouin": "ʔ axuː aːlʃliːta",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]
