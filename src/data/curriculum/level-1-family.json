@@ -9,7 +9,11 @@
     "english": "Father",
     "hebrew": "אבא",
     "hebrewTransliteration": "אַבּ",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_father.mp3"
   },
   {
     "id": "l1_fam_mother",
@@ -21,7 +25,11 @@
     "english": "Mother",
     "hebrew": "אמא",
     "hebrewTransliteration": "אִם",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_mother.mp3"
   },
   {
     "id": "l1_fam_brother",
@@ -33,7 +41,11 @@
     "english": "Brother",
     "hebrew": "אח",
     "hebrewTransliteration": "אַח",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_brother.mp3"
   },
   {
     "id": "l1_fam_sister",
@@ -45,7 +57,11 @@
     "english": "Sister",
     "hebrew": "אחות",
     "hebrewTransliteration": "אֻחְת",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_sister.mp3"
   },
   {
     "id": "l1_fam_friend_m",
@@ -57,7 +73,11 @@
     "english": "Friend (male)",
     "hebrew": "חבר",
     "hebrewTransliteration": "צַאחִבּ",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_friend_m.mp3"
   },
   {
     "id": "l1_fam_friend_f",
@@ -69,7 +89,11 @@
     "english": "Friend (female)",
     "hebrew": "חברה",
     "hebrewTransliteration": "צַאחְבֶּה",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_friend_f.mp3"
   },
   {
     "id": "l1_fam_boy",
@@ -81,7 +105,11 @@
     "english": "Boy",
     "hebrew": "ילד",
     "hebrewTransliteration": "וַלַד",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_boy.mp3"
   },
   {
     "id": "l1_fam_girl",
@@ -93,7 +121,11 @@
     "english": "Girl / Daughter",
     "hebrew": "ילדה / בת",
     "hebrewTransliteration": "בִּנְת",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_girl.mp3"
   },
   {
     "id": "l1_fam_man",
@@ -105,7 +137,11 @@
     "english": "Man",
     "hebrew": "גבר / איש",
     "hebrewTransliteration": "זַלַמֶה",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_man.mp3"
   },
   {
     "id": "l1_fam_woman",
@@ -117,7 +153,11 @@
     "english": "Woman",
     "hebrew": "אישה",
     "hebrewTransliteration": "מַרַה",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_woman.mp3"
   },
   {
     "id": "l1_fam_grandfather",
@@ -129,7 +169,11 @@
     "english": "Grandfather",
     "hebrew": "סבא",
     "hebrewTransliteration": "סִידוֹ",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_grandfather.mp3"
   },
   {
     "id": "l1_fam_grandmother",
@@ -141,7 +185,11 @@
     "english": "Grandmother",
     "hebrew": "סבתא",
     "hebrewTransliteration": "תֵיתַה",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_grandmother.mp3"
   },
   {
     "id": "l1_fam_uncle_p",
@@ -153,7 +201,11 @@
     "english": "Uncle (Paternal)",
     "hebrew": "דוד (אבא)",
     "hebrewTransliteration": "עַם",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_uncle_p.mp3"
   },
   {
     "id": "l1_fam_aunt_p",
@@ -165,7 +217,11 @@
     "english": "Aunt (Paternal)",
     "hebrew": "דודה (אבא)",
     "hebrewTransliteration": "עַמֶּה",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_aunt_p.mp3"
   },
   {
     "id": "l1_fam_uncle_m",
@@ -177,7 +233,11 @@
     "english": "Uncle (Maternal)",
     "hebrew": "דוד (אמא)",
     "hebrewTransliteration": "חַ'אל",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_uncle_m.mp3"
   },
   {
     "id": "l1_fam_aunt_m",
@@ -189,7 +249,11 @@
     "english": "Aunt (Maternal)",
     "hebrew": "דודה (אמא)",
     "hebrewTransliteration": "חַ'אלֶה",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_aunt_m.mp3"
   },
   {
     "id": "l1_fam_husband",
@@ -201,8 +265,14 @@
     "english": "Husband (Levantine)",
     "hebrew": "בעל",
     "hebrewTransliteration": "ג'וֹז",
-    "alternatives": ["Zowj"],
-    "tags": ["family", "noun"]
+    "alternatives": [
+      "Zowj"
+    ],
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_husband.mp3"
   },
   {
     "id": "l1_fam_husband_formal",
@@ -214,7 +284,11 @@
     "english": "Husband (Formal)",
     "hebrew": "בעל (רשמי)",
     "hebrewTransliteration": "זטֹוּג'",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_husband_formal.mp3"
   },
   {
     "id": "l1_fam_husband_possessive",
@@ -226,7 +300,11 @@
     "english": "My Husband",
     "hebrew": "בעלי",
     "hebrewTransliteration": "ג'וֹזִי / זוֹגִ'י",
-    "tags": ["family", "phrase"]
+    "tags": [
+      "family",
+      "phrase"
+    ],
+    "audio": "/audio/family/l1_fam_husband_possessive.mp3"
   },
   {
     "id": "l1_fam_wife_possessive",
@@ -238,7 +316,11 @@
     "english": "My Wife",
     "hebrew": "אשתי",
     "hebrewTransliteration": "מַרַתִי / זוֹגַ'תִי",
-    "tags": ["family", "phrase"]
+    "tags": [
+      "family",
+      "phrase"
+    ],
+    "audio": "/audio/family/l1_fam_wife_possessive.mp3"
   },
   {
     "id": "l1_fam_my_love_m",
@@ -250,7 +332,11 @@
     "english": "My Love / My Dear (to male)",
     "hebrew": "אהובי / חביבי",
     "hebrewTransliteration": "חַבִּיבִּי",
-    "tags": ["family", "endearment"]
+    "tags": [
+      "family",
+      "endearment"
+    ],
+    "audio": "/audio/family/l1_fam_my_love_m.mp3"
   },
   {
     "id": "l1_fam_my_love_f",
@@ -262,9 +348,13 @@
     "english": "My Love / My Dear (to female)",
     "hebrew": "אהובתי / חביבתי",
     "hebrewTransliteration": "חַבִּיבְּתִי",
-    "tags": ["family", "endearment"]
+    "tags": [
+      "family",
+      "endearment"
+    ],
+    "audio": "/audio/family/l1_fam_my_love_f.mp3"
   },
-   {
+  {
     "id": "l1_fam_fiance_m",
     "level": 1,
     "topic": "family",
@@ -274,7 +364,11 @@
     "english": "My Fiance (male)",
     "hebrew": "ארוסי",
     "hebrewTransliteration": "חַ'טִיבִּי",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_fiance_m.mp3"
   },
   {
     "id": "l1_fam_fiance_f",
@@ -286,7 +380,11 @@
     "english": "My Fiancee (female)",
     "hebrew": "ארוסתי",
     "hebrewTransliteration": "חַ'טִיבְּתִי",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_fiance_f.mp3"
   },
   {
     "id": "l1_ppl_old_man",
@@ -298,7 +396,11 @@
     "english": "Old Man / Elderly",
     "hebrew": "זקן / קשיש",
     "hebrewTransliteration": "חִ'תְיַאר / עַג'וּז",
-    "tags": ["people", "adjective"]
+    "tags": [
+      "people",
+      "adjective"
+    ],
+    "audio": "/audio/people/l1_ppl_old_man.mp3"
   },
   {
     "id": "l1_ppl_teenager",
@@ -310,7 +412,11 @@
     "english": "Teenager",
     "hebrew": "נער / מתבגר",
     "hebrewTransliteration": "מֻרַאהֶק",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/people/l1_ppl_teenager.mp3"
   },
   {
     "id": "l1_ppl_baby",
@@ -322,7 +428,11 @@
     "english": "Child / Baby",
     "hebrew": "תינוק / ילד",
     "hebrewTransliteration": "טִפְל",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/people/l1_ppl_baby.mp3"
   },
   {
     "id": "l1_ppl_shab",
@@ -334,7 +444,11 @@
     "english": "Young Man / Guy",
     "hebrew": "בחור",
     "hebrewTransliteration": "שַׁבּ",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/people/l1_ppl_shab.mp3"
   },
   {
     "id": "l1_ppl_sabiyye",
@@ -346,7 +460,11 @@
     "english": "Young Woman / Gal",
     "hebrew": "בחורה",
     "hebrewTransliteration": "צַבִּיֶּה",
-    "tags": ["people", "noun"]
+    "tags": [
+      "people",
+      "noun"
+    ],
+    "audio": "/audio/people/l1_ppl_sabiyye.mp3"
   },
   {
     "id": "l1_fam_wife",
@@ -358,7 +476,11 @@
     "english": "Wife / Woman",
     "hebrew": "אישה / רעיה",
     "hebrewTransliteration": "מַרַה",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_wife.mp3"
   },
   {
     "id": "l1_fam_son",
@@ -370,6 +492,10 @@
     "english": "Son",
     "hebrew": "בן",
     "hebrewTransliteration": "אִבְּן",
-    "tags": ["family", "noun"]
+    "tags": [
+      "family",
+      "noun"
+    ],
+    "audio": "/audio/family/l1_fam_son.mp3"
   }
 ]

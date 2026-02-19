@@ -9,7 +9,10 @@
     "english": "House / Home",
     "hebrew": "בית",
     "hebrewTransliteration": "בֵּית",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_home.mp3"
   },
   {
     "id": "l2_house_room",
@@ -21,7 +24,10 @@
     "english": "Room",
     "hebrew": "חדר",
     "hebrewTransliteration": "עֻ'רְפֶה",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_room.mp3"
   },
   {
     "id": "l2_house_kitchen",
@@ -33,7 +39,10 @@
     "english": "Kitchen",
     "hebrew": "מטבח",
     "hebrewTransliteration": "מַטְבַּח'",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_kitchen.mp3"
   },
   {
     "id": "l2_house_bathroom",
@@ -45,7 +54,10 @@
     "english": "Bathroom",
     "hebrew": "שירותים / מקלחת",
     "hebrewTransliteration": "חַמַּאם",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_bathroom.mp3"
   },
   {
     "id": "l2_house_door",
@@ -57,7 +69,10 @@
     "english": "Door",
     "hebrew": "דלת",
     "hebrewTransliteration": "בַּאבּ",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_door.mp3"
   },
   {
     "id": "l2_house_window",
@@ -69,7 +84,10 @@
     "english": "Window",
     "hebrew": "חלון",
     "hebrewTransliteration": "שֻבַּאכּ",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_window.mp3"
   },
   {
     "id": "l2_house_chair",
@@ -81,7 +99,10 @@
     "english": "Chair",
     "hebrew": "כיסא",
     "hebrewTransliteration": "כֻּרְסִי",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_chair.mp3"
   },
   {
     "id": "l2_house_table",
@@ -93,7 +114,10 @@
     "english": "Table",
     "hebrew": "שולחן",
     "hebrewTransliteration": "טַאוּלֶה",
-    "tags": ["household"]
+    "tags": [
+      "household"
+    ],
+    "audio": "/audio/household/l2_house_table.mp3"
   },
   {
     "id": "l2_house_yard",
@@ -105,7 +129,11 @@
     "english": "Yard / Open space",
     "hebrew": "חצר / רחבה",
     "hebrewTransliteration": "סַאחַה",
-    "tags": ["household", "place"]
+    "tags": [
+      "household",
+      "place"
+    ],
+    "audio": "/audio/household/l2_house_yard.mp3"
   },
   {
     "id": "l2_house_space_storage",
@@ -117,7 +145,11 @@
     "english": "Space / Storage / Area",
     "hebrew": "שטח / מקום",
     "hebrewTransliteration": "מַסַאחַה",
-    "tags": ["household", "noun"]
+    "tags": [
+      "household",
+      "noun"
+    ],
+    "audio": "/audio/household/l2_house_space_storage.mp3"
   },
   {
     "id": "l2_house_storeroom",
@@ -129,7 +161,11 @@
     "english": "Store room / Warehouse",
     "hebrew": "מחסן",
     "hebrewTransliteration": "מַחְ'זַן",
-    "tags": ["household", "place"]
+    "tags": [
+      "household",
+      "place"
+    ],
+    "audio": "/audio/household/l2_house_storeroom.mp3"
   },
   {
     "id": "l2_house_store_verb",
@@ -141,7 +177,11 @@
     "english": "To store / To save",
     "hebrew": "לאחסן",
     "hebrewTransliteration": "חַ'זַּן",
-    "tags": ["household", "verb"]
+    "tags": [
+      "household",
+      "verb"
+    ],
+    "audio": "/audio/household/l2_house_store_verb.mp3"
   },
   {
     "id": "l2_house_space_room",
@@ -153,7 +193,11 @@
     "english": "Space / Room (to fit something)",
     "hebrew": "מקום (מרחב)",
     "hebrewTransliteration": "וַסַע",
-    "tags": ["household", "noun"]
+    "tags": [
+      "household",
+      "noun"
+    ],
+    "audio": "/audio/household/l2_house_space_room.mp3"
   },
   {
     "id": "l2_house_wide",
@@ -165,7 +209,11 @@
     "english": "Wide / Spacious",
     "hebrew": "רחב / מרווח",
     "hebrewTransliteration": "וַאסִע",
-    "tags": ["household", "adjective"]
+    "tags": [
+      "household",
+      "adjective"
+    ],
+    "audio": "/audio/household/l2_house_wide.mp3"
   },
   {
     "id": "l2_house_wall",
@@ -177,7 +225,11 @@
     "english": "Wall",
     "hebrew": "קיר",
     "hebrewTransliteration": "חִיט",
-    "tags": ["household", "noun"]
+    "tags": [
+      "household",
+      "noun"
+    ],
+    "audio": "/audio/household/l2_house_wall.mp3"
   },
   {
     "id": "l2_house_walls",
@@ -189,6 +241,11 @@
     "english": "Walls",
     "hebrew": "קירות",
     "hebrewTransliteration": "חִיטַאן",
-    "tags": ["household", "noun", "plural"]
+    "tags": [
+      "household",
+      "noun",
+      "plural"
+    ],
+    "audio": "/audio/household/l2_house_walls.mp3"
   }
 ]

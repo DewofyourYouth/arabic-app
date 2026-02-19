@@ -7,7 +7,11 @@
     "arabic": "الْيُوم",
     "transliteration": "El-yom",
     "english": "Today",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_today.mp3"
   },
   {
     "id": "time_tomorrow",
@@ -17,7 +21,11 @@
     "arabic": "بُكْرَة",
     "transliteration": "Bukra",
     "english": "Tomorrow",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_tomorrow.mp3"
   },
   {
     "id": "time_yesterday",
@@ -27,7 +35,11 @@
     "arabic": "مْبَارِح",
     "transliteration": "Mbare7",
     "english": "Yesterday",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_yesterday.mp3"
   },
   {
     "id": "time_now",
@@ -37,7 +49,11 @@
     "arabic": "هَلَّأ",
     "transliteration": "Halla'",
     "english": "Now",
-    "tags": ["time", "adverb"]
+    "tags": [
+      "time",
+      "adverb"
+    ],
+    "audio": "/audio/time/time_now.mp3"
   },
   {
     "id": "time_later",
@@ -47,7 +63,11 @@
     "arabic": "بَعْدِين",
     "transliteration": "Ba'den",
     "english": "Later",
-    "tags": ["time", "adverb"]
+    "tags": [
+      "time",
+      "adverb"
+    ],
+    "audio": "/audio/time/time_later.mp3"
   },
   {
     "id": "time_morning",
@@ -57,7 +77,11 @@
     "arabic": "صُبُح",
     "transliteration": "Soboh",
     "english": "Morning",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_morning.mp3"
   },
   {
     "id": "time_night",
@@ -67,7 +91,11 @@
     "arabic": "لِيل",
     "transliteration": "Leil",
     "english": "Night",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_night.mp3"
   },
   {
     "id": "time_day_generic",
@@ -77,7 +105,11 @@
     "arabic": "يُوم",
     "transliteration": "Yom",
     "english": "Day",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_day_generic.mp3"
   },
   {
     "id": "time_week",
@@ -87,7 +119,11 @@
     "arabic": "أُسْبُوع",
     "transliteration": "Usbu'",
     "english": "Week",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_week.mp3"
   },
   {
     "id": "time_month",
@@ -97,7 +133,11 @@
     "arabic": "شَهْر",
     "transliteration": "Shahr",
     "english": "Month",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_month.mp3"
   },
   {
     "id": "time_year",
@@ -107,9 +147,13 @@
     "arabic": "سَنِة",
     "transliteration": "Saneh",
     "english": "Year",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_year.mp3"
   },
-    {
+  {
     "id": "time_sunday",
     "level": 1,
     "topic": "time",
@@ -117,7 +161,11 @@
     "arabic": "الأَحَد",
     "transliteration": "El-Ahad",
     "english": "Sunday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_sunday.mp3"
   },
   {
     "id": "time_monday",
@@ -127,7 +175,11 @@
     "arabic": "التِّنِين",
     "transliteration": "Et-Tanen",
     "english": "Monday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_monday.mp3"
   },
   {
     "id": "time_tuesday",
@@ -137,7 +189,11 @@
     "arabic": "التَّلَاتَا",
     "transliteration": "Et-Talata",
     "english": "Tuesday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_tuesday.mp3"
   },
   {
     "id": "time_wednesday",
@@ -147,7 +203,11 @@
     "arabic": "الأَرْبِعَا",
     "transliteration": "El-Arbi'a",
     "english": "Wednesday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_wednesday.mp3"
   },
   {
     "id": "time_thursday",
@@ -157,7 +217,11 @@
     "arabic": "الخَمِيس",
     "transliteration": "El-Khamis",
     "english": "Thursday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_thursday.mp3"
   },
   {
     "id": "time_friday",
@@ -167,7 +231,11 @@
     "arabic": "الجمعة",
     "transliteration": "El-Jum'a",
     "english": "Friday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_friday.mp3"
   },
   {
     "id": "time_saturday",
@@ -177,6 +245,10 @@
     "arabic": "السَّبْت",
     "transliteration": "Es-Sabt",
     "english": "Saturday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_saturday.mp3"
   }
 ]

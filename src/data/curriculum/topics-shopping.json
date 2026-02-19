@@ -9,7 +9,11 @@
     "english": "How much is this?",
     "hebrew": "כמה זה עולה?",
     "hebrewTransliteration": "אדֵיש חָקוֹ?",
-    "tags": ["shopping", "common"]
+    "tags": [
+      "shopping",
+      "common"
+    ],
+    "audio": "/audio/shopping/l2_shop_howmuch.mp3"
   },
   {
     "id": "l2_shop_expensive",
@@ -21,7 +25,10 @@
     "english": "Expensive",
     "hebrew": "יקר",
     "hebrewTransliteration": "עָ'אלִי",
-    "tags": ["shopping"]
+    "tags": [
+      "shopping"
+    ],
+    "audio": "/audio/shopping/l2_shop_expensive.mp3"
   },
   {
     "id": "l2_shop_cheap",
@@ -33,7 +40,10 @@
     "english": "Cheap",
     "hebrew": "זול",
     "hebrewTransliteration": "רְחִ'יס",
-    "tags": ["shopping"]
+    "tags": [
+      "shopping"
+    ],
+    "audio": "/audio/shopping/l2_shop_cheap.mp3"
   },
   {
     "id": "l2_shop_discount",
@@ -45,7 +55,10 @@
     "english": "Is there a discount?",
     "hebrew": "יש הנחה?",
     "hebrewTransliteration": "פִי חַ'סִם?",
-    "tags": ["shopping"]
+    "tags": [
+      "shopping"
+    ],
+    "audio": "/audio/shopping/l2_shop_discount.mp3"
   },
   {
     "id": "l2_shop_clothes",
@@ -57,7 +70,10 @@
     "english": "Clothes",
     "hebrew": "בגדים",
     "hebrewTransliteration": "אַוָואעִי",
-    "tags": ["shopping"]
+    "tags": [
+      "shopping"
+    ],
+    "audio": "/audio/shopping/l2_shop_clothes.mp3"
   },
   {
     "id": "l2_shop_market",
@@ -69,7 +85,10 @@
     "english": "Market",
     "hebrew": "שוק",
     "hebrewTransliteration": "סוּק",
-    "tags": ["shopping"]
+    "tags": [
+      "shopping"
+    ],
+    "audio": "/audio/shopping/l2_shop_market.mp3"
   },
   {
     "id": "l2_shop_boots",
@@ -81,7 +100,11 @@
     "english": "Boots",
     "hebrew": "מגפיים",
     "hebrewTransliteration": "גַ'זְמֶה",
-    "tags": ["shopping", "clothes"]
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "audio": "/audio/shopping/l2_shop_boots.mp3"
   },
   {
     "id": "l2_shop_shoes_sport",
@@ -93,7 +116,11 @@
     "english": "Boots / Sport shoes",
     "hebrew": "נעלי ספורט",
     "hebrewTransliteration": "בּוֹט",
-    "tags": ["shopping", "clothes"]
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "audio": "/audio/shopping/l2_shop_shoes_sport.mp3"
   },
   {
     "id": "l2_shop_shoes",
@@ -105,7 +132,11 @@
     "english": "Shoes",
     "hebrew": "נעליים",
     "hebrewTransliteration": "כֻּנְדַרַה",
-    "tags": ["shopping", "clothes"]
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "audio": "/audio/shopping/l2_shop_shoes.mp3"
   },
   {
     "id": "l2_shop_shoes_flipped",
@@ -117,6 +148,10 @@
     "english": "Shoes (common)",
     "hebrew": "נעליים (נפוץ)",
     "hebrewTransliteration": "סַבַּאט",
-    "tags": ["shopping", "clothes"]
+    "tags": [
+      "shopping",
+      "clothes"
+    ],
+    "audio": "/audio/shopping/l2_shop_shoes_flipped.mp3"
   }
 ]

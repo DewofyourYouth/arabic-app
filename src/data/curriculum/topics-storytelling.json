@@ -7,7 +7,10 @@
     "arabic": "مْبَارِح",
     "transliteration": "Mbareh",
     "english": "Yesterday",
-    "tags": ["time"]
+    "tags": [
+      "time"
+    ],
+    "audio": "/audio/storytelling/l2_story_yesterday.mp3"
   },
   {
     "id": "l2_story_tomorrow",
@@ -17,7 +20,10 @@
     "arabic": "بُكْرَة",
     "transliteration": "Bukra",
     "english": "Tomorrow",
-    "tags": ["time"]
+    "tags": [
+      "time"
+    ],
+    "audio": "/audio/storytelling/l2_story_tomorrow.mp3"
   },
   {
     "id": "l2_story_now",
@@ -27,7 +33,10 @@
     "arabic": "هَلَّأ",
     "transliteration": "Halla'",
     "english": "Now",
-    "tags": ["time"]
+    "tags": [
+      "time"
+    ],
+    "audio": "/audio/storytelling/l2_story_now.mp3"
   },
   {
     "id": "l2_story_after",
@@ -37,7 +46,10 @@
     "arabic": "بَعِد مَا...",
     "transliteration": "Ba'd ma...",
     "english": "After...",
-    "tags": ["connector"]
+    "tags": [
+      "connector"
+    ],
+    "audio": "/audio/storytelling/l2_story_after.mp3"
   },
   {
     "id": "l2_story_before",
@@ -47,7 +59,10 @@
     "arabic": "قَبِل مَا...",
     "transliteration": "Qabil ma...",
     "english": "Before...",
-    "tags": ["connector"]
+    "tags": [
+      "connector"
+    ],
+    "audio": "/audio/storytelling/l2_story_before.mp3"
   },
   {
     "id": "l2_story_then",
@@ -57,7 +72,10 @@
     "arabic": "بَعْدِين",
     "transliteration": "Ba'dein",
     "english": "Then / Later",
-    "tags": ["connector"]
+    "tags": [
+      "connector"
+    ],
+    "audio": "/audio/storytelling/l2_story_then.mp3"
   },
   {
     "id": "l2_story_suddenly",
@@ -67,6 +85,9 @@
     "arabic": "فَجْأَة",
     "transliteration": "Faj'a",
     "english": "Suddenly",
-    "tags": ["connector"]
+    "tags": [
+      "connector"
+    ],
+    "audio": "/audio/storytelling/l2_story_suddenly.mp3"
   }
 ]

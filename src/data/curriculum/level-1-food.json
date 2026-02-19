@@ -9,7 +9,12 @@
     "english": "Water",
     "hebrew": "מים",
     "image": "water.png",
-    "tags": ["food", "drink"]
+    "tags": [
+      "food",
+      "drink"
+    ],
+    "ipa": "majj",
+    "audio": "/audio/food/l1_food_water.mp3"
   },
   {
     "id": "l1_food_coffee",
@@ -21,7 +26,14 @@
     "english": "Coffee",
     "hebrew": "קפה",
     "image": "coffee.png",
-    "tags": ["food", "drink"]
+    "tags": [
+      "food",
+      "drink"
+    ],
+    "ipa": "xsampa:?ah.we",
+    "ipa_bedouin": "xsampa:gah.wa",
+    "audio": "/audio/food/l1_food_coffee.mp3",
+    "audio_bedouin": "/audio/food/l1_food_coffee_bedouin.mp3"
   },
   {
     "id": "l1_food_tea",
@@ -32,7 +44,12 @@
     "transliteration": "Shai",
     "english": "Tea",
     "hebrew": "תה",
-    "tags": ["food", "drink"]
+    "tags": [
+      "food",
+      "drink"
+    ],
+    "ipa": "ʃaːj",
+    "audio": "/audio/food/l1_food_tea.mp3"
   },
   {
     "id": "l1_food_bread",
@@ -43,7 +60,12 @@
     "transliteration": "Khubez",
     "english": "Bread",
     "hebrew": "לחם",
-    "tags": ["food", "staple"]
+    "tags": [
+      "food",
+      "staple"
+    ],
+    "ipa": "ˈxu.biz",
+    "audio": "/audio/food/l1_food_bread.mp3"
   },
   {
     "id": "l1_food_chicken",
@@ -54,7 +76,14 @@
     "transliteration": "Djal / Jaj",
     "english": "Chicken",
     "hebrew": "עוף",
-    "tags": ["food", "meat"]
+    "tags": [
+      "food",
+      "meat"
+    ],
+    "ipa": "ʒaːʒ",
+    "ipa_bedouin": "dʒaːʒ",
+    "audio": "/audio/food/l1_food_chicken.mp3",
+    "audio_bedouin": "/audio/food/l1_food_chicken_bedouin.mp3"
   },
   {
     "id": "l1_food_meat",
@@ -65,7 +94,12 @@
     "transliteration": "Lahmeh",
     "english": "Meat",
     "hebrew": "בשר",
-    "tags": ["food", "meat"]
+    "tags": [
+      "food",
+      "meat"
+    ],
+    "ipa": "ˈlaħ.me",
+    "audio": "/audio/food/l1_food_meat.mp3"
   },
   {
     "id": "l1_food_banana",
@@ -77,7 +111,12 @@
     "english": "Banana",
     "hebrew": "בננה",
     "image": "banana.png",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "moːz",
+    "audio": "/audio/food/l1_food_banana.mp3"
   },
   {
     "id": "l1_food_apple",
@@ -89,7 +128,12 @@
     "english": "Apple",
     "hebrew": "תפוח",
     "image": "apple.png",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "tuf.ˈfaːħ",
+    "audio": "/audio/food/l1_food_apple.mp3"
   },
   {
     "id": "l1_food_orange",
@@ -101,7 +145,14 @@
     "english": "Orange",
     "hebrew": "תפוז",
     "image": "orange.png",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "bur.tu.ˈʔaːl",
+    "ipa_bedouin": "bur.tu.ˈgaːl",
+    "audio": "/audio/food/l1_food_orange.mp3",
+    "audio_bedouin": "/audio/food/l1_food_orange_bedouin.mp3"
   },
   {
     "id": "l1_food_grapes",
@@ -113,7 +164,12 @@
     "english": "Grapes",
     "hebrew": "ענבים",
     "image": "grapes.jpg",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "ˈʕi.nab",
+    "audio": "/audio/food/l1_food_grapes.mp3"
   },
   {
     "id": "l1_food_strawberry",
@@ -125,7 +181,12 @@
     "english": "Strawberry",
     "hebrew": "תות",
     "image": "strawberry.jpg",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "fa.ˈraw.la",
+    "audio": "/audio/food/l1_food_strawberry.mp3"
   },
   {
     "id": "l1_food_watermelon",
@@ -137,7 +198,12 @@
     "english": "Watermelon",
     "hebrew": "אבטיח",
     "image": "watermelon.png",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "bat.ˈtˤiːx",
+    "audio": "/audio/food/l1_food_watermelon.mp3"
   },
   {
     "id": "l1_food_mango",
@@ -149,7 +215,12 @@
     "english": "Mango",
     "hebrew": "מנגו",
     "image": "mango.jpg",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "ˈman.ga",
+    "audio": "/audio/food/l1_food_mango.mp3"
   },
   {
     "id": "l1_food_coconut",
@@ -161,7 +232,14 @@
     "english": "Coconut",
     "hebrew": "קוקוס",
     "image": "coconut.jpg",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "ʒoːz l.hind",
+    "ipa_bedouin": "dʒoːz l.hind",
+    "audio": "/audio/food/l1_food_coconut.mp3",
+    "audio_bedouin": "/audio/food/l1_food_coconut_bedouin.mp3"
   },
   {
     "id": "l1_food_melon",
@@ -172,7 +250,12 @@
     "transliteration": "Shummam",
     "english": "Melon",
     "hebrew": "מלון",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "ʃam.ˈmaːm",
+    "audio": "/audio/food/l1_food_melon.mp3"
   },
   {
     "id": "l1_food_pomegranate",
@@ -184,7 +267,12 @@
     "english": "Pomegranate",
     "hebrew": "רימון",
     "image": "pomegranate.jpg",
-    "tags": ["food", "fruit"]
+    "tags": [
+      "food",
+      "fruit"
+    ],
+    "ipa": "rum.ˈmaːn",
+    "audio": "/audio/food/l1_food_pomegranate.mp3"
   },
   {
     "id": "l1_food_tomato",
@@ -196,7 +284,12 @@
     "english": "Tomato",
     "hebrew": "עגבניה",
     "image": "tomatoes.jpg",
-    "tags": ["food", "vegetable"]
+    "tags": [
+      "food",
+      "vegetable"
+    ],
+    "ipa": "ban.ˈdoː.ra",
+    "audio": "/audio/food/l1_food_tomato.mp3"
   },
   {
     "id": "l1_food_cucumber",
@@ -207,7 +300,12 @@
     "transliteration": "Khyar",
     "english": "Cucumber",
     "hebrew": "מלפפון",
-    "tags": ["food", "vegetable"]
+    "tags": [
+      "food",
+      "vegetable"
+    ],
+    "ipa": "xjaːr",
+    "audio": "/audio/food/l1_food_cucumber.mp3"
   },
   {
     "id": "l1_food_potato",
@@ -218,7 +316,12 @@
     "transliteration": "Batata",
     "english": "Potato",
     "hebrew": "תפוח אדמה",
-    "tags": ["food", "vegetable"]
+    "tags": [
+      "food",
+      "vegetable"
+    ],
+    "ipa": "ba.ˈtˤaː.tˤa",
+    "audio": "/audio/food/l1_food_potato.mp3"
   },
   {
     "id": "l1_food_delicious",
@@ -229,7 +332,12 @@
     "transliteration": "Zaki",
     "english": "Delicious",
     "hebrew": "טעים",
-    "tags": ["food", "adjective"]
+    "tags": [
+      "food",
+      "adjective"
+    ],
+    "ipa": "ˈzaː.ki",
+    "audio": "/audio/food/l1_food_delicious.mp3"
   },
   {
     "id": "l1_food_fat",
@@ -240,7 +348,12 @@
     "transliteration": "Dihin",
     "english": "Fat (noun)",
     "hebrew": "שומן",
-    "tags": ["food", "noun"]
+    "tags": [
+      "food",
+      "noun"
+    ],
+    "ipa": "ˈdi.hin",
+    "audio": "/audio/food/l1_food_fat.mp3"
   },
   {
     "id": "l1_food_fats",
@@ -251,7 +364,13 @@
     "transliteration": "Duhun",
     "english": "Fats",
     "hebrew": "שומנים",
-    "tags": ["food", "noun", "plural"]
+    "tags": [
+      "food",
+      "noun",
+      "plural"
+    ],
+    "ipa": "du.ˈhuːn",
+    "audio": "/audio/food/l1_food_fats.mp3"
   },
   {
     "id": "l1_food_fatty",
@@ -262,6 +381,11 @@
     "transliteration": "Duhni",
     "english": "Fatty / Oily",
     "hebrew": "שומני",
-    "tags": ["food", "adjective"]
+    "tags": [
+      "food",
+      "adjective"
+    ],
+    "ipa": "ˈduh.ni",
+    "audio": "/audio/food/l1_food_fatty.mp3"
   }
 ]

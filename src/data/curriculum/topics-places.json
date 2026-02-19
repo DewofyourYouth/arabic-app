@@ -8,7 +8,11 @@
     "transliteration": "Beit",
     "hebrew": "בית",
     "hebrewTransliteration": "בֵּית",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_house.mp3"
   },
   {
     "id": "place_street",
@@ -20,7 +24,11 @@
     "english": "Street",
     "hebrew": "רחוב",
     "hebrewTransliteration": "שַׁארֶע",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_street.mp3"
   },
   {
     "id": "place_school",
@@ -32,7 +40,11 @@
     "english": "School",
     "hebrew": "בית ספר",
     "hebrewTransliteration": "מַדְרַסֶה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_school.mp3"
   },
   {
     "id": "place_hospital",
@@ -44,7 +56,11 @@
     "english": "Hospital",
     "hebrew": "בית חולים",
     "hebrewTransliteration": "מֻסְתַשְׁפַא",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_hospital.mp3"
   },
   {
     "id": "place_airport",
@@ -56,7 +72,11 @@
     "english": "Airport",
     "hebrew": "שדה תעופה",
     "hebrewTransliteration": "מַטַאר",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_airport.mp3"
   },
   {
     "id": "place_hotel",
@@ -68,7 +88,11 @@
     "english": "Hotel",
     "hebrew": "מלון",
     "hebrewTransliteration": "פֻנְדֻק",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_hotel.mp3"
   },
   {
     "id": "place_restaurant",
@@ -79,7 +103,11 @@
     "transliteration": "Mat'am",
     "hebrew": "מסעדה",
     "hebrewTransliteration": "מַטְעַם",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_restaurant.mp3"
   },
   {
     "id": "place_cafe",
@@ -91,7 +119,11 @@
     "english": "Cafe / Coffee Shop",
     "hebrew": "בית קפה",
     "hebrewTransliteration": "אַהְוֶה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_cafe.mp3"
   },
   {
     "id": "place_market",
@@ -103,7 +135,11 @@
     "english": "Market / Souq",
     "hebrew": "שוק",
     "hebrewTransliteration": "סוּק",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_market.mp3"
   },
   {
     "id": "place_pharmacy",
@@ -115,7 +151,11 @@
     "english": "Pharmacy",
     "hebrew": "בית מרקחת",
     "hebrewTransliteration": "צַיְדַלִיֶּה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_pharmacy.mp3"
   },
   {
     "id": "place_university",
@@ -127,6 +167,10 @@
     "english": "University",
     "hebrew": "אוניברסיטה",
     "hebrewTransliteration": "גַ'אמְעַה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_university.mp3"
   }
 ]

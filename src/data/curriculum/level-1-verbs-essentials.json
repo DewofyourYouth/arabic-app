@@ -7,7 +7,11 @@
     "arabic": "بِدِّي",
     "transliteration": "Biddi",
     "english": "I want",
-    "tags": ["verb", "essential"]
+    "tags": [
+      "verb",
+      "essential"
+    ],
+    "audio": "/audio/verbs/l1_verb_want.mp3"
   },
   {
     "id": "l1_verb_go",
@@ -17,7 +21,11 @@
     "arabic": "بَرُوح",
     "transliteration": "Baruh",
     "english": "I go",
-    "tags": ["verb", "essential"]
+    "tags": [
+      "verb",
+      "essential"
+    ],
+    "audio": "/audio/verbs/l1_verb_go.mp3"
   },
   {
     "id": "l1_verb_see",
@@ -27,7 +35,11 @@
     "arabic": "بَشُوف",
     "transliteration": "Bashuf",
     "english": "I see",
-    "tags": ["verb", "essential"]
+    "tags": [
+      "verb",
+      "essential"
+    ],
+    "audio": "/audio/verbs/l1_verb_see.mp3"
   },
   {
     "id": "l1_verb_eat",
@@ -37,7 +49,11 @@
     "arabic": "بَاكُل",
     "transliteration": "Bakol",
     "english": "I eat",
-    "tags": ["verb", "essential"]
+    "tags": [
+      "verb",
+      "essential"
+    ],
+    "audio": "/audio/verbs/l1_verb_eat.mp3"
   },
   {
     "id": "l1_verb_drink",
@@ -47,6 +63,10 @@
     "arabic": "بَشْرَب",
     "transliteration": "Bashrab",
     "english": "I drink",
-    "tags": ["verb", "essential"]
+    "tags": [
+      "verb",
+      "essential"
+    ],
+    "audio": "/audio/verbs/l1_verb_drink.mp3"
   }
 ]

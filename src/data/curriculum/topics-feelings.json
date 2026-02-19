@@ -9,7 +9,11 @@
     "english": "Happy",
     "hebrew": "מבסוט / שמח",
     "hebrewTransliteration": "מַבְּסוּט",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_happy.mp3"
   },
   {
     "id": "l2_feel_sad",
@@ -21,7 +25,11 @@
     "english": "Sad / Upset",
     "hebrew": "עצוב / כועס",
     "hebrewTransliteration": "זַעְלַאן",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_sad.mp3"
   },
   {
     "id": "l2_feel_tired",
@@ -33,7 +41,11 @@
     "english": "Tired",
     "hebrew": "עייף",
     "hebrewTransliteration": "תַעְבַּאן",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_tired.mp3"
   },
   {
     "id": "l2_op_ibd",
@@ -45,7 +57,10 @@
     "english": "In my opinion...",
     "hebrew": "לדעתי...",
     "hebrewTransliteration": "אַנַא בְּרַאְיִי",
-    "tags": ["opinions"]
+    "tags": [
+      "opinions"
+    ],
+    "audio": "/audio/opinions/l2_op_ibd.mp3"
   },
   {
     "id": "l2_op_like",
@@ -57,7 +72,10 @@
     "english": "I like / I love...",
     "hebrew": "אני אוהב...",
     "hebrewTransliteration": "אַנַא בַּחִבּ",
-    "tags": ["opinions"]
+    "tags": [
+      "opinions"
+    ],
+    "audio": "/audio/opinions/l2_op_like.mp3"
   },
   {
     "id": "l2_op_whatthink",
@@ -69,7 +87,11 @@
     "english": "What do you think?",
     "hebrew": "מה דעתך?",
     "hebrewTransliteration": "שׁוּ רַאְיַכּ?",
-    "tags": ["opinions", "question"]
+    "tags": [
+      "opinions",
+      "question"
+    ],
+    "audio": "/audio/opinions/l2_op_whatthink.mp3"
   },
   {
     "id": "l2_feel_busy",
@@ -81,7 +103,11 @@
     "english": "Busy",
     "hebrew": "עסוק",
     "hebrewTransliteration": "מַשְׁע'וּל",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_busy.mp3"
   },
   {
     "id": "l2_feel_get_tired",
@@ -93,7 +119,11 @@
     "english": "To get tired",
     "hebrew": "להתעייף (התעייף)",
     "hebrewTransliteration": "תִעִבּ",
-    "tags": ["feelings", "verb"]
+    "tags": [
+      "feelings",
+      "verb"
+    ],
+    "audio": "/audio/feelings/l2_feel_get_tired.mp3"
   },
   {
     "id": "l2_feel_tiring",
@@ -105,7 +135,11 @@
     "english": "Tiring",
     "hebrew": "מעייף",
     "hebrewTransliteration": "מֻתְעִבּ",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_tiring.mp3"
   },
   {
     "id": "l2_feel_get_happy",
@@ -117,6 +151,10 @@
     "english": "To get happy / To enjoy",
     "hebrew": "ליהנות (נהנה)",
     "hebrewTransliteration": "אִנְבַּסַט",
-    "tags": ["feelings", "verb"]
+    "tags": [
+      "feelings",
+      "verb"
+    ],
+    "audio": "/audio/feelings/l2_feel_get_happy.mp3"
   }
 ]

@@ -7,7 +7,11 @@
     "arabic": "إِنْقَال",
     "transliteration": "Inqal",
     "english": "It was said",
-    "tags": ["grammar", "passive"]
+    "tags": [
+      "grammar",
+      "passive"
+    ],
+    "audio": "/audio/passive/l4_pass_it_was_said.mp3"
   },
   {
     "id": "l4_idiom_hand",
@@ -17,6 +21,10 @@
     "arabic": "يِسْلَمُو إِيدِيك",
     "transliteration": "Yislamu ideik",
     "english": "Bless your hands (Thank you for work/food)",
-    "tags": ["idiom", "cultural"]
+    "tags": [
+      "idiom",
+      "cultural"
+    ],
+    "audio": "/audio/idioms/l4_idiom_hand.mp3"
   }
 ]

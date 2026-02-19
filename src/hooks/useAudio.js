@@ -93,7 +93,35 @@ export const useAudio = () => {
     return processedText;
   };
 
-  const playPronunciation = useCallback((text) => {
+  const playPronunciation = useCallback((text, audioData) => {
+    // 1. Try playing audio file if available
+    let audioFile = null;
+
+    // Handle string (legacy/simple) vs object (future proofing if passed entire card)
+    // Actually, callers pass `cardData.audio`.
+    // But we need to know about `audio_bedouin`.
+    // So callers should probably pass the WHOLE card or both paths.
+    // Let's assume callers pass the `cardData` object or we change the signature.
+    // To minimize refactoring, let's keep `text` as first arg, and 2nd arg `audioData` can be the card object OR the audio path string.
+    
+    if (typeof audioData === 'object' && audioData !== null) {
+        const dialect = settings?.dialect || 'urban'; // default to urban/standard
+        if (dialect === 'bedouin' || dialect === 'rural') {
+            audioFile = audioData.audio_bedouin || audioData.audio; // Fallback to standard if bedouin missing
+        } else {
+            audioFile = audioData.audio;
+        }
+    } else if (typeof audioData === 'string') {
+        audioFile = audioData;
+    }
+
+    if (audioFile) {
+      const audio = new Audio(audioFile);
+      audio.play().catch(e => console.warn("Failed to play audio file:", e));
+      return;
+    }
+
+    // 2. Fallback to TTS
     if ('speechSynthesis' in window) {
       // Use dialect from settings, default to 'bedouin' if not set
       const dialect = settings?.dialect || 'bedouin';

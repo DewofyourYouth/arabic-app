@@ -10,7 +10,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_want.mp3"
   },
   {
     "id": "l1_v_go",
@@ -23,7 +24,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_go.mp3"
   },
   {
     "id": "l1_v_eat",
@@ -36,7 +38,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_eat.mp3"
   },
   {
     "id": "l1_v_drink",
@@ -49,7 +52,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_drink.mp3"
   },
   {
     "id": "l1_v_see",
@@ -62,7 +66,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_see.mp3"
   },
   {
     "id": "l1_v_know",
@@ -75,7 +80,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_know.mp3"
   },
   {
     "id": "l1_v_say",
@@ -88,7 +94,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_say.mp3"
   },
   {
     "id": "l1_v_do_make",
@@ -101,7 +108,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_do_make.mp3"
   },
   {
     "id": "l1_v_come",
@@ -114,7 +122,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_come.mp3"
   },
   {
     "id": "l1_v_take",
@@ -127,7 +136,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_take.mp3"
   },
   {
     "id": "l1_v_give",
@@ -140,7 +150,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_give.mp3"
   },
   {
     "id": "l1_v_find",
@@ -153,7 +164,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_find.mp3"
   },
   {
     "id": "l1_v_work",
@@ -166,7 +178,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_work.mp3"
   },
   {
     "id": "l1_v_live",
@@ -179,7 +192,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_live.mp3"
   },
   {
     "id": "l1_v_speak",
@@ -192,7 +206,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_speak.mp3"
   },
   {
     "id": "l1_v_write",
@@ -205,7 +220,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_write.mp3"
   },
   {
     "id": "l1_v_read",
@@ -218,7 +234,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_read.mp3"
   },
   {
     "id": "l1_v_understand",
@@ -231,7 +248,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_understand.mp3"
   },
   {
     "id": "l1_v_help",
@@ -244,7 +262,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_help.mp3"
   },
   {
     "id": "l1_v_learn",
@@ -257,7 +276,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_learn.mp3"
   },
   {
     "id": "l1_v_study",
@@ -270,7 +290,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_study.mp3"
   },
   {
     "id": "l1_v_sleep",
@@ -283,7 +304,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_sleep.mp3"
   },
   {
     "id": "l1_v_wake_up",
@@ -296,7 +318,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_wake_up.mp3"
   },
   {
     "id": "l1_v_sit",
@@ -309,7 +332,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_sit.mp3"
   },
   {
     "id": "l1_v_stand",
@@ -322,7 +346,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_stand.mp3"
   },
   {
     "id": "l1_v_walk",
@@ -335,7 +360,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_walk.mp3"
   },
   {
     "id": "l1_v_run",
@@ -348,7 +374,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_run.mp3"
   },
   {
     "id": "l1_v_buy",
@@ -361,7 +388,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_buy.mp3"
   },
   {
     "id": "l1_v_sell",
@@ -374,7 +402,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_sell.mp3"
   },
   {
     "id": "l1_v_pay",
@@ -387,7 +416,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_pay.mp3"
   },
   {
     "id": "l1_v_open",
@@ -400,7 +430,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_open.mp3"
   },
   {
     "id": "l1_v_close",
@@ -413,7 +444,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_close.mp3"
   },
   {
     "id": "l1_v_enter",
@@ -426,7 +458,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_enter.mp3"
   },
   {
     "id": "l1_v_exit",
@@ -439,7 +472,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_exit.mp3"
   },
   {
     "id": "l1_v_return",
@@ -452,7 +486,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_return.mp3"
   },
   {
     "id": "l1_v_wait",
@@ -465,7 +500,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_wait.mp3"
   },
   {
     "id": "l1_v_leave",
@@ -478,7 +514,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_leave.mp3"
   },
   {
     "id": "l1_v_ask",
@@ -491,7 +528,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_ask.mp3"
   },
   {
     "id": "l1_v_answer",
@@ -504,7 +542,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_answer.mp3"
   },
   {
     "id": "l1_v_hear",
@@ -517,7 +556,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_hear.mp3"
   },
   {
     "id": "l1_v_listen",
@@ -530,7 +570,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_listen.mp3"
   },
   {
     "id": "l1_v_look",
@@ -543,7 +584,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_look.mp3"
   },
   {
     "id": "l1_v_think",
@@ -556,7 +598,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_think.mp3"
   },
   {
     "id": "l1_v_remember",
@@ -569,7 +612,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_remember.mp3"
   },
   {
     "id": "l1_v_forget",
@@ -582,7 +626,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_forget.mp3"
   },
   {
     "id": "l1_v_love",
@@ -595,7 +640,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_love.mp3"
   },
   {
     "id": "l1_v_like",
@@ -608,7 +654,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_like.mp3"
   },
   {
     "id": "l1_v_hate",
@@ -621,7 +668,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_hate.mp3"
   },
   {
     "id": "l1_v_need",
@@ -634,7 +682,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_need.mp3"
   },
   {
     "id": "l1_v_try",
@@ -647,7 +696,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_try.mp3"
   },
   {
     "id": "l1_v_use",
@@ -660,7 +710,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_use.mp3"
   },
   {
     "id": "l1_v_feel",
@@ -673,7 +724,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_feel.mp3"
   },
   {
     "id": "l1_v_flip",
@@ -686,7 +738,8 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_flip.mp3"
   },
   {
     "id": "l1_v_paint",
@@ -699,6 +752,7 @@
     "tags": [
       "verb",
       "common"
-    ]
+    ],
+    "audio": "/audio/verbs-common/l1_v_paint.mp3"
   }
 ]

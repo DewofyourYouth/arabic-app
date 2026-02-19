@@ -7,7 +7,10 @@
     "arabic": "رَاس",
     "transliteration": "Ras",
     "english": "Head",
-    "tags": ["body"]
+    "tags": [
+      "body"
+    ],
+    "audio": "/audio/health/l2_body_head.mp3"
   },
   {
     "id": "l2_body_hand",
@@ -17,7 +20,10 @@
     "arabic": "إِيد",
     "transliteration": "Eid",
     "english": "Hand",
-    "tags": ["body"]
+    "tags": [
+      "body"
+    ],
+    "audio": "/audio/health/l2_body_hand.mp3"
   },
   {
     "id": "l2_hlt_sick",
@@ -27,7 +33,10 @@
     "arabic": "مَرِيض",
     "transliteration": "Mareed",
     "english": "Sick",
-    "tags": ["health"]
+    "tags": [
+      "health"
+    ],
+    "audio": "/audio/health/l2_hlt_sick.mp3"
   },
   {
     "id": "l2_hlt_pain",
@@ -37,7 +46,10 @@
     "arabic": "وَجَع",
     "transliteration": "Waja'",
     "english": "Pain",
-    "tags": ["health"]
+    "tags": [
+      "health"
+    ],
+    "audio": "/audio/health/l2_hlt_pain.mp3"
   },
   {
     "id": "l2_hlt_doctor",
@@ -47,7 +59,10 @@
     "arabic": "دُكْتُور",
     "transliteration": "Duktor",
     "english": "Doctor",
-    "tags": ["health"]
+    "tags": [
+      "health"
+    ],
+    "audio": "/audio/health/l2_hlt_doctor.mp3"
   },
   {
     "id": "l2_hlt_feel",
@@ -57,6 +72,10 @@
     "arabic": "سَلَامْتَك",
     "transliteration": "Salamtak",
     "english": "Get well soon (To a male)",
-    "tags": ["health", "polite"]
+    "tags": [
+      "health",
+      "polite"
+    ],
+    "audio": "/audio/health/l2_hlt_feel.mp3"
   }
 ]

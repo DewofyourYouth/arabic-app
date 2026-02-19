@@ -7,7 +7,11 @@
     "arabic": "لَأَنُّو",
     "transliteration": "La'annu",
     "english": "Because",
-    "tags": ["grammar", "connector"]
+    "tags": [
+      "grammar",
+      "connector"
+    ],
+    "audio": "/audio/connectors/l3_conn_because.mp3"
   },
   {
     "id": "l3_conn_if",
@@ -17,7 +21,11 @@
     "arabic": "إِزَا",
     "transliteration": "Iza",
     "english": "If",
-    "tags": ["grammar", "connector"]
+    "tags": [
+      "grammar",
+      "connector"
+    ],
+    "audio": "/audio/connectors/l3_conn_if.mp3"
   },
   {
     "id": "l3_rel_who",
@@ -27,6 +35,10 @@
     "arabic": "إِلِّي",
     "transliteration": "Illi",
     "english": "The one who / That / Which",
-    "tags": ["grammar", "relative"]
+    "tags": [
+      "grammar",
+      "relative"
+    ],
+    "audio": "/audio/relative_pronouns/l3_rel_who.mp3"
   }
 ]

@@ -9,7 +9,10 @@
     "hebrew": "חם",
     "hebrewTransliteration": "שׁוֹב",
     "english": "Hot",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_hot.mp3"
   },
   {
     "id": "l2_wthr_cold",
@@ -21,7 +24,10 @@
     "hebrew": "קר",
     "hebrewTransliteration": "בָּרִיד",
     "english": "Cold",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_cold.mp3"
   },
   {
     "id": "l2_wthr_rain",
@@ -33,7 +39,10 @@
     "hebrew": "גשם / חורף",
     "hebrewTransliteration": "שִׁיטַא",
     "english": "Rain / Winter",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_rain.mp3"
   },
   {
     "id": "l2_wthr_sun",
@@ -45,7 +54,10 @@
     "english": "Sun",
     "hebrew": "שמש",
     "hebrewTransliteration": "שֶׁמֶשׁ",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_sun.mp3"
   },
   {
     "id": "l2_wthr_today",
@@ -57,7 +69,11 @@
     "english": "How is the weather today?",
     "hebrew": "איך מזג האוויר היום?",
     "hebrewTransliteration": "אֵיךְ מֶזֶג הָאֲוִיר הַיּוֹם?",
-    "tags": ["weather", "question"]
+    "tags": [
+      "weather",
+      "question"
+    ],
+    "audio": "/audio/weather/l2_wthr_today.mp3"
   },
   {
     "id": "l2_wthr_beautiful",
@@ -69,6 +85,9 @@
     "english": "The weather is beautiful",
     "hebrew": "מזג האוויר יפה",
     "hebrewTransliteration": "מֶזֶג הָאֲוִיר יָפֶה",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_beautiful.mp3"
   }
 ]

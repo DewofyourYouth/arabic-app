@@ -1,12 +1,112 @@
 [
-  { "id": "l1_num_1", "level": 1, "topic": "numbers", "type": "word", "arabic": "وَاحِد", "transliteration": "Wahad", "english": "One", "hebrew": "אחד" },
-  { "id": "l1_num_2", "level": 1, "topic": "numbers", "type": "word", "arabic": "تْنَيْن", "transliteration": "Tnein", "english": "Two", "hebrew": "שתיים" },
-  { "id": "l1_num_3", "level": 1, "topic": "numbers", "type": "word", "arabic": "تَلَاتِة", "transliteration": "Talateh", "english": "Three", "hebrew": "שלוש" },
-  { "id": "l1_num_4", "level": 1, "topic": "numbers", "type": "word", "arabic": "أَرْبَعَة", "transliteration": "Arba'a", "english": "Four", "hebrew": "ארבע" },
-  { "id": "l1_num_5", "level": 1, "topic": "numbers", "type": "word", "arabic": "خَمْسِة", "transliteration": "Khamseh", "english": "Five", "hebrew": "חמש" },
-  { "id": "l1_num_6", "level": 1, "topic": "numbers", "type": "word", "arabic": "سِتِّة", "transliteration": "Sitteh", "english": "Six", "hebrew": "שש" },
-  { "id": "l1_num_7", "level": 1, "topic": "numbers", "type": "word", "arabic": "سَبْعَة", "transliteration": "Sab'a", "english": "Seven", "hebrew": "שבע" },
-  { "id": "l1_num_8", "level": 1, "topic": "numbers", "type": "word", "arabic": "تَمَانِيِة", "transliteration": "Tamanyeh", "english": "Eight", "hebrew": "שמונה" },
-  { "id": "l1_num_9", "level": 1, "topic": "numbers", "type": "word", "arabic": "تِسْعَة", "transliteration": "Tis'a", "english": "Nine", "hebrew": "תשע" },
-  { "id": "l1_num_10", "level": 1, "topic": "numbers", "type": "word", "arabic": "عَشَرَة", "transliteration": "Ashara", "english": "Ten", "hebrew": "עשר" }
+  {
+    "id": "l1_num_1",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "وَاحِد",
+    "transliteration": "Wahad",
+    "english": "One",
+    "hebrew": "אחד",
+    "audio": "/audio/numbers/l1_num_1.mp3"
+  },
+  {
+    "id": "l1_num_2",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "تْنَيْن",
+    "transliteration": "Tnein",
+    "english": "Two",
+    "hebrew": "שתיים",
+    "audio": "/audio/numbers/l1_num_2.mp3"
+  },
+  {
+    "id": "l1_num_3",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "تَلَاتِة",
+    "transliteration": "Talateh",
+    "english": "Three",
+    "hebrew": "שלוש",
+    "audio": "/audio/numbers/l1_num_3.mp3"
+  },
+  {
+    "id": "l1_num_4",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "أَرْبَعَة",
+    "transliteration": "Arba'a",
+    "english": "Four",
+    "hebrew": "ארבע",
+    "audio": "/audio/numbers/l1_num_4.mp3"
+  },
+  {
+    "id": "l1_num_5",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "خَمْسِة",
+    "transliteration": "Khamseh",
+    "english": "Five",
+    "hebrew": "חמש",
+    "audio": "/audio/numbers/l1_num_5.mp3"
+  },
+  {
+    "id": "l1_num_6",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "سِتِّة",
+    "transliteration": "Sitteh",
+    "english": "Six",
+    "hebrew": "שש",
+    "audio": "/audio/numbers/l1_num_6.mp3"
+  },
+  {
+    "id": "l1_num_7",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "سَبْعَة",
+    "transliteration": "Sab'a",
+    "english": "Seven",
+    "hebrew": "שבע",
+    "audio": "/audio/numbers/l1_num_7.mp3"
+  },
+  {
+    "id": "l1_num_8",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "تَمَانِيِة",
+    "transliteration": "Tamanyeh",
+    "english": "Eight",
+    "hebrew": "שמונה",
+    "audio": "/audio/numbers/l1_num_8.mp3"
+  },
+  {
+    "id": "l1_num_9",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "تِسْعَة",
+    "transliteration": "Tis'a",
+    "english": "Nine",
+    "hebrew": "תשע",
+    "audio": "/audio/numbers/l1_num_9.mp3"
+  },
+  {
+    "id": "l1_num_10",
+    "level": 1,
+    "topic": "numbers",
+    "type": "word",
+    "arabic": "عَشَرَة",
+    "transliteration": "Ashara",
+    "english": "Ten",
+    "hebrew": "עשר",
+    "audio": "/audio/numbers/l1_num_10.mp3"
+  }
 ]

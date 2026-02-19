@@ -8,8 +8,16 @@
     "arabic": "رايِح",
     "transliteration": "Rayeh",
     "english": "Going",
-    "forms": { "m": "رايِح", "f": "رايحة", "pl": "رايحين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "رايِح",
+      "f": "رايحة",
+      "pl": "رايحين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_going.mp3"
   },
   {
     "id": "ap_seeing",
@@ -20,8 +28,16 @@
     "arabic": "شايِف",
     "transliteration": "Shayef",
     "english": "Seeing",
-    "forms": { "m": "شايِف", "f": "شايفة", "pl": "شايفين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "شايِف",
+      "f": "شايفة",
+      "pl": "شايفين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_seeing.mp3"
   },
   {
     "id": "ap_sleeping",
@@ -32,8 +48,16 @@
     "arabic": "نايِم",
     "transliteration": "Nayem",
     "english": "Sleeping",
-    "forms": { "m": "نايِم", "f": "نايمة", "pl": "نايمين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "نايِم",
+      "f": "نايمة",
+      "pl": "نايمين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_sleeping.mp3"
   },
   {
     "id": "ap_visiting",
@@ -44,8 +68,16 @@
     "arabic": "زايِر",
     "transliteration": "Zayer",
     "english": "Visiting",
-    "forms": { "m": "زايِر", "f": "زايرة", "pl": "زايرين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "زايِر",
+      "f": "زايرة",
+      "pl": "زايرين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_visiting.mp3"
   },
   {
     "id": "ap_driving",
@@ -56,8 +88,16 @@
     "arabic": "سايِق",
     "transliteration": "Sayeq",
     "english": "Driving",
-    "forms": { "m": "سايِق", "f": "سايقة", "pl": "سايقين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "سايِق",
+      "f": "سايقة",
+      "pl": "سايقين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_driving.mp3"
   },
   {
     "id": "ap_living_hollow",
@@ -68,8 +108,16 @@
     "arabic": "عايِش",
     "transliteration": "Ayesh",
     "english": "Living (alive)",
-    "forms": { "m": "عايِش", "f": "عايشة", "pl": "عايشين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "عايِش",
+      "f": "عايشة",
+      "pl": "عايشين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_living_hollow.mp3"
   },
   {
     "id": "ap_scared",
@@ -80,8 +128,16 @@
     "arabic": "خايِف",
     "transliteration": "Khayef",
     "english": "Scared",
-    "forms": { "m": "خايِف", "f": "خايفة", "pl": "خايفين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "خايِف",
+      "f": "خايفة",
+      "pl": "خايفين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_scared.mp3"
   },
   {
     "id": "ap_bringing",
@@ -92,8 +148,16 @@
     "arabic": "جايِب",
     "transliteration": "Jayeb",
     "english": "Bringing",
-    "forms": { "m": "جايِب", "f": "جايبة", "pl": "جايبين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "جايِب",
+      "f": "جايبة",
+      "pl": "جايبين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_bringing.mp3"
   },
   {
     "id": "ap_selling",
@@ -104,8 +168,16 @@
     "arabic": "بايِع",
     "transliteration": "Daye'",
     "english": "Selling",
-    "forms": { "m": "بايِع", "f": "بايعة", "pl": "بايعين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "بايِع",
+      "f": "بايعة",
+      "pl": "بايعين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_selling.mp3"
   },
   {
     "id": "ap_fasting",
@@ -116,8 +188,16 @@
     "arabic": "صايِم",
     "transliteration": "Sayem",
     "english": "Fasting",
-    "forms": { "m": "صايِم", "f": "صايمة", "pl": "صايمين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "صايِم",
+      "f": "صايمة",
+      "pl": "صايمين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_fasting.mp3"
   },
   {
     "id": "ap_walking",
@@ -128,8 +208,16 @@
     "arabic": "ماشي",
     "transliteration": "Mashi",
     "english": "Walking",
-    "forms": { "m": "ماشي", "f": "ماشية", "pl": "ماشيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "ماشي",
+      "f": "ماشية",
+      "pl": "ماشيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_walking.mp3"
   },
   {
     "id": "ap_speaking",
@@ -140,8 +228,16 @@
     "arabic": "حاكي",
     "transliteration": "Haki",
     "english": "Speaking",
-    "forms": { "m": "حاكي", "f": "حاكية", "pl": "حاكيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "حاكي",
+      "f": "حاكية",
+      "pl": "حاكيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_speaking.mp3"
   },
   {
     "id": "ap_buying",
@@ -152,8 +248,16 @@
     "arabic": "شاري",
     "transliteration": "Shari",
     "english": "Buying",
-    "forms": { "m": "شاري", "f": "شارية", "pl": "شاريين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "شاري",
+      "f": "شارية",
+      "pl": "شاريين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_buying.mp3"
   },
   {
     "id": "ap_listening",
@@ -164,8 +268,16 @@
     "arabic": "صاغي",
     "transliteration": "Saghi",
     "english": "Listening",
-    "forms": { "m": "صاغي", "f": "صاغية", "pl": "صاغيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "صاغي",
+      "f": "صاغية",
+      "pl": "صاغيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_listening.mp3"
   },
   {
     "id": "ap_forgetting",
@@ -176,8 +288,16 @@
     "arabic": "ناسي",
     "transliteration": "Nasi",
     "english": "Forgetting",
-    "forms": { "m": "ناسي", "f": "ناسية", "pl": "ناسيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "ناسي",
+      "f": "ناسية",
+      "pl": "ناسيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_forgetting.mp3"
   },
   {
     "id": "ap_crying",
@@ -188,8 +308,16 @@
     "arabic": "باكي",
     "transliteration": "Baki",
     "english": "Crying",
-    "forms": { "m": "باكي", "f": "باكية", "pl": "باكيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "باكي",
+      "f": "باكية",
+      "pl": "باكيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_crying.mp3"
   },
   {
     "id": "ap_boiling",
@@ -200,8 +328,16 @@
     "arabic": "غالي",
     "transliteration": "Ghali",
     "english": "Boiling",
-    "forms": { "m": "غالي", "f": "غالية", "pl": "غاليين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "غالي",
+      "f": "غالية",
+      "pl": "غاليين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_boiling.mp3"
   },
   {
     "id": "ap_praying",
@@ -212,8 +348,16 @@
     "arabic": "مْصَلّي",
     "transliteration": "Msalli",
     "english": "Praying",
-    "forms": { "m": "مْصَلّي", "f": "مْصَلّية", "pl": "مْصَلّيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مْصَلّي",
+      "f": "مْصَلّية",
+      "pl": "مْصَلّيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_praying.mp3"
   },
   {
     "id": "ap_waiting",
@@ -224,8 +368,16 @@
     "arabic": "مِسْتَنّي",
     "transliteration": "Mistanni",
     "english": "Waiting",
-    "forms": { "m": "مِسْتَنّي", "f": "مِسْتَنّية", "pl": "مِسْتَنّيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مِسْتَنّي",
+      "f": "مِسْتَنّية",
+      "pl": "مِسْتَنّيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_waiting.mp3"
   },
   {
     "id": "ap_giving",
@@ -236,8 +388,16 @@
     "arabic": "مُعْطي",
     "transliteration": "Mu'ti",
     "english": "Giving",
-    "forms": { "m": "مُعْطي", "f": "مُعْطية", "pl": "مُعْطيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مُعْطي",
+      "f": "مُعْطية",
+      "pl": "مُعْطيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_giving.mp3"
   },
   {
     "id": "ap_knowing",
@@ -248,8 +408,16 @@
     "arabic": "عارِف",
     "transliteration": "Aref",
     "english": "Knowing",
-    "forms": { "m": "عارِف", "f": "عارفة", "pl": "عارفين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "عارِف",
+      "f": "عارفة",
+      "pl": "عارفين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_knowing.mp3"
   },
   {
     "id": "ap_understanding",
@@ -260,8 +428,16 @@
     "arabic": "فاهِم",
     "transliteration": "Fahem",
     "english": "Understanding",
-    "forms": { "m": "فاهِم", "f": "فاهمة", "pl": "فاهمين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "فاهِم",
+      "f": "فاهمة",
+      "pl": "فاهمين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_understanding.mp3"
   },
   {
     "id": "ap_hearing",
@@ -272,8 +448,16 @@
     "arabic": "سامِع",
     "transliteration": "Same'",
     "english": "Hearing",
-    "forms": { "m": "سامِع", "f": "سامعة", "pl": "سامعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "سامِع",
+      "f": "سامعة",
+      "pl": "سامعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_hearing.mp3"
   },
   {
     "id": "ap_sitting",
@@ -284,8 +468,16 @@
     "arabic": "قاعِد",
     "transliteration": "A'ed",
     "english": "Sitting",
-    "forms": { "m": "قاعِد", "f": "قاعدة", "pl": "قاعدين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "قاعِد",
+      "f": "قاعدة",
+      "pl": "قاعدين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_sitting.mp3"
   },
   {
     "id": "ap_standing",
@@ -296,8 +488,16 @@
     "arabic": "واقِف",
     "transliteration": "Wa'ef",
     "english": "Standing",
-    "forms": { "m": "واقِف", "f": "واقفة", "pl": "واقفين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "واقِف",
+      "f": "واقفة",
+      "pl": "واقفين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_standing.mp3"
   },
   {
     "id": "ap_studying",
@@ -308,8 +508,16 @@
     "arabic": "دارِس",
     "transliteration": "Dares",
     "english": "Studying",
-    "forms": { "m": "دارِس", "f": "دارسة", "pl": "دارسين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "دارِس",
+      "f": "دارسة",
+      "pl": "دارسين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_studying.mp3"
   },
   {
     "id": "ap_living_standard",
@@ -320,8 +528,16 @@
     "arabic": "ساكِن",
     "transliteration": "Saken",
     "english": "Living (residing)",
-    "forms": { "m": "ساكِن", "f": "ساكنة", "pl": "ساكنين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "ساكِن",
+      "f": "ساكنة",
+      "pl": "ساكنين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_living_standard.mp3"
   },
   {
     "id": "ap_wearing",
@@ -332,8 +548,16 @@
     "arabic": "لابِس",
     "transliteration": "Labes",
     "english": "Wearing",
-    "forms": { "m": "لابِس", "f": "لابسة", "pl": "لابسين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "لابِس",
+      "f": "لابسة",
+      "pl": "لابسين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_wearing.mp3"
   },
   {
     "id": "ap_holding",
@@ -344,8 +568,16 @@
     "arabic": "حامِل",
     "transliteration": "Hamel",
     "english": "Holding",
-    "forms": { "m": "حامِل", "f": "حاملة", "pl": "حاملين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حامِل",
+      "f": "حاملة",
+      "pl": "حاملين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_holding.mp3"
   },
   {
     "id": "ap_writing",
@@ -356,8 +588,16 @@
     "arabic": "كاتِب",
     "transliteration": "Kateb",
     "english": "Writing",
-    "forms": { "m": "كاتِب", "f": "كاتبة", "pl": "كاتبين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "كاتِب",
+      "f": "كاتبة",
+      "pl": "كاتبين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_writing.mp3"
   },
   {
     "id": "ap_leaving",
@@ -368,8 +608,16 @@
     "arabic": "طالِع",
     "transliteration": "Tale'",
     "english": "Leaving/Going Up",
-    "forms": { "m": "طالِع", "f": "طالعة", "pl": "طالعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "طالِع",
+      "f": "طالعة",
+      "pl": "طالعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_leaving.mp3"
   },
   {
     "id": "ap_entering",
@@ -380,8 +628,16 @@
     "arabic": "فايِت",
     "transliteration": "Fayet",
     "english": "Entering",
-    "forms": { "m": "فايِت", "f": "فايتة", "pl": "فايتين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "فايِت",
+      "f": "فايتة",
+      "pl": "فايتين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_entering.mp3"
   },
   {
     "id": "ap_returning",
@@ -392,8 +648,16 @@
     "arabic": "راجِع",
     "transliteration": "Raje'",
     "english": "Returning",
-    "forms": { "m": "راجِع", "f": "راجعة", "pl": "راجعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "راجِع",
+      "f": "راجعة",
+      "pl": "راجعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_returning.mp3"
   },
   {
     "id": "ap_paying",
@@ -404,8 +668,16 @@
     "arabic": "دافِع",
     "transliteration": "Dafe'",
     "english": "Paying",
-    "forms": { "m": "دافِع", "f": "دافعة", "pl": "دافعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "دافِع",
+      "f": "دافعة",
+      "pl": "دافعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_paying.mp3"
   },
   {
     "id": "ap_playing",
@@ -416,8 +688,16 @@
     "arabic": "لاعِب",
     "transliteration": "La'eb",
     "english": "Playing",
-    "forms": { "m": "لاعِب", "f": "لاعبة", "pl": "لاعبين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "لاعِب",
+      "f": "لاعبة",
+      "pl": "لاعبين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_playing.mp3"
   },
   {
     "id": "ap_drinking",
@@ -428,8 +708,16 @@
     "arabic": "شارِب",
     "transliteration": "Shareb",
     "english": "Drinking",
-    "forms": { "m": "شارِب", "f": "شاربة", "pl": "شاربين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "شارِب",
+      "f": "شاربة",
+      "pl": "شاربين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_drinking.mp3"
   },
   {
     "id": "ap_putting",
@@ -440,8 +728,16 @@
     "arabic": "حاطِط",
     "transliteration": "Hatet",
     "english": "Putting",
-    "forms": { "m": "حاطِط", "f": "حاطّة", "pl": "حاطّين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حاطِط",
+      "f": "حاطّة",
+      "pl": "حاطّين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_putting.mp3"
   },
   {
     "id": "ap_loving",
@@ -452,8 +748,16 @@
     "arabic": "حابِب",
     "transliteration": "Habeb",
     "english": "Loving",
-    "forms": { "m": "حابِب", "f": "حابّة", "pl": "حابّين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حابِب",
+      "f": "حابّة",
+      "pl": "حابّين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_loving.mp3"
   },
   {
     "id": "ap_traveling",
@@ -464,8 +768,16 @@
     "arabic": "مْسافِر",
     "transliteration": "Msafer",
     "english": "Traveling",
-    "forms": { "m": "مْسافِر", "f": "مْسافرة", "pl": "مْسافرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْسافِر",
+      "f": "مْسافرة",
+      "pl": "مْسافرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_traveling.mp3"
   },
   {
     "id": "ap_working",
@@ -476,8 +788,16 @@
     "arabic": "مِشْتَغِل",
     "transliteration": "Mishtaghel",
     "english": "Working",
-    "forms": { "m": "مِشْتَغِل", "f": "مِشْتَغلة", "pl": "مِشْتَغلين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِشْتَغِل",
+      "f": "مِشْتَغلة",
+      "pl": "مِشْتَغلين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_working.mp3"
   },
   {
     "id": "ap_thinking",
@@ -488,8 +808,16 @@
     "arabic": "مْفَكِّر",
     "transliteration": "Mfakker",
     "english": "Thinking",
-    "forms": { "m": "مْفَكِّر", "f": "مْفَكِّرة", "pl": "مْفَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْفَكِّر",
+      "f": "مْفَكِّرة",
+      "pl": "مْفَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_thinking.mp3"
   },
   {
     "id": "ap_closing",
@@ -500,8 +828,16 @@
     "arabic": "مْسَكِّر",
     "transliteration": "Msakker",
     "english": "Closing",
-    "forms": { "m": "مْسَكِّر", "f": "مْسَكِّرة", "pl": "مْسَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْسَكِّر",
+      "f": "مْسَكِّرة",
+      "pl": "مْسَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_closing.mp3"
   },
   {
     "id": "ap_fixing",
@@ -512,8 +848,16 @@
     "arabic": "مْصَلِّح",
     "transliteration": "Msalleh",
     "english": "Fixing",
-    "forms": { "m": "مْصَلِّح", "f": "مْصَلِّحة", "pl": "مْصَلِّحين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْصَلِّح",
+      "f": "مْصَلِّحة",
+      "pl": "مْصَلِّحين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_fixing.mp3"
   },
   {
     "id": "ap_changing",
@@ -524,8 +868,16 @@
     "arabic": "مْغَيِّر",
     "transliteration": "Mghayyer",
     "english": "Changing",
-    "forms": { "m": "مْغَيِّر", "f": "مْغَيِّرة", "pl": "مْغَيِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْغَيِّر",
+      "f": "مْغَيِّرة",
+      "pl": "مْغَيِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_changing.mp3"
   },
   {
     "id": "ap_cleaning",
@@ -536,8 +888,16 @@
     "arabic": "مْنَدِّف",
     "transliteration": "Mnaddef",
     "english": "Cleaning",
-    "forms": { "m": "مْنَدِّف", "f": "مْنَدِّفة", "pl": "مْنَدِّفين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْنَدِّف",
+      "f": "مْنَدِّفة",
+      "pl": "مْنَدِّفين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_cleaning.mp3"
   },
   {
     "id": "ap_believing",
@@ -548,8 +908,16 @@
     "arabic": "مْصَدِّق",
     "transliteration": "Msadde'",
     "english": "Believing",
-    "forms": { "m": "مْصَدِّق", "f": "مْصَدِّقة", "pl": "مْصَدِّقين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْصَدِّق",
+      "f": "مْصَدِّقة",
+      "pl": "مْصَدِّقين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_believing.mp3"
   },
   {
     "id": "ap_preparing",
@@ -560,8 +928,16 @@
     "arabic": "مْجَهِّز",
     "transliteration": "Mjahhez",
     "english": "Preparing",
-    "forms": { "m": "مْجَهِّز", "f": "مْجَهِّزة", "pl": "مْجَهِّزين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْجَهِّز",
+      "f": "مْجَهِّزة",
+      "pl": "مْجَهِّزين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_preparing.mp3"
   },
   {
     "id": "ap_helping",
@@ -572,8 +948,16 @@
     "arabic": "مْساعِد",
     "transliteration": "Msa'ed",
     "english": "Helping",
-    "forms": { "m": "مْساعِد", "f": "مْساعِدة", "pl": "مْساعِدين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْساعِد",
+      "f": "مْساعِدة",
+      "pl": "مْساعِدين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_helping.mp3"
   },
   {
     "id": "ap_remembering",
@@ -584,8 +968,16 @@
     "arabic": "مِتْذَكِّر",
     "transliteration": "Mitzakker",
     "english": "Remembering",
-    "forms": { "m": "مِتْذَكِّر", "f": "مِتْذَكِّرة", "pl": "مِتْذَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِتْذَكِّر",
+      "f": "مِتْذَكِّرة",
+      "pl": "مِتْذَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_remembering.mp3"
   },
   {
     "id": "ap_using",
@@ -596,8 +988,16 @@
     "arabic": "مِسْتَعْمِل",
     "transliteration": "Mista'mel",
     "english": "Using",
-    "forms": { "m": "مِسْتَعْمِل", "f": "مِسْتَعْمِلة", "pl": "مِسْتَعْمِلين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِسْتَعْمِل",
+      "f": "مِسْتَعْمِلة",
+      "pl": "مِسْتَعْمِلين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_using.mp3"
   },
   {
     "id": "ap_eating",
@@ -608,8 +1008,16 @@
     "arabic": "ماكِل",
     "transliteration": "Makel",
     "english": "Eating",
-    "forms": { "m": "ماكِل", "f": "ماكلة", "pl": "ماكلين" },
-    "tags": ["active_participle", "exception"]
+    "forms": {
+      "m": "ماكِل",
+      "f": "ماكلة",
+      "pl": "ماكلين"
+    },
+    "tags": [
+      "active_participle",
+      "exception"
+    ],
+    "audio": "/audio/active_participle/ap_eating.mp3"
   },
   {
     "id": "ap_taking",
@@ -620,7 +1028,15 @@
     "arabic": "ماخِد",
     "transliteration": "Makhed",
     "english": "Taking",
-    "forms": { "m": "ماخِد", "f": "ماخدة", "pl": "ماخدين" },
-    "tags": ["active_participle", "exception"]
+    "forms": {
+      "m": "ماخِد",
+      "f": "ماخدة",
+      "pl": "ماخدين"
+    },
+    "tags": [
+      "active_participle",
+      "exception"
+    ],
+    "audio": "/audio/active_participle/ap_taking.mp3"
   }
 ]

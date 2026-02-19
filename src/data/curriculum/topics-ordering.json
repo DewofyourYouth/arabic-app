@@ -8,7 +8,11 @@
     "transliteration": "Biddi qahwe law samaht",
     "hebrew": "אני רוצה קפה בבקשה",
     "hebrewTransliteration": "בִּדִּי קַהְוֶה לַו סַמַחְת",
-    "tags": ["restaurant", "common"]
+    "tags": [
+      "restaurant",
+      "common"
+    ],
+    "audio": "/audio/ordering/l2_ord_coffee.mp3"
   },
   {
     "id": "l2_ord_tea",
@@ -20,7 +24,10 @@
     "english": "I want tea with sugar",
     "hebrew": "אני רוצה תה עם סוכר",
     "hebrewTransliteration": "בִּדִּי שַׁאי מַע סֻכַּר",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_tea.mp3"
   },
   {
     "id": "l2_ord_menu",
@@ -32,7 +39,10 @@
     "english": "Can I have the menu?",
     "hebrew": "אפשר את התפריט?",
     "hebrewTransliteration": "מֻמְכִּן אִל-מֶנְיוּ?",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_menu.mp3"
   },
   {
     "id": "l2_ord_bill",
@@ -43,7 +53,11 @@
     "transliteration": "L-hsab law samaht",
     "hebrew": "החשבון בבקשה",
     "hebrewTransliteration": "לִ-חְסַאבּ לַו סַמַחְת",
-    "tags": ["restaurant", "common"]
+    "tags": [
+      "restaurant",
+      "common"
+    ],
+    "audio": "/audio/ordering/l2_ord_bill.mp3"
   },
   {
     "id": "l2_ord_water",
@@ -55,7 +69,10 @@
     "english": "A bottle of water",
     "hebrew": "בקבוק מים",
     "hebrewTransliteration": "קַנִּינֶת מַי",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_water.mp3"
   },
   {
     "id": "l2_ord_delicious",
@@ -67,6 +84,10 @@
     "english": "The food is very delicious",
     "hebrew": "האוכל טעים מאוד",
     "hebrewTransliteration": "אִל-אַכִּל זַאכִּי כְּתִיר",
-    "tags": ["restaurant", "compliment"]
+    "tags": [
+      "restaurant",
+      "compliment"
+    ],
+    "audio": "/audio/ordering/l2_ord_delicious.mp3"
   }
 ]

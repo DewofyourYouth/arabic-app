@@ -10,7 +10,11 @@
     "hebrew": "אדום",
     "hebrewTransliteration": "אַחְמַר",
     "image": "red.png",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_red.mp3"
   },
   {
     "id": "l1_color_blue",
@@ -23,7 +27,11 @@
     "hebrew": "כחול",
     "hebrewTransliteration": "אַזְרַק",
     "image": "blue.png",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_blue.mp3"
   },
   {
     "id": "l1_color_green",
@@ -35,7 +43,11 @@
     "english": "Green",
     "hebrew": "ירוק",
     "hebrewTransliteration": "אַחְ'דַר",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_green.mp3"
   },
   {
     "id": "l1_color_yellow",
@@ -48,7 +60,11 @@
     "hebrew": "צהוב",
     "hebrewTransliteration": "אַצְפַר",
     "image": "yellow.jpg",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_yellow.mp3"
   },
   {
     "id": "l1_color_white",
@@ -60,7 +76,11 @@
     "english": "White",
     "hebrew": "לבן",
     "hebrewTransliteration": "אַבְּיַד",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_white.mp3"
   },
   {
     "id": "l1_color_black",
@@ -73,7 +93,11 @@
     "hebrew": "שחור",
     "hebrewTransliteration": "אַסְוַד",
     "image": "black.jpg",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_black.mp3"
   },
   {
     "id": "l1_color_orange",
@@ -85,7 +109,11 @@
     "english": "Orange",
     "hebrew": "כתום",
     "hebrewTransliteration": "בֻּרְתֻקַאלִי",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_orange.mp3"
   },
   {
     "id": "l1_color_brown",
@@ -97,6 +125,10 @@
     "english": "Brown",
     "hebrew": "חום",
     "hebrewTransliteration": "בֻּנִּי",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_brown.mp3"
   }
 ]
