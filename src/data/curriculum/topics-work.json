@@ -13,8 +13,9 @@
     "audio": "/audio/work/l2_work_job.mp3",
     "audio_bedouin": "/audio/work/l2_work_job_bedouin.mp3",
     "phonetic_arabic": "شُغُلْ",
-    "ipa_bedouin": "ʃ u ɣ u l",
-    "gender": "female"
+    "ipa_bedouin": "ʃuɣul",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_edu_student",
@@ -30,8 +31,9 @@
     "audio": "/audio/education/l2_edu_student.mp3",
     "phonetic_arabic": "طَالِبْ",
     "audio_bedouin": "/audio/education/l2_edu_student_bedouin.mp3",
-    "ipa_bedouin": "tˤ a aː l i b",
-    "gender": "female"
+    "ipa_bedouin": "tˤaːlib",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_edu_university",
@@ -47,8 +49,9 @@
     "audio": "/audio/education/l2_edu_university.mp3",
     "audio_bedouin": "/audio/education/l2_edu_university_bedouin.mp3",
     "phonetic_arabic": "جَامْعَهْ",
-    "ipa_bedouin": "d͡ʒ a aː m ʕ a a",
-    "gender": "female"
+    "ipa_bedouin": "d͡ʒaːmʕaa",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_work_office",
@@ -64,8 +67,9 @@
     "audio": "/audio/work/l2_work_office.mp3",
     "audio_bedouin": "/audio/work/l2_work_office_bedouin.mp3",
     "phonetic_arabic": "مَكْتَبْ",
-    "ipa_bedouin": "m a k t a b",
-    "gender": "female"
+    "ipa_bedouin": "maktab",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_work_engineer",
@@ -82,8 +86,9 @@
     "audio": "/audio/work/l2_work_engineer.mp3",
     "audio_bedouin": "/audio/work/l2_work_engineer_bedouin.mp3",
     "phonetic_arabic": "مُهَنْدِسْ",
-    "ipa_bedouin": "m u h a n d i s",
-    "gender": "female"
+    "ipa_bedouin": "muhandis",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_work_teacher",
@@ -100,8 +105,9 @@
     "audio": "/audio/work/l2_work_teacher.mp3",
     "audio_bedouin": "/audio/work/l2_work_teacher_bedouin.mp3",
     "phonetic_arabic": "إِسْتَاذْ",
-    "ipa_bedouin": "ʔ i i s t a aː ð",
-    "gender": "female"
+    "ipa_bedouin": "ʔ istaːð",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_work_whatdo",
@@ -118,7 +124,8 @@
     "audio": "/audio/work/l2_work_whatdo.mp3",
     "audio_bedouin": "/audio/work/l2_work_whatdo_bedouin.mp3",
     "phonetic_arabic": "شُو بِتِشْتِغِل؟ْ",
-    "ipa_bedouin": "ʃ u uː b i t i ʃ t i ɣ i l",
-    "gender": "female"
+    "ipa_bedouin": "ʃuː bitiʃtiɣil",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

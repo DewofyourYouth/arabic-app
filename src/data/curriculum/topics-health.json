@@ -13,8 +13,9 @@
     "audio": "/audio/health/l2_body_head.mp3",
     "audio_bedouin": "/audio/health/l2_body_head_bedouin.mp3",
     "phonetic_arabic": "رَاسْ",
-    "ipa_bedouin": "r a aː s",
-    "gender": "female"
+    "ipa_bedouin": "raːs",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_body_hand",
@@ -30,8 +31,9 @@
     "audio": "/audio/health/l2_body_hand.mp3",
     "audio_bedouin": "/audio/health/l2_body_hand_bedouin.mp3",
     "phonetic_arabic": "إِيدْ",
-    "ipa_bedouin": "ʔ i i iː d",
-    "gender": "female"
+    "ipa_bedouin": "ʔ iiːd",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_hlt_sick",
@@ -47,8 +49,9 @@
     "audio": "/audio/health/l2_hlt_sick.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_sick_bedouin.mp3",
     "phonetic_arabic": "مَرِيضْ",
-    "ipa_bedouin": "m a r i iː dˤ",
-    "gender": "female"
+    "ipa_bedouin": "mariːdˤ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_hlt_pain",
@@ -64,8 +67,9 @@
     "audio": "/audio/health/l2_hlt_pain.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_pain_bedouin.mp3",
     "phonetic_arabic": "وَجَعْ",
-    "ipa_bedouin": "w a d͡ʒ a ʕ",
-    "gender": "female"
+    "ipa_bedouin": "wad͡ʒaʕ",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_hlt_doctor",
@@ -81,8 +85,9 @@
     "audio": "/audio/health/l2_hlt_doctor.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_doctor_bedouin.mp3",
     "phonetic_arabic": "دُكْتُورْ",
-    "ipa_bedouin": "d u k t u uː r",
-    "gender": "female"
+    "ipa_bedouin": "duktuːr",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_hlt_feel",
@@ -99,7 +104,8 @@
     "audio": "/audio/health/l2_hlt_feel.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_feel_bedouin.mp3",
     "phonetic_arabic": "سَلَامْتَكْ",
-    "ipa_bedouin": "s a l a aː m t a k",
-    "gender": "female"
+    "ipa_bedouin": "salaːmtak",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]

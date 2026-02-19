@@ -16,7 +16,7 @@
     "phonetic_arabic": "إِنْءَالْ",
     "phonetic_bedouin": "إِنْگَالْ",
     "gender": "female",
-    "ipa_bedouin": "ʔ iinɡaaːl",
+    "ipa_bedouin": "ʔ inɡaːl",
     "ipa_bedouin_auto_generated": true
   },
   {
@@ -34,7 +34,8 @@
     "audio": "/audio/idioms/l4_idiom_hand.mp3",
     "audio_bedouin": "/audio/idioms/l4_idiom_hand_bedouin.mp3",
     "phonetic_arabic": "يِسْلَمُو إِيدِيكْ",
-    "ipa_bedouin": "j i s l a m u uː ʔ i i iː d i iː k",
-    "gender": "female"
+    "ipa_bedouin": "jislamuː ʔ iiːdiːk",
+    "gender": "female",
+    "ipa_bedouin_auto_generated": true
   }
 ]
