@@ -7,7 +7,15 @@
     "arabic": "وِين...؟",
     "transliteration": "Wein...?",
     "english": "Where is...?",
-    "tags": ["directions", "common"]
+    "tags": [
+      "directions",
+      "common"
+    ],
+    "audio": "/audio/directions/l2_dir_where.mp3",
+    "audio_bedouin": "/audio/directions/l2_dir_where_bedouin.mp3",
+    "phonetic_arabic": "وِين...؟ْ",
+    "ipa_bedouin": "w i iː n",
+    "gender": "female"
   },
   {
     "id": "l2_dir_straight",
@@ -17,7 +25,14 @@
     "arabic": "دُغْرِي",
     "transliteration": "Dughri",
     "english": "Straight ahead",
-    "tags": ["directions"]
+    "tags": [
+      "directions"
+    ],
+    "audio": "/audio/directions/l2_dir_straight.mp3",
+    "audio_bedouin": "/audio/directions/l2_dir_straight_bedouin.mp3",
+    "phonetic_arabic": "دُغْرِيْ",
+    "ipa_bedouin": "d u ɣ r i iː",
+    "gender": "female"
   },
   {
     "id": "l2_dir_right",
@@ -27,7 +42,14 @@
     "arabic": "يَمِين",
     "transliteration": "Yamin",
     "english": "Right",
-    "tags": ["directions"]
+    "tags": [
+      "directions"
+    ],
+    "audio": "/audio/directions/l2_dir_right.mp3",
+    "audio_bedouin": "/audio/directions/l2_dir_right_bedouin.mp3",
+    "phonetic_arabic": "يَمِينْ",
+    "ipa_bedouin": "j a m i iː n",
+    "gender": "female"
   },
   {
     "id": "l2_dir_left",
@@ -37,7 +59,14 @@
     "arabic": "شْمَال",
     "transliteration": "Shmal",
     "english": "Left",
-    "tags": ["directions"]
+    "tags": [
+      "directions"
+    ],
+    "audio": "/audio/directions/l2_dir_left.mp3",
+    "audio_bedouin": "/audio/directions/l2_dir_left_bedouin.mp3",
+    "phonetic_arabic": "شْمَالْ",
+    "ipa_bedouin": "ʃ m a aː l",
+    "gender": "female"
   },
   {
     "id": "l2_dir_here",
@@ -47,7 +76,14 @@
     "arabic": "هُون",
     "transliteration": "Hon",
     "english": "Here",
-    "tags": ["directions"]
+    "tags": [
+      "directions"
+    ],
+    "audio": "/audio/directions/l2_dir_here.mp3",
+    "phonetic_arabic": "هُونْ",
+    "audio_bedouin": "/audio/directions/l2_dir_here_bedouin.mp3",
+    "ipa_bedouin": "h u uː n",
+    "gender": "female"
   },
   {
     "id": "l2_dir_there",
@@ -57,6 +93,13 @@
     "arabic": "هُنَاك",
     "transliteration": "Hunāk",
     "english": "There",
-    "tags": ["directions"]
+    "tags": [
+      "directions"
+    ],
+    "audio": "/audio/directions/l2_dir_there.mp3",
+    "audio_bedouin": "/audio/directions/l2_dir_there_bedouin.mp3",
+    "phonetic_arabic": "هُنَاكْ",
+    "ipa_bedouin": "h u n a aː k",
+    "gender": "female"
   }
 ]

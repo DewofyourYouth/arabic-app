@@ -438,7 +438,7 @@ const Library = ({ cards: rawCards }) => {
               {/* Audio Button & Progress */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <button
-                  onClick={() => playPronunciation(card.arabic)}
+                  onClick={() => playPronunciation(card.arabic, card)}
                   style={{
                     background: 'var(--color-primary)',
                     color: 'white',

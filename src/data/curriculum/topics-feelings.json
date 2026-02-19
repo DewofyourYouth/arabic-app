@@ -9,7 +9,15 @@
     "english": "Happy",
     "hebrew": "מבסוט / שמח",
     "hebrewTransliteration": "מַבְּסוּט",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_happy.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_happy_bedouin.mp3",
+    "phonetic_arabic": "مَبْسُوطْ",
+    "ipa_bedouin": "m a b s u uː tˤ",
+    "gender": "female"
   },
   {
     "id": "l2_feel_sad",
@@ -21,7 +29,15 @@
     "english": "Sad / Upset",
     "hebrew": "עצוב / כועס",
     "hebrewTransliteration": "זַעְלַאן",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_sad.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_sad_bedouin.mp3",
+    "phonetic_arabic": "زَعْلَانْ",
+    "ipa_bedouin": "a ʕ l a aː n",
+    "gender": "female"
   },
   {
     "id": "l2_feel_tired",
@@ -33,7 +49,15 @@
     "english": "Tired",
     "hebrew": "עייף",
     "hebrewTransliteration": "תַעְבַּאן",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_tired.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_tired_bedouin.mp3",
+    "phonetic_arabic": "تَعْبَانْ",
+    "ipa_bedouin": "t a ʕ b a aː n",
+    "gender": "female"
   },
   {
     "id": "l2_op_ibd",
@@ -45,7 +69,14 @@
     "english": "In my opinion...",
     "hebrew": "לדעתי...",
     "hebrewTransliteration": "אַנַא בְּרַאְיִי",
-    "tags": ["opinions"]
+    "tags": [
+      "opinions"
+    ],
+    "audio": "/audio/opinions/l2_op_ibd.mp3",
+    "audio_bedouin": "/audio/opinions/l2_op_ibd_bedouin.mp3",
+    "phonetic_arabic": "أَنَا بِرَأْيِي...ْ",
+    "ipa_bedouin": "ʔ a a n a aː b i r a ʔ a j i iː",
+    "gender": "female"
   },
   {
     "id": "l2_op_like",
@@ -57,7 +88,14 @@
     "english": "I like / I love...",
     "hebrew": "אני אוהב...",
     "hebrewTransliteration": "אַנַא בַּחִבּ",
-    "tags": ["opinions"]
+    "tags": [
+      "opinions"
+    ],
+    "audio": "/audio/opinions/l2_op_like.mp3",
+    "audio_bedouin": "/audio/opinions/l2_op_like_bedouin.mp3",
+    "phonetic_arabic": "أَنَا بَحِبّ...ْ",
+    "ipa_bedouin": "ʔ a a n a aː b a ħ i b ː",
+    "gender": "female"
   },
   {
     "id": "l2_op_whatthink",
@@ -69,7 +107,15 @@
     "english": "What do you think?",
     "hebrew": "מה דעתך?",
     "hebrewTransliteration": "שׁוּ רַאְיַכּ?",
-    "tags": ["opinions", "question"]
+    "tags": [
+      "opinions",
+      "question"
+    ],
+    "audio": "/audio/opinions/l2_op_whatthink.mp3",
+    "audio_bedouin": "/audio/opinions/l2_op_whatthink_bedouin.mp3",
+    "phonetic_arabic": "شُو رَأْيَك؟ْ",
+    "ipa_bedouin": "ʃ u uː r a ʔ a j a k",
+    "gender": "female"
   },
   {
     "id": "l2_feel_busy",
@@ -81,7 +127,15 @@
     "english": "Busy",
     "hebrew": "עסוק",
     "hebrewTransliteration": "מַשְׁע'וּל",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_busy.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_busy_bedouin.mp3",
+    "phonetic_arabic": "مَشْغُولْ",
+    "ipa_bedouin": "m a ʃ ɣ u uː l",
+    "gender": "female"
   },
   {
     "id": "l2_feel_get_tired",
@@ -93,7 +147,15 @@
     "english": "To get tired",
     "hebrew": "להתעייף (התעייף)",
     "hebrewTransliteration": "תִעִבּ",
-    "tags": ["feelings", "verb"]
+    "tags": [
+      "feelings",
+      "verb"
+    ],
+    "audio": "/audio/feelings/l2_feel_get_tired.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_get_tired_bedouin.mp3",
+    "phonetic_arabic": "تِعِبْ",
+    "ipa_bedouin": "t i ʕ i b",
+    "gender": "female"
   },
   {
     "id": "l2_feel_tiring",
@@ -105,7 +167,15 @@
     "english": "Tiring",
     "hebrew": "מעייף",
     "hebrewTransliteration": "מֻתְעִבּ",
-    "tags": ["feelings", "adjective"]
+    "tags": [
+      "feelings",
+      "adjective"
+    ],
+    "audio": "/audio/feelings/l2_feel_tiring.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_tiring_bedouin.mp3",
+    "phonetic_arabic": "مُتْعِبْ",
+    "ipa_bedouin": "m u t ʕ i b",
+    "gender": "female"
   },
   {
     "id": "l2_feel_get_happy",
@@ -117,6 +187,14 @@
     "english": "To get happy / To enjoy",
     "hebrew": "ליהנות (נהנה)",
     "hebrewTransliteration": "אִנְבַּסַט",
-    "tags": ["feelings", "verb"]
+    "tags": [
+      "feelings",
+      "verb"
+    ],
+    "audio": "/audio/feelings/l2_feel_get_happy.mp3",
+    "audio_bedouin": "/audio/feelings/l2_feel_get_happy_bedouin.mp3",
+    "phonetic_arabic": "اِنْبَسَطْ",
+    "ipa_bedouin": "aː i n b a s a tˤ",
+    "gender": "female"
   }
 ]

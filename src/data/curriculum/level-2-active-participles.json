@@ -8,8 +8,20 @@
     "arabic": "رايِح",
     "transliteration": "Rayeh",
     "english": "Going",
-    "forms": { "m": "رايِح", "f": "رايحة", "pl": "رايحين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "رايِح",
+      "f": "رايحة",
+      "pl": "رايحين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_going.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_going_bedouin.mp3",
+    "phonetic_arabic": "رايِحْ",
+    "ipa_bedouin": "r aː j i ħ",
+    "gender": "female"
   },
   {
     "id": "ap_seeing",
@@ -20,8 +32,20 @@
     "arabic": "شايِف",
     "transliteration": "Shayef",
     "english": "Seeing",
-    "forms": { "m": "شايِف", "f": "شايفة", "pl": "شايفين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "شايِف",
+      "f": "شايفة",
+      "pl": "شايفين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_seeing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_seeing_bedouin.mp3",
+    "phonetic_arabic": "شايِفْ",
+    "ipa_bedouin": "ʃ aː j i f",
+    "gender": "female"
   },
   {
     "id": "ap_sleeping",
@@ -32,8 +56,20 @@
     "arabic": "نايِم",
     "transliteration": "Nayem",
     "english": "Sleeping",
-    "forms": { "m": "نايِم", "f": "نايمة", "pl": "نايمين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "نايِم",
+      "f": "نايمة",
+      "pl": "نايمين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_sleeping.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_sleeping_bedouin.mp3",
+    "phonetic_arabic": "نايِمْ",
+    "ipa_bedouin": "n aː j i m",
+    "gender": "female"
   },
   {
     "id": "ap_visiting",
@@ -44,8 +80,20 @@
     "arabic": "زايِر",
     "transliteration": "Zayer",
     "english": "Visiting",
-    "forms": { "m": "زايِر", "f": "زايرة", "pl": "زايرين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "زايِر",
+      "f": "زايرة",
+      "pl": "زايرين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_visiting.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_visiting_bedouin.mp3",
+    "phonetic_arabic": "زايِرْ",
+    "ipa_bedouin": "aː j i r",
+    "gender": "female"
   },
   {
     "id": "ap_driving",
@@ -56,8 +104,22 @@
     "arabic": "سايِق",
     "transliteration": "Sayeq",
     "english": "Driving",
-    "forms": { "m": "سايِق", "f": "سايقة", "pl": "سايقين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "سايِق",
+      "f": "سايقة",
+      "pl": "سايقين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_driving.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_driving_bedouin.mp3",
+    "phonetic_arabic": "سايِءْ",
+    "phonetic_bedouin": "سايِگْ",
+    "gender": "female",
+    "ipa_bedouin": "saːjiɡ",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_living_hollow",
@@ -68,8 +130,20 @@
     "arabic": "عايِش",
     "transliteration": "Ayesh",
     "english": "Living (alive)",
-    "forms": { "m": "عايِش", "f": "عايشة", "pl": "عايشين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "عايِش",
+      "f": "عايشة",
+      "pl": "عايشين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_living_hollow.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_living_hollow_bedouin.mp3",
+    "phonetic_arabic": "عايِشْ",
+    "ipa_bedouin": "ʕ aː j i ʃ",
+    "gender": "female"
   },
   {
     "id": "ap_scared",
@@ -80,8 +154,20 @@
     "arabic": "خايِف",
     "transliteration": "Khayef",
     "english": "Scared",
-    "forms": { "m": "خايِف", "f": "خايفة", "pl": "خايفين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "خايِف",
+      "f": "خايفة",
+      "pl": "خايفين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_scared.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_scared_bedouin.mp3",
+    "phonetic_arabic": "خايِفْ",
+    "ipa_bedouin": "x aː j i f",
+    "gender": "female"
   },
   {
     "id": "ap_bringing",
@@ -92,8 +178,20 @@
     "arabic": "جايِب",
     "transliteration": "Jayeb",
     "english": "Bringing",
-    "forms": { "m": "جايِب", "f": "جايبة", "pl": "جايبين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "جايِب",
+      "f": "جايبة",
+      "pl": "جايبين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_bringing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_bringing_bedouin.mp3",
+    "phonetic_arabic": "جايِبْ",
+    "ipa_bedouin": "d͡ʒ aː j i b",
+    "gender": "female"
   },
   {
     "id": "ap_selling",
@@ -104,8 +202,20 @@
     "arabic": "بايِع",
     "transliteration": "Daye'",
     "english": "Selling",
-    "forms": { "m": "بايِع", "f": "بايعة", "pl": "بايعين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "بايِع",
+      "f": "بايعة",
+      "pl": "بايعين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_selling.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_selling_bedouin.mp3",
+    "phonetic_arabic": "بايِعْ",
+    "ipa_bedouin": "b aː j i ʕ",
+    "gender": "female"
   },
   {
     "id": "ap_fasting",
@@ -116,8 +226,20 @@
     "arabic": "صايِم",
     "transliteration": "Sayem",
     "english": "Fasting",
-    "forms": { "m": "صايِم", "f": "صايمة", "pl": "صايمين" },
-    "tags": ["active_participle", "hollow"]
+    "forms": {
+      "m": "صايِم",
+      "f": "صايمة",
+      "pl": "صايمين"
+    },
+    "tags": [
+      "active_participle",
+      "hollow"
+    ],
+    "audio": "/audio/active_participle/ap_fasting.mp3",
+    "phonetic_arabic": "صايِمْ",
+    "audio_bedouin": "/audio/active_participle/ap_fasting_bedouin.mp3",
+    "ipa_bedouin": "sˤ aː j i m",
+    "gender": "female"
   },
   {
     "id": "ap_walking",
@@ -128,8 +250,20 @@
     "arabic": "ماشي",
     "transliteration": "Mashi",
     "english": "Walking",
-    "forms": { "m": "ماشي", "f": "ماشية", "pl": "ماشيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "ماشي",
+      "f": "ماشية",
+      "pl": "ماشيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_walking.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_walking_bedouin.mp3",
+    "phonetic_arabic": "ماشيْ",
+    "ipa_bedouin": "m aː ʃ iː",
+    "gender": "female"
   },
   {
     "id": "ap_speaking",
@@ -140,8 +274,20 @@
     "arabic": "حاكي",
     "transliteration": "Haki",
     "english": "Speaking",
-    "forms": { "m": "حاكي", "f": "حاكية", "pl": "حاكيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "حاكي",
+      "f": "حاكية",
+      "pl": "حاكيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_speaking.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_speaking_bedouin.mp3",
+    "phonetic_arabic": "حاكيْ",
+    "ipa_bedouin": "ħ aː k iː",
+    "gender": "female"
   },
   {
     "id": "ap_buying",
@@ -152,8 +298,20 @@
     "arabic": "شاري",
     "transliteration": "Shari",
     "english": "Buying",
-    "forms": { "m": "شاري", "f": "شارية", "pl": "شاريين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "شاري",
+      "f": "شارية",
+      "pl": "شاريين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_buying.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_buying_bedouin.mp3",
+    "phonetic_arabic": "شاريْ",
+    "ipa_bedouin": "ʃ aː r iː",
+    "gender": "female"
   },
   {
     "id": "ap_listening",
@@ -164,8 +322,20 @@
     "arabic": "صاغي",
     "transliteration": "Saghi",
     "english": "Listening",
-    "forms": { "m": "صاغي", "f": "صاغية", "pl": "صاغيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "صاغي",
+      "f": "صاغية",
+      "pl": "صاغيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_listening.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_listening_bedouin.mp3",
+    "phonetic_arabic": "صاغيْ",
+    "ipa_bedouin": "sˤ aː ɣ iː",
+    "gender": "female"
   },
   {
     "id": "ap_forgetting",
@@ -176,8 +346,20 @@
     "arabic": "ناسي",
     "transliteration": "Nasi",
     "english": "Forgetting",
-    "forms": { "m": "ناسي", "f": "ناسية", "pl": "ناسيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "ناسي",
+      "f": "ناسية",
+      "pl": "ناسيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_forgetting.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_forgetting_bedouin.mp3",
+    "phonetic_arabic": "ناسيْ",
+    "ipa_bedouin": "n aː s iː",
+    "gender": "female"
   },
   {
     "id": "ap_crying",
@@ -188,8 +370,20 @@
     "arabic": "باكي",
     "transliteration": "Baki",
     "english": "Crying",
-    "forms": { "m": "باكي", "f": "باكية", "pl": "باكيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "باكي",
+      "f": "باكية",
+      "pl": "باكيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_crying.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_crying_bedouin.mp3",
+    "phonetic_arabic": "باكيْ",
+    "ipa_bedouin": "b aː k iː",
+    "gender": "female"
   },
   {
     "id": "ap_boiling",
@@ -200,8 +394,20 @@
     "arabic": "غالي",
     "transliteration": "Ghali",
     "english": "Boiling",
-    "forms": { "m": "غالي", "f": "غالية", "pl": "غاليين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "غالي",
+      "f": "غالية",
+      "pl": "غاليين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_boiling.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_boiling_bedouin.mp3",
+    "phonetic_arabic": "غاليْ",
+    "ipa_bedouin": "ɣ aː l iː",
+    "gender": "female"
   },
   {
     "id": "ap_praying",
@@ -212,8 +418,20 @@
     "arabic": "مْصَلّي",
     "transliteration": "Msalli",
     "english": "Praying",
-    "forms": { "m": "مْصَلّي", "f": "مْصَلّية", "pl": "مْصَلّيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مْصَلّي",
+      "f": "مْصَلّية",
+      "pl": "مْصَلّيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_praying.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_praying_bedouin.mp3",
+    "phonetic_arabic": "مْصَلّيْ",
+    "ipa_bedouin": "m sˤ a l ː iː",
+    "gender": "female"
   },
   {
     "id": "ap_waiting",
@@ -224,8 +442,20 @@
     "arabic": "مِسْتَنّي",
     "transliteration": "Mistanni",
     "english": "Waiting",
-    "forms": { "m": "مِسْتَنّي", "f": "مِسْتَنّية", "pl": "مِسْتَنّيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مِسْتَنّي",
+      "f": "مِسْتَنّية",
+      "pl": "مِسْتَنّيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_waiting.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_waiting_bedouin.mp3",
+    "phonetic_arabic": "مِسْتَنّيْ",
+    "ipa_bedouin": "m i s t a n ː iː",
+    "gender": "female"
   },
   {
     "id": "ap_giving",
@@ -236,8 +466,20 @@
     "arabic": "مُعْطي",
     "transliteration": "Mu'ti",
     "english": "Giving",
-    "forms": { "m": "مُعْطي", "f": "مُعْطية", "pl": "مُعْطيين" },
-    "tags": ["active_participle", "defective"]
+    "forms": {
+      "m": "مُعْطي",
+      "f": "مُعْطية",
+      "pl": "مُعْطيين"
+    },
+    "tags": [
+      "active_participle",
+      "defective"
+    ],
+    "audio": "/audio/active_participle/ap_giving.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_giving_bedouin.mp3",
+    "phonetic_arabic": "مُعْطيْ",
+    "ipa_bedouin": "m u ʕ tˤ iː",
+    "gender": "female"
   },
   {
     "id": "ap_knowing",
@@ -248,8 +490,20 @@
     "arabic": "عارِف",
     "transliteration": "Aref",
     "english": "Knowing",
-    "forms": { "m": "عارِف", "f": "عارفة", "pl": "عارفين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "عارِف",
+      "f": "عارفة",
+      "pl": "عارفين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_knowing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_knowing_bedouin.mp3",
+    "phonetic_arabic": "عارِفْ",
+    "ipa_bedouin": "ʕ aː r i f",
+    "gender": "female"
   },
   {
     "id": "ap_understanding",
@@ -260,8 +514,20 @@
     "arabic": "فاهِم",
     "transliteration": "Fahem",
     "english": "Understanding",
-    "forms": { "m": "فاهِم", "f": "فاهمة", "pl": "فاهمين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "فاهِم",
+      "f": "فاهمة",
+      "pl": "فاهمين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_understanding.mp3",
+    "phonetic_arabic": "فاهِمْ",
+    "audio_bedouin": "/audio/active_participle/ap_understanding_bedouin.mp3",
+    "ipa_bedouin": "f aː h i m",
+    "gender": "female"
   },
   {
     "id": "ap_hearing",
@@ -272,8 +538,20 @@
     "arabic": "سامِع",
     "transliteration": "Same'",
     "english": "Hearing",
-    "forms": { "m": "سامِع", "f": "سامعة", "pl": "سامعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "سامِع",
+      "f": "سامعة",
+      "pl": "سامعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_hearing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_hearing_bedouin.mp3",
+    "phonetic_arabic": "سامِعْ",
+    "ipa_bedouin": "s aː m i ʕ",
+    "gender": "female"
   },
   {
     "id": "ap_sitting",
@@ -284,8 +562,22 @@
     "arabic": "قاعِد",
     "transliteration": "A'ed",
     "english": "Sitting",
-    "forms": { "m": "قاعِد", "f": "قاعدة", "pl": "قاعدين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "قاعِد",
+      "f": "قاعدة",
+      "pl": "قاعدين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_sitting.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_sitting_bedouin.mp3",
+    "phonetic_arabic": "ءاعِدْ",
+    "phonetic_bedouin": "گاعِدْ",
+    "gender": "female",
+    "ipa_bedouin": "ɡaːʕid",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_standing",
@@ -296,8 +588,22 @@
     "arabic": "واقِف",
     "transliteration": "Wa'ef",
     "english": "Standing",
-    "forms": { "m": "واقِف", "f": "واقفة", "pl": "واقفين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "واقِف",
+      "f": "واقفة",
+      "pl": "واقفين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_standing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_standing_bedouin.mp3",
+    "phonetic_arabic": "واءِفْ",
+    "phonetic_bedouin": "واگِفْ",
+    "gender": "female",
+    "ipa_bedouin": "waːɡif",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_studying",
@@ -308,8 +614,20 @@
     "arabic": "دارِس",
     "transliteration": "Dares",
     "english": "Studying",
-    "forms": { "m": "دارِس", "f": "دارسة", "pl": "دارسين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "دارِس",
+      "f": "دارسة",
+      "pl": "دارسين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_studying.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_studying_bedouin.mp3",
+    "phonetic_arabic": "دارِسْ",
+    "ipa_bedouin": "d aː r i s",
+    "gender": "female"
   },
   {
     "id": "ap_living_standard",
@@ -320,8 +638,20 @@
     "arabic": "ساكِن",
     "transliteration": "Saken",
     "english": "Living (residing)",
-    "forms": { "m": "ساكِن", "f": "ساكنة", "pl": "ساكنين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "ساكِن",
+      "f": "ساكنة",
+      "pl": "ساكنين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_living_standard.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_living_standard_bedouin.mp3",
+    "phonetic_arabic": "ساكِنْ",
+    "ipa_bedouin": "s aː k i n",
+    "gender": "female"
   },
   {
     "id": "ap_wearing",
@@ -332,8 +662,20 @@
     "arabic": "لابِس",
     "transliteration": "Labes",
     "english": "Wearing",
-    "forms": { "m": "لابِس", "f": "لابسة", "pl": "لابسين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "لابِس",
+      "f": "لابسة",
+      "pl": "لابسين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_wearing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_wearing_bedouin.mp3",
+    "phonetic_arabic": "لابِسْ",
+    "ipa_bedouin": "l aː b i s",
+    "gender": "female"
   },
   {
     "id": "ap_holding",
@@ -344,8 +686,20 @@
     "arabic": "حامِل",
     "transliteration": "Hamel",
     "english": "Holding",
-    "forms": { "m": "حامِل", "f": "حاملة", "pl": "حاملين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حامِل",
+      "f": "حاملة",
+      "pl": "حاملين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_holding.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_holding_bedouin.mp3",
+    "phonetic_arabic": "حامِلْ",
+    "ipa_bedouin": "ħ aː m i l",
+    "gender": "female"
   },
   {
     "id": "ap_writing",
@@ -356,8 +710,20 @@
     "arabic": "كاتِب",
     "transliteration": "Kateb",
     "english": "Writing",
-    "forms": { "m": "كاتِب", "f": "كاتبة", "pl": "كاتبين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "كاتِب",
+      "f": "كاتبة",
+      "pl": "كاتبين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_writing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_writing_bedouin.mp3",
+    "phonetic_arabic": "كاتِبْ",
+    "ipa_bedouin": "k aː t i b",
+    "gender": "female"
   },
   {
     "id": "ap_leaving",
@@ -368,8 +734,20 @@
     "arabic": "طالِع",
     "transliteration": "Tale'",
     "english": "Leaving/Going Up",
-    "forms": { "m": "طالِع", "f": "طالعة", "pl": "طالعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "طالِع",
+      "f": "طالعة",
+      "pl": "طالعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_leaving.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_leaving_bedouin.mp3",
+    "phonetic_arabic": "طالِعْ",
+    "ipa_bedouin": "tˤ aː l i ʕ",
+    "gender": "female"
   },
   {
     "id": "ap_entering",
@@ -380,8 +758,20 @@
     "arabic": "فايِت",
     "transliteration": "Fayet",
     "english": "Entering",
-    "forms": { "m": "فايِت", "f": "فايتة", "pl": "فايتين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "فايِت",
+      "f": "فايتة",
+      "pl": "فايتين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_entering.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_entering_bedouin.mp3",
+    "phonetic_arabic": "فايِتْ",
+    "ipa_bedouin": "f aː j i t",
+    "gender": "female"
   },
   {
     "id": "ap_returning",
@@ -392,8 +782,20 @@
     "arabic": "راجِع",
     "transliteration": "Raje'",
     "english": "Returning",
-    "forms": { "m": "راجِع", "f": "راجعة", "pl": "راجعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "راجِع",
+      "f": "راجعة",
+      "pl": "راجعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_returning.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_returning_bedouin.mp3",
+    "phonetic_arabic": "راجِعْ",
+    "ipa_bedouin": "r aː d͡ʒ i ʕ",
+    "gender": "female"
   },
   {
     "id": "ap_paying",
@@ -404,8 +806,20 @@
     "arabic": "دافِع",
     "transliteration": "Dafe'",
     "english": "Paying",
-    "forms": { "m": "دافِع", "f": "دافعة", "pl": "دافعين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "دافِع",
+      "f": "دافعة",
+      "pl": "دافعين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_paying.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_paying_bedouin.mp3",
+    "phonetic_arabic": "دافِعْ",
+    "ipa_bedouin": "d aː f i ʕ",
+    "gender": "female"
   },
   {
     "id": "ap_playing",
@@ -416,8 +830,20 @@
     "arabic": "لاعِب",
     "transliteration": "La'eb",
     "english": "Playing",
-    "forms": { "m": "لاعِب", "f": "لاعبة", "pl": "لاعبين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "لاعِب",
+      "f": "لاعبة",
+      "pl": "لاعبين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_playing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_playing_bedouin.mp3",
+    "phonetic_arabic": "لاعِبْ",
+    "ipa_bedouin": "l aː ʕ i b",
+    "gender": "female"
   },
   {
     "id": "ap_drinking",
@@ -428,8 +854,20 @@
     "arabic": "شارِب",
     "transliteration": "Shareb",
     "english": "Drinking",
-    "forms": { "m": "شارِب", "f": "شاربة", "pl": "شاربين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "شارِب",
+      "f": "شاربة",
+      "pl": "شاربين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_drinking.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_drinking_bedouin.mp3",
+    "phonetic_arabic": "شارِبْ",
+    "ipa_bedouin": "ʃ aː r i b",
+    "gender": "female"
   },
   {
     "id": "ap_putting",
@@ -440,8 +878,20 @@
     "arabic": "حاطِط",
     "transliteration": "Hatet",
     "english": "Putting",
-    "forms": { "m": "حاطِط", "f": "حاطّة", "pl": "حاطّين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حاطِط",
+      "f": "حاطّة",
+      "pl": "حاطّين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_putting.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_putting_bedouin.mp3",
+    "phonetic_arabic": "حاطِطْ",
+    "ipa_bedouin": "ħ aː tˤ i tˤ",
+    "gender": "female"
   },
   {
     "id": "ap_loving",
@@ -452,8 +902,20 @@
     "arabic": "حابِب",
     "transliteration": "Habeb",
     "english": "Loving",
-    "forms": { "m": "حابِب", "f": "حابّة", "pl": "حابّين" },
-    "tags": ["active_participle", "standard"]
+    "forms": {
+      "m": "حابِب",
+      "f": "حابّة",
+      "pl": "حابّين"
+    },
+    "tags": [
+      "active_participle",
+      "standard"
+    ],
+    "audio": "/audio/active_participle/ap_loving.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_loving_bedouin.mp3",
+    "phonetic_arabic": "حابِبْ",
+    "ipa_bedouin": "ħ aː b i b",
+    "gender": "female"
   },
   {
     "id": "ap_traveling",
@@ -464,8 +926,20 @@
     "arabic": "مْسافِر",
     "transliteration": "Msafer",
     "english": "Traveling",
-    "forms": { "m": "مْسافِر", "f": "مْسافرة", "pl": "مْسافرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْسافِر",
+      "f": "مْسافرة",
+      "pl": "مْسافرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_traveling.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_traveling_bedouin.mp3",
+    "phonetic_arabic": "مْسافِرْ",
+    "ipa_bedouin": "m s aː f i r",
+    "gender": "female"
   },
   {
     "id": "ap_working",
@@ -476,8 +950,20 @@
     "arabic": "مِشْتَغِل",
     "transliteration": "Mishtaghel",
     "english": "Working",
-    "forms": { "m": "مِشْتَغِل", "f": "مِشْتَغلة", "pl": "مِشْتَغلين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِشْتَغِل",
+      "f": "مِشْتَغلة",
+      "pl": "مِشْتَغلين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_working.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_working_bedouin.mp3",
+    "phonetic_arabic": "مِشْتَغِلْ",
+    "ipa_bedouin": "m i ʃ t a ɣ i l",
+    "gender": "female"
   },
   {
     "id": "ap_thinking",
@@ -488,8 +974,20 @@
     "arabic": "مْفَكِّر",
     "transliteration": "Mfakker",
     "english": "Thinking",
-    "forms": { "m": "مْفَكِّر", "f": "مْفَكِّرة", "pl": "مْفَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْفَكِّر",
+      "f": "مْفَكِّرة",
+      "pl": "مْفَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_thinking.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_thinking_bedouin.mp3",
+    "phonetic_arabic": "مْفَكِّرْ",
+    "ipa_bedouin": "m f a k i ː r",
+    "gender": "female"
   },
   {
     "id": "ap_closing",
@@ -500,8 +998,20 @@
     "arabic": "مْسَكِّر",
     "transliteration": "Msakker",
     "english": "Closing",
-    "forms": { "m": "مْسَكِّر", "f": "مْسَكِّرة", "pl": "مْسَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْسَكِّر",
+      "f": "مْسَكِّرة",
+      "pl": "مْسَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_closing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_closing_bedouin.mp3",
+    "phonetic_arabic": "مْسَكِّرْ",
+    "ipa_bedouin": "m s a k i ː r",
+    "gender": "female"
   },
   {
     "id": "ap_fixing",
@@ -512,8 +1022,20 @@
     "arabic": "مْصَلِّح",
     "transliteration": "Msalleh",
     "english": "Fixing",
-    "forms": { "m": "مْصَلِّح", "f": "مْصَلِّحة", "pl": "مْصَلِّحين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْصَلِّح",
+      "f": "مْصَلِّحة",
+      "pl": "مْصَلِّحين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_fixing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_fixing_bedouin.mp3",
+    "phonetic_arabic": "مْصَلِّحْ",
+    "ipa_bedouin": "m sˤ a l i ː ħ",
+    "gender": "female"
   },
   {
     "id": "ap_changing",
@@ -524,8 +1046,20 @@
     "arabic": "مْغَيِّر",
     "transliteration": "Mghayyer",
     "english": "Changing",
-    "forms": { "m": "مْغَيِّر", "f": "مْغَيِّرة", "pl": "مْغَيِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْغَيِّر",
+      "f": "مْغَيِّرة",
+      "pl": "مْغَيِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_changing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_changing_bedouin.mp3",
+    "phonetic_arabic": "مْغَيِّرْ",
+    "ipa_bedouin": "m ɣ a j i ː r",
+    "gender": "female"
   },
   {
     "id": "ap_cleaning",
@@ -536,8 +1070,20 @@
     "arabic": "مْنَدِّف",
     "transliteration": "Mnaddef",
     "english": "Cleaning",
-    "forms": { "m": "مْنَدِّف", "f": "مْنَدِّفة", "pl": "مْنَدِّفين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْنَدِّف",
+      "f": "مْنَدِّفة",
+      "pl": "مْنَدِّفين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_cleaning.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_cleaning_bedouin.mp3",
+    "phonetic_arabic": "مْنَدِّفْ",
+    "ipa_bedouin": "m n a d i ː f",
+    "gender": "female"
   },
   {
     "id": "ap_believing",
@@ -548,8 +1094,22 @@
     "arabic": "مْصَدِّق",
     "transliteration": "Msadde'",
     "english": "Believing",
-    "forms": { "m": "مْصَدِّق", "f": "مْصَدِّقة", "pl": "مْصَدِّقين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْصَدِّق",
+      "f": "مْصَدِّقة",
+      "pl": "مْصَدِّقين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_believing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_believing_bedouin.mp3",
+    "phonetic_arabic": "مْصَدِّءْ",
+    "phonetic_bedouin": "مْصَدِّگْ",
+    "gender": "female",
+    "ipa_bedouin": "msˤadiːɡ",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "ap_preparing",
@@ -560,8 +1120,20 @@
     "arabic": "مْجَهِّز",
     "transliteration": "Mjahhez",
     "english": "Preparing",
-    "forms": { "m": "مْجَهِّز", "f": "مْجَهِّزة", "pl": "مْجَهِّزين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْجَهِّز",
+      "f": "مْجَهِّزة",
+      "pl": "مْجَهِّزين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_preparing.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_preparing_bedouin.mp3",
+    "phonetic_arabic": "مْجَهِّزْ",
+    "ipa_bedouin": "m d͡ʒ a h i ː",
+    "gender": "female"
   },
   {
     "id": "ap_helping",
@@ -572,8 +1144,20 @@
     "arabic": "مْساعِد",
     "transliteration": "Msa'ed",
     "english": "Helping",
-    "forms": { "m": "مْساعِد", "f": "مْساعِدة", "pl": "مْساعِدين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مْساعِد",
+      "f": "مْساعِدة",
+      "pl": "مْساعِدين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_helping.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_helping_bedouin.mp3",
+    "phonetic_arabic": "مْساعِدْ",
+    "ipa_bedouin": "m s aː ʕ i d",
+    "gender": "female"
   },
   {
     "id": "ap_remembering",
@@ -584,8 +1168,20 @@
     "arabic": "مِتْذَكِّر",
     "transliteration": "Mitzakker",
     "english": "Remembering",
-    "forms": { "m": "مِتْذَكِّر", "f": "مِتْذَكِّرة", "pl": "مِتْذَكِّرين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِتْذَكِّر",
+      "f": "مِتْذَكِّرة",
+      "pl": "مِتْذَكِّرين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_remembering.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_remembering_bedouin.mp3",
+    "phonetic_arabic": "مِتْذَكِّرْ",
+    "ipa_bedouin": "m i t ð a k i ː r",
+    "gender": "female"
   },
   {
     "id": "ap_using",
@@ -596,8 +1192,20 @@
     "arabic": "مِسْتَعْمِل",
     "transliteration": "Mista'mel",
     "english": "Using",
-    "forms": { "m": "مِسْتَعْمِل", "f": "مِسْتَعْمِلة", "pl": "مِسْتَعْمِلين" },
-    "tags": ["active_participle", "m-prefix"]
+    "forms": {
+      "m": "مِسْتَعْمِل",
+      "f": "مِسْتَعْمِلة",
+      "pl": "مِسْتَعْمِلين"
+    },
+    "tags": [
+      "active_participle",
+      "m-prefix"
+    ],
+    "audio": "/audio/active_participle/ap_using.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_using_bedouin.mp3",
+    "phonetic_arabic": "مِسْتَعْمِلْ",
+    "ipa_bedouin": "m i s t a ʕ m i l",
+    "gender": "female"
   },
   {
     "id": "ap_eating",
@@ -608,8 +1216,20 @@
     "arabic": "ماكِل",
     "transliteration": "Makel",
     "english": "Eating",
-    "forms": { "m": "ماكِل", "f": "ماكلة", "pl": "ماكلين" },
-    "tags": ["active_participle", "exception"]
+    "forms": {
+      "m": "ماكِل",
+      "f": "ماكلة",
+      "pl": "ماكلين"
+    },
+    "tags": [
+      "active_participle",
+      "exception"
+    ],
+    "audio": "/audio/active_participle/ap_eating.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_eating_bedouin.mp3",
+    "phonetic_arabic": "ماكِلْ",
+    "ipa_bedouin": "m aː k i l",
+    "gender": "female"
   },
   {
     "id": "ap_taking",
@@ -620,7 +1240,19 @@
     "arabic": "ماخِد",
     "transliteration": "Makhed",
     "english": "Taking",
-    "forms": { "m": "ماخِد", "f": "ماخدة", "pl": "ماخدين" },
-    "tags": ["active_participle", "exception"]
+    "forms": {
+      "m": "ماخِد",
+      "f": "ماخدة",
+      "pl": "ماخدين"
+    },
+    "tags": [
+      "active_participle",
+      "exception"
+    ],
+    "audio": "/audio/active_participle/ap_taking.mp3",
+    "audio_bedouin": "/audio/active_participle/ap_taking_bedouin.mp3",
+    "phonetic_arabic": "ماخِدْ",
+    "ipa_bedouin": "m aː x i d",
+    "gender": "female"
   }
 ]

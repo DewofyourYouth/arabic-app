@@ -7,7 +7,14 @@
     "arabic": "شُغُل",
     "transliteration": "Shughul",
     "english": "Work / Job",
-    "tags": ["work"]
+    "tags": [
+      "work"
+    ],
+    "audio": "/audio/work/l2_work_job.mp3",
+    "audio_bedouin": "/audio/work/l2_work_job_bedouin.mp3",
+    "phonetic_arabic": "شُغُلْ",
+    "ipa_bedouin": "ʃ u ɣ u l",
+    "gender": "female"
   },
   {
     "id": "l2_edu_student",
@@ -17,7 +24,14 @@
     "arabic": "طَالِب",
     "transliteration": "Talib",
     "english": "Student",
-    "tags": ["education"]
+    "tags": [
+      "education"
+    ],
+    "audio": "/audio/education/l2_edu_student.mp3",
+    "phonetic_arabic": "طَالِبْ",
+    "audio_bedouin": "/audio/education/l2_edu_student_bedouin.mp3",
+    "ipa_bedouin": "tˤ a aː l i b",
+    "gender": "female"
   },
   {
     "id": "l2_edu_university",
@@ -27,7 +41,14 @@
     "arabic": "جَامْعَة",
     "transliteration": "Jam'a",
     "english": "University",
-    "tags": ["education"]
+    "tags": [
+      "education"
+    ],
+    "audio": "/audio/education/l2_edu_university.mp3",
+    "audio_bedouin": "/audio/education/l2_edu_university_bedouin.mp3",
+    "phonetic_arabic": "جَامْعَهْ",
+    "ipa_bedouin": "d͡ʒ a aː m ʕ a a",
+    "gender": "female"
   },
   {
     "id": "l2_work_office",
@@ -37,7 +58,14 @@
     "arabic": "مَكْتَب",
     "transliteration": "Maktab",
     "english": "Office / Desk",
-    "tags": ["work"]
+    "tags": [
+      "work"
+    ],
+    "audio": "/audio/work/l2_work_office.mp3",
+    "audio_bedouin": "/audio/work/l2_work_office_bedouin.mp3",
+    "phonetic_arabic": "مَكْتَبْ",
+    "ipa_bedouin": "m a k t a b",
+    "gender": "female"
   },
   {
     "id": "l2_work_engineer",
@@ -47,7 +75,15 @@
     "arabic": "مُهَنْدِس",
     "transliteration": "Muhandis",
     "english": "Engineer",
-    "tags": ["work", "profession"]
+    "tags": [
+      "work",
+      "profession"
+    ],
+    "audio": "/audio/work/l2_work_engineer.mp3",
+    "audio_bedouin": "/audio/work/l2_work_engineer_bedouin.mp3",
+    "phonetic_arabic": "مُهَنْدِسْ",
+    "ipa_bedouin": "m u h a n d i s",
+    "gender": "female"
   },
   {
     "id": "l2_work_teacher",
@@ -57,7 +93,15 @@
     "arabic": "إِسْتَاذ",
     "transliteration": "Ustaz",
     "english": "Teacher / Professor",
-    "tags": ["work", "profession"]
+    "tags": [
+      "work",
+      "profession"
+    ],
+    "audio": "/audio/work/l2_work_teacher.mp3",
+    "audio_bedouin": "/audio/work/l2_work_teacher_bedouin.mp3",
+    "phonetic_arabic": "إِسْتَاذْ",
+    "ipa_bedouin": "ʔ i i s t a aː ð",
+    "gender": "female"
   },
   {
     "id": "l2_work_whatdo",
@@ -67,6 +111,14 @@
     "arabic": "شُو بِتِشْتِغِل؟",
     "transliteration": "Shu bitishtighil?",
     "english": "What do you do (for work)?",
-    "tags": ["work", "question"]
+    "tags": [
+      "work",
+      "question"
+    ],
+    "audio": "/audio/work/l2_work_whatdo.mp3",
+    "audio_bedouin": "/audio/work/l2_work_whatdo_bedouin.mp3",
+    "phonetic_arabic": "شُو بِتِشْتِغِل؟ْ",
+    "ipa_bedouin": "ʃ u uː b i t i ʃ t i ɣ i l",
+    "gender": "female"
   }
 ]

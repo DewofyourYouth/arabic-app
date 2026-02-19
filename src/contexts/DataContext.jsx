@@ -18,10 +18,18 @@ import { INITIAL_SRS_STATE } from '../utils/srs';
 const DataContext = createContext();
 
 export function useData() {
-  return useContext(DataContext);
+  const context = useContext(DataContext);
+  if (context === undefined) {
+    console.error("useData must be used within a DataProvider");
+    // We intentionally return undefined here to let it throw, or we could return null.
+    // But logging helps us verify if context is missing.
+    console.log("DataContext check:", DataContext);
+  }
+  return context;
 }
 
 export function DataProvider({ children }) {
+  console.log("DataProvider: Mounting...");
   const { currentUser } = useAuth();
   const [userData, setUserData] = useState(null);
   const [curriculum, setCurriculum] = useState(null);

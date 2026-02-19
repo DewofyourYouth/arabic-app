@@ -8,7 +8,17 @@
     "transliteration": "Biddi qahwe law samaht",
     "hebrew": "אני רוצה קפה בבקשה",
     "hebrewTransliteration": "בִּדִּי קַהְוֶה לַו סַמַחְת",
-    "tags": ["restaurant", "common"]
+    "tags": [
+      "restaurant",
+      "common"
+    ],
+    "audio": "/audio/ordering/l2_ord_coffee.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_coffee_bedouin.mp3",
+    "phonetic_arabic": "بِدِّي ءَهْوَة لَوْ سَمَحْتْ",
+    "phonetic_bedouin": "بِدِّي گَهْوَة لَوْ سَمَحْتْ",
+    "gender": "female",
+    "ipa_bedouin": "bidːiiː ɡahwaa lauː samaħt",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_ord_tea",
@@ -20,7 +30,14 @@
     "english": "I want tea with sugar",
     "hebrew": "אני רוצה תה עם סוכר",
     "hebrewTransliteration": "בִּדִּי שַׁאי מַע סֻכַּר",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_tea.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_tea_bedouin.mp3",
+    "phonetic_arabic": "بِدِّي شَاي مَع سُكَّرْ",
+    "ipa_bedouin": "b i d ː i iː ʃ a aː iː m a ʕ s u k ː a r",
+    "gender": "female"
   },
   {
     "id": "l2_ord_menu",
@@ -32,7 +49,14 @@
     "english": "Can I have the menu?",
     "hebrew": "אפשר את התפריט?",
     "hebrewTransliteration": "מֻמְכִּן אִל-מֶנְיוּ?",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_menu.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_menu_bedouin.mp3",
+    "phonetic_arabic": "مُمْكِن الْمِنْيُو؟ْ",
+    "ipa_bedouin": "m u m k i n aː l m i n j u uː",
+    "gender": "female"
   },
   {
     "id": "l2_ord_bill",
@@ -43,7 +67,15 @@
     "transliteration": "L-hsab law samaht",
     "hebrew": "החשבון בבקשה",
     "hebrewTransliteration": "לִ-חְסַאבּ לַו סַמַחְת",
-    "tags": ["restaurant", "common"]
+    "tags": [
+      "restaurant",
+      "common"
+    ],
+    "audio": "/audio/ordering/l2_ord_bill.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_bill_bedouin.mp3",
+    "phonetic_arabic": "لِحْسَاب لَوْ سَمَحْتْ",
+    "ipa_bedouin": "l i ħ s a aː b l a uː s a m a ħ t",
+    "gender": "female"
   },
   {
     "id": "l2_ord_water",
@@ -55,7 +87,16 @@
     "english": "A bottle of water",
     "hebrew": "בקבוק מים",
     "hebrewTransliteration": "קַנִּינֶת מַי",
-    "tags": ["restaurant"]
+    "tags": [
+      "restaurant"
+    ],
+    "audio": "/audio/ordering/l2_ord_water.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_water_bedouin.mp3",
+    "phonetic_arabic": "ءَنِّينِة مَيّْ",
+    "phonetic_bedouin": "گَنِّينِة مَيّْ",
+    "gender": "female",
+    "ipa_bedouin": "ɡanːiiːnia maiːː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_ord_delicious",
@@ -67,6 +108,14 @@
     "english": "The food is very delicious",
     "hebrew": "האוכל טעים מאוד",
     "hebrewTransliteration": "אִל-אַכִּל זַאכִּי כְּתִיר",
-    "tags": ["restaurant", "compliment"]
+    "tags": [
+      "restaurant",
+      "compliment"
+    ],
+    "audio": "/audio/ordering/l2_ord_delicious.mp3",
+    "audio_bedouin": "/audio/ordering/l2_ord_delicious_bedouin.mp3",
+    "phonetic_arabic": "الْأَكِل زَاكِي كْتِيرْ",
+    "ipa_bedouin": "aː l ʔ a a k i l a aː k i iː k t i iː r",
+    "gender": "female"
   }
 ]

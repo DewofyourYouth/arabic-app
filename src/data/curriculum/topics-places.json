@@ -8,7 +8,15 @@
     "transliteration": "Beit",
     "hebrew": "בית",
     "hebrewTransliteration": "בֵּית",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_house.mp3",
+    "audio_bedouin": "/audio/places/place_house_bedouin.mp3",
+    "phonetic_arabic": "بِيتْ",
+    "ipa_bedouin": "b i iː t",
+    "gender": "female"
   },
   {
     "id": "place_street",
@@ -20,7 +28,15 @@
     "english": "Street",
     "hebrew": "רחוב",
     "hebrewTransliteration": "שַׁארֶע",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_street.mp3",
+    "audio_bedouin": "/audio/places/place_street_bedouin.mp3",
+    "phonetic_arabic": "شَارِعْ",
+    "ipa_bedouin": "ʃ a aː r i ʕ",
+    "gender": "female"
   },
   {
     "id": "place_school",
@@ -32,7 +48,15 @@
     "english": "School",
     "hebrew": "בית ספר",
     "hebrewTransliteration": "מַדְרַסֶה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_school.mp3",
+    "audio_bedouin": "/audio/places/place_school_bedouin.mp3",
+    "phonetic_arabic": "مَدْرَسِهْ",
+    "ipa_bedouin": "m a d r a s i a",
+    "gender": "female"
   },
   {
     "id": "place_hospital",
@@ -44,7 +68,15 @@
     "english": "Hospital",
     "hebrew": "בית חולים",
     "hebrewTransliteration": "מֻסְתַשְׁפַא",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_hospital.mp3",
+    "audio_bedouin": "/audio/places/place_hospital_bedouin.mp3",
+    "phonetic_arabic": "مُسْتَشْفَىْ",
+    "ipa_bedouin": "m u s t a ʃ f a",
+    "gender": "female"
   },
   {
     "id": "place_airport",
@@ -56,7 +88,15 @@
     "english": "Airport",
     "hebrew": "שדה תעופה",
     "hebrewTransliteration": "מַטַאר",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_airport.mp3",
+    "audio_bedouin": "/audio/places/place_airport_bedouin.mp3",
+    "phonetic_arabic": "مَطَارْ",
+    "ipa_bedouin": "m a tˤ a aː r",
+    "gender": "female"
   },
   {
     "id": "place_hotel",
@@ -68,7 +108,16 @@
     "english": "Hotel",
     "hebrew": "מלון",
     "hebrewTransliteration": "פֻנְדֻק",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_hotel.mp3",
+    "audio_bedouin": "/audio/places/place_hotel_bedouin.mp3",
+    "phonetic_arabic": "فُنْدُءْ",
+    "phonetic_bedouin": "فُنْدُگْ",
+    "gender": "female",
+    "ipa_bedouin": "f u n d u ɡ"
   },
   {
     "id": "place_restaurant",
@@ -79,7 +128,15 @@
     "transliteration": "Mat'am",
     "hebrew": "מסעדה",
     "hebrewTransliteration": "מַטְעַם",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_restaurant.mp3",
+    "audio_bedouin": "/audio/places/place_restaurant_bedouin.mp3",
+    "phonetic_arabic": "مَطْعَمْ",
+    "ipa_bedouin": "m a tˤ ʕ a m",
+    "gender": "female"
   },
   {
     "id": "place_cafe",
@@ -91,7 +148,17 @@
     "english": "Cafe / Coffee Shop",
     "hebrew": "בית קפה",
     "hebrewTransliteration": "אַהְוֶה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_cafe.mp3",
+    "phonetic_arabic": "ءَهْوَهْ",
+    "audio_bedouin": "/audio/places/place_cafe_bedouin.mp3",
+    "phonetic_bedouin": "گَهْوَهْ",
+    "ipa": "ˈʔ a h w e",
+    "ipa_bedouin": "ɡ a h w a",
+    "gender": "female"
   },
   {
     "id": "place_market",
@@ -103,7 +170,16 @@
     "english": "Market / Souq",
     "hebrew": "שוק",
     "hebrewTransliteration": "סוּק",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_market.mp3",
+    "audio_bedouin": "/audio/places/place_market_bedouin.mp3",
+    "phonetic_arabic": "سُوءْ",
+    "phonetic_bedouin": "سُوگْ",
+    "gender": "female",
+    "ipa_bedouin": "s uː ɡ"
   },
   {
     "id": "place_pharmacy",
@@ -115,7 +191,15 @@
     "english": "Pharmacy",
     "hebrew": "בית מרקחת",
     "hebrewTransliteration": "צַיְדַלִיֶּה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_pharmacy.mp3",
+    "audio_bedouin": "/audio/places/place_pharmacy_bedouin.mp3",
+    "phonetic_arabic": "صَيْدَلِيِّهْ",
+    "ipa_bedouin": "sˤ a iː d a l i iː ː i a",
+    "gender": "female"
   },
   {
     "id": "place_university",
@@ -127,6 +211,14 @@
     "english": "University",
     "hebrew": "אוניברסיטה",
     "hebrewTransliteration": "גַ'אמְעַה",
-    "tags": ["places", "noun"]
+    "tags": [
+      "places",
+      "noun"
+    ],
+    "audio": "/audio/places/place_university.mp3",
+    "audio_bedouin": "/audio/places/place_university_bedouin.mp3",
+    "phonetic_arabic": "جَامْعَهْ",
+    "ipa_bedouin": "d͡ʒ a aː m ʕ a a",
+    "gender": "female"
   }
 ]

@@ -24,7 +24,7 @@ const Flashcard = ({ cardData, isFlipped, onFlip }) => {
 
   const handleAudioClick = (e) => {
     e.stopPropagation();
-    playPronunciation(arabic);
+    playPronunciation(arabic, cardData);
   };
 
   return (

@@ -7,7 +7,15 @@
     "arabic": "الْيُوم",
     "transliteration": "El-yom",
     "english": "Today",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_today.mp3",
+    "audio_bedouin": "/audio/time/time_today_bedouin.mp3",
+    "phonetic_arabic": "الْيُومْ",
+    "ipa_bedouin": "aː l j u uː m",
+    "gender": "female"
   },
   {
     "id": "time_tomorrow",
@@ -17,7 +25,15 @@
     "arabic": "بُكْرَة",
     "transliteration": "Bukra",
     "english": "Tomorrow",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_tomorrow.mp3",
+    "audio_bedouin": "/audio/time/time_tomorrow_bedouin.mp3",
+    "phonetic_arabic": "بُكْرَهْ",
+    "ipa_bedouin": "b u k r a a",
+    "gender": "female"
   },
   {
     "id": "time_yesterday",
@@ -27,7 +43,15 @@
     "arabic": "مْبَارِح",
     "transliteration": "Mbare7",
     "english": "Yesterday",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_yesterday.mp3",
+    "audio_bedouin": "/audio/time/time_yesterday_bedouin.mp3",
+    "phonetic_arabic": "مْبَارِحْ",
+    "ipa_bedouin": "m b a aː r i ħ",
+    "gender": "female"
   },
   {
     "id": "time_now",
@@ -37,7 +61,15 @@
     "arabic": "هَلَّأ",
     "transliteration": "Halla'",
     "english": "Now",
-    "tags": ["time", "adverb"]
+    "tags": [
+      "time",
+      "adverb"
+    ],
+    "audio": "/audio/time/time_now.mp3",
+    "audio_bedouin": "/audio/time/time_now_bedouin.mp3",
+    "phonetic_arabic": "هَلَّأْ",
+    "ipa_bedouin": "h a l ː a ʔ a",
+    "gender": "female"
   },
   {
     "id": "time_later",
@@ -47,7 +79,15 @@
     "arabic": "بَعْدِين",
     "transliteration": "Ba'den",
     "english": "Later",
-    "tags": ["time", "adverb"]
+    "tags": [
+      "time",
+      "adverb"
+    ],
+    "audio": "/audio/time/time_later.mp3",
+    "audio_bedouin": "/audio/time/time_later_bedouin.mp3",
+    "phonetic_arabic": "بَعْدِينْ",
+    "ipa_bedouin": "b a ʕ d i iː n",
+    "gender": "female"
   },
   {
     "id": "time_morning",
@@ -57,7 +97,15 @@
     "arabic": "صُبُح",
     "transliteration": "Soboh",
     "english": "Morning",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_morning.mp3",
+    "audio_bedouin": "/audio/time/time_morning_bedouin.mp3",
+    "phonetic_arabic": "صُبُحْ",
+    "ipa_bedouin": "sˤ u b u ħ",
+    "gender": "female"
   },
   {
     "id": "time_night",
@@ -67,7 +115,15 @@
     "arabic": "لِيل",
     "transliteration": "Leil",
     "english": "Night",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_night.mp3",
+    "audio_bedouin": "/audio/time/time_night_bedouin.mp3",
+    "phonetic_arabic": "لِيلْ",
+    "ipa_bedouin": "l i iː l",
+    "gender": "female"
   },
   {
     "id": "time_day_generic",
@@ -77,7 +133,15 @@
     "arabic": "يُوم",
     "transliteration": "Yom",
     "english": "Day",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_day_generic.mp3",
+    "audio_bedouin": "/audio/time/time_day_generic_bedouin.mp3",
+    "phonetic_arabic": "يُومْ",
+    "ipa_bedouin": "j u uː m",
+    "gender": "female"
   },
   {
     "id": "time_week",
@@ -87,7 +151,15 @@
     "arabic": "أُسْبُوع",
     "transliteration": "Usbu'",
     "english": "Week",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_week.mp3",
+    "audio_bedouin": "/audio/time/time_week_bedouin.mp3",
+    "phonetic_arabic": "أُسْبُوعْ",
+    "ipa_bedouin": "ʔ a u s b u uː ʕ",
+    "gender": "female"
   },
   {
     "id": "time_month",
@@ -97,7 +169,15 @@
     "arabic": "شَهْر",
     "transliteration": "Shahr",
     "english": "Month",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_month.mp3",
+    "audio_bedouin": "/audio/time/time_month_bedouin.mp3",
+    "phonetic_arabic": "شَهْرْ",
+    "ipa_bedouin": "ʃ a h r",
+    "gender": "female"
   },
   {
     "id": "time_year",
@@ -107,9 +187,17 @@
     "arabic": "سَنِة",
     "transliteration": "Saneh",
     "english": "Year",
-    "tags": ["time", "noun"]
+    "tags": [
+      "time",
+      "noun"
+    ],
+    "audio": "/audio/time/time_year.mp3",
+    "audio_bedouin": "/audio/time/time_year_bedouin.mp3",
+    "phonetic_arabic": "سَنِهْ",
+    "ipa_bedouin": "s a n i a",
+    "gender": "female"
   },
-    {
+  {
     "id": "time_sunday",
     "level": 1,
     "topic": "time",
@@ -117,7 +205,15 @@
     "arabic": "الأَحَد",
     "transliteration": "El-Ahad",
     "english": "Sunday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_sunday.mp3",
+    "audio_bedouin": "/audio/time/time_sunday_bedouin.mp3",
+    "phonetic_arabic": "الأَحَدْ",
+    "ipa_bedouin": "aː l ʔ a a ħ a d",
+    "gender": "female"
   },
   {
     "id": "time_monday",
@@ -127,7 +223,15 @@
     "arabic": "التِّنِين",
     "transliteration": "Et-Tanen",
     "english": "Monday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_monday.mp3",
+    "audio_bedouin": "/audio/time/time_monday_bedouin.mp3",
+    "phonetic_arabic": "التِّنِينْ",
+    "ipa_bedouin": "aː l t ː i n i iː n",
+    "gender": "female"
   },
   {
     "id": "time_tuesday",
@@ -137,7 +241,15 @@
     "arabic": "التَّلَاتَا",
     "transliteration": "Et-Talata",
     "english": "Tuesday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_tuesday.mp3",
+    "audio_bedouin": "/audio/time/time_tuesday_bedouin.mp3",
+    "phonetic_arabic": "التَّلَاتَاْ",
+    "ipa_bedouin": "aː l t ː a l a aː t a aː",
+    "gender": "female"
   },
   {
     "id": "time_wednesday",
@@ -147,7 +259,15 @@
     "arabic": "الأَرْبِعَا",
     "transliteration": "El-Arbi'a",
     "english": "Wednesday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_wednesday.mp3",
+    "audio_bedouin": "/audio/time/time_wednesday_bedouin.mp3",
+    "phonetic_arabic": "الأَرْبِعَاْ",
+    "ipa_bedouin": "aː l ʔ a a r b i ʕ a aː",
+    "gender": "female"
   },
   {
     "id": "time_thursday",
@@ -157,7 +277,15 @@
     "arabic": "الخَمِيس",
     "transliteration": "El-Khamis",
     "english": "Thursday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_thursday.mp3",
+    "audio_bedouin": "/audio/time/time_thursday_bedouin.mp3",
+    "phonetic_arabic": "الخَمِيسْ",
+    "ipa_bedouin": "aː l x a m i iː s",
+    "gender": "female"
   },
   {
     "id": "time_friday",
@@ -167,7 +295,15 @@
     "arabic": "الجمعة",
     "transliteration": "El-Jum'a",
     "english": "Friday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_friday.mp3",
+    "audio_bedouin": "/audio/time/time_friday_bedouin.mp3",
+    "phonetic_arabic": "الجمعهْ",
+    "ipa_bedouin": "aː l d͡ʒ m ʕ a",
+    "gender": "female"
   },
   {
     "id": "time_saturday",
@@ -177,6 +313,14 @@
     "arabic": "السَّبْت",
     "transliteration": "Es-Sabt",
     "english": "Saturday",
-    "tags": ["time", "day"]
+    "tags": [
+      "time",
+      "day"
+    ],
+    "audio": "/audio/time/time_saturday.mp3",
+    "audio_bedouin": "/audio/time/time_saturday_bedouin.mp3",
+    "phonetic_arabic": "السَّبْتْ",
+    "ipa_bedouin": "aː l s ː a b t",
+    "gender": "female"
   }
 ]

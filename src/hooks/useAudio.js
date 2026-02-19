@@ -40,43 +40,6 @@ export const useAudio = () => {
   const preprocessArabicForTTS = (text, dialect) => {
     let processedText = text;
 
-    // 0. Manual Overrides for specific words in the text
-    const PHONETIC_OVERRIDES = {
-      'قهوة': {
-        urban: 'أَهْوِة', 
-        bedouin: `${settings?.gChar || 'گ'}َهْوِة` // Changed from FatHa to Kasra on Waw (وِ) to avoid "oo" sound
-      },
-      // Add exact match with diacritics just in case
-      'قَهْوَة': {
-        urban: 'أَهْوِة', 
-        bedouin: `${settings?.gChar || 'گ'}َهْوِة`
-      }
-    };
-
-    // Helper to remove diacritics for matching
-    const removeDiacritics = (str) => str.replace(/[\u064B-\u065F]/g, '');
-
-    // Apply overrides
-    Object.keys(PHONETIC_OVERRIDES).forEach(key => {
-        if (text.includes(key) || removeDiacritics(text).includes(removeDiacritics(key))) {
-             const replacement = PHONETIC_OVERRIDES[key][dialect] || PHONETIC_OVERRIDES[key].bedouin;
-             if (replacement) {
-                 // Try exact match first
-                 if (text.includes(key)) {
-                     processedText = processedText.replace(new RegExp(key, 'g'), replacement);
-                 } else {
-                     // Fallback for diacritic differences
-                     const base = removeDiacritics(key);
-                     // Create a regex that allows for optional diacritics between letters
-                     // This is hard, so for now we stick to the specific fallback we know: "Coffee"
-                     if (key.includes('قهوة')) {
-                         processedText = processedText.replace(/ق[\u064B-\u065F]*ه[\u064B-\u065F]*و[\u064B-\u065F]*ة/g, replacement);
-                     }
-                 }
-             }
-        }
-    });
-
     // 1. Replace ta marbouta (ة) with regular ha (ه) for pausal form "eh" sound
     processedText = processedText.replace(/ة/g, 'ه');
 
@@ -84,8 +47,7 @@ export const useAudio = () => {
     if (dialect === 'urban') {
       processedText = processedText.replace(/ق/g, 'ء');
     } else if (dialect === 'rural' || dialect === 'bedouin') {
-      const gChar = settings?.gChar || 'گ';
-      processedText = processedText.replace(/ق/g, gChar);
+      processedText = processedText.replace(/ق/g, 'g');
     }
 
     console.log(`[TTS] Input: "${text}", Dialect: ${dialect}, Spoken: "${processedText}"`); // Debug log
@@ -93,7 +55,51 @@ export const useAudio = () => {
     return processedText;
   };
 
-  const playPronunciation = useCallback((text) => {
+  const playPronunciation = useCallback((text, audioData) => {
+    // 1. Try playing audio file if available
+    let audioFile = null;
+
+    // Handle string (legacy/simple) vs object (future proofing if passed entire card)
+    // Actually, callers pass `cardData.audio`.
+    // But we need to know about `audio_bedouin`.
+    // So callers should probably pass the WHOLE card or both paths.
+    // Let's assume callers pass the `cardData` object or we change the signature.
+    // To minimize refactoring, let's keep `text` as first arg, and 2nd arg `audioData` can be the card object OR the audio path string.
+    
+    if (typeof audioData === 'object' && audioData !== null) {
+        const dialect = settings?.dialect || 'urban'; // default to urban/standard
+        if (dialect === 'bedouin' || dialect === 'rural') {
+            audioFile = audioData.audio_bedouin || audioData.audio; // Fallback to standard if bedouin missing
+        } else {
+            audioFile = audioData.audio;
+        }
+    } else if (typeof audioData === 'string') {
+        audioFile = audioData;
+    }
+
+    if (audioFile) {
+      console.log(`[useAudio] Attempting to play file: ${audioFile} with cache buster`);
+      const audio = new Audio(`${audioFile}?v=9`);
+      audio.onerror = (e) => {
+        console.warn(`[useAudio] Error loading audio file: ${audioFile}`, e);
+        // Fallback to TTS handled by caller? No, we need to handle it here or let it fail
+        // If we want fallback on error, we need to move TTS logic here or chain it.
+        // For now, let's just log it.
+      };
+      audio.oncanplaythrough = () => console.log(`[useAudio] Audio file loaded successfully: ${audioFile}`);
+      
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+          playPromise.catch(error => {
+              console.warn(`[useAudio] Playback failed for ${audioFile}:`, error);
+          });
+      }
+      return;
+    } else {
+        console.log(`[useAudio] No audio file found for text: "${text}". audioData was:`, audioData);
+    }
+
+    // 2. Fallback to TTS
     if ('speechSynthesis' in window) {
       // Use dialect from settings, default to 'bedouin' if not set
       const dialect = settings?.dialect || 'bedouin';

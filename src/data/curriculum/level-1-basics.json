@@ -8,7 +8,15 @@
     "transliteration": "Chat Arabic",
     "english": "We use numbers to represent Arabic sounds that don't exist in English.",
     "hebrew": "אנו משתמשים במספרים כדי לייצג צלילים בערבית שאינם קיימים באנגלית (או בעברית).",
-    "tags": ["guide", "intro"]
+    "tags": [
+      "guide",
+      "intro"
+    ],
+    "audio": "/audio/intro/intro_arbizi_welcome.mp3",
+    "audio_bedouin": "/audio/intro/intro_arbizi_welcome_bedouin.mp3",
+    "phonetic_arabic": "أرابيزيْ",
+    "ipa_bedouin": "ʔ a r aː b iː iː",
+    "gender": "female"
   },
   {
     "id": "intro_arbizi_7",
@@ -19,7 +27,15 @@
     "transliteration": "7 = Ḥa",
     "english": "The number 7 represents the deep 'H' sound (like cleaning glasses).",
     "hebrew": "המספר 7 מייצג את הצליל ״ח״.",
-    "tags": ["guide", "intro"]
+    "tags": [
+      "guide",
+      "intro"
+    ],
+    "audio": "/audio/intro/intro_arbizi_7.mp3",
+    "audio_bedouin": "/audio/intro/intro_arbizi_7_bedouin.mp3",
+    "phonetic_arabic": "حْ",
+    "ipa_bedouin": "ħ",
+    "gender": "female"
   },
   {
     "id": "intro_arbizi_3",
@@ -30,7 +46,15 @@
     "transliteration": "3 = 'Ayn",
     "english": "The number 3 represents the deep throat sound 'Ayn.",
     "hebrew": "המספר 3 מייצג את הצליל ״ע״.",
-    "tags": ["guide", "intro"]
+    "tags": [
+      "guide",
+      "intro"
+    ],
+    "audio": "/audio/intro/intro_arbizi_3.mp3",
+    "audio_bedouin": "/audio/intro/intro_arbizi_3_bedouin.mp3",
+    "phonetic_arabic": "عْ",
+    "ipa_bedouin": "ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_g_hello",
@@ -42,9 +66,18 @@
     "english": "Hello",
     "hebrew": "שלום",
     "hebrewTransliteration": "מַרְחַבַּא",
-    "audio": "/audio/marhaba.mp3",
-    "alternatives": ["Ahlan"],
-    "tags": ["greeting", "common"]
+    "audio": "/audio/greetings/l1_g_hello.mp3",
+    "alternatives": [
+      "Ahlan"
+    ],
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio_bedouin": "/audio/greetings/l1_g_hello_bedouin.mp3",
+    "phonetic_arabic": "مرحباْ",
+    "ipa_bedouin": "m r ħ b aː",
+    "gender": "female"
   },
   {
     "id": "l1_g_howareyou_formal",
@@ -56,7 +89,15 @@
     "english": "How are you? (General)",
     "hebrew": "מה שלומך? (כללי)",
     "hebrewTransliteration": "כִיף חַאלַכ?",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_howareyou_formal.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_howareyou_formal_bedouin.mp3",
+    "phonetic_arabic": "كِيف حَالَك؟ْ",
+    "ipa_bedouin": "k i iː f ħ a aː l a k",
+    "gender": "female"
   },
   {
     "id": "l1_g_howareyou_m",
@@ -68,7 +109,15 @@
     "english": "How are you? (to male)",
     "hebrew": "מה שלומך? (לזכר)",
     "hebrewTransliteration": "כִיפַכ?",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "gender": "female",
+    "audio": "/audio/greetings/l1_g_howareyou_m.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_howareyou_m_bedouin.mp3",
+    "phonetic_arabic": "كِيفَك؟ْ",
+    "ipa_bedouin": "k i iː f a k"
   },
   {
     "id": "l1_g_howareyou_f",
@@ -80,7 +129,15 @@
     "english": "How are you? (to female)",
     "hebrew": "מה שלומך? (לנקבה)",
     "hebrewTransliteration": "כִיפִכ?",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "gender": "female",
+    "audio": "/audio/greetings/l1_g_howareyou_f.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_howareyou_f_bedouin.mp3",
+    "phonetic_arabic": "كِيفِك؟ْ",
+    "ipa_bedouin": "k i iː f i k"
   },
   {
     "id": "l1_g_reply_mnih",
@@ -92,7 +149,15 @@
     "english": "I am good (male)",
     "hebrew": "אני בסדר (זכר)",
     "hebrewTransliteration": "אַנַא מְנִיח",
-    "tags": ["greeting", "reply"]
+    "tags": [
+      "greeting",
+      "reply"
+    ],
+    "gender": "female",
+    "audio": "/audio/greetings/l1_g_reply_mnih.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_reply_mnih_bedouin.mp3",
+    "phonetic_arabic": "أَنَا مْنِيحْ",
+    "ipa_bedouin": "ʔ a a n a aː m n i iː ħ"
   },
   {
     "id": "l1_g_reply_mniha",
@@ -104,7 +169,15 @@
     "english": "I am good (female)",
     "hebrew": "אני בסדר (נקבה)",
     "hebrewTransliteration": "אַנַא מְנִיחַה",
-    "tags": ["greeting", "reply"]
+    "tags": [
+      "greeting",
+      "reply"
+    ],
+    "gender": "female",
+    "audio": "/audio/greetings/l1_g_reply_mniha.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_reply_mniha_bedouin.mp3",
+    "phonetic_arabic": "أَنَا مْنِيحَهْ",
+    "ipa_bedouin": "ʔ a a n a aː m n i iː ħ a a"
   },
   {
     "id": "l1_g_reply_tamam",
@@ -116,7 +189,16 @@
     "english": "Great / Okay / All good",
     "hebrew": "סבבה / הכל טוב",
     "hebrewTransliteration": "תַמַאם",
-    "tags": ["greeting", "reply", "common"]
+    "tags": [
+      "greeting",
+      "reply",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_reply_tamam.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_reply_tamam_bedouin.mp3",
+    "phonetic_arabic": "تَمَامْ",
+    "ipa_bedouin": "t a m a aː m",
+    "gender": "female"
   },
   {
     "id": "l1_g_news",
@@ -128,7 +210,15 @@
     "english": "What's your news?",
     "hebrew": "מה חדש? / מה נשמע?",
     "hebrewTransliteration": "שׁוּ אַחְבַּארַכ?",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_news.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_news_bedouin.mp3",
+    "phonetic_arabic": "شُو أَخْبَارَك؟ْ",
+    "ipa_bedouin": "ʃ u uː ʔ a a x b a aː r a k",
+    "gender": "female"
   },
   {
     "id": "l1_g_sup",
@@ -140,7 +230,15 @@
     "english": "What's up? (Literally: What is there, what is not there?)",
     "hebrew": "מה קורה? (מילולית: מה יש ומה אין?)",
     "hebrewTransliteration": "שׁוּ פִי מַא פִי?",
-    "tags": ["greeting", "colloquial"]
+    "tags": [
+      "greeting",
+      "colloquial"
+    ],
+    "audio": "/audio/greetings/l1_g_sup.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_sup_bedouin.mp3",
+    "phonetic_arabic": "شُو فِي مَا فِي؟ْ",
+    "ipa_bedouin": "ʃ u uː f i iː m a aː f i iː",
+    "gender": "female"
   },
   {
     "id": "l1_g_morning",
@@ -152,7 +250,15 @@
     "english": "Good morning",
     "hebrew": "בוקר טוב",
     "hebrewTransliteration": "צַבַּאח אִל-חֵ'יר",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_morning.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_morning_bedouin.mp3",
+    "phonetic_arabic": "صَبَاح الْخَيْرْ",
+    "ipa_bedouin": "sˤ a b a aː ħ aː l x a iː r",
+    "gender": "female"
   },
   {
     "id": "l1_g_welcome",
@@ -164,8 +270,14 @@
     "english": "Welcome / Hello",
     "hebrew": "אהלן / ברוכים הבאים",
     "hebrewTransliteration": "אַהְלָן",
-    "audio": "/audio/ahlan.mp3",
-    "tags": ["greeting"]
+    "audio": "/audio/greetings/l1_g_welcome.mp3",
+    "tags": [
+      "greeting"
+    ],
+    "audio_bedouin": "/audio/greetings/l1_g_welcome_bedouin.mp3",
+    "phonetic_arabic": "أَهْلَنْْ",
+    "ipa_bedouin": "ʔ a h l aː",
+    "gender": "female"
   },
   {
     "id": "l1_res_thankyou",
@@ -177,7 +289,14 @@
     "english": "Thank you",
     "hebrew": "תודה",
     "hebrewTransliteration": "שׁוּכְּרַן",
-    "tags": ["polite"]
+    "tags": [
+      "polite"
+    ],
+    "audio": "/audio/essentials/l1_res_thankyou.mp3",
+    "audio_bedouin": "/audio/essentials/l1_res_thankyou_bedouin.mp3",
+    "phonetic_arabic": "شكراًْ",
+    "ipa_bedouin": "ʃ k r aː",
+    "gender": "female"
   },
   {
     "id": "l1_res_yourewelcome",
@@ -189,7 +308,14 @@
     "english": "You're welcome / Excuse me",
     "hebrew": "על לא דבר / סליחה",
     "hebrewTransliteration": "עַפְוַאן",
-    "tags": ["polite"]
+    "tags": [
+      "polite"
+    ],
+    "audio": "/audio/essentials/l1_res_yourewelcome.mp3",
+    "audio_bedouin": "/audio/essentials/l1_res_yourewelcome_bedouin.mp3",
+    "phonetic_arabic": "عفواًْ",
+    "ipa_bedouin": "ʕ f uː aː",
+    "gender": "female"
   },
   {
     "id": "l1_pro_i",
@@ -201,7 +327,15 @@
     "english": "I",
     "hebrew": "אני",
     "hebrewTransliteration": "אַנַא",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "audio": "/audio/pronouns/l1_pro_i.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_i_bedouin.mp3",
+    "phonetic_arabic": "أَنَاْ",
+    "ipa_bedouin": "ʔ a a n a aː",
+    "gender": "female"
   },
   {
     "id": "l1_pro_you_m",
@@ -213,9 +347,17 @@
     "english": "You (male)",
     "hebrew": "אתה",
     "hebrewTransliteration": "אִנְתֶה",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "gender": "female",
+    "audio": "/audio/pronouns/l1_pro_you_m.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_you_m_bedouin.mp3",
+    "phonetic_arabic": "إِنْتَْ",
+    "ipa_bedouin": "ʔ i i n t a"
   },
-    {
+  {
     "id": "l1_pro_you_f",
     "level": 1,
     "topic": "pronouns",
@@ -225,7 +367,15 @@
     "english": "You (female)",
     "hebrew": "את",
     "hebrewTransliteration": "אִנְתִי",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "gender": "female",
+    "audio": "/audio/pronouns/l1_pro_you_f.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_you_f_bedouin.mp3",
+    "phonetic_arabic": "إِنْتِْ",
+    "ipa_bedouin": "ʔ i i n t i"
   },
   {
     "id": "l1_pro_he",
@@ -237,7 +387,15 @@
     "english": "He",
     "hebrew": "הוא",
     "hebrewTransliteration": "הֻוֶּה",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "audio": "/audio/pronouns/l1_pro_he.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_he_bedouin.mp3",
+    "phonetic_arabic": "هُوَّْ",
+    "ipa_bedouin": "h u uː ː a",
+    "gender": "female"
   },
   {
     "id": "l1_pro_she",
@@ -249,7 +407,15 @@
     "english": "She",
     "hebrew": "היא",
     "hebrewTransliteration": "הִייֶה",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "gender": "female",
+    "audio": "/audio/pronouns/l1_pro_she.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_she_bedouin.mp3",
+    "phonetic_arabic": "هِيَّْ",
+    "ipa_bedouin": "h i iː ː a"
   },
   {
     "id": "l1_pro_we",
@@ -261,7 +427,15 @@
     "english": "We",
     "hebrew": "אנחנו",
     "hebrewTransliteration": "אִחְנַא",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "phonetic_arabic": "إِحْ نَاْ",
+    "audio": "/audio/pronouns/l1_pro_we.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_we_bedouin.mp3",
+    "ipa_bedouin": "ʔ i i ħ n a aː",
+    "gender": "female"
   },
   {
     "id": "l1_pro_you_pl",
@@ -273,7 +447,15 @@
     "english": "You (plural)",
     "hebrew": "אתם/אתן",
     "hebrewTransliteration": "אִנְתוּ",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "audio": "/audio/pronouns/l1_pro_you_pl.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_you_pl_bedouin.mp3",
+    "phonetic_arabic": "إِنْتُوْ",
+    "ipa_bedouin": "ʔ i i n t u uː",
+    "gender": "female"
   },
   {
     "id": "l1_pro_they",
@@ -285,7 +467,15 @@
     "english": "They",
     "hebrew": "הם/הן",
     "hebrewTransliteration": "הֻמֶּה",
-    "tags": ["grammar", "pronoun"]
+    "tags": [
+      "grammar",
+      "pronoun"
+    ],
+    "audio": "/audio/pronouns/l1_pro_they.mp3",
+    "audio_bedouin": "/audio/pronouns/l1_pro_they_bedouin.mp3",
+    "phonetic_arabic": "هُمَّْ",
+    "ipa_bedouin": "h u m ː a",
+    "gender": "female"
   },
   {
     "id": "l1_g_evening",
@@ -297,7 +487,15 @@
     "english": "Good evening",
     "hebrew": "ערב טוב",
     "hebrewTransliteration": "מַסַא אִל-חֵ'יר",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_evening.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_evening_bedouin.mp3",
+    "phonetic_arabic": "مَسَا الْخَيْرْ",
+    "ipa_bedouin": "m a s a aː aː l x a iː r",
+    "gender": "female"
   },
   {
     "id": "l1_g_goodbye",
@@ -309,7 +507,15 @@
     "english": "Goodbye",
     "hebrew": "להתראות",
     "hebrewTransliteration": "מַעַ אִ-סַּלַאנֶה",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "phonetic_arabic": "مَعِ السَّلَامِةْ",
+    "audio": "/audio/greetings/l1_g_goodbye.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_goodbye_bedouin.mp3",
+    "ipa_bedouin": "m a ʕ aː l s ː a l a aː m i a",
+    "gender": "female"
   },
   {
     "id": "l1_g_seeyou",
@@ -321,7 +527,15 @@
     "english": "See you",
     "hebrew": "נתראה",
     "hebrewTransliteration": "בְּשׁוּפַכ",
-    "tags": ["greeting", "common"]
+    "tags": [
+      "greeting",
+      "common"
+    ],
+    "audio": "/audio/greetings/l1_g_seeyou.mp3",
+    "audio_bedouin": "/audio/greetings/l1_g_seeyou_bedouin.mp3",
+    "phonetic_arabic": "بَشُوفَكْ",
+    "ipa_bedouin": "b a ʃ u uː f a k",
+    "gender": "female"
   },
   {
     "id": "l1_basics_fast",
@@ -333,7 +547,14 @@
     "english": "Fast",
     "hebrew": "מהיר",
     "hebrewTransliteration": "סַרִיע",
-    "tags": ["adjective"]
+    "tags": [
+      "adjective"
+    ],
+    "audio": "/audio/adjectives/l1_basics_fast.mp3",
+    "audio_bedouin": "/audio/adjectives/l1_basics_fast_bedouin.mp3",
+    "phonetic_arabic": "سَرِيعْ",
+    "ipa_bedouin": "s a r i iː ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_basics_slow",
@@ -345,7 +566,14 @@
     "english": "Slow",
     "hebrew": "איטי",
     "hebrewTransliteration": "בָּטִי",
-    "tags": ["adjective"]
+    "tags": [
+      "adjective"
+    ],
+    "phonetic_arabic": "بَطِيءْ",
+    "audio": "/audio/adjectives/l1_basics_slow.mp3",
+    "audio_bedouin": "/audio/adjectives/l1_basics_slow_bedouin.mp3",
+    "ipa_bedouin": "b a tˤ i iː ʔ",
+    "gender": "female"
   },
   {
     "id": "l1_basics_quickly",
@@ -357,7 +585,14 @@
     "english": "Quickly / Fast",
     "hebrew": "מהר",
     "hebrewTransliteration": "בְּסוּרְעַה",
-    "tags": ["adverb"]
+    "tags": [
+      "adverb"
+    ],
+    "audio": "/audio/adverbs/l1_basics_quickly.mp3",
+    "audio_bedouin": "/audio/adverbs/l1_basics_quickly_bedouin.mp3",
+    "phonetic_arabic": "بْسُرْعَهْ",
+    "ipa_bedouin": "b s u r ʕ a a",
+    "gender": "female"
   },
   {
     "id": "l1_basics_slowly",
@@ -369,7 +604,15 @@
     "english": "Slowly / Slow down",
     "hebrew": "לאט לאט",
     "hebrewTransliteration": "שְׁוַאי שְׁוַאי",
-    "tags": ["adverb", "common"]
+    "tags": [
+      "adverb",
+      "common"
+    ],
+    "audio": "/audio/adverbs/l1_basics_slowly.mp3",
+    "audio_bedouin": "/audio/adverbs/l1_basics_slowly_bedouin.mp3",
+    "phonetic_arabic": "شْوَي شْوَيْ",
+    "ipa_bedouin": "ʃ w a iː ʃ w a iː",
+    "gender": "female"
   },
   {
     "id": "l1_basics_kindof",
@@ -381,6 +624,14 @@
     "english": "Kind of / I mean / That is",
     "hebrew": "יעני / כלומר",
     "hebrewTransliteration": "יַעְנִי",
-    "tags": ["filler", "common"]
+    "tags": [
+      "filler",
+      "common"
+    ],
+    "audio": "/audio/fillers/l1_basics_kindof.mp3",
+    "audio_bedouin": "/audio/fillers/l1_basics_kindof_bedouin.mp3",
+    "phonetic_arabic": "يَعْنِيْ",
+    "ipa_bedouin": "j a ʕ n i iː",
+    "gender": "female"
   }
 ]

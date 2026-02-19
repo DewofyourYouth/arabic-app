@@ -224,7 +224,7 @@ const QuizCard = ({ cardData, allCards, onRate, quizType = 'en-to-ar' }) => {
     if (option.isCorrect) {
       playCorrect();
       if (cardData.arabic) {
-        playPronunciation(cardData.arabic);
+        playPronunciation(cardData.arabic, cardData);
       }
       // Delay before moving on to let user see feedback
       setTimeout(() => {

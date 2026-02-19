@@ -8,7 +8,16 @@
     "transliteration": "Na'eeman",
     "english": "Blessings (said after haircut/shower)",
     "note": "Reply: Allah yin'am 'alayk (الله ينعم عليك)",
-    "tags": ["idiom", "social", "common"]
+    "tags": [
+      "idiom",
+      "social",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_neeman.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_neeman_bedouin.mp3",
+    "phonetic_arabic": "نعيماًْ",
+    "ipa_bedouin": "n ʕ iː m aː",
+    "gender": "female"
   },
   {
     "id": "idiom_tanjara",
@@ -18,7 +27,18 @@
     "arabic": "طنجرة ولقت غطاها",
     "transliteration": "Tanjara w la'et ghataha",
     "english": "A pot found its lid (Perfect match)",
-    "tags": ["idiom", "funny", "common"]
+    "tags": [
+      "idiom",
+      "funny",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_tanjara.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tanjara_bedouin.mp3",
+    "phonetic_arabic": "طنجرة ولءت غطاهاْ",
+    "phonetic_bedouin": "طنگرة ولگت غطاهاْ",
+    "gender": "female",
+    "ipa_bedouin": "tˤnɡra uːlɡt ɣtˤaːhaː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_doq_7adid",
@@ -28,7 +48,17 @@
     "arabic": "دق الحديد وهو حامي",
     "transliteration": "Doq el-7adid w huwwe 7ami",
     "english": "Strike the iron while it is hot",
-    "tags": ["idiom", "proverb"]
+    "tags": [
+      "idiom",
+      "proverb"
+    ],
+    "audio": "/audio/idioms/idiom_doq_7adid.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_doq_7adid_bedouin.mp3",
+    "phonetic_arabic": "دء الحديد وهو حاميْ",
+    "phonetic_bedouin": "دگ الحديد وهو حاميْ",
+    "gender": "female",
+    "ipa_bedouin": "dɡ aːlħdiːd uːhuː ħaːmiː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_3oqbal",
@@ -38,7 +68,18 @@
     "arabic": "عقبال عندك",
     "transliteration": "3oqbal 3indak",
     "english": "May it happen for you next (at celebrations)",
-    "tags": ["idiom", "social", "wedding"]
+    "tags": [
+      "idiom",
+      "social",
+      "wedding"
+    ],
+    "audio": "/audio/idioms/idiom_3oqbal.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_3oqbal_bedouin.mp3",
+    "phonetic_arabic": "عءبال عندكْ",
+    "phonetic_bedouin": "عگبال عندكْ",
+    "gender": "female",
+    "ipa_bedouin": "ʕɡbaːl ʕndk",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_jabal",
@@ -48,7 +89,16 @@
     "arabic": "يا جبل ما يهزك ريح",
     "transliteration": "Ya jabal ma yhizzak ri7",
     "english": "O mountain, the wind does not shake you (Be strong)",
-    "tags": ["idiom", "proverb", "encouragement"]
+    "tags": [
+      "idiom",
+      "proverb",
+      "encouragement"
+    ],
+    "audio": "/audio/idioms/idiom_jabal.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_jabal_bedouin.mp3",
+    "phonetic_arabic": "يا جبل ما يهزك ريحْ",
+    "ipa_bedouin": "j aː d͡ʒ b l m aː iː h k r iː ħ",
+    "gender": "female"
   },
   {
     "id": "idiom_mn_3yunii",
@@ -58,7 +108,16 @@
     "arabic": "من عيوني",
     "transliteration": "Min 3yunii",
     "english": "From my eyes (With pleasure)",
-    "tags": ["idiom", "polite", "common"]
+    "tags": [
+      "idiom",
+      "polite",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_mn_3yunii.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_mn_3yunii_bedouin.mp3",
+    "phonetic_arabic": "من عيونيْ",
+    "ipa_bedouin": "m n ʕ iː uː n iː",
+    "gender": "female"
   },
   {
     "id": "idiom_tikram",
@@ -68,7 +127,16 @@
     "arabic": "تكرم / تكرمي",
     "transliteration": "Tikram / Tikrami",
     "english": "You're welcome / At your service",
-    "tags": ["idiom", "polite", "common"]
+    "tags": [
+      "idiom",
+      "polite",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_tikram.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tikram_bedouin.mp3",
+    "phonetic_arabic": "تكرمْ / تكرميْ",
+    "ipa_bedouin": "t k r m t k r m iː",
+    "gender": "female"
   },
   {
     "id": "idiom_ala_rasi",
@@ -78,7 +146,16 @@
     "arabic": "على راسي",
     "transliteration": "3ala rasi",
     "english": "On my head (At your service/Respect)",
-    "tags": ["idiom", "polite", "common"]
+    "tags": [
+      "idiom",
+      "polite",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_ala_rasi.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_ala_rasi_bedouin.mp3",
+    "phonetic_arabic": "على راسيْ",
+    "ipa_bedouin": "ʕ l r aː s iː",
+    "gender": "female"
   },
   {
     "id": "idiom_zabbatha",
@@ -88,7 +165,16 @@
     "arabic": "زبطها",
     "transliteration": "Zabbat'ha",
     "english": "He fixed it / He succeeded",
-    "tags": ["idiom", "slang", "common"]
+    "tags": [
+      "idiom",
+      "slang",
+      "common"
+    ],
+    "audio": "/audio/idioms/idiom_zabbatha.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_zabbatha_bedouin.mp3",
+    "phonetic_arabic": "زبطهاْ",
+    "ipa_bedouin": "b tˤ h aː",
+    "gender": "female"
   },
   {
     "id": "idiom_sa7tein",
@@ -99,7 +185,16 @@
     "transliteration": "Sa7tein",
     "english": "Bon Appétit (Two healths)",
     "note": "Reply: 3ala albak (على قلبك)",
-    "tags": ["idiom", "social", "food"]
+    "tags": [
+      "idiom",
+      "social",
+      "food"
+    ],
+    "audio": "/audio/idioms/idiom_sa7tein.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_sa7tein_bedouin.mp3",
+    "phonetic_arabic": "صحتينْ",
+    "ipa_bedouin": "sˤ ħ t iː n",
+    "gender": "female"
   },
   {
     "id": "idiom_yatik_afya",
@@ -109,7 +204,16 @@
     "arabic": "يعطيك العافية",
     "transliteration": "Ya'tik al-afya",
     "english": "May God give you health (Greeting/Thanks)",
-    "tags": ["idiom", "social", "polite"]
+    "tags": [
+      "idiom",
+      "social",
+      "polite"
+    ],
+    "audio": "/audio/idioms/idiom_yatik_afya.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_yatik_afya_bedouin.mp3",
+    "phonetic_arabic": "يعطيك العافيهْ",
+    "ipa_bedouin": "j ʕ tˤ iː k aː l ʕ aː f iː a",
+    "gender": "female"
   },
   {
     "id": "idiom_tikrar_hmar",
@@ -119,7 +223,16 @@
     "arabic": "التكرار بعلم الحمار",
     "transliteration": "El-tikrar bi-3allim el-hmar",
     "english": "Repetition teaches the donkey (Practice makes perfect)",
-    "tags": ["idiom", "funny", "proverb"]
+    "tags": [
+      "idiom",
+      "funny",
+      "proverb"
+    ],
+    "audio": "/audio/idioms/idiom_tikrar_hmar.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tikrar_hmar_bedouin.mp3",
+    "phonetic_arabic": "التكرار بعلم الحمارْ",
+    "ipa_bedouin": "aː l t k r aː r b ʕ l m aː l ħ m aː r",
+    "gender": "female"
   },
   {
     "id": "idiom_temmak_sama",
@@ -129,7 +242,16 @@
     "arabic": "من تمك لباب السما",
     "transliteration": "Men temmak la bab al-sama",
     "english": "From your mouth to the sky's door (I hope so)",
-    "tags": ["idiom", "social", "wish"]
+    "tags": [
+      "idiom",
+      "social",
+      "wish"
+    ],
+    "audio": "/audio/idioms/idiom_temmak_sama.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_temmak_sama_bedouin.mp3",
+    "phonetic_arabic": "من تمك لباب السماْ",
+    "ipa_bedouin": "m n t m k l b aː b aː l s m aː",
+    "gender": "female"
   },
   {
     "id": "idiom_faat_maat",
@@ -139,7 +261,16 @@
     "arabic": "يلي فات مات",
     "transliteration": "Yalli faat maat",
     "english": "What passed died (Let bygones be bygones)",
-    "tags": ["idiom", "proverb", "wisdom"]
+    "tags": [
+      "idiom",
+      "proverb",
+      "wisdom"
+    ],
+    "audio": "/audio/idioms/idiom_faat_maat.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_faat_maat_bedouin.mp3",
+    "phonetic_arabic": "يلي فات ماتْ",
+    "ipa_bedouin": "j l iː f aː t m aː t",
+    "gender": "female"
   },
   {
     "id": "idiom_dammak_khafif",
@@ -149,7 +280,16 @@
     "arabic": "دمك خفيف",
     "transliteration": "Dammak khafif",
     "english": "Your blood is light (You are funny/charming)",
-    "tags": ["idiom", "social", "compliment"]
+    "tags": [
+      "idiom",
+      "social",
+      "compliment"
+    ],
+    "audio": "/audio/idioms/idiom_dammak_khafif.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_dammak_khafif_bedouin.mp3",
+    "phonetic_arabic": "دمك خفيفْ",
+    "ipa_bedouin": "d m k x f iː f",
+    "gender": "female"
   },
   {
     "id": "idiom_akho_shilite",
@@ -159,6 +299,15 @@
     "arabic": "أخو الشليتة",
     "transliteration": "Akho el-shilite",
     "english": "Brother of a naughty woman (Rascal/Clever devil)",
-    "tags": ["idiom", "slang", "funny"]
+    "tags": [
+      "idiom",
+      "slang",
+      "funny"
+    ],
+    "audio": "/audio/idioms/idiom_akho_shilite.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_akho_shilite_bedouin.mp3",
+    "phonetic_arabic": "أخو الشليتهْ",
+    "ipa_bedouin": "ʔ a x uː aː l ʃ l iː t a",
+    "gender": "female"
   }
 ]

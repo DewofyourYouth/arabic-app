@@ -9,7 +9,14 @@
     "hebrew": "חם",
     "hebrewTransliteration": "שׁוֹב",
     "english": "Hot",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_hot.mp3",
+    "audio_bedouin": "/audio/weather/l2_wthr_hot_bedouin.mp3",
+    "phonetic_arabic": "شُوبْ",
+    "ipa_bedouin": "ʃ u uː b",
+    "gender": "female"
   },
   {
     "id": "l2_wthr_cold",
@@ -21,7 +28,14 @@
     "hebrew": "קר",
     "hebrewTransliteration": "בָּרִיד",
     "english": "Cold",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_cold.mp3",
+    "audio_bedouin": "/audio/weather/l2_wthr_cold_bedouin.mp3",
+    "phonetic_arabic": "بَرِدْ",
+    "ipa_bedouin": "b a r i d",
+    "gender": "female"
   },
   {
     "id": "l2_wthr_rain",
@@ -33,7 +47,14 @@
     "hebrew": "גשם / חורף",
     "hebrewTransliteration": "שִׁיטַא",
     "english": "Rain / Winter",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_rain.mp3",
+    "audio_bedouin": "/audio/weather/l2_wthr_rain_bedouin.mp3",
+    "phonetic_arabic": "شِتَاْ",
+    "ipa_bedouin": "ʃ i t a aː",
+    "gender": "female"
   },
   {
     "id": "l2_wthr_sun",
@@ -45,7 +66,14 @@
     "english": "Sun",
     "hebrew": "שמש",
     "hebrewTransliteration": "שֶׁמֶשׁ",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_sun.mp3",
+    "phonetic_arabic": "شَمِسْ",
+    "audio_bedouin": "/audio/weather/l2_wthr_sun_bedouin.mp3",
+    "ipa_bedouin": "ʃ a m i s",
+    "gender": "female"
   },
   {
     "id": "l2_wthr_today",
@@ -57,7 +85,17 @@
     "english": "How is the weather today?",
     "hebrew": "איך מזג האוויר היום?",
     "hebrewTransliteration": "אֵיךְ מֶזֶג הָאֲוִיר הַיּוֹם?",
-    "tags": ["weather", "question"]
+    "tags": [
+      "weather",
+      "question"
+    ],
+    "audio": "/audio/weather/l2_wthr_today.mp3",
+    "audio_bedouin": "/audio/weather/l2_wthr_today_bedouin.mp3",
+    "phonetic_arabic": "كِيف الطَّءْص الْيُوم؟ْ",
+    "phonetic_bedouin": "كِيف الطَّگْص الْيُوم؟ْ",
+    "gender": "female",
+    "ipa_bedouin": "kiiːf aːltˤːaɡsˤ aːljuuːm",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_wthr_beautiful",
@@ -69,6 +107,13 @@
     "english": "The weather is beautiful",
     "hebrew": "מזג האוויר יפה",
     "hebrewTransliteration": "מֶזֶג הָאֲוִיר יָפֶה",
-    "tags": ["weather"]
+    "tags": [
+      "weather"
+    ],
+    "audio": "/audio/weather/l2_wthr_beautiful.mp3",
+    "audio_bedouin": "/audio/weather/l2_wthr_beautiful_bedouin.mp3",
+    "phonetic_arabic": "الْجَوّ حِلُوْ",
+    "ipa_bedouin": "aː l d͡ʒ a uː ː ħ i l u uː",
+    "gender": "female"
   }
 ]

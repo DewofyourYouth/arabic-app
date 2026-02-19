@@ -10,7 +10,15 @@
     "hebrew": "אדום",
     "hebrewTransliteration": "אַחְמַר",
     "image": "red.png",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "phonetic_arabic": "أَحْمَرْ",
+    "audio": "/audio/colors/l1_color_red.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_red_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a ħ m a r",
+    "gender": "female"
   },
   {
     "id": "l1_color_blue",
@@ -23,7 +31,17 @@
     "hebrew": "כחול",
     "hebrewTransliteration": "אַזְרַק",
     "image": "blue.png",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_blue.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_blue_bedouin.mp3",
+    "phonetic_arabic": "أَزْرَءْ",
+    "phonetic_bedouin": "أَزْرَگْ",
+    "gender": "female",
+    "ipa_bedouin": "ʔ aazraɡ",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_color_green",
@@ -35,7 +53,15 @@
     "english": "Green",
     "hebrew": "ירוק",
     "hebrewTransliteration": "אַחְ'דַר",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "phonetic_arabic": "أَخْضَرْ",
+    "audio": "/audio/colors/l1_color_green.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_green_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a x dˤ a r",
+    "gender": "female"
   },
   {
     "id": "l1_color_yellow",
@@ -48,7 +74,15 @@
     "hebrew": "צהוב",
     "hebrewTransliteration": "אַצְפַר",
     "image": "yellow.jpg",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "phonetic_arabic": "أَصْفَرْ",
+    "audio": "/audio/colors/l1_color_yellow.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_yellow_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a sˤ f a r",
+    "gender": "female"
   },
   {
     "id": "l1_color_white",
@@ -60,7 +94,15 @@
     "english": "White",
     "hebrew": "לבן",
     "hebrewTransliteration": "אַבְּיַד",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_white.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_white_bedouin.mp3",
+    "phonetic_arabic": "أَبْيَضْ",
+    "ipa_bedouin": "ʔ a a b j a dˤ",
+    "gender": "female"
   },
   {
     "id": "l1_color_black",
@@ -73,7 +115,15 @@
     "hebrew": "שחור",
     "hebrewTransliteration": "אַסְוַד",
     "image": "black.jpg",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "phonetic_arabic": "أَسْوَدْ",
+    "audio": "/audio/colors/l1_color_black.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_black_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a s w a d",
+    "gender": "female"
   },
   {
     "id": "l1_color_orange",
@@ -85,7 +135,17 @@
     "english": "Orange",
     "hebrew": "כתום",
     "hebrewTransliteration": "בֻּרְתֻקַאלִי",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_orange.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_orange_bedouin.mp3",
+    "phonetic_arabic": "بُرْتُءَالِيْ",
+    "phonetic_bedouin": "بُرْتُگَالِيْ",
+    "gender": "female",
+    "ipa_bedouin": "burtuɡaaːliiː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_color_brown",
@@ -97,6 +157,14 @@
     "english": "Brown",
     "hebrew": "חום",
     "hebrewTransliteration": "בֻּנִּי",
-    "tags": ["colors", "adjective"]
+    "tags": [
+      "colors",
+      "adjective"
+    ],
+    "audio": "/audio/colors/l1_color_brown.mp3",
+    "audio_bedouin": "/audio/colors/l1_color_brown_bedouin.mp3",
+    "phonetic_arabic": "بُنِّيْ",
+    "ipa_bedouin": "b u n i ː iː",
+    "gender": "female"
   }
 ]
