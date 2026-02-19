@@ -8,7 +8,11 @@
     "transliteration": "Wahad",
     "english": "One",
     "hebrew": "אחד",
-    "audio": "/audio/numbers/l1_num_1.mp3"
+    "audio": "/audio/numbers/l1_num_1.mp3",
+    "phonetic_arabic": "وَاحِدْ",
+    "audio_bedouin": "/audio/numbers/l1_num_1_bedouin.mp3",
+    "ipa_bedouin": "w a aː ħ i d",
+    "gender": "female"
   },
   {
     "id": "l1_num_2",
@@ -19,7 +23,11 @@
     "transliteration": "Tnein",
     "english": "Two",
     "hebrew": "שתיים",
-    "audio": "/audio/numbers/l1_num_2.mp3"
+    "phonetic_arabic": "تْنَيْنْ",
+    "audio": "/audio/numbers/l1_num_2.mp3",
+    "audio_bedouin": "/audio/numbers/l1_num_2_bedouin.mp3",
+    "ipa_bedouin": "t n a iː n",
+    "gender": "female"
   },
   {
     "id": "l1_num_3",
@@ -30,7 +38,11 @@
     "transliteration": "Talateh",
     "english": "Three",
     "hebrew": "שלוש",
-    "audio": "/audio/numbers/l1_num_3.mp3"
+    "audio": "/audio/numbers/l1_num_3.mp3",
+    "phonetic_arabic": "تَلَاتِهْ",
+    "audio_bedouin": "/audio/numbers/l1_num_3_bedouin.mp3",
+    "ipa_bedouin": "t a l a aː t i a",
+    "gender": "female"
   },
   {
     "id": "l1_num_4",
@@ -41,7 +53,11 @@
     "transliteration": "Arba'a",
     "english": "Four",
     "hebrew": "ארבע",
-    "audio": "/audio/numbers/l1_num_4.mp3"
+    "audio": "/audio/numbers/l1_num_4.mp3",
+    "phonetic_arabic": "أَرْبَعَهْ",
+    "audio_bedouin": "/audio/numbers/l1_num_4_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a r b a ʕ a a",
+    "gender": "female"
   },
   {
     "id": "l1_num_5",
@@ -52,7 +68,11 @@
     "transliteration": "Khamseh",
     "english": "Five",
     "hebrew": "חמש",
-    "audio": "/audio/numbers/l1_num_5.mp3"
+    "audio": "/audio/numbers/l1_num_5.mp3",
+    "phonetic_arabic": "خَمْسِهْ",
+    "audio_bedouin": "/audio/numbers/l1_num_5_bedouin.mp3",
+    "ipa_bedouin": "x a m s i a",
+    "gender": "female"
   },
   {
     "id": "l1_num_6",
@@ -63,7 +83,11 @@
     "transliteration": "Sitteh",
     "english": "Six",
     "hebrew": "שש",
-    "audio": "/audio/numbers/l1_num_6.mp3"
+    "audio": "/audio/numbers/l1_num_6.mp3",
+    "phonetic_arabic": "سِتِّهْ",
+    "audio_bedouin": "/audio/numbers/l1_num_6_bedouin.mp3",
+    "ipa_bedouin": "s i t ː i a",
+    "gender": "female"
   },
   {
     "id": "l1_num_7",
@@ -74,7 +98,11 @@
     "transliteration": "Sab'a",
     "english": "Seven",
     "hebrew": "שבע",
-    "audio": "/audio/numbers/l1_num_7.mp3"
+    "audio": "/audio/numbers/l1_num_7.mp3",
+    "audio_bedouin": "/audio/numbers/l1_num_7_bedouin.mp3",
+    "phonetic_arabic": "سَبْعَهْ",
+    "ipa_bedouin": "s a b ʕ a a",
+    "gender": "female"
   },
   {
     "id": "l1_num_8",
@@ -85,7 +113,11 @@
     "transliteration": "Tamanyeh",
     "english": "Eight",
     "hebrew": "שמונה",
-    "audio": "/audio/numbers/l1_num_8.mp3"
+    "audio": "/audio/numbers/l1_num_8.mp3",
+    "audio_bedouin": "/audio/numbers/l1_num_8_bedouin.mp3",
+    "phonetic_arabic": "تَمَانِيِهْ",
+    "ipa_bedouin": "t a m a aː n i j i a",
+    "gender": "female"
   },
   {
     "id": "l1_num_9",
@@ -96,7 +128,11 @@
     "transliteration": "Tis'a",
     "english": "Nine",
     "hebrew": "תשע",
-    "audio": "/audio/numbers/l1_num_9.mp3"
+    "audio": "/audio/numbers/l1_num_9.mp3",
+    "audio_bedouin": "/audio/numbers/l1_num_9_bedouin.mp3",
+    "phonetic_arabic": "تِسْعَهْ",
+    "ipa_bedouin": "t i s ʕ a a",
+    "gender": "female"
   },
   {
     "id": "l1_num_10",
@@ -107,6 +143,10 @@
     "transliteration": "Ashara",
     "english": "Ten",
     "hebrew": "עשר",
-    "audio": "/audio/numbers/l1_num_10.mp3"
+    "audio": "/audio/numbers/l1_num_10.mp3",
+    "audio_bedouin": "/audio/numbers/l1_num_10_bedouin.mp3",
+    "phonetic_arabic": "عَشَرَهْ",
+    "ipa_bedouin": "ʕ a ʃ a r a a",
+    "gender": "female"
   }
 ]

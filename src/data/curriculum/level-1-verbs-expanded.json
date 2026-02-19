@@ -11,7 +11,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_want.mp3"
+    "audio": "/audio/verbs-common/l1_v_want.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_want_bedouin.mp3",
+    "phonetic_arabic": "بديْ",
+    "ipa_bedouin": "b d iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_go",
@@ -25,7 +29,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_go.mp3"
+    "audio": "/audio/verbs-common/l1_v_go.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_go_bedouin.mp3",
+    "phonetic_arabic": "بروحْ",
+    "ipa_bedouin": "b r uː ħ",
+    "gender": "female"
   },
   {
     "id": "l1_v_eat",
@@ -39,7 +47,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_eat.mp3"
+    "audio": "/audio/verbs-common/l1_v_eat.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_eat_bedouin.mp3",
+    "phonetic_arabic": "باكلْ",
+    "ipa_bedouin": "b aː k l",
+    "gender": "female"
   },
   {
     "id": "l1_v_drink",
@@ -53,7 +65,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_drink.mp3"
+    "audio": "/audio/verbs-common/l1_v_drink.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_drink_bedouin.mp3",
+    "phonetic_arabic": "بشربْ",
+    "ipa_bedouin": "b ʃ r b",
+    "gender": "female"
   },
   {
     "id": "l1_v_see",
@@ -67,7 +83,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_see.mp3"
+    "audio": "/audio/verbs-common/l1_v_see.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_see_bedouin.mp3",
+    "phonetic_arabic": "بشوفْ",
+    "ipa_bedouin": "b ʃ uː f",
+    "gender": "female"
   },
   {
     "id": "l1_v_know",
@@ -81,7 +101,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_know.mp3"
+    "audio": "/audio/verbs-common/l1_v_know.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_know_bedouin.mp3",
+    "phonetic_arabic": "بعرفْ",
+    "ipa_bedouin": "b ʕ r f",
+    "gender": "female"
   },
   {
     "id": "l1_v_say",
@@ -95,7 +119,12 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_say.mp3"
+    "audio": "/audio/verbs-common/l1_v_say.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_say_bedouin.mp3",
+    "phonetic_arabic": "بءولْ",
+    "phonetic_bedouin": "بگولْ",
+    "gender": "female",
+    "ipa_bedouin": "b a ɡ uː l"
   },
   {
     "id": "l1_v_do_make",
@@ -109,7 +138,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_do_make.mp3"
+    "audio": "/audio/verbs-common/l1_v_do_make.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_do_make_bedouin.mp3",
+    "phonetic_arabic": "بعملْ",
+    "ipa_bedouin": "b ʕ m l",
+    "gender": "female"
   },
   {
     "id": "l1_v_come",
@@ -123,7 +156,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_come.mp3"
+    "audio": "/audio/verbs-common/l1_v_come.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_come_bedouin.mp3",
+    "phonetic_arabic": "بجيْ",
+    "ipa_bedouin": "b d͡ʒ iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_take",
@@ -137,7 +174,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_take.mp3"
+    "audio": "/audio/verbs-common/l1_v_take.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_take_bedouin.mp3",
+    "phonetic_arabic": "باخدْ",
+    "ipa_bedouin": "b aː x d",
+    "gender": "female"
   },
   {
     "id": "l1_v_give",
@@ -151,7 +192,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_give.mp3"
+    "audio": "/audio/verbs-common/l1_v_give.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_give_bedouin.mp3",
+    "phonetic_arabic": "بعطيْ",
+    "ipa_bedouin": "b ʕ tˤ iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_find",
@@ -165,7 +210,13 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_find.mp3"
+    "audio": "/audio/verbs-common/l1_v_find.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_find_bedouin.mp3",
+    "phonetic_arabic": "بلاءيْ",
+    "phonetic_bedouin": "بلاگيْ",
+    "gender": "female",
+    "ipa_bedouin": "blaːɡiː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_v_work",
@@ -179,7 +230,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_work.mp3"
+    "audio": "/audio/verbs-common/l1_v_work.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_work_bedouin.mp3",
+    "phonetic_arabic": "بشتغلْ",
+    "ipa_bedouin": "b ʃ t ɣ l",
+    "gender": "female"
   },
   {
     "id": "l1_v_live",
@@ -193,7 +248,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_live.mp3"
+    "audio": "/audio/verbs-common/l1_v_live.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_live_bedouin.mp3",
+    "phonetic_arabic": "بسكنْ",
+    "ipa_bedouin": "b s k n",
+    "gender": "female"
   },
   {
     "id": "l1_v_speak",
@@ -207,7 +266,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_speak.mp3"
+    "audio": "/audio/verbs-common/l1_v_speak.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_speak_bedouin.mp3",
+    "phonetic_arabic": "بحكيْ",
+    "ipa_bedouin": "b ħ k iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_write",
@@ -221,7 +284,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_write.mp3"
+    "audio": "/audio/verbs-common/l1_v_write.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_write_bedouin.mp3",
+    "phonetic_arabic": "بكتبْ",
+    "ipa_bedouin": "b k t b",
+    "gender": "female"
   },
   {
     "id": "l1_v_read",
@@ -235,7 +302,13 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_read.mp3"
+    "audio": "/audio/verbs-common/l1_v_read.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_read_bedouin.mp3",
+    "phonetic_arabic": "بءراْ",
+    "phonetic_bedouin": "بگراْ",
+    "gender": "female",
+    "ipa_bedouin": "bɡraː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_v_understand",
@@ -249,7 +322,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_understand.mp3"
+    "audio": "/audio/verbs-common/l1_v_understand.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_understand_bedouin.mp3",
+    "phonetic_arabic": "بفهمْ",
+    "ipa_bedouin": "b f h m",
+    "gender": "female"
   },
   {
     "id": "l1_v_help",
@@ -263,7 +340,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_help.mp3"
+    "audio": "/audio/verbs-common/l1_v_help.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_help_bedouin.mp3",
+    "phonetic_arabic": "بساعدْ",
+    "ipa_bedouin": "b s aː ʕ d",
+    "gender": "female"
   },
   {
     "id": "l1_v_learn",
@@ -277,7 +358,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_learn.mp3"
+    "audio": "/audio/verbs-common/l1_v_learn.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_learn_bedouin.mp3",
+    "phonetic_arabic": "بتعلمْ",
+    "ipa_bedouin": "b t ʕ l m",
+    "gender": "female"
   },
   {
     "id": "l1_v_study",
@@ -291,7 +376,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_study.mp3"
+    "audio": "/audio/verbs-common/l1_v_study.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_study_bedouin.mp3",
+    "phonetic_arabic": "بدرسْ",
+    "ipa_bedouin": "b d r s",
+    "gender": "female"
   },
   {
     "id": "l1_v_sleep",
@@ -305,7 +394,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_sleep.mp3"
+    "audio": "/audio/verbs-common/l1_v_sleep.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_sleep_bedouin.mp3",
+    "phonetic_arabic": "بنامْ",
+    "ipa_bedouin": "b n aː m",
+    "gender": "female"
   },
   {
     "id": "l1_v_wake_up",
@@ -319,7 +412,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_wake_up.mp3"
+    "audio": "/audio/verbs-common/l1_v_wake_up.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_wake_up_bedouin.mp3",
+    "phonetic_arabic": "بصحىْ",
+    "ipa_bedouin": "b sˤ ħ",
+    "gender": "female"
   },
   {
     "id": "l1_v_sit",
@@ -333,7 +430,13 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_sit.mp3"
+    "audio": "/audio/verbs-common/l1_v_sit.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_sit_bedouin.mp3",
+    "phonetic_arabic": "بءعدْ",
+    "phonetic_bedouin": "بگعدْ",
+    "gender": "female",
+    "ipa_bedouin": "bɡʕd",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_v_stand",
@@ -347,7 +450,13 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_stand.mp3"
+    "audio": "/audio/verbs-common/l1_v_stand.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_stand_bedouin.mp3",
+    "phonetic_arabic": "بوءفْ",
+    "phonetic_bedouin": "بوگفْ",
+    "gender": "female",
+    "ipa_bedouin": "buːɡf",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_v_walk",
@@ -361,7 +470,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_walk.mp3"
+    "audio": "/audio/verbs-common/l1_v_walk.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_walk_bedouin.mp3",
+    "phonetic_arabic": "بمشيْ",
+    "ipa_bedouin": "b m ʃ iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_run",
@@ -375,7 +488,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_run.mp3"
+    "audio": "/audio/verbs-common/l1_v_run.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_run_bedouin.mp3",
+    "phonetic_arabic": "بجريْ",
+    "ipa_bedouin": "b d͡ʒ r iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_buy",
@@ -389,7 +506,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_buy.mp3"
+    "audio": "/audio/verbs-common/l1_v_buy.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_buy_bedouin.mp3",
+    "phonetic_arabic": "بشتريْ",
+    "ipa_bedouin": "b ʃ t r iː",
+    "gender": "female"
   },
   {
     "id": "l1_v_sell",
@@ -403,7 +524,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_sell.mp3"
+    "audio": "/audio/verbs-common/l1_v_sell.mp3",
+    "phonetic_arabic": "ببيعْ",
+    "audio_bedouin": "/audio/verbs-common/l1_v_sell_bedouin.mp3",
+    "ipa_bedouin": "b b iː ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_pay",
@@ -417,7 +542,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_pay.mp3"
+    "audio": "/audio/verbs-common/l1_v_pay.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_pay_bedouin.mp3",
+    "phonetic_arabic": "بدفعْ",
+    "ipa_bedouin": "b d f ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_open",
@@ -431,7 +560,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_open.mp3"
+    "audio": "/audio/verbs-common/l1_v_open.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_open_bedouin.mp3",
+    "phonetic_arabic": "بفتحْ",
+    "ipa_bedouin": "b f t ħ",
+    "gender": "female"
   },
   {
     "id": "l1_v_close",
@@ -445,7 +578,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_close.mp3"
+    "audio": "/audio/verbs-common/l1_v_close.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_close_bedouin.mp3",
+    "phonetic_arabic": "بسكرْ",
+    "ipa_bedouin": "b s k r",
+    "gender": "female"
   },
   {
     "id": "l1_v_enter",
@@ -459,7 +596,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_enter.mp3"
+    "audio": "/audio/verbs-common/l1_v_enter.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_enter_bedouin.mp3",
+    "phonetic_arabic": "بدخلْ",
+    "ipa_bedouin": "b d x l",
+    "gender": "female"
   },
   {
     "id": "l1_v_exit",
@@ -473,7 +614,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_exit.mp3"
+    "audio": "/audio/verbs-common/l1_v_exit.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_exit_bedouin.mp3",
+    "phonetic_arabic": "بطلعْ",
+    "ipa_bedouin": "b tˤ l ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_return",
@@ -487,7 +632,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_return.mp3"
+    "audio": "/audio/verbs-common/l1_v_return.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_return_bedouin.mp3",
+    "phonetic_arabic": "برجعْ",
+    "ipa_bedouin": "b r d͡ʒ ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_wait",
@@ -501,7 +650,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_wait.mp3"
+    "audio": "/audio/verbs-common/l1_v_wait.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_wait_bedouin.mp3",
+    "phonetic_arabic": "بنطرْ",
+    "ipa_bedouin": "b n tˤ r",
+    "gender": "female"
   },
   {
     "id": "l1_v_leave",
@@ -515,7 +668,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_leave.mp3"
+    "audio": "/audio/verbs-common/l1_v_leave.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_leave_bedouin.mp3",
+    "phonetic_arabic": "بتركْ",
+    "ipa_bedouin": "b t r k",
+    "gender": "female"
   },
   {
     "id": "l1_v_ask",
@@ -529,7 +686,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_ask.mp3"
+    "audio": "/audio/verbs-common/l1_v_ask.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_ask_bedouin.mp3",
+    "phonetic_arabic": "بسألْ",
+    "ipa_bedouin": "b s ʔ a l",
+    "gender": "female"
   },
   {
     "id": "l1_v_answer",
@@ -543,7 +704,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_answer.mp3"
+    "audio": "/audio/verbs-common/l1_v_answer.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_answer_bedouin.mp3",
+    "phonetic_arabic": "بجاوبْ",
+    "ipa_bedouin": "b d͡ʒ aː uː b",
+    "gender": "female"
   },
   {
     "id": "l1_v_hear",
@@ -557,7 +722,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_hear.mp3"
+    "audio": "/audio/verbs-common/l1_v_hear.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_hear_bedouin.mp3",
+    "phonetic_arabic": "بسمعْ",
+    "ipa_bedouin": "b s m ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_listen",
@@ -571,7 +740,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_listen.mp3"
+    "audio": "/audio/verbs-common/l1_v_listen.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_listen_bedouin.mp3",
+    "phonetic_arabic": "بسمعْ",
+    "ipa_bedouin": "b s m ʕ",
+    "gender": "female"
   },
   {
     "id": "l1_v_look",
@@ -585,7 +758,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_look.mp3"
+    "audio": "/audio/verbs-common/l1_v_look.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_look_bedouin.mp3",
+    "phonetic_arabic": "بنظرْ",
+    "ipa_bedouin": "b n ðˤ r",
+    "gender": "female"
   },
   {
     "id": "l1_v_think",
@@ -599,7 +776,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_think.mp3"
+    "audio": "/audio/verbs-common/l1_v_think.mp3",
+    "phonetic_arabic": "بفكرْ",
+    "audio_bedouin": "/audio/verbs-common/l1_v_think_bedouin.mp3",
+    "ipa_bedouin": "b f k r",
+    "gender": "female"
   },
   {
     "id": "l1_v_remember",
@@ -613,7 +794,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_remember.mp3"
+    "audio": "/audio/verbs-common/l1_v_remember.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_remember_bedouin.mp3",
+    "phonetic_arabic": "بتذكرْ",
+    "ipa_bedouin": "b t ð k r",
+    "gender": "female"
   },
   {
     "id": "l1_v_forget",
@@ -627,7 +812,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_forget.mp3"
+    "audio": "/audio/verbs-common/l1_v_forget.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_forget_bedouin.mp3",
+    "phonetic_arabic": "بنسىْ",
+    "ipa_bedouin": "b n s",
+    "gender": "female"
   },
   {
     "id": "l1_v_love",
@@ -641,7 +830,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_love.mp3"
+    "audio": "/audio/verbs-common/l1_v_love.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_love_bedouin.mp3",
+    "phonetic_arabic": "بحبْ",
+    "ipa_bedouin": "b ħ b",
+    "gender": "female"
   },
   {
     "id": "l1_v_like",
@@ -655,7 +848,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_like.mp3"
+    "audio": "/audio/verbs-common/l1_v_like.mp3",
+    "phonetic_arabic": "بحبْ",
+    "audio_bedouin": "/audio/verbs-common/l1_v_like_bedouin.mp3",
+    "ipa_bedouin": "b ħ b",
+    "gender": "female"
   },
   {
     "id": "l1_v_hate",
@@ -669,7 +866,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_hate.mp3"
+    "audio": "/audio/verbs-common/l1_v_hate.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_hate_bedouin.mp3",
+    "phonetic_arabic": "بكرهْ",
+    "ipa_bedouin": "b k r h",
+    "gender": "female"
   },
   {
     "id": "l1_v_need",
@@ -683,7 +884,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_need.mp3"
+    "audio": "/audio/verbs-common/l1_v_need.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_need_bedouin.mp3",
+    "phonetic_arabic": "بحتاجْ",
+    "ipa_bedouin": "b ħ t aː d͡ʒ",
+    "gender": "female"
   },
   {
     "id": "l1_v_try",
@@ -697,7 +902,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_try.mp3"
+    "audio": "/audio/verbs-common/l1_v_try.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_try_bedouin.mp3",
+    "phonetic_arabic": "بجربْ",
+    "ipa_bedouin": "b d͡ʒ r b",
+    "gender": "female"
   },
   {
     "id": "l1_v_use",
@@ -711,7 +920,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_use.mp3"
+    "audio": "/audio/verbs-common/l1_v_use.mp3",
+    "phonetic_arabic": "بستخدمْ",
+    "audio_bedouin": "/audio/verbs-common/l1_v_use_bedouin.mp3",
+    "ipa_bedouin": "b s t x d m",
+    "gender": "female"
   },
   {
     "id": "l1_v_feel",
@@ -725,7 +938,11 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_feel.mp3"
+    "audio": "/audio/verbs-common/l1_v_feel.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_feel_bedouin.mp3",
+    "phonetic_arabic": "بحسْ",
+    "ipa_bedouin": "b ħ s",
+    "gender": "female"
   },
   {
     "id": "l1_v_flip",
@@ -739,7 +956,13 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_flip.mp3"
+    "audio": "/audio/verbs-common/l1_v_flip.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_flip_bedouin.mp3",
+    "phonetic_arabic": "بءلبْ",
+    "phonetic_bedouin": "بگلبْ",
+    "gender": "female",
+    "ipa_bedouin": "bɡlb",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l1_v_paint",
@@ -753,6 +976,10 @@
       "verb",
       "common"
     ],
-    "audio": "/audio/verbs-common/l1_v_paint.mp3"
+    "audio": "/audio/verbs-common/l1_v_paint.mp3",
+    "audio_bedouin": "/audio/verbs-common/l1_v_paint_bedouin.mp3",
+    "phonetic_arabic": "bedhenْ",
+    "ipa_bedouin": "bedhen",
+    "gender": "female"
   }
 ]

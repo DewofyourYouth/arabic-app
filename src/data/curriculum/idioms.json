@@ -13,7 +13,11 @@
       "social",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_neeman.mp3"
+    "audio": "/audio/idioms/idiom_neeman.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_neeman_bedouin.mp3",
+    "phonetic_arabic": "نعيماًْ",
+    "ipa_bedouin": "n ʕ iː m aː",
+    "gender": "female"
   },
   {
     "id": "idiom_tanjara",
@@ -28,7 +32,13 @@
       "funny",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_tanjara.mp3"
+    "audio": "/audio/idioms/idiom_tanjara.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tanjara_bedouin.mp3",
+    "phonetic_arabic": "طنجرة ولءت غطاهاْ",
+    "phonetic_bedouin": "طنگرة ولگت غطاهاْ",
+    "gender": "female",
+    "ipa_bedouin": "tˤnɡra uːlɡt ɣtˤaːhaː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_doq_7adid",
@@ -42,7 +52,13 @@
       "idiom",
       "proverb"
     ],
-    "audio": "/audio/idioms/idiom_doq_7adid.mp3"
+    "audio": "/audio/idioms/idiom_doq_7adid.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_doq_7adid_bedouin.mp3",
+    "phonetic_arabic": "دء الحديد وهو حاميْ",
+    "phonetic_bedouin": "دگ الحديد وهو حاميْ",
+    "gender": "female",
+    "ipa_bedouin": "dɡ aːlħdiːd uːhuː ħaːmiː",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_3oqbal",
@@ -57,7 +73,13 @@
       "social",
       "wedding"
     ],
-    "audio": "/audio/idioms/idiom_3oqbal.mp3"
+    "audio": "/audio/idioms/idiom_3oqbal.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_3oqbal_bedouin.mp3",
+    "phonetic_arabic": "عءبال عندكْ",
+    "phonetic_bedouin": "عگبال عندكْ",
+    "gender": "female",
+    "ipa_bedouin": "ʕɡbaːl ʕndk",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "idiom_jabal",
@@ -72,7 +94,11 @@
       "proverb",
       "encouragement"
     ],
-    "audio": "/audio/idioms/idiom_jabal.mp3"
+    "audio": "/audio/idioms/idiom_jabal.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_jabal_bedouin.mp3",
+    "phonetic_arabic": "يا جبل ما يهزك ريحْ",
+    "ipa_bedouin": "j aː d͡ʒ b l m aː iː h k r iː ħ",
+    "gender": "female"
   },
   {
     "id": "idiom_mn_3yunii",
@@ -87,7 +113,11 @@
       "polite",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_mn_3yunii.mp3"
+    "audio": "/audio/idioms/idiom_mn_3yunii.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_mn_3yunii_bedouin.mp3",
+    "phonetic_arabic": "من عيونيْ",
+    "ipa_bedouin": "m n ʕ iː uː n iː",
+    "gender": "female"
   },
   {
     "id": "idiom_tikram",
@@ -102,7 +132,11 @@
       "polite",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_tikram.mp3"
+    "audio": "/audio/idioms/idiom_tikram.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tikram_bedouin.mp3",
+    "phonetic_arabic": "تكرمْ / تكرميْ",
+    "ipa_bedouin": "t k r m t k r m iː",
+    "gender": "female"
   },
   {
     "id": "idiom_ala_rasi",
@@ -117,7 +151,11 @@
       "polite",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_ala_rasi.mp3"
+    "audio": "/audio/idioms/idiom_ala_rasi.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_ala_rasi_bedouin.mp3",
+    "phonetic_arabic": "على راسيْ",
+    "ipa_bedouin": "ʕ l r aː s iː",
+    "gender": "female"
   },
   {
     "id": "idiom_zabbatha",
@@ -132,7 +170,11 @@
       "slang",
       "common"
     ],
-    "audio": "/audio/idioms/idiom_zabbatha.mp3"
+    "audio": "/audio/idioms/idiom_zabbatha.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_zabbatha_bedouin.mp3",
+    "phonetic_arabic": "زبطهاْ",
+    "ipa_bedouin": "b tˤ h aː",
+    "gender": "female"
   },
   {
     "id": "idiom_sa7tein",
@@ -148,7 +190,11 @@
       "social",
       "food"
     ],
-    "audio": "/audio/idioms/idiom_sa7tein.mp3"
+    "audio": "/audio/idioms/idiom_sa7tein.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_sa7tein_bedouin.mp3",
+    "phonetic_arabic": "صحتينْ",
+    "ipa_bedouin": "sˤ ħ t iː n",
+    "gender": "female"
   },
   {
     "id": "idiom_yatik_afya",
@@ -163,7 +209,11 @@
       "social",
       "polite"
     ],
-    "audio": "/audio/idioms/idiom_yatik_afya.mp3"
+    "audio": "/audio/idioms/idiom_yatik_afya.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_yatik_afya_bedouin.mp3",
+    "phonetic_arabic": "يعطيك العافيهْ",
+    "ipa_bedouin": "j ʕ tˤ iː k aː l ʕ aː f iː a",
+    "gender": "female"
   },
   {
     "id": "idiom_tikrar_hmar",
@@ -178,7 +228,11 @@
       "funny",
       "proverb"
     ],
-    "audio": "/audio/idioms/idiom_tikrar_hmar.mp3"
+    "audio": "/audio/idioms/idiom_tikrar_hmar.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_tikrar_hmar_bedouin.mp3",
+    "phonetic_arabic": "التكرار بعلم الحمارْ",
+    "ipa_bedouin": "aː l t k r aː r b ʕ l m aː l ħ m aː r",
+    "gender": "female"
   },
   {
     "id": "idiom_temmak_sama",
@@ -193,7 +247,11 @@
       "social",
       "wish"
     ],
-    "audio": "/audio/idioms/idiom_temmak_sama.mp3"
+    "audio": "/audio/idioms/idiom_temmak_sama.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_temmak_sama_bedouin.mp3",
+    "phonetic_arabic": "من تمك لباب السماْ",
+    "ipa_bedouin": "m n t m k l b aː b aː l s m aː",
+    "gender": "female"
   },
   {
     "id": "idiom_faat_maat",
@@ -208,7 +266,11 @@
       "proverb",
       "wisdom"
     ],
-    "audio": "/audio/idioms/idiom_faat_maat.mp3"
+    "audio": "/audio/idioms/idiom_faat_maat.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_faat_maat_bedouin.mp3",
+    "phonetic_arabic": "يلي فات ماتْ",
+    "ipa_bedouin": "j l iː f aː t m aː t",
+    "gender": "female"
   },
   {
     "id": "idiom_dammak_khafif",
@@ -223,7 +285,11 @@
       "social",
       "compliment"
     ],
-    "audio": "/audio/idioms/idiom_dammak_khafif.mp3"
+    "audio": "/audio/idioms/idiom_dammak_khafif.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_dammak_khafif_bedouin.mp3",
+    "phonetic_arabic": "دمك خفيفْ",
+    "ipa_bedouin": "d m k x f iː f",
+    "gender": "female"
   },
   {
     "id": "idiom_akho_shilite",
@@ -238,6 +304,10 @@
       "slang",
       "funny"
     ],
-    "audio": "/audio/idioms/idiom_akho_shilite.mp3"
+    "audio": "/audio/idioms/idiom_akho_shilite.mp3",
+    "audio_bedouin": "/audio/idioms/idiom_akho_shilite_bedouin.mp3",
+    "phonetic_arabic": "أخو الشليتهْ",
+    "ipa_bedouin": "ʔ a x uː aː l ʃ l iː t a",
+    "gender": "female"
   }
 ]

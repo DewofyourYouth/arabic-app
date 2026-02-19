@@ -11,10 +11,10 @@ const IntroCard = ({ cardData, onNext }) => {
   useEffect(() => {
     // Small delay for smoother UX
     const timer = setTimeout(() => {
-      playPronunciation(arabic);
+      playPronunciation(arabic, cardData);
     }, 500);
     return () => clearTimeout(timer);
-  }, [arabic, playPronunciation]);
+  }, [arabic, cardData, playPronunciation]);
 
   return (
     <div style={{
@@ -150,7 +150,7 @@ const IntroCard = ({ cardData, onNext }) => {
         </div>
 
         <button
-          onClick={() => playPronunciation(arabic)}
+          onClick={() => playPronunciation(arabic, cardData)}
           style={{
             marginTop: 'var(--spacing-6)',
             background: 'var(--color-background)',

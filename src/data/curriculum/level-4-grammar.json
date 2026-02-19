@@ -11,7 +11,13 @@
       "grammar",
       "passive"
     ],
-    "audio": "/audio/passive/l4_pass_it_was_said.mp3"
+    "audio": "/audio/passive/l4_pass_it_was_said.mp3",
+    "audio_bedouin": "/audio/passive/l4_pass_it_was_said_bedouin.mp3",
+    "phonetic_arabic": "إِنْءَالْ",
+    "phonetic_bedouin": "إِنْگَالْ",
+    "gender": "female",
+    "ipa_bedouin": "ʔ iinɡaaːl",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l4_idiom_hand",
@@ -25,6 +31,10 @@
       "idiom",
       "cultural"
     ],
-    "audio": "/audio/idioms/l4_idiom_hand.mp3"
+    "audio": "/audio/idioms/l4_idiom_hand.mp3",
+    "audio_bedouin": "/audio/idioms/l4_idiom_hand_bedouin.mp3",
+    "phonetic_arabic": "يِسْلَمُو إِيدِيكْ",
+    "ipa_bedouin": "j i s l a m u uː ʔ i i iː d i iː k",
+    "gender": "female"
   }
 ]

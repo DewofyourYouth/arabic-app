@@ -13,7 +13,13 @@
       "shopping",
       "common"
     ],
-    "audio": "/audio/shopping/l2_shop_howmuch.mp3"
+    "audio": "/audio/shopping/l2_shop_howmuch.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_howmuch_bedouin.mp3",
+    "phonetic_arabic": "ءَدَّيْش حَءُّه؟ْ",
+    "phonetic_bedouin": "گَدَّيْش حَگُّه؟ْ",
+    "gender": "female",
+    "ipa_bedouin": "ɡadːaiːʃ ħaɡːuh",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_shop_expensive",
@@ -28,7 +34,11 @@
     "tags": [
       "shopping"
     ],
-    "audio": "/audio/shopping/l2_shop_expensive.mp3"
+    "audio": "/audio/shopping/l2_shop_expensive.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_expensive_bedouin.mp3",
+    "phonetic_arabic": "غَالِيْ",
+    "ipa_bedouin": "ɣ a aː l i iː",
+    "gender": "female"
   },
   {
     "id": "l2_shop_cheap",
@@ -43,7 +53,11 @@
     "tags": [
       "shopping"
     ],
-    "audio": "/audio/shopping/l2_shop_cheap.mp3"
+    "audio": "/audio/shopping/l2_shop_cheap.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_cheap_bedouin.mp3",
+    "phonetic_arabic": "رْخِيصْ",
+    "ipa_bedouin": "r x i iː sˤ",
+    "gender": "female"
   },
   {
     "id": "l2_shop_discount",
@@ -58,7 +72,11 @@
     "tags": [
       "shopping"
     ],
-    "audio": "/audio/shopping/l2_shop_discount.mp3"
+    "audio": "/audio/shopping/l2_shop_discount.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_discount_bedouin.mp3",
+    "phonetic_arabic": "فِي خَصِم؟ْ",
+    "ipa_bedouin": "f i iː x a sˤ i m",
+    "gender": "female"
   },
   {
     "id": "l2_shop_clothes",
@@ -73,7 +91,11 @@
     "tags": [
       "shopping"
     ],
-    "audio": "/audio/shopping/l2_shop_clothes.mp3"
+    "audio": "/audio/shopping/l2_shop_clothes.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_clothes_bedouin.mp3",
+    "phonetic_arabic": "أَوَاعِيْ",
+    "ipa_bedouin": "ʔ a a w a aː ʕ i iː",
+    "gender": "female"
   },
   {
     "id": "l2_shop_market",
@@ -88,7 +110,12 @@
     "tags": [
       "shopping"
     ],
-    "audio": "/audio/shopping/l2_shop_market.mp3"
+    "audio": "/audio/shopping/l2_shop_market.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_market_bedouin.mp3",
+    "phonetic_arabic": "سُوءْ",
+    "phonetic_bedouin": "سُوگْ",
+    "gender": "female",
+    "ipa_bedouin": "s uː ɡ"
   },
   {
     "id": "l2_shop_boots",
@@ -104,7 +131,11 @@
       "shopping",
       "clothes"
     ],
-    "audio": "/audio/shopping/l2_shop_boots.mp3"
+    "audio": "/audio/shopping/l2_shop_boots.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_boots_bedouin.mp3",
+    "phonetic_arabic": "جَزْمِهْ",
+    "ipa_bedouin": "d͡ʒ a m i a",
+    "gender": "female"
   },
   {
     "id": "l2_shop_shoes_sport",
@@ -120,7 +151,11 @@
       "shopping",
       "clothes"
     ],
-    "audio": "/audio/shopping/l2_shop_shoes_sport.mp3"
+    "audio": "/audio/shopping/l2_shop_shoes_sport.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_shoes_sport_bedouin.mp3",
+    "phonetic_arabic": "بُوتْ",
+    "ipa_bedouin": "b u uː t",
+    "gender": "female"
   },
   {
     "id": "l2_shop_shoes",
@@ -136,7 +171,11 @@
       "shopping",
       "clothes"
     ],
-    "audio": "/audio/shopping/l2_shop_shoes.mp3"
+    "audio": "/audio/shopping/l2_shop_shoes.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_shoes_bedouin.mp3",
+    "phonetic_arabic": "كُنْدَرَهْ",
+    "ipa_bedouin": "k u n d a r a a",
+    "gender": "female"
   },
   {
     "id": "l2_shop_shoes_flipped",
@@ -152,6 +191,10 @@
       "shopping",
       "clothes"
     ],
-    "audio": "/audio/shopping/l2_shop_shoes_flipped.mp3"
+    "audio": "/audio/shopping/l2_shop_shoes_flipped.mp3",
+    "audio_bedouin": "/audio/shopping/l2_shop_shoes_flipped_bedouin.mp3",
+    "phonetic_arabic": "سَبَّاطْ",
+    "ipa_bedouin": "s a b ː a aː tˤ",
+    "gender": "female"
   }
 ]

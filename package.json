@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-sdk/client-polly": "^3.993.0",
     "@capacitor/android": "^8.1.0",
     "@capacitor/cli": "^8.1.0",
     "@capacitor/core": "^8.1.0",
     "@capacitor/ios": "^8.1.0",
     "@google-cloud/text-to-speech": "^6.4.0",
     "canvas-confetti": "^1.9.4",
+    "dotenv": "^17.3.1",
     "firebase": "^12.9.0",
     "papaparse": "^5.5.3",
     "react": "^19.2.0",

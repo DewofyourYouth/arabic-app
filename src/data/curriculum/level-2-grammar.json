@@ -11,7 +11,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_i.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_i.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_i_bedouin.mp3",
+    "phonetic_arabic": "كُنتْ",
+    "ipa_bedouin": "k u n t",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_you_m",
@@ -25,7 +29,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_you_m.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_you_m.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_you_m_bedouin.mp3",
+    "phonetic_arabic": "كُنتْ",
+    "ipa_bedouin": "k u n t",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_you_f",
@@ -39,7 +47,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_you_f.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_you_f.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_you_f_bedouin.mp3",
+    "phonetic_arabic": "كُنتِيْ",
+    "ipa_bedouin": "k u n t i iː",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_he",
@@ -53,7 +65,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_he.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_he.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_he_bedouin.mp3",
+    "phonetic_arabic": "كَانْ",
+    "ipa_bedouin": "k a aː n",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_she",
@@ -67,7 +83,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_she.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_she.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_she_bedouin.mp3",
+    "phonetic_arabic": "كَانَتْ",
+    "ipa_bedouin": "k a aː n a t",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_we",
@@ -81,7 +101,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_we.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_we.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_we_bedouin.mp3",
+    "phonetic_arabic": "كُنَّاْ",
+    "ipa_bedouin": "k u n ː a aː",
+    "gender": "female"
   },
   {
     "id": "l2_be_past_they",
@@ -95,7 +119,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_past_they.mp3"
+    "audio": "/audio/verb_to_be/l2_be_past_they.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_past_they_bedouin.mp3",
+    "phonetic_arabic": "كَانُواْ",
+    "ipa_bedouin": "k a aː n u uː aː",
+    "gender": "female"
   },
   {
     "id": "l2_be_fut_i",
@@ -109,7 +137,11 @@
       "grammar",
       "verb"
     ],
-    "audio": "/audio/verb_to_be/l2_be_fut_i.mp3"
+    "audio": "/audio/verb_to_be/l2_be_fut_i.mp3",
+    "audio_bedouin": "/audio/verb_to_be/l2_be_fut_i_bedouin.mp3",
+    "phonetic_arabic": "رَح أَكُونْ",
+    "ipa_bedouin": "r a ħ ʔ a a k u uː n",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_have_i",
@@ -123,7 +155,11 @@
       "grammar",
       "possession"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_have_i.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_have_i.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_have_i_bedouin.mp3",
+    "phonetic_arabic": "عِنْدِيْ",
+    "ipa_bedouin": "ʕ i n d i iː",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_have_you_m",
@@ -137,7 +173,11 @@
       "grammar",
       "possession"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_have_you_m.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_have_you_m.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_have_you_m_bedouin.mp3",
+    "phonetic_arabic": "عِنْدَكْ",
+    "ipa_bedouin": "ʕ i n d a k",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_have_he",
@@ -151,7 +191,11 @@
       "grammar",
       "possession"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_have_he.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_have_he.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_have_he_bedouin.mp3",
+    "phonetic_arabic": "عِنْدُوْ",
+    "ipa_bedouin": "ʕ i n d u uː",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_want_i",
@@ -164,7 +208,11 @@
     "tags": [
       "grammar"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_want_i.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_want_i.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_want_i_bedouin.mp3",
+    "phonetic_arabic": "بِدِّيْ",
+    "ipa_bedouin": "b i d ː i iː",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_want_you_m",
@@ -177,7 +225,11 @@
     "tags": [
       "grammar"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_want_you_m.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_want_you_m.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_want_you_m_bedouin.mp3",
+    "phonetic_arabic": "بِدَّكْ",
+    "ipa_bedouin": "b i d ː a k",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_need_i",
@@ -190,7 +242,11 @@
     "tags": [
       "grammar"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_need_i.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_need_i.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_need_i_bedouin.mp3",
+    "phonetic_arabic": "لَازِمْنِيْ",
+    "ipa_bedouin": "l a aː i m n i iː",
+    "gender": "female"
   },
   {
     "id": "l2_pseudo_like_i",
@@ -203,7 +259,11 @@
     "tags": [
       "grammar"
     ],
-    "audio": "/audio/pseudo_verbs/l2_pseudo_like_i.mp3"
+    "audio": "/audio/pseudo_verbs/l2_pseudo_like_i.mp3",
+    "audio_bedouin": "/audio/pseudo_verbs/l2_pseudo_like_i_bedouin.mp3",
+    "phonetic_arabic": "بَحِبْ",
+    "ipa_bedouin": "b a ħ i b",
+    "gender": "female"
   },
   {
     "id": "l2_imp_go_m",
@@ -217,7 +277,11 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_go_m.mp3"
+    "audio": "/audio/imperatives/l2_imp_go_m.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_go_m_bedouin.mp3",
+    "phonetic_arabic": "رُوحْ",
+    "ipa_bedouin": "r u uː ħ",
+    "gender": "female"
   },
   {
     "id": "l2_imp_go_f",
@@ -231,7 +295,11 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_go_f.mp3"
+    "audio": "/audio/imperatives/l2_imp_go_f.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_go_f_bedouin.mp3",
+    "phonetic_arabic": "رُوحِيْ",
+    "ipa_bedouin": "r u uː ħ i iː",
+    "gender": "female"
   },
   {
     "id": "l2_imp_come_m",
@@ -245,7 +313,11 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_come_m.mp3"
+    "audio": "/audio/imperatives/l2_imp_come_m.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_come_m_bedouin.mp3",
+    "phonetic_arabic": "تَعَالْ",
+    "ipa_bedouin": "t a ʕ a aː l",
+    "gender": "female"
   },
   {
     "id": "l2_imp_come_f",
@@ -259,7 +331,11 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_come_f.mp3"
+    "audio": "/audio/imperatives/l2_imp_come_f.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_come_f_bedouin.mp3",
+    "phonetic_arabic": "تَعَالِيْ",
+    "ipa_bedouin": "t a ʕ a aː l i iː",
+    "gender": "female"
   },
   {
     "id": "l2_imp_stop_m",
@@ -273,7 +349,13 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_stop_m.mp3"
+    "audio": "/audio/imperatives/l2_imp_stop_m.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_stop_m_bedouin.mp3",
+    "phonetic_arabic": "وَءِّفْ",
+    "phonetic_bedouin": "وَگِّفْ",
+    "gender": "female",
+    "ipa_bedouin": "waɡːif",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_imp_sit_m",
@@ -287,7 +369,13 @@
       "grammar",
       "imperative"
     ],
-    "audio": "/audio/imperatives/l2_imp_sit_m.mp3"
+    "audio": "/audio/imperatives/l2_imp_sit_m.mp3",
+    "audio_bedouin": "/audio/imperatives/l2_imp_sit_m_bedouin.mp3",
+    "phonetic_arabic": "اُءْعُدْ",
+    "phonetic_bedouin": "اُگْعُدْ",
+    "gender": "female",
+    "ipa_bedouin": "aːuɡʕud",
+    "ipa_bedouin_auto_generated": true
   },
   {
     "id": "l2_obj_me",
@@ -301,7 +389,11 @@
       "grammar",
       "pronoun"
     ],
-    "audio": "/audio/object_pronouns/l2_obj_me.mp3"
+    "audio": "/audio/object_pronouns/l2_obj_me.mp3",
+    "audio_bedouin": "/audio/object_pronouns/l2_obj_me_bedouin.mp3",
+    "phonetic_arabic": "ـنِيْ",
+    "ipa_bedouin": "n i iː",
+    "gender": "female"
   },
   {
     "id": "l2_obj_him",
@@ -315,7 +407,11 @@
       "grammar",
       "pronoun"
     ],
-    "audio": "/audio/object_pronouns/l2_obj_him.mp3"
+    "audio": "/audio/object_pronouns/l2_obj_him.mp3",
+    "audio_bedouin": "/audio/object_pronouns/l2_obj_him_bedouin.mp3",
+    "phonetic_arabic": "ـُوْ",
+    "ipa_bedouin": "u uː",
+    "gender": "female"
   },
   {
     "id": "l2_obj_her",
@@ -329,7 +425,11 @@
       "grammar",
       "pronoun"
     ],
-    "audio": "/audio/object_pronouns/l2_obj_her.mp3"
+    "audio": "/audio/object_pronouns/l2_obj_her.mp3",
+    "audio_bedouin": "/audio/object_pronouns/l2_obj_her_bedouin.mp3",
+    "phonetic_arabic": "ـهَاْ",
+    "ipa_bedouin": "h a aː",
+    "gender": "female"
   },
   {
     "id": "l2_neg_verb",
@@ -343,7 +443,11 @@
       "grammar",
       "negation"
     ],
-    "audio": "/audio/negation/l2_neg_verb.mp3"
+    "audio": "/audio/negation/l2_neg_verb.mp3",
+    "audio_bedouin": "/audio/negation/l2_neg_verb_bedouin.mp3",
+    "phonetic_arabic": "مَاْ",
+    "ipa_bedouin": "m a aː",
+    "gender": "female"
   },
   {
     "id": "l2_neg_dont_have",
@@ -357,7 +461,11 @@
       "grammar",
       "negation"
     ],
-    "audio": "/audio/negation/l2_neg_dont_have.mp3"
+    "audio": "/audio/negation/l2_neg_dont_have.mp3",
+    "audio_bedouin": "/audio/negation/l2_neg_dont_have_bedouin.mp3",
+    "phonetic_arabic": "مَا عِنْدِيْ",
+    "ipa_bedouin": "m a aː ʕ i n d i iː",
+    "gender": "female"
   },
   {
     "id": "l2_neg_dont_know",
@@ -371,7 +479,11 @@
       "grammar",
       "negation"
     ],
-    "audio": "/audio/negation/l2_neg_dont_know.mp3"
+    "audio": "/audio/negation/l2_neg_dont_know.mp3",
+    "audio_bedouin": "/audio/negation/l2_neg_dont_know_bedouin.mp3",
+    "phonetic_arabic": "مَا بَعْرِفْ",
+    "ipa_bedouin": "m a aː b a ʕ r i f",
+    "gender": "female"
   },
   {
     "id": "l2_adj_better",
@@ -385,7 +497,11 @@
       "adjective",
       "comparative"
     ],
-    "audio": "/audio/adjectives/l2_adj_better.mp3"
+    "audio": "/audio/adjectives/l2_adj_better.mp3",
+    "audio_bedouin": "/audio/adjectives/l2_adj_better_bedouin.mp3",
+    "phonetic_arabic": "أَحْسَنْ",
+    "ipa_bedouin": "ʔ a a ħ s a n",
+    "gender": "female"
   },
   {
     "id": "l2_adj_bigger",
@@ -399,7 +515,11 @@
       "adjective",
       "comparative"
     ],
-    "audio": "/audio/adjectives/l2_adj_bigger.mp3"
+    "audio": "/audio/adjectives/l2_adj_bigger.mp3",
+    "audio_bedouin": "/audio/adjectives/l2_adj_bigger_bedouin.mp3",
+    "phonetic_arabic": "أَكْبَرْ",
+    "ipa_bedouin": "ʔ a a k b a r",
+    "gender": "female"
   },
   {
     "id": "l2_adj_more",
@@ -413,7 +533,11 @@
       "adjective",
       "comparative"
     ],
-    "audio": "/audio/adjectives/l2_adj_more.mp3"
+    "audio": "/audio/adjectives/l2_adj_more.mp3",
+    "audio_bedouin": "/audio/adjectives/l2_adj_more_bedouin.mp3",
+    "phonetic_arabic": "أَكْتَرْ",
+    "ipa_bedouin": "ʔ a a k t a r",
+    "gender": "female"
   },
   {
     "id": "l2_time_always",
@@ -427,7 +551,11 @@
       "time",
       "frequency"
     ],
-    "audio": "/audio/frequency/l2_time_always.mp3"
+    "audio": "/audio/frequency/l2_time_always.mp3",
+    "audio_bedouin": "/audio/frequency/l2_time_always_bedouin.mp3",
+    "phonetic_arabic": "دَايْمًاْ",
+    "ipa_bedouin": "d a aː iː m aː",
+    "gender": "female"
   },
   {
     "id": "l2_time_sometimes",
@@ -441,7 +569,11 @@
       "time",
       "frequency"
     ],
-    "audio": "/audio/frequency/l2_time_sometimes.mp3"
+    "audio": "/audio/frequency/l2_time_sometimes.mp3",
+    "phonetic_arabic": "أَحْيَانًاْ / مَرَّاتْ",
+    "audio_bedouin": "/audio/frequency/l2_time_sometimes_bedouin.mp3",
+    "ipa_bedouin": "ʔ a a ħ j a aː n aː m a r ː a aː t",
+    "gender": "female"
   },
   {
     "id": "l2_time_never",
@@ -455,7 +587,11 @@
       "time",
       "frequency"
     ],
-    "audio": "/audio/frequency/l2_time_never.mp3"
+    "audio": "/audio/frequency/l2_time_never.mp3",
+    "audio_bedouin": "/audio/frequency/l2_time_never_bedouin.mp3",
+    "phonetic_arabic": "أَبَدًاْ",
+    "ipa_bedouin": "ʔ a a b a d aː",
+    "gender": "female"
   },
   {
     "id": "l2_time_week",
@@ -468,7 +604,11 @@
     "tags": [
       "time"
     ],
-    "audio": "/audio/time/l2_time_week.mp3"
+    "audio": "/audio/time/l2_time_week.mp3",
+    "audio_bedouin": "/audio/time/l2_time_week_bedouin.mp3",
+    "phonetic_arabic": "أُسْبُوعْ",
+    "ipa_bedouin": "ʔ a u s b u uː ʕ",
+    "gender": "female"
   },
   {
     "id": "l2_time_month",
@@ -481,7 +621,11 @@
     "tags": [
       "time"
     ],
-    "audio": "/audio/time/l2_time_month.mp3"
+    "audio": "/audio/time/l2_time_month.mp3",
+    "audio_bedouin": "/audio/time/l2_time_month_bedouin.mp3",
+    "phonetic_arabic": "شَهَرْ",
+    "ipa_bedouin": "ʃ a h a r",
+    "gender": "female"
   },
   {
     "id": "l2_time_year",
@@ -494,7 +638,11 @@
     "tags": [
       "time"
     ],
-    "audio": "/audio/time/l2_time_year.mp3"
+    "audio": "/audio/time/l2_time_year.mp3",
+    "audio_bedouin": "/audio/time/l2_time_year_bedouin.mp3",
+    "phonetic_arabic": "سَنِهْ",
+    "ipa_bedouin": "s a n i a",
+    "gender": "female"
   },
   {
     "id": "l2_noun_thing",
@@ -507,7 +655,11 @@
     "tags": [
       "noun"
     ],
-    "audio": "/audio/vocabulary/l2_noun_thing.mp3"
+    "audio": "/audio/vocabulary/l2_noun_thing.mp3",
+    "audio_bedouin": "/audio/vocabulary/l2_noun_thing_bedouin.mp3",
+    "phonetic_arabic": "إِشِيْ",
+    "ipa_bedouin": "ʔ i i ʃ i iː",
+    "gender": "female"
   },
   {
     "id": "l2_noun_people",
@@ -520,7 +672,11 @@
     "tags": [
       "noun"
     ],
-    "audio": "/audio/vocabulary/l2_noun_people.mp3"
+    "audio": "/audio/vocabulary/l2_noun_people.mp3",
+    "audio_bedouin": "/audio/vocabulary/l2_noun_people_bedouin.mp3",
+    "phonetic_arabic": "نَاسْ",
+    "ipa_bedouin": "n a aː s",
+    "gender": "female"
   },
   {
     "id": "l2_noun_place",
@@ -533,7 +689,11 @@
     "tags": [
       "noun"
     ],
-    "audio": "/audio/vocabulary/l2_noun_place.mp3"
+    "audio": "/audio/vocabulary/l2_noun_place.mp3",
+    "audio_bedouin": "/audio/vocabulary/l2_noun_place_bedouin.mp3",
+    "phonetic_arabic": "مَحَلْ / مَكَانْ",
+    "ipa_bedouin": "m a ħ a l m a k a aː n",
+    "gender": "female"
   },
   {
     "id": "l2_conn_or",
@@ -546,6 +706,10 @@
     "tags": [
       "connector"
     ],
-    "audio": "/audio/connectors/l2_conn_or.mp3"
+    "audio": "/audio/connectors/l2_conn_or.mp3",
+    "audio_bedouin": "/audio/connectors/l2_conn_or_bedouin.mp3",
+    "phonetic_arabic": "وَلَّاْ / أَوْ",
+    "ipa_bedouin": "w a l ː a aː ʔ a a uː",
+    "gender": "female"
   }
 ]

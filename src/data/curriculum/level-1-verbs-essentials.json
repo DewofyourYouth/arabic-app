@@ -11,7 +11,11 @@
       "verb",
       "essential"
     ],
-    "audio": "/audio/verbs/l1_verb_want.mp3"
+    "audio": "/audio/verbs/l1_verb_want.mp3",
+    "audio_bedouin": "/audio/verbs/l1_verb_want_bedouin.mp3",
+    "phonetic_arabic": "بِدِّيْ",
+    "ipa_bedouin": "b i d ː i iː",
+    "gender": "female"
   },
   {
     "id": "l1_verb_go",
@@ -25,7 +29,11 @@
       "verb",
       "essential"
     ],
-    "audio": "/audio/verbs/l1_verb_go.mp3"
+    "audio": "/audio/verbs/l1_verb_go.mp3",
+    "audio_bedouin": "/audio/verbs/l1_verb_go_bedouin.mp3",
+    "phonetic_arabic": "بَرُوحْ",
+    "ipa_bedouin": "b a r u uː ħ",
+    "gender": "female"
   },
   {
     "id": "l1_verb_see",
@@ -39,7 +47,11 @@
       "verb",
       "essential"
     ],
-    "audio": "/audio/verbs/l1_verb_see.mp3"
+    "audio": "/audio/verbs/l1_verb_see.mp3",
+    "audio_bedouin": "/audio/verbs/l1_verb_see_bedouin.mp3",
+    "phonetic_arabic": "بَشُوفْ",
+    "ipa_bedouin": "b a ʃ u uː f",
+    "gender": "female"
   },
   {
     "id": "l1_verb_eat",
@@ -53,7 +65,11 @@
       "verb",
       "essential"
     ],
-    "audio": "/audio/verbs/l1_verb_eat.mp3"
+    "audio": "/audio/verbs/l1_verb_eat.mp3",
+    "audio_bedouin": "/audio/verbs/l1_verb_eat_bedouin.mp3",
+    "phonetic_arabic": "بَاكُلْ",
+    "ipa_bedouin": "b a aː k u l",
+    "gender": "female"
   },
   {
     "id": "l1_verb_drink",
@@ -67,6 +83,10 @@
       "verb",
       "essential"
     ],
-    "audio": "/audio/verbs/l1_verb_drink.mp3"
+    "audio": "/audio/verbs/l1_verb_drink.mp3",
+    "audio_bedouin": "/audio/verbs/l1_verb_drink_bedouin.mp3",
+    "phonetic_arabic": "بَشْرَبْ",
+    "ipa_bedouin": "b a ʃ r a b",
+    "gender": "female"
   }
 ]

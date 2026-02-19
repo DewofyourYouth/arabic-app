@@ -10,7 +10,11 @@
     "tags": [
       "body"
     ],
-    "audio": "/audio/health/l2_body_head.mp3"
+    "audio": "/audio/health/l2_body_head.mp3",
+    "audio_bedouin": "/audio/health/l2_body_head_bedouin.mp3",
+    "phonetic_arabic": "رَاسْ",
+    "ipa_bedouin": "r a aː s",
+    "gender": "female"
   },
   {
     "id": "l2_body_hand",
@@ -23,7 +27,11 @@
     "tags": [
       "body"
     ],
-    "audio": "/audio/health/l2_body_hand.mp3"
+    "audio": "/audio/health/l2_body_hand.mp3",
+    "audio_bedouin": "/audio/health/l2_body_hand_bedouin.mp3",
+    "phonetic_arabic": "إِيدْ",
+    "ipa_bedouin": "ʔ i i iː d",
+    "gender": "female"
   },
   {
     "id": "l2_hlt_sick",
@@ -36,7 +44,11 @@
     "tags": [
       "health"
     ],
-    "audio": "/audio/health/l2_hlt_sick.mp3"
+    "audio": "/audio/health/l2_hlt_sick.mp3",
+    "audio_bedouin": "/audio/health/l2_hlt_sick_bedouin.mp3",
+    "phonetic_arabic": "مَرِيضْ",
+    "ipa_bedouin": "m a r i iː dˤ",
+    "gender": "female"
   },
   {
     "id": "l2_hlt_pain",
@@ -49,7 +61,11 @@
     "tags": [
       "health"
     ],
-    "audio": "/audio/health/l2_hlt_pain.mp3"
+    "audio": "/audio/health/l2_hlt_pain.mp3",
+    "audio_bedouin": "/audio/health/l2_hlt_pain_bedouin.mp3",
+    "phonetic_arabic": "وَجَعْ",
+    "ipa_bedouin": "w a d͡ʒ a ʕ",
+    "gender": "female"
   },
   {
     "id": "l2_hlt_doctor",
@@ -62,7 +78,11 @@
     "tags": [
       "health"
     ],
-    "audio": "/audio/health/l2_hlt_doctor.mp3"
+    "audio": "/audio/health/l2_hlt_doctor.mp3",
+    "audio_bedouin": "/audio/health/l2_hlt_doctor_bedouin.mp3",
+    "phonetic_arabic": "دُكْتُورْ",
+    "ipa_bedouin": "d u k t u uː r",
+    "gender": "female"
   },
   {
     "id": "l2_hlt_feel",
@@ -76,6 +96,10 @@
       "health",
       "polite"
     ],
-    "audio": "/audio/health/l2_hlt_feel.mp3"
+    "audio": "/audio/health/l2_hlt_feel.mp3",
+    "audio_bedouin": "/audio/health/l2_hlt_feel_bedouin.mp3",
+    "phonetic_arabic": "سَلَامْتَكْ",
+    "ipa_bedouin": "s a l a aː m t a k",
+    "gender": "female"
   }
 ]
