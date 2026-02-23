@@ -11,9 +11,11 @@
     "audio": "/audio/numbers/l1_num_1.mp3",
     "phonetic_arabic": "وَاحِدْ",
     "audio_bedouin": "/audio/numbers/l1_num_1_bedouin.mp3",
-    "ipa_bedouin": "waːħid",
+    "ipa_bedouin": "xsampa:wahad",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wahad",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_2",
@@ -27,9 +29,11 @@
     "phonetic_arabic": "تْنَيْنْ",
     "audio": "/audio/numbers/l1_num_2.mp3",
     "audio_bedouin": "/audio/numbers/l1_num_2_bedouin.mp3",
-    "ipa_bedouin": "tnaiːn",
+    "ipa_bedouin": "xsampa:tnein",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tnein",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_3",
@@ -43,9 +47,11 @@
     "audio": "/audio/numbers/l1_num_3.mp3",
     "phonetic_arabic": "تَلَاتِهْ",
     "audio_bedouin": "/audio/numbers/l1_num_3_bedouin.mp3",
-    "ipa_bedouin": "talaːtia",
+    "ipa_bedouin": "xsampa:talateh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:talateh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_4",
@@ -59,9 +65,11 @@
     "audio": "/audio/numbers/l1_num_4.mp3",
     "phonetic_arabic": "أَرْبَعَهْ",
     "audio_bedouin": "/audio/numbers/l1_num_4_bedouin.mp3",
-    "ipa_bedouin": "ʔ arbaʕaa",
+    "ipa_bedouin": "xsampa:arba?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:arba?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_5",
@@ -75,9 +83,11 @@
     "audio": "/audio/numbers/l1_num_5.mp3",
     "phonetic_arabic": "خَمْسِهْ",
     "audio_bedouin": "/audio/numbers/l1_num_5_bedouin.mp3",
-    "ipa_bedouin": "xamsia",
+    "ipa_bedouin": "xsampa:xamseh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xamseh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_6",
@@ -91,9 +101,11 @@
     "audio": "/audio/numbers/l1_num_6.mp3",
     "phonetic_arabic": "سِتِّهْ",
     "audio_bedouin": "/audio/numbers/l1_num_6_bedouin.mp3",
-    "ipa_bedouin": "sitːia",
+    "ipa_bedouin": "xsampa:sitteh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sitteh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_7",
@@ -107,9 +119,11 @@
     "audio": "/audio/numbers/l1_num_7.mp3",
     "audio_bedouin": "/audio/numbers/l1_num_7_bedouin.mp3",
     "phonetic_arabic": "سَبْعَهْ",
-    "ipa_bedouin": "sabʕaa",
+    "ipa_bedouin": "xsampa:sab?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sab?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_8",
@@ -123,9 +137,11 @@
     "audio": "/audio/numbers/l1_num_8.mp3",
     "audio_bedouin": "/audio/numbers/l1_num_8_bedouin.mp3",
     "phonetic_arabic": "تَمَانِيِهْ",
-    "ipa_bedouin": "tamaːnjia",
+    "ipa_bedouin": "xsampa:tamanjeh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tamanjeh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_9",
@@ -139,9 +155,11 @@
     "audio": "/audio/numbers/l1_num_9.mp3",
     "audio_bedouin": "/audio/numbers/l1_num_9_bedouin.mp3",
     "phonetic_arabic": "تِسْعَهْ",
-    "ipa_bedouin": "tisʕaa",
+    "ipa_bedouin": "xsampa:tis?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tis?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_num_10",
@@ -155,8 +173,10 @@
     "audio": "/audio/numbers/l1_num_10.mp3",
     "audio_bedouin": "/audio/numbers/l1_num_10_bedouin.mp3",
     "phonetic_arabic": "عَشَرَهْ",
-    "ipa_bedouin": "ʕaʃaraa",
+    "ipa_bedouin": "xsampa:aSara",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:aSara",
+    "ipa_auto_generated": true
   }
 ]

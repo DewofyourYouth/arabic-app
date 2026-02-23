@@ -91,6 +91,9 @@ const ARABIC_TO_IPA = {
     'ؤ': 'ʔ',
     'گ': 'ɡ',
     'چ': 'tʃ',
+    'ً': 'n', // Tanween Fath (usually follows Alif, so aː + n = aːn)
+    'ٌ': 'u n', // Tanween Damm
+    'ٍ': 'i n', // Tanween Kasr
     ' ': ' '
 };
 
@@ -108,18 +111,19 @@ function arabicToIPA(text) {
         // Simple heuristic: 
         // If 'و' has Fatha/Kasra/Damma OR Shadda on it, it's 'w'.
         // If 'ي' has Fatha/Kasra/Damma OR Shadda on it, it's 'j'.
+        // NEW: If followed by Alif (ا), it is likely a consonant (e.g. Afwan, Huwa)
         
         let mapped = ARABIC_TO_IPA[char];
         
         if (char === 'و') {
-            if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ')) {
+            if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ' || nextChar === 'ا' || nextChar === 'ً')) {
                 mapped = 'w';
             } else if (i === 0) {
                  mapped = 'w'; // Start of word usually W
             }
         }
         if (char === 'ي') {
-             if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ')) {
+             if (nextChar && (nextChar === 'َ' || nextChar === 'ِ' || nextChar === 'ُ' || nextChar === 'ّ' || nextChar === 'ا' || nextChar === 'ً')) {
                 mapped = 'j';
             } else if (i === 0) {
                  mapped = 'j'; 

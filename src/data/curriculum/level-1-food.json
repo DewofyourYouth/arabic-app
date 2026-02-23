@@ -16,9 +16,11 @@
     "audio": "/audio/food/l1_food_water.mp3",
     "audio_bedouin": "/audio/food/l1_food_water_bedouin.mp3",
     "phonetic_arabic": "مَيّْ",
-    "ipa_bedouin": "majː",
+    "ipa_bedouin": "xsampa:majj",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:majj",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_coffee",
@@ -38,10 +40,11 @@
     "audio_bedouin": "/audio/food/l1_food_coffee_bedouin.mp3",
     "phonetic_arabic": "ءَهْوَهْ",
     "phonetic_bedouin": "گَهْوَهْ",
-    "ipa": "ˈʔ a h w e",
-    "ipa_bedouin": "ɡahwah",
+    "ipa": "xsampa:ahweh",
+    "ipa_bedouin": "xsampa:gahwa",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_tea",
@@ -59,9 +62,11 @@
     "audio": "/audio/food/l1_food_tea.mp3",
     "audio_bedouin": "/audio/food/l1_food_tea_bedouin.mp3",
     "phonetic_arabic": "شَايْ",
-    "ipa_bedouin": "ʃaːiː",
+    "ipa_bedouin": "xsampa:Saj",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Saj",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_bread",
@@ -79,9 +84,11 @@
     "phonetic_arabic": "خُبِزْ",
     "audio": "/audio/food/l1_food_bread.mp3",
     "audio_bedouin": "/audio/food/l1_food_bread_bedouin.mp3",
-    "ipa_bedouin": "xubiz",
+    "ipa_bedouin": "xsampa:xubez",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xubez",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_chicken",
@@ -99,9 +106,11 @@
     "phonetic_arabic": "جَاجْ",
     "audio": "/audio/food/l1_food_chicken.mp3",
     "audio_bedouin": "/audio/food/l1_food_chicken_bedouin.mp3",
-    "ipa_bedouin": "d͡ʒaːd͡ʒ",
+    "ipa_bedouin": "xsampa:ddZal / dZadZ",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ddZal / dZadZ",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_meat",
@@ -119,9 +128,11 @@
     "phonetic_arabic": "لَحْمِهْ",
     "audio": "/audio/food/l1_food_meat.mp3",
     "audio_bedouin": "/audio/food/l1_food_meat_bedouin.mp3",
-    "ipa_bedouin": "laħmia",
+    "ipa_bedouin": "xsampa:lahmeh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:lahmeh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_banana",
@@ -140,9 +151,11 @@
     "phonetic_arabic": "مُوزْ",
     "audio": "/audio/food/l1_food_banana.mp3",
     "audio_bedouin": "/audio/food/l1_food_banana_bedouin.mp3",
-    "ipa_bedouin": "muːz",
+    "ipa_bedouin": "xsampa:muz",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:muz",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_apple",
@@ -161,9 +174,11 @@
     "phonetic_arabic": "تُفَّاحْ",
     "audio": "/audio/food/l1_food_apple.mp3",
     "audio_bedouin": "/audio/food/l1_food_apple_bedouin.mp3",
-    "ipa_bedouin": "tfaːħ",
+    "ipa_bedouin": "xsampa:tufeX\\",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tufeX\\",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_orange",
@@ -184,8 +199,10 @@
     "phonetic_arabic": "برتءالْ",
     "phonetic_bedouin": "برتگالْ",
     "gender": "female",
-    "ipa_bedouin": "brtɡaːl",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:bu:rtukol",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bu:rtukol",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_grapes",
@@ -204,9 +221,11 @@
     "phonetic_arabic": "عِنَبْ",
     "audio": "/audio/food/l1_food_grapes.mp3",
     "audio_bedouin": "/audio/food/l1_food_grapes_bedouin.mp3",
-    "ipa_bedouin": "ʕnb",
+    "ipa_bedouin": "xsampa:einab",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:einab",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_strawberry",
@@ -225,9 +244,11 @@
     "phonetic_arabic": "فَرَاوْلِهْ",
     "audio": "/audio/food/l1_food_strawberry.mp3",
     "audio_bedouin": "/audio/food/l1_food_strawberry_bedouin.mp3",
-    "ipa_bedouin": "fraːuːla",
+    "ipa_bedouin": "xsampa:farawla",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:farawla",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_watermelon",
@@ -246,9 +267,11 @@
     "phonetic_arabic": "بَطِّيخْ",
     "audio": "/audio/food/l1_food_watermelon.mp3",
     "audio_bedouin": "/audio/food/l1_food_watermelon_bedouin.mp3",
-    "ipa_bedouin": "btˤiːx",
+    "ipa_bedouin": "xsampa:batiX\\",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:batiX\\",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_mango",
@@ -267,9 +290,11 @@
     "audio": "/audio/food/l1_food_mango.mp3",
     "audio_bedouin": "/audio/food/l1_food_mango_bedouin.mp3",
     "phonetic_arabic": "مانجاْ",
-    "ipa_bedouin": "maːnd͡ʒaː",
+    "ipa_bedouin": "xsampa:manga",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:manga",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_coconut",
@@ -288,9 +313,11 @@
     "phonetic_arabic": "جُوزْ الْهِنْدْ",
     "audio": "/audio/food/l1_food_coconut.mp3",
     "audio_bedouin": "/audio/food/l1_food_coconut_bedouin.mp3",
-    "ipa_bedouin": "d͡ʒuːz aːlhnd",
+    "ipa_bedouin": "xsampa:dZoez hend",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZoez hend",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_melon",
@@ -308,9 +335,11 @@
     "audio": "/audio/food/l1_food_melon.mp3",
     "audio_bedouin": "/audio/food/l1_food_melon_bedouin.mp3",
     "phonetic_arabic": "شمامْ",
-    "ipa_bedouin": "ʃmaːm",
+    "ipa_bedouin": "xsampa:Summam",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Summam",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_pomegranate",
@@ -329,9 +358,11 @@
     "audio": "/audio/food/l1_food_pomegranate.mp3",
     "audio_bedouin": "/audio/food/l1_food_pomegranate_bedouin.mp3",
     "phonetic_arabic": "رمانْ",
-    "ipa_bedouin": "rmaːn",
+    "ipa_bedouin": "xsampa:ruman",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ruman",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_tomato",
@@ -350,9 +381,11 @@
     "audio": "/audio/food/l1_food_tomato.mp3",
     "audio_bedouin": "/audio/food/l1_food_tomato_bedouin.mp3",
     "phonetic_arabic": "بَنْدُورَهْ",
-    "ipa_bedouin": "banduːraa",
+    "ipa_bedouin": "xsampa:bandora",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bandora",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_cucumber",
@@ -370,9 +403,11 @@
     "audio": "/audio/food/l1_food_cucumber.mp3",
     "audio_bedouin": "/audio/food/l1_food_cucumber_bedouin.mp3",
     "phonetic_arabic": "خْيَارْ",
-    "ipa_bedouin": "xjaːr",
+    "ipa_bedouin": "xsampa:xjar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xjar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_potato",
@@ -390,9 +425,11 @@
     "audio": "/audio/food/l1_food_potato.mp3",
     "audio_bedouin": "/audio/food/l1_food_potato_bedouin.mp3",
     "phonetic_arabic": "بَطَاطَاْ",
-    "ipa_bedouin": "batˤaːtˤaː",
+    "ipa_bedouin": "xsampa:batata",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:batata",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_delicious",
@@ -410,9 +447,11 @@
     "audio": "/audio/food/l1_food_delicious.mp3",
     "audio_bedouin": "/audio/food/l1_food_delicious_bedouin.mp3",
     "phonetic_arabic": "زَاكِيْ",
-    "ipa_bedouin": "zaːkiː",
+    "ipa_bedouin": "xsampa:zaki",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:zaki",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_fat",
@@ -430,9 +469,11 @@
     "phonetic_arabic": "دِهِنْ",
     "audio": "/audio/food/l1_food_fat.mp3",
     "audio_bedouin": "/audio/food/l1_food_fat_bedouin.mp3",
-    "ipa_bedouin": "dihin",
+    "ipa_bedouin": "xsampa:dihin",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dihin",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_fats",
@@ -451,9 +492,11 @@
     "audio": "/audio/food/l1_food_fats.mp3",
     "audio_bedouin": "/audio/food/l1_food_fats_bedouin.mp3",
     "phonetic_arabic": "دُهُونْ",
-    "ipa_bedouin": "duhuːn",
+    "ipa_bedouin": "xsampa:duhun",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:duhun",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_food_fatty",
@@ -471,8 +514,10 @@
     "audio": "/audio/food/l1_food_fatty.mp3",
     "audio_bedouin": "/audio/food/l1_food_fatty_bedouin.mp3",
     "phonetic_arabic": "دُهْنِيّْ",
-    "ipa_bedouin": "duhnjː",
+    "ipa_bedouin": "xsampa:duhni",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:duhni",
+    "ipa_auto_generated": true
   }
 ]

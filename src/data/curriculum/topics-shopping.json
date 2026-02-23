@@ -18,8 +18,10 @@
     "phonetic_arabic": "ءَدَّيْش حَءُّه؟ْ",
     "phonetic_bedouin": "گَدَّيْش حَگُّه؟ْ",
     "gender": "female",
-    "ipa_bedouin": "ɡadːaiːʃ ħaɡːuh",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:addeiS haggu",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:addeiS ha??u",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_expensive",
@@ -37,9 +39,11 @@
     "audio": "/audio/shopping/l2_shop_expensive.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_expensive_bedouin.mp3",
     "phonetic_arabic": "غَالِيْ",
-    "ipa_bedouin": "ɣaːliː",
+    "ipa_bedouin": "xsampa:Gali",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Gali",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_cheap",
@@ -57,9 +61,11 @@
     "audio": "/audio/shopping/l2_shop_cheap.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_cheap_bedouin.mp3",
     "phonetic_arabic": "رْخِيصْ",
-    "ipa_bedouin": "rxiːsˤ",
+    "ipa_bedouin": "xsampa:rxis",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:rxis",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_discount",
@@ -77,9 +83,11 @@
     "audio": "/audio/shopping/l2_shop_discount.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_discount_bedouin.mp3",
     "phonetic_arabic": "فِي خَصِم؟ْ",
-    "ipa_bedouin": "fiː xasˤim",
+    "ipa_bedouin": "xsampa:fi xasim",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:fi xasim",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_clothes",
@@ -97,9 +105,11 @@
     "audio": "/audio/shopping/l2_shop_clothes.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_clothes_bedouin.mp3",
     "phonetic_arabic": "أَوَاعِيْ",
-    "ipa_bedouin": "ʔ awaːʕiː",
+    "ipa_bedouin": "xsampa:awā?i",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:awā?i",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_market",
@@ -119,8 +129,10 @@
     "phonetic_arabic": "سُوءْ",
     "phonetic_bedouin": "سُوگْ",
     "gender": "female",
-    "ipa_bedouin": "suːɡ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:sug",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:su?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_boots",
@@ -139,9 +151,11 @@
     "audio": "/audio/shopping/l2_shop_boots.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_boots_bedouin.mp3",
     "phonetic_arabic": "جَزْمِهْ",
-    "ipa_bedouin": "d͡ʒazmia",
+    "ipa_bedouin": "xsampa:dZazme",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZazme",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_shoes_sport",
@@ -160,9 +174,11 @@
     "audio": "/audio/shopping/l2_shop_shoes_sport.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_shoes_sport_bedouin.mp3",
     "phonetic_arabic": "بُوتْ",
-    "ipa_bedouin": "buːt",
+    "ipa_bedouin": "xsampa:bot",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bot",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_shoes",
@@ -181,9 +197,11 @@
     "audio": "/audio/shopping/l2_shop_shoes.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_shoes_bedouin.mp3",
     "phonetic_arabic": "كُنْدَرَهْ",
-    "ipa_bedouin": "kundaraa",
+    "ipa_bedouin": "xsampa:kundara",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:kundara",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_shop_shoes_flipped",
@@ -202,8 +220,10 @@
     "audio": "/audio/shopping/l2_shop_shoes_flipped.mp3",
     "audio_bedouin": "/audio/shopping/l2_shop_shoes_flipped_bedouin.mp3",
     "phonetic_arabic": "سَبَّاطْ",
-    "ipa_bedouin": "sabːaːtˤ",
+    "ipa_bedouin": "xsampa:sabbat",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sabbat",
+    "ipa_auto_generated": true
   }
 ]

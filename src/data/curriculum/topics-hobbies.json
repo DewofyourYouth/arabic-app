@@ -13,9 +13,11 @@
     "audio": "/audio/hobbies/l2_hob_sport.mp3",
     "audio_bedouin": "/audio/hobbies/l2_hob_sport_bedouin.mp3",
     "phonetic_arabic": "رِيَاضَهْ",
-    "ipa_bedouin": "rjaːdˤaa",
+    "ipa_bedouin": "xsampa:rijada",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:rijada",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hob_reading",
@@ -33,8 +35,10 @@
     "phonetic_arabic": "ءِرَاءَهْ",
     "phonetic_bedouin": "گِرَاءَهْ",
     "gender": "female",
-    "ipa_bedouin": "ɡiraːʔah",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:gira?a",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:?ira?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hob_music",
@@ -52,8 +56,10 @@
     "phonetic_arabic": "مُوسِيءَىْ",
     "phonetic_bedouin": "مُوسِيگَىْ",
     "gender": "female",
-    "ipa_bedouin": "muːsiːɡaa",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:musiga",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:musi?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hob_travel",
@@ -69,9 +75,11 @@
     "audio": "/audio/hobbies/l2_hob_travel.mp3",
     "audio_bedouin": "/audio/hobbies/l2_hob_travel_bedouin.mp3",
     "phonetic_arabic": "سَفَرْ",
-    "ipa_bedouin": "safar",
+    "ipa_bedouin": "xsampa:safar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:safar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hob_freetime",
@@ -89,8 +97,10 @@
     "phonetic_arabic": "وَءْت فَرَاغْ",
     "phonetic_bedouin": "وَگْت فَرَاغْ",
     "gender": "female",
-    "ipa_bedouin": "waɡt faraːɣ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:wagt faraG",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wa?t faraG",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hob_doing",
@@ -107,8 +117,10 @@
     "audio": "/audio/hobbies/l2_hob_doing.mp3",
     "audio_bedouin": "/audio/hobbies/l2_hob_doing_bedouin.mp3",
     "phonetic_arabic": "شُو بْتِحِبّ تَعْمَل؟ْ",
-    "ipa_bedouin": "ʃuː btiħibː taʕmal",
+    "ipa_bedouin": "xsampa:Su btihibb ta?mal",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Su btihibb ta?mal",
+    "ipa_auto_generated": true
   }
 ]

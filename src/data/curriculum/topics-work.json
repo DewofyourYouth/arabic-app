@@ -13,9 +13,11 @@
     "audio": "/audio/work/l2_work_job.mp3",
     "audio_bedouin": "/audio/work/l2_work_job_bedouin.mp3",
     "phonetic_arabic": "شُغُلْ",
-    "ipa_bedouin": "ʃuɣul",
+    "ipa_bedouin": "xsampa:SuGul",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:SuGul",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_edu_student",
@@ -31,9 +33,11 @@
     "audio": "/audio/education/l2_edu_student.mp3",
     "phonetic_arabic": "طَالِبْ",
     "audio_bedouin": "/audio/education/l2_edu_student_bedouin.mp3",
-    "ipa_bedouin": "tˤaːlib",
+    "ipa_bedouin": "xsampa:talib",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:talib",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_edu_university",
@@ -49,9 +53,11 @@
     "audio": "/audio/education/l2_edu_university.mp3",
     "audio_bedouin": "/audio/education/l2_edu_university_bedouin.mp3",
     "phonetic_arabic": "جَامْعَهْ",
-    "ipa_bedouin": "d͡ʒaːmʕaa",
+    "ipa_bedouin": "xsampa:dZam?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZam?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_work_office",
@@ -67,9 +73,11 @@
     "audio": "/audio/work/l2_work_office.mp3",
     "audio_bedouin": "/audio/work/l2_work_office_bedouin.mp3",
     "phonetic_arabic": "مَكْتَبْ",
-    "ipa_bedouin": "maktab",
+    "ipa_bedouin": "xsampa:maktab",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:maktab",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_work_engineer",
@@ -86,9 +94,11 @@
     "audio": "/audio/work/l2_work_engineer.mp3",
     "audio_bedouin": "/audio/work/l2_work_engineer_bedouin.mp3",
     "phonetic_arabic": "مُهَنْدِسْ",
-    "ipa_bedouin": "muhandis",
+    "ipa_bedouin": "xsampa:muhandis",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:muhandis",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_work_teacher",
@@ -105,9 +115,11 @@
     "audio": "/audio/work/l2_work_teacher.mp3",
     "audio_bedouin": "/audio/work/l2_work_teacher_bedouin.mp3",
     "phonetic_arabic": "إِسْتَاذْ",
-    "ipa_bedouin": "ʔ istaːð",
+    "ipa_bedouin": "xsampa:ustaz",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ustaz",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_work_whatdo",
@@ -124,8 +136,10 @@
     "audio": "/audio/work/l2_work_whatdo.mp3",
     "audio_bedouin": "/audio/work/l2_work_whatdo_bedouin.mp3",
     "phonetic_arabic": "شُو بِتِشْتِغِل؟ْ",
-    "ipa_bedouin": "ʃuː bitiʃtiɣil",
+    "ipa_bedouin": "xsampa:Su bitiStiGil",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Su bitiStiGil",
+    "ipa_auto_generated": true
   }
 ]

@@ -14,9 +14,11 @@
     "audio": "/audio/time/time_today.mp3",
     "audio_bedouin": "/audio/time/time_today_bedouin.mp3",
     "phonetic_arabic": "الْيُومْ",
-    "ipa_bedouin": "aːljuːm",
+    "ipa_bedouin": "xsampa:el-jom",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-jom",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_tomorrow",
@@ -33,9 +35,11 @@
     "audio": "/audio/time/time_tomorrow.mp3",
     "audio_bedouin": "/audio/time/time_tomorrow_bedouin.mp3",
     "phonetic_arabic": "بُكْرَهْ",
-    "ipa_bedouin": "bukraa",
+    "ipa_bedouin": "xsampa:bukra",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bukra",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_yesterday",
@@ -52,9 +56,11 @@
     "audio": "/audio/time/time_yesterday.mp3",
     "audio_bedouin": "/audio/time/time_yesterday_bedouin.mp3",
     "phonetic_arabic": "مْبَارِحْ",
-    "ipa_bedouin": "mbaːriħ",
+    "ipa_bedouin": "xsampa:mbareX\\",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mbareX\\",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_now",
@@ -71,9 +77,11 @@
     "audio": "/audio/time/time_now.mp3",
     "audio_bedouin": "/audio/time/time_now_bedouin.mp3",
     "phonetic_arabic": "هَلَّأْ",
-    "ipa_bedouin": "halːaʔ a",
+    "ipa_bedouin": "xsampa:halla?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:halla?",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_later",
@@ -90,9 +98,11 @@
     "audio": "/audio/time/time_later.mp3",
     "audio_bedouin": "/audio/time/time_later_bedouin.mp3",
     "phonetic_arabic": "بَعْدِينْ",
-    "ipa_bedouin": "baʕdiːn",
+    "ipa_bedouin": "xsampa:ba?den",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ba?den",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_morning",
@@ -109,9 +119,11 @@
     "audio": "/audio/time/time_morning.mp3",
     "audio_bedouin": "/audio/time/time_morning_bedouin.mp3",
     "phonetic_arabic": "صُبُحْ",
-    "ipa_bedouin": "sˤubuħ",
+    "ipa_bedouin": "xsampa:soboh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:soboh",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_night",
@@ -128,9 +140,11 @@
     "audio": "/audio/time/time_night.mp3",
     "audio_bedouin": "/audio/time/time_night_bedouin.mp3",
     "phonetic_arabic": "لِيلْ",
-    "ipa_bedouin": "liːl",
+    "ipa_bedouin": "xsampa:leil",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:leil",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_day_generic",
@@ -147,9 +161,11 @@
     "audio": "/audio/time/time_day_generic.mp3",
     "audio_bedouin": "/audio/time/time_day_generic_bedouin.mp3",
     "phonetic_arabic": "يُومْ",
-    "ipa_bedouin": "juːm",
+    "ipa_bedouin": "xsampa:jom",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:jom",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_week",
@@ -166,9 +182,11 @@
     "audio": "/audio/time/time_week.mp3",
     "audio_bedouin": "/audio/time/time_week_bedouin.mp3",
     "phonetic_arabic": "أُسْبُوعْ",
-    "ipa_bedouin": "ʔ asbuːʕ",
+    "ipa_bedouin": "xsampa:usbu?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:usbu?",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_month",
@@ -185,9 +203,11 @@
     "audio": "/audio/time/time_month.mp3",
     "audio_bedouin": "/audio/time/time_month_bedouin.mp3",
     "phonetic_arabic": "شَهْرْ",
-    "ipa_bedouin": "ʃahr",
+    "ipa_bedouin": "xsampa:Sahr",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Sahr",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_year",
@@ -204,9 +224,11 @@
     "audio": "/audio/time/time_year.mp3",
     "audio_bedouin": "/audio/time/time_year_bedouin.mp3",
     "phonetic_arabic": "سَنِهْ",
-    "ipa_bedouin": "sania",
+    "ipa_bedouin": "xsampa:saneh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:saneh",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_sunday",
@@ -223,9 +245,11 @@
     "audio": "/audio/time/time_sunday.mp3",
     "audio_bedouin": "/audio/time/time_sunday_bedouin.mp3",
     "phonetic_arabic": "الأَحَدْ",
-    "ipa_bedouin": "aːlʔ aħad",
+    "ipa_bedouin": "xsampa:el-ahad",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-ahad",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_monday",
@@ -242,9 +266,11 @@
     "audio": "/audio/time/time_monday.mp3",
     "audio_bedouin": "/audio/time/time_monday_bedouin.mp3",
     "phonetic_arabic": "التِّنِينْ",
-    "ipa_bedouin": "aːltːiniːn",
+    "ipa_bedouin": "xsampa:et-tanen",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:et-tanen",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_tuesday",
@@ -261,9 +287,11 @@
     "audio": "/audio/time/time_tuesday.mp3",
     "audio_bedouin": "/audio/time/time_tuesday_bedouin.mp3",
     "phonetic_arabic": "التَّلَاتَاْ",
-    "ipa_bedouin": "aːltːalaːtaː",
+    "ipa_bedouin": "xsampa:et-talata",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:et-talata",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_wednesday",
@@ -280,9 +308,11 @@
     "audio": "/audio/time/time_wednesday.mp3",
     "audio_bedouin": "/audio/time/time_wednesday_bedouin.mp3",
     "phonetic_arabic": "الأَرْبِعَاْ",
-    "ipa_bedouin": "aːlʔ arbiʕaː",
+    "ipa_bedouin": "xsampa:el-arbi?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-arbi?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_thursday",
@@ -299,9 +329,11 @@
     "audio": "/audio/time/time_thursday.mp3",
     "audio_bedouin": "/audio/time/time_thursday_bedouin.mp3",
     "phonetic_arabic": "الخَمِيسْ",
-    "ipa_bedouin": "aːlxamiːs",
+    "ipa_bedouin": "xsampa:el-xamis",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-xamis",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_friday",
@@ -318,9 +350,11 @@
     "audio": "/audio/time/time_friday.mp3",
     "audio_bedouin": "/audio/time/time_friday_bedouin.mp3",
     "phonetic_arabic": "الجمعهْ",
-    "ipa_bedouin": "aːld͡ʒmʕa",
+    "ipa_bedouin": "xsampa:el-dZum?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-dZum?a",
+    "ipa_auto_generated": true
   },
   {
     "id": "time_saturday",
@@ -337,8 +371,10 @@
     "audio": "/audio/time/time_saturday.mp3",
     "audio_bedouin": "/audio/time/time_saturday_bedouin.mp3",
     "phonetic_arabic": "السَّبْتْ",
-    "ipa_bedouin": "aːlsːabt",
+    "ipa_bedouin": "xsampa:es-sabt",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:es-sabt",
+    "ipa_auto_generated": true
   }
 ]

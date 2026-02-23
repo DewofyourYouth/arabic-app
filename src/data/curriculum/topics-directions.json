@@ -14,9 +14,11 @@
     "audio": "/audio/directions/l2_dir_where.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_where_bedouin.mp3",
     "phonetic_arabic": "وِين...؟ْ",
-    "ipa_bedouin": "wiːn",
+    "ipa_bedouin": "xsampa:wein",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wein",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_dir_straight",
@@ -32,9 +34,11 @@
     "audio": "/audio/directions/l2_dir_straight.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_straight_bedouin.mp3",
     "phonetic_arabic": "دُغْرِيْ",
-    "ipa_bedouin": "duɣriː",
+    "ipa_bedouin": "xsampa:duGri",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:duGri",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_dir_right",
@@ -50,9 +54,11 @@
     "audio": "/audio/directions/l2_dir_right.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_right_bedouin.mp3",
     "phonetic_arabic": "يَمِينْ",
-    "ipa_bedouin": "jamiːn",
+    "ipa_bedouin": "xsampa:jamin",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:jamin",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_dir_left",
@@ -68,9 +74,11 @@
     "audio": "/audio/directions/l2_dir_left.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_left_bedouin.mp3",
     "phonetic_arabic": "شْمَالْ",
-    "ipa_bedouin": "ʃmaːl",
+    "ipa_bedouin": "xsampa:Smal",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Smal",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_dir_here",
@@ -86,9 +94,11 @@
     "audio": "/audio/directions/l2_dir_here.mp3",
     "phonetic_arabic": "هُونْ",
     "audio_bedouin": "/audio/directions/l2_dir_here_bedouin.mp3",
-    "ipa_bedouin": "huːn",
+    "ipa_bedouin": "xsampa:hon",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:hon",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_dir_there",
@@ -104,8 +114,10 @@
     "audio": "/audio/directions/l2_dir_there.mp3",
     "audio_bedouin": "/audio/directions/l2_dir_there_bedouin.mp3",
     "phonetic_arabic": "هُنَاكْ",
-    "ipa_bedouin": "hunaːk",
+    "ipa_bedouin": "xsampa:hunāk",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:hunāk",
+    "ipa_auto_generated": true
   }
 ]

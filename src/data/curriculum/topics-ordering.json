@@ -17,8 +17,10 @@
     "phonetic_arabic": "بِدِّي ءَهْوَة لَوْ سَمَحْتْ",
     "phonetic_bedouin": "بِدِّي گَهْوَة لَوْ سَمَحْتْ",
     "gender": "female",
-    "ipa_bedouin": "bidːiː ɡahwaa lauː samaħt",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:biddi gahwe law samaht",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:biddi ?ahwe law samaht",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_ord_tea",
@@ -36,9 +38,11 @@
     "audio": "/audio/ordering/l2_ord_tea.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_tea_bedouin.mp3",
     "phonetic_arabic": "بِدِّي شَاي مَع سُكَّرْ",
-    "ipa_bedouin": "bidːiː ʃaːiː maʕ sukːar",
+    "ipa_bedouin": "xsampa:biddi Saj ma? sukkar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:biddi Saj ma? sukkar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_ord_menu",
@@ -56,9 +60,11 @@
     "audio": "/audio/ordering/l2_ord_menu.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_menu_bedouin.mp3",
     "phonetic_arabic": "مُمْكِن الْمِنْيُو؟ْ",
-    "ipa_bedouin": "mumkin aːlminjuː",
+    "ipa_bedouin": "xsampa:mumkin el-menu",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mumkin el-menu",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_ord_bill",
@@ -76,9 +82,11 @@
     "audio": "/audio/ordering/l2_ord_bill.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_bill_bedouin.mp3",
     "phonetic_arabic": "لِحْسَاب لَوْ سَمَحْتْ",
-    "ipa_bedouin": "liħsaːb lauː samaħt",
+    "ipa_bedouin": "xsampa:l-hsab law samaht",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:l-hsab law samaht",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_ord_water",
@@ -98,8 +106,10 @@
     "phonetic_arabic": "ءَنِّينِة مَيّْ",
     "phonetic_bedouin": "گَنِّينِة مَيّْ",
     "gender": "female",
-    "ipa_bedouin": "ɡanːiːnia majː",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:ganninet majj",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:?anninet majj",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_ord_delicious",
@@ -118,8 +128,10 @@
     "audio": "/audio/ordering/l2_ord_delicious.mp3",
     "audio_bedouin": "/audio/ordering/l2_ord_delicious_bedouin.mp3",
     "phonetic_arabic": "الْأَكِل زَاكِي كْتِيرْ",
-    "ipa_bedouin": "aːlʔ akil zaːkiː ktiːr",
+    "ipa_bedouin": "xsampa:el-akil zaki ktir",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-akil zaki ktir",
+    "ipa_auto_generated": true
   }
 ]

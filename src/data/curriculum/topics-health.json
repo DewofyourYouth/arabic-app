@@ -13,9 +13,11 @@
     "audio": "/audio/health/l2_body_head.mp3",
     "audio_bedouin": "/audio/health/l2_body_head_bedouin.mp3",
     "phonetic_arabic": "رَاسْ",
-    "ipa_bedouin": "raːs",
+    "ipa_bedouin": "xsampa:ras",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ras",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_body_hand",
@@ -31,9 +33,11 @@
     "audio": "/audio/health/l2_body_hand.mp3",
     "audio_bedouin": "/audio/health/l2_body_hand_bedouin.mp3",
     "phonetic_arabic": "إِيدْ",
-    "ipa_bedouin": "ʔ iiːd",
+    "ipa_bedouin": "xsampa:eid",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:eid",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hlt_sick",
@@ -49,9 +53,11 @@
     "audio": "/audio/health/l2_hlt_sick.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_sick_bedouin.mp3",
     "phonetic_arabic": "مَرِيضْ",
-    "ipa_bedouin": "mariːdˤ",
+    "ipa_bedouin": "xsampa:mari:d",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mari:d",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hlt_pain",
@@ -67,9 +73,11 @@
     "audio": "/audio/health/l2_hlt_pain.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_pain_bedouin.mp3",
     "phonetic_arabic": "وَجَعْ",
-    "ipa_bedouin": "wad͡ʒaʕ",
+    "ipa_bedouin": "xsampa:wadZa?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wadZa?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hlt_doctor",
@@ -85,9 +93,11 @@
     "audio": "/audio/health/l2_hlt_doctor.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_doctor_bedouin.mp3",
     "phonetic_arabic": "دُكْتُورْ",
-    "ipa_bedouin": "duktuːr",
+    "ipa_bedouin": "xsampa:duktor",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:duktor",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_hlt_feel",
@@ -104,8 +114,10 @@
     "audio": "/audio/health/l2_hlt_feel.mp3",
     "audio_bedouin": "/audio/health/l2_hlt_feel_bedouin.mp3",
     "phonetic_arabic": "سَلَامْتَكْ",
-    "ipa_bedouin": "salaːmtak",
+    "ipa_bedouin": "xsampa:salamtak",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:salamtak",
+    "ipa_auto_generated": true
   }
 ]

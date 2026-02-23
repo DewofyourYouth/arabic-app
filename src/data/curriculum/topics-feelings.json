@@ -16,9 +16,11 @@
     "audio": "/audio/feelings/l2_feel_happy.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_happy_bedouin.mp3",
     "phonetic_arabic": "مَبْسُوطْ",
-    "ipa_bedouin": "mabsuːtˤ",
+    "ipa_bedouin": "xsampa:mabsut",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mabsut",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_sad",
@@ -37,9 +39,11 @@
     "audio": "/audio/feelings/l2_feel_sad.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_sad_bedouin.mp3",
     "phonetic_arabic": "زَعْلَانْ",
-    "ipa_bedouin": "zaʕlaːn",
+    "ipa_bedouin": "xsampa:za?lan",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:za?lan",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_tired",
@@ -58,9 +62,11 @@
     "audio": "/audio/feelings/l2_feel_tired.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_tired_bedouin.mp3",
     "phonetic_arabic": "تَعْبَانْ",
-    "ipa_bedouin": "taʕbaːn",
+    "ipa_bedouin": "xsampa:ta?ban",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ta?ban",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_op_ibd",
@@ -78,9 +84,11 @@
     "audio": "/audio/opinions/l2_op_ibd.mp3",
     "audio_bedouin": "/audio/opinions/l2_op_ibd_bedouin.mp3",
     "phonetic_arabic": "أَنَا بِرَأْيِي...ْ",
-    "ipa_bedouin": "ʔ anaː biraʔ ajiː",
+    "ipa_bedouin": "xsampa:ana bi-ra?ji",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ana bi-ra?ji",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_op_like",
@@ -98,9 +106,11 @@
     "audio": "/audio/opinions/l2_op_like.mp3",
     "audio_bedouin": "/audio/opinions/l2_op_like_bedouin.mp3",
     "phonetic_arabic": "أَنَا بَحِبّ...ْ",
-    "ipa_bedouin": "ʔ anaː baħibː",
+    "ipa_bedouin": "xsampa:ana bahibb",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ana bahibb",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_op_whatthink",
@@ -119,9 +129,11 @@
     "audio": "/audio/opinions/l2_op_whatthink.mp3",
     "audio_bedouin": "/audio/opinions/l2_op_whatthink_bedouin.mp3",
     "phonetic_arabic": "شُو رَأْيَك؟ْ",
-    "ipa_bedouin": "ʃuː raʔ ajak",
+    "ipa_bedouin": "xsampa:Su ra?jak",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Su ra?jak",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_busy",
@@ -140,9 +152,11 @@
     "audio": "/audio/feelings/l2_feel_busy.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_busy_bedouin.mp3",
     "phonetic_arabic": "مَشْغُولْ",
-    "ipa_bedouin": "maʃɣuːl",
+    "ipa_bedouin": "xsampa:maSGul",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:maSGul",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_get_tired",
@@ -161,9 +175,11 @@
     "audio": "/audio/feelings/l2_feel_get_tired.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_get_tired_bedouin.mp3",
     "phonetic_arabic": "تِعِبْ",
-    "ipa_bedouin": "tiʕib",
+    "ipa_bedouin": "xsampa:ti?ib",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ti?ib",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_tiring",
@@ -182,9 +198,11 @@
     "audio": "/audio/feelings/l2_feel_tiring.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_tiring_bedouin.mp3",
     "phonetic_arabic": "مُتْعِبْ",
-    "ipa_bedouin": "mutʕib",
+    "ipa_bedouin": "xsampa:mut?ib",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mut?ib",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_feel_get_happy",
@@ -203,8 +221,10 @@
     "audio": "/audio/feelings/l2_feel_get_happy.mp3",
     "audio_bedouin": "/audio/feelings/l2_feel_get_happy_bedouin.mp3",
     "phonetic_arabic": "اِنْبَسَطْ",
-    "ipa_bedouin": "aːinbasatˤ",
+    "ipa_bedouin": "xsampa:inbasat",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:inbasat",
+    "ipa_auto_generated": true
   }
 ]

@@ -15,9 +15,11 @@
     "audio": "/audio/places/place_house.mp3",
     "audio_bedouin": "/audio/places/place_house_bedouin.mp3",
     "phonetic_arabic": "بِيتْ",
-    "ipa_bedouin": "biːt",
+    "ipa_bedouin": "xsampa:beit",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:beit",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_street",
@@ -36,9 +38,11 @@
     "audio": "/audio/places/place_street.mp3",
     "audio_bedouin": "/audio/places/place_street_bedouin.mp3",
     "phonetic_arabic": "شَارِعْ",
-    "ipa_bedouin": "ʃaːriʕ",
+    "ipa_bedouin": "xsampa:Sare?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Sare?",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_school",
@@ -57,9 +61,11 @@
     "audio": "/audio/places/place_school.mp3",
     "audio_bedouin": "/audio/places/place_school_bedouin.mp3",
     "phonetic_arabic": "مَدْرَسِهْ",
-    "ipa_bedouin": "madrasia",
+    "ipa_bedouin": "xsampa:madrasel",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:madrasel",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_hospital",
@@ -78,9 +84,11 @@
     "audio": "/audio/places/place_hospital.mp3",
     "audio_bedouin": "/audio/places/place_hospital_bedouin.mp3",
     "phonetic_arabic": "مُسْتَشْفَىْ",
-    "ipa_bedouin": "mustaʃfaa",
+    "ipa_bedouin": "xsampa:mustaSfa",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mustaSfa",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_airport",
@@ -99,9 +107,11 @@
     "audio": "/audio/places/place_airport.mp3",
     "audio_bedouin": "/audio/places/place_airport_bedouin.mp3",
     "phonetic_arabic": "مَطَارْ",
-    "ipa_bedouin": "matˤaːr",
+    "ipa_bedouin": "xsampa:matar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:matar",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_hotel",
@@ -122,8 +132,10 @@
     "phonetic_arabic": "فُنْدُءْ",
     "phonetic_bedouin": "فُنْدُگْ",
     "gender": "female",
-    "ipa_bedouin": "funduɡ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:fundug",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:fundu?",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_restaurant",
@@ -141,9 +153,11 @@
     "audio": "/audio/places/place_restaurant.mp3",
     "audio_bedouin": "/audio/places/place_restaurant_bedouin.mp3",
     "phonetic_arabic": "مَطْعَمْ",
-    "ipa_bedouin": "matˤʕam",
+    "ipa_bedouin": "xsampa:mat?am",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mat?am",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_cafe",
@@ -163,10 +177,11 @@
     "phonetic_arabic": "ءَهْوَهْ",
     "audio_bedouin": "/audio/places/place_cafe_bedouin.mp3",
     "phonetic_bedouin": "گَهْوَهْ",
-    "ipa": "ˈʔ a h w e",
-    "ipa_bedouin": "ɡahwah",
+    "ipa": "xsampa:ahweh",
+    "ipa_bedouin": "xsampa:gahwa",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa_auto_generated": true
   },
   {
     "id": "place_market",
@@ -187,8 +202,10 @@
     "phonetic_arabic": "سُوءْ",
     "phonetic_bedouin": "سُوگْ",
     "gender": "female",
-    "ipa_bedouin": "suːɡ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:su:g",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:su:?",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_pharmacy",
@@ -207,9 +224,11 @@
     "audio": "/audio/places/place_pharmacy.mp3",
     "audio_bedouin": "/audio/places/place_pharmacy_bedouin.mp3",
     "phonetic_arabic": "صَيْدَلِيِّهْ",
-    "ipa_bedouin": "sˤaiːdaljːia",
+    "ipa_bedouin": "xsampa:sajdalijeh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sajdalijeh",
+    "ipa_auto_generated": true
   },
   {
     "id": "place_university",
@@ -228,8 +247,10 @@
     "audio": "/audio/places/place_university.mp3",
     "audio_bedouin": "/audio/places/place_university_bedouin.mp3",
     "phonetic_arabic": "جَامْعَهْ",
-    "ipa_bedouin": "d͡ʒaːmʕaa",
+    "ipa_bedouin": "xsampa:dZam?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZam?a",
+    "ipa_auto_generated": true
   }
 ]

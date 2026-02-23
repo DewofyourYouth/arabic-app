@@ -15,9 +15,11 @@
     "audio": "/audio/household/l2_house_home.mp3",
     "phonetic_arabic": "بِيتْ",
     "audio_bedouin": "/audio/household/l2_house_home_bedouin.mp3",
-    "ipa_bedouin": "biːt",
+    "ipa_bedouin": "xsampa:beit",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:beit",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_room",
@@ -35,9 +37,11 @@
     "audio": "/audio/household/l2_house_room.mp3",
     "audio_bedouin": "/audio/household/l2_house_room_bedouin.mp3",
     "phonetic_arabic": "غُرْفَهْ",
-    "ipa_bedouin": "ɣurfaa",
+    "ipa_bedouin": "xsampa:Gurfa",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Gurfa",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_kitchen",
@@ -55,9 +59,11 @@
     "audio": "/audio/household/l2_house_kitchen.mp3",
     "audio_bedouin": "/audio/household/l2_house_kitchen_bedouin.mp3",
     "phonetic_arabic": "مَطْبَخْ",
-    "ipa_bedouin": "matˤbax",
+    "ipa_bedouin": "xsampa:matbax",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:matbax",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_bathroom",
@@ -75,9 +81,11 @@
     "audio": "/audio/household/l2_house_bathroom.mp3",
     "audio_bedouin": "/audio/household/l2_house_bathroom_bedouin.mp3",
     "phonetic_arabic": "حَمَّامْ",
-    "ipa_bedouin": "ħamːaːm",
+    "ipa_bedouin": "xsampa:hammam",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:hammam",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_door",
@@ -95,9 +103,11 @@
     "audio": "/audio/household/l2_house_door.mp3",
     "phonetic_arabic": "بَابْ",
     "audio_bedouin": "/audio/household/l2_house_door_bedouin.mp3",
-    "ipa_bedouin": "baːb",
+    "ipa_bedouin": "xsampa:bab",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bab",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_window",
@@ -115,9 +125,11 @@
     "audio": "/audio/household/l2_house_window.mp3",
     "audio_bedouin": "/audio/household/l2_house_window_bedouin.mp3",
     "phonetic_arabic": "شُبَّاكْ",
-    "ipa_bedouin": "ʃubːaːk",
+    "ipa_bedouin": "xsampa:Subbak",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Subbak",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_chair",
@@ -135,9 +147,11 @@
     "audio": "/audio/household/l2_house_chair.mp3",
     "audio_bedouin": "/audio/household/l2_house_chair_bedouin.mp3",
     "phonetic_arabic": "كُرْسِيْ",
-    "ipa_bedouin": "kursiː",
+    "ipa_bedouin": "xsampa:kursi",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:kursi",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_table",
@@ -155,9 +169,11 @@
     "audio": "/audio/household/l2_house_table.mp3",
     "audio_bedouin": "/audio/household/l2_house_table_bedouin.mp3",
     "phonetic_arabic": "طَاوْلَهْ",
-    "ipa_bedouin": "tˤaːuːlaa",
+    "ipa_bedouin": "xsampa:tawla",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tawla",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_yard",
@@ -176,9 +192,11 @@
     "audio": "/audio/household/l2_house_yard.mp3",
     "audio_bedouin": "/audio/household/l2_house_yard_bedouin.mp3",
     "phonetic_arabic": "سَاحَهْ",
-    "ipa_bedouin": "saːħaa",
+    "ipa_bedouin": "xsampa:saha",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:saha",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_space_storage",
@@ -197,9 +215,11 @@
     "audio": "/audio/household/l2_house_space_storage.mp3",
     "audio_bedouin": "/audio/household/l2_house_space_storage_bedouin.mp3",
     "phonetic_arabic": "مَسَاحَهْ",
-    "ipa_bedouin": "masaːħaa",
+    "ipa_bedouin": "xsampa:masaha",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:masaha",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_storeroom",
@@ -218,9 +238,11 @@
     "audio": "/audio/household/l2_house_storeroom.mp3",
     "audio_bedouin": "/audio/household/l2_house_storeroom_bedouin.mp3",
     "phonetic_arabic": "مَخْزَنْ",
-    "ipa_bedouin": "maxzan",
+    "ipa_bedouin": "xsampa:maxzan",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:maxzan",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_store_verb",
@@ -239,9 +261,11 @@
     "audio": "/audio/household/l2_house_store_verb.mp3",
     "audio_bedouin": "/audio/household/l2_house_store_verb_bedouin.mp3",
     "phonetic_arabic": "خَزَّنْ",
-    "ipa_bedouin": "xazːan",
+    "ipa_bedouin": "xsampa:xazzan",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xazzan",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_space_room",
@@ -260,9 +284,11 @@
     "audio": "/audio/household/l2_house_space_room.mp3",
     "audio_bedouin": "/audio/household/l2_house_space_room_bedouin.mp3",
     "phonetic_arabic": "وَسَعْ",
-    "ipa_bedouin": "wasaʕ",
+    "ipa_bedouin": "xsampa:wasa?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wasa?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_wide",
@@ -281,9 +307,11 @@
     "audio": "/audio/household/l2_house_wide.mp3",
     "audio_bedouin": "/audio/household/l2_house_wide_bedouin.mp3",
     "phonetic_arabic": "وَاسِعْ",
-    "ipa_bedouin": "waːsiʕ",
+    "ipa_bedouin": "xsampa:wasi?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:wasi?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_wall",
@@ -302,9 +330,11 @@
     "audio": "/audio/household/l2_house_wall.mp3",
     "audio_bedouin": "/audio/household/l2_house_wall_bedouin.mp3",
     "phonetic_arabic": "حِيطْ",
-    "ipa_bedouin": "ħiːtˤ",
+    "ipa_bedouin": "xsampa:hajt",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:hajt",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_house_walls",
@@ -324,8 +354,10 @@
     "audio": "/audio/household/l2_house_walls.mp3",
     "audio_bedouin": "/audio/household/l2_house_walls_bedouin.mp3",
     "phonetic_arabic": "حِيطَانْ",
-    "ipa_bedouin": "ħiːtˤaːn",
+    "ipa_bedouin": "xsampa:hajtan",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:hajtan",
+    "ipa_auto_generated": true
   }
 ]

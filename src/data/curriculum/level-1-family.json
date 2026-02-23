@@ -16,9 +16,11 @@
     "phonetic_arabic": "أَبْ",
     "audio": "/audio/family/l1_fam_father.mp3",
     "audio_bedouin": "/audio/family/l1_fam_father_bedouin.mp3",
-    "ipa_bedouin": "ʔ ab",
+    "ipa_bedouin": "xsampa:ab",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ab",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_mother",
@@ -37,9 +39,11 @@
     "audio": "/audio/family/l1_fam_mother.mp3",
     "audio_bedouin": "/audio/family/l1_fam_mother_bedouin.mp3",
     "phonetic_arabic": "إِمْ",
-    "ipa_bedouin": "ʔ im",
+    "ipa_bedouin": "xsampa:imm",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:imm",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_brother",
@@ -58,9 +62,11 @@
     "phonetic_arabic": "أَخْ",
     "audio": "/audio/family/l1_fam_brother.mp3",
     "audio_bedouin": "/audio/family/l1_fam_brother_bedouin.mp3",
-    "ipa_bedouin": "ʔ ax",
+    "ipa_bedouin": "xsampa:ax",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ax",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_sister",
@@ -79,9 +85,11 @@
     "phonetic_arabic": "أُخْتْ",
     "audio": "/audio/family/l1_fam_sister.mp3",
     "audio_bedouin": "/audio/family/l1_fam_sister_bedouin.mp3",
-    "ipa_bedouin": "ʔ axt",
+    "ipa_bedouin": "xsampa:uxt",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:uxt",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_friend_m",
@@ -100,9 +108,11 @@
     "phonetic_arabic": "صَاحِبْ",
     "audio": "/audio/family/l1_fam_friend_m.mp3",
     "audio_bedouin": "/audio/family/l1_fam_friend_m_bedouin.mp3",
-    "ipa_bedouin": "sˤaːħib",
+    "ipa_bedouin": "xsampa:sahib",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sahib",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_friend_f",
@@ -121,9 +131,11 @@
     "phonetic_arabic": "صَاحْبِهْ",
     "audio": "/audio/family/l1_fam_friend_f.mp3",
     "audio_bedouin": "/audio/family/l1_fam_friend_f_bedouin.mp3",
-    "ipa_bedouin": "sˤaːħbia",
+    "ipa_bedouin": "xsampa:sahbeh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sahbeh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_boy",
@@ -142,9 +154,11 @@
     "audio": "/audio/family/l1_fam_boy.mp3",
     "audio_bedouin": "/audio/family/l1_fam_boy_bedouin.mp3",
     "phonetic_arabic": "وَلَدْ",
-    "ipa_bedouin": "walad",
+    "ipa_bedouin": "xsampa:walad",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:walad",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_girl",
@@ -163,9 +177,11 @@
     "audio": "/audio/family/l1_fam_girl.mp3",
     "audio_bedouin": "/audio/family/l1_fam_girl_bedouin.mp3",
     "phonetic_arabic": "بِنْتْ",
-    "ipa_bedouin": "bint",
+    "ipa_bedouin": "xsampa:bint",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bint",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_man",
@@ -184,9 +200,11 @@
     "phonetic_arabic": "زَلَمِهْ",
     "audio": "/audio/family/l1_fam_man.mp3",
     "audio_bedouin": "/audio/family/l1_fam_man_bedouin.mp3",
-    "ipa_bedouin": "zalamia",
+    "ipa_bedouin": "xsampa:zalameh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:zalameh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_woman",
@@ -205,9 +223,11 @@
     "audio": "/audio/family/l1_fam_woman.mp3",
     "audio_bedouin": "/audio/family/l1_fam_woman_bedouin.mp3",
     "phonetic_arabic": "مَرَهْ",
-    "ipa_bedouin": "maraa",
+    "ipa_bedouin": "xsampa:mara",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mara",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_grandfather",
@@ -226,9 +246,11 @@
     "audio": "/audio/family/l1_fam_grandfather.mp3",
     "audio_bedouin": "/audio/family/l1_fam_grandfather_bedouin.mp3",
     "phonetic_arabic": "سِيدُوْ",
-    "ipa_bedouin": "siːduː",
+    "ipa_bedouin": "xsampa:sido",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sido",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_grandmother",
@@ -247,9 +269,11 @@
     "audio": "/audio/family/l1_fam_grandmother.mp3",
     "audio_bedouin": "/audio/family/l1_fam_grandmother_bedouin.mp3",
     "phonetic_arabic": "تِيتَهْ",
-    "ipa_bedouin": "tiːtaa",
+    "ipa_bedouin": "xsampa:teta",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:teta",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_uncle_p",
@@ -268,9 +292,11 @@
     "audio": "/audio/family/l1_fam_uncle_p.mp3",
     "audio_bedouin": "/audio/family/l1_fam_uncle_p_bedouin.mp3",
     "phonetic_arabic": "عَمّْ",
-    "ipa_bedouin": "ʕamː",
+    "ipa_bedouin": "xsampa:?amm",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:?amm",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_aunt_p",
@@ -289,9 +315,11 @@
     "audio": "/audio/family/l1_fam_aunt_p.mp3",
     "audio_bedouin": "/audio/family/l1_fam_aunt_p_bedouin.mp3",
     "phonetic_arabic": "عَمَّهْ",
-    "ipa_bedouin": "ʕamːaa",
+    "ipa_bedouin": "xsampa:?ammeh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:?ammeh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_uncle_m",
@@ -310,9 +338,11 @@
     "audio": "/audio/family/l1_fam_uncle_m.mp3",
     "audio_bedouin": "/audio/family/l1_fam_uncle_m_bedouin.mp3",
     "phonetic_arabic": "خَالْ",
-    "ipa_bedouin": "xaːl",
+    "ipa_bedouin": "xsampa:xal",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xal",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_aunt_m",
@@ -331,9 +361,11 @@
     "audio": "/audio/family/l1_fam_aunt_m.mp3",
     "audio_bedouin": "/audio/family/l1_fam_aunt_m_bedouin.mp3",
     "phonetic_arabic": "خَالَهْ",
-    "ipa_bedouin": "xaːlaa",
+    "ipa_bedouin": "xsampa:xaleh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xaleh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_husband",
@@ -356,8 +388,10 @@
     "phonetic_arabic": "جُوزْ",
     "audio": "/audio/family/l1_fam_husband.mp3",
     "audio_bedouin": "/audio/family/l1_fam_husband_bedouin.mp3",
-    "ipa_bedouin": "d͡ʒuːz",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:dZoz",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZoz",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_husband_formal",
@@ -377,8 +411,10 @@
     "phonetic_arabic": "زُوجْ",
     "audio": "/audio/family/l1_fam_husband_formal.mp3",
     "audio_bedouin": "/audio/family/l1_fam_husband_formal_bedouin.mp3",
-    "ipa_bedouin": "zuːd͡ʒ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:zowdZ",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:zowdZ",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_husband_possessive",
@@ -398,8 +434,10 @@
     "phonetic_arabic": "جُوزِي / زُوجِيْ",
     "audio": "/audio/family/l1_fam_husband_possessive.mp3",
     "audio_bedouin": "/audio/family/l1_fam_husband_possessive_bedouin.mp3",
-    "ipa_bedouin": "d͡ʒuːziː  zuːd͡ʒiː",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:dZowzi / zowdZi",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:dZowzi / zowdZi",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_wife_possessive",
@@ -418,9 +456,11 @@
     "phonetic_arabic": "مَرَتِي / زُوجْتِيْ",
     "audio": "/audio/family/l1_fam_wife_possessive.mp3",
     "audio_bedouin": "/audio/family/l1_fam_wife_possessive_bedouin.mp3",
-    "ipa_bedouin": "maratiː  zuːd͡ʒtiː",
+    "ipa_bedouin": "xsampa:marati / zowdZati",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:marati / zowdZati",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_my_love_m",
@@ -439,9 +479,11 @@
     "audio": "/audio/family/l1_fam_my_love_m.mp3",
     "audio_bedouin": "/audio/family/l1_fam_my_love_m_bedouin.mp3",
     "phonetic_arabic": "حَبِيبِيْ",
-    "ipa_bedouin": "ħabiːbiː",
+    "ipa_bedouin": "xsampa:habibi",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:habibi",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_my_love_f",
@@ -460,9 +502,11 @@
     "audio": "/audio/family/l1_fam_my_love_f.mp3",
     "audio_bedouin": "/audio/family/l1_fam_my_love_f_bedouin.mp3",
     "phonetic_arabic": "حَبِيبْتِيْ",
-    "ipa_bedouin": "ħabiːbtiː",
+    "ipa_bedouin": "xsampa:habibti",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:habibti",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_fiance_m",
@@ -481,9 +525,11 @@
     "audio": "/audio/family/l1_fam_fiance_m.mp3",
     "audio_bedouin": "/audio/family/l1_fam_fiance_m_bedouin.mp3",
     "phonetic_arabic": "خَطِيبِيْ",
-    "ipa_bedouin": "xatˤiːbiː",
+    "ipa_bedouin": "xsampa:xati:bi",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xati:bi",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_fiance_f",
@@ -502,9 +548,11 @@
     "audio": "/audio/family/l1_fam_fiance_f.mp3",
     "audio_bedouin": "/audio/family/l1_fam_fiance_f_bedouin.mp3",
     "phonetic_arabic": "خَطِيبْتِيْ",
-    "ipa_bedouin": "xatˤiːbtiː",
+    "ipa_bedouin": "xsampa:xati:bti",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xati:bti",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_ppl_old_man",
@@ -523,9 +571,11 @@
     "phonetic_arabic": "خِتْيَارْ / عَجُوزْ",
     "audio": "/audio/people/l1_ppl_old_man.mp3",
     "audio_bedouin": "/audio/people/l1_ppl_old_man_bedouin.mp3",
-    "ipa_bedouin": "xitjaːr  ʕad͡ʒuːz",
+    "ipa_bedouin": "xsampa:xitjar / ?adZuz",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:xitjar / ?adZuz",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_ppl_teenager",
@@ -546,8 +596,10 @@
     "phonetic_arabic": "مُرَاهِءْ",
     "phonetic_bedouin": "مُرَاهِگْ",
     "gender": "female",
-    "ipa_bedouin": "muraːhiɡ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:murahig",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:murahi?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_ppl_baby",
@@ -566,9 +618,11 @@
     "audio": "/audio/people/l1_ppl_baby.mp3",
     "audio_bedouin": "/audio/people/l1_ppl_baby_bedouin.mp3",
     "phonetic_arabic": "طِفِلْ",
-    "ipa_bedouin": "tˤifil",
+    "ipa_bedouin": "xsampa:tifel",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:tifel",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_ppl_shab",
@@ -587,9 +641,11 @@
     "audio": "/audio/people/l1_ppl_shab.mp3",
     "audio_bedouin": "/audio/people/l1_ppl_shab_bedouin.mp3",
     "phonetic_arabic": "شَبْ",
-    "ipa_bedouin": "ʃab",
+    "ipa_bedouin": "xsampa:Sab",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Sab",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_ppl_sabiyye",
@@ -608,9 +664,11 @@
     "audio": "/audio/people/l1_ppl_sabiyye.mp3",
     "audio_bedouin": "/audio/people/l1_ppl_sabiyye_bedouin.mp3",
     "phonetic_arabic": "صَبِيِّهْ",
-    "ipa_bedouin": "sˤabjːia",
+    "ipa_bedouin": "xsampa:sabijje",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:sabijje",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_wife",
@@ -629,9 +687,11 @@
     "audio": "/audio/family/l1_fam_wife.mp3",
     "audio_bedouin": "/audio/family/l1_fam_wife_bedouin.mp3",
     "phonetic_arabic": "مَرَهْ",
-    "ipa_bedouin": "maraa",
+    "ipa_bedouin": "xsampa:mara",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mara",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_fam_son",
@@ -650,8 +710,10 @@
     "audio": "/audio/family/l1_fam_son.mp3",
     "audio_bedouin": "/audio/family/l1_fam_son_bedouin.mp3",
     "phonetic_arabic": "إِبْنْ",
-    "ipa_bedouin": "ʔ ibn",
+    "ipa_bedouin": "xsampa:iben",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:iben",
+    "ipa_auto_generated": true
   }
 ]

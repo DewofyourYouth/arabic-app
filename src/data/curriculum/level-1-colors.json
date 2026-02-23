@@ -17,9 +17,11 @@
     "phonetic_arabic": "أَحْمَرْ",
     "audio": "/audio/colors/l1_color_red.mp3",
     "audio_bedouin": "/audio/colors/l1_color_red_bedouin.mp3",
-    "ipa_bedouin": "ʔ aħmar",
+    "ipa_bedouin": "xsampa:ahmar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ahmar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_blue",
@@ -41,8 +43,10 @@
     "phonetic_arabic": "أَزْرَءْ",
     "phonetic_bedouin": "أَزْرَگْ",
     "gender": "female",
-    "ipa_bedouin": "ʔ azraɡ",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:azrag",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:azra?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_green",
@@ -61,9 +65,11 @@
     "phonetic_arabic": "أَخْضَرْ",
     "audio": "/audio/colors/l1_color_green.mp3",
     "audio_bedouin": "/audio/colors/l1_color_green_bedouin.mp3",
-    "ipa_bedouin": "ʔ axdˤar",
+    "ipa_bedouin": "xsampa:axdar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:axdar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_yellow",
@@ -83,9 +89,11 @@
     "phonetic_arabic": "أَصْفَرْ",
     "audio": "/audio/colors/l1_color_yellow.mp3",
     "audio_bedouin": "/audio/colors/l1_color_yellow_bedouin.mp3",
-    "ipa_bedouin": "ʔ asˤfar",
+    "ipa_bedouin": "xsampa:asfar",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:asfar",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_white",
@@ -104,9 +112,11 @@
     "audio": "/audio/colors/l1_color_white.mp3",
     "audio_bedouin": "/audio/colors/l1_color_white_bedouin.mp3",
     "phonetic_arabic": "أَبْيَضْ",
-    "ipa_bedouin": "ʔ abjadˤ",
+    "ipa_bedouin": "xsampa:abjad",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:abjad",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_black",
@@ -126,9 +136,11 @@
     "phonetic_arabic": "أَسْوَدْ",
     "audio": "/audio/colors/l1_color_black.mp3",
     "audio_bedouin": "/audio/colors/l1_color_black_bedouin.mp3",
-    "ipa_bedouin": "ʔ aswad",
+    "ipa_bedouin": "xsampa:aswad",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:aswad",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_orange",
@@ -149,8 +161,10 @@
     "phonetic_arabic": "بُرْتُءَالِيْ",
     "phonetic_bedouin": "بُرْتُگَالِيْ",
     "gender": "female",
-    "ipa_bedouin": "burtuɡaːliː",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:burtugali",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:burtu?ali",
+    "ipa_auto_generated": true
   },
   {
     "id": "l1_color_brown",
@@ -169,8 +183,10 @@
     "audio": "/audio/colors/l1_color_brown.mp3",
     "audio_bedouin": "/audio/colors/l1_color_brown_bedouin.mp3",
     "phonetic_arabic": "بُنِّيْ",
-    "ipa_bedouin": "buniːiː",
+    "ipa_bedouin": "xsampa:bunni",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bunni",
+    "ipa_auto_generated": true
   }
 ]

@@ -13,9 +13,11 @@
     "audio": "/audio/storytelling/l2_story_yesterday.mp3",
     "audio_bedouin": "/audio/storytelling/l2_story_yesterday_bedouin.mp3",
     "phonetic_arabic": "مْبَارِحْ",
-    "ipa_bedouin": "mbaːriħ",
+    "ipa_bedouin": "xsampa:mbareh",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:mbareh",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_tomorrow",
@@ -31,9 +33,11 @@
     "audio": "/audio/storytelling/l2_story_tomorrow.mp3",
     "phonetic_arabic": "بُكْرَهْ",
     "audio_bedouin": "/audio/storytelling/l2_story_tomorrow_bedouin.mp3",
-    "ipa_bedouin": "bukraa",
+    "ipa_bedouin": "xsampa:bukra",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:bukra",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_now",
@@ -49,9 +53,11 @@
     "audio": "/audio/storytelling/l2_story_now.mp3",
     "audio_bedouin": "/audio/storytelling/l2_story_now_bedouin.mp3",
     "phonetic_arabic": "هَلَّأْ",
-    "ipa_bedouin": "halːaʔ a",
+    "ipa_bedouin": "xsampa:halla?",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:halla?",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_after",
@@ -67,9 +73,11 @@
     "audio": "/audio/storytelling/l2_story_after.mp3",
     "audio_bedouin": "/audio/storytelling/l2_story_after_bedouin.mp3",
     "phonetic_arabic": "بَعِد مَا...ْ",
-    "ipa_bedouin": "baʕid maː",
+    "ipa_bedouin": "xsampa:ba?d ma",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ba?d ma",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_before",
@@ -87,8 +95,10 @@
     "phonetic_arabic": "ءَبِل مَا...ْ",
     "phonetic_bedouin": "گَبِل مَا...ْ",
     "gender": "female",
-    "ipa_bedouin": "ɡabil maː",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:gabil ma",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:?abil ma",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_then",
@@ -104,9 +114,11 @@
     "audio": "/audio/storytelling/l2_story_then.mp3",
     "audio_bedouin": "/audio/storytelling/l2_story_then_bedouin.mp3",
     "phonetic_arabic": "بَعْدِينْ",
-    "ipa_bedouin": "baʕdiːn",
+    "ipa_bedouin": "xsampa:ba?dein",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:ba?dein",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_story_suddenly",
@@ -122,8 +134,10 @@
     "audio": "/audio/storytelling/l2_story_suddenly.mp3",
     "audio_bedouin": "/audio/storytelling/l2_story_suddenly_bedouin.mp3",
     "phonetic_arabic": "فَجْأَهْ",
-    "ipa_bedouin": "fad͡ʒʔ aa",
+    "ipa_bedouin": "xsampa:fadZ?a",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:fadZ?a",
+    "ipa_auto_generated": true
   }
 ]

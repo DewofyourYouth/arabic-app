@@ -15,9 +15,11 @@
     "audio": "/audio/weather/l2_wthr_hot.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_hot_bedouin.mp3",
     "phonetic_arabic": "شُوبْ",
-    "ipa_bedouin": "ʃuːb",
+    "ipa_bedouin": "xsampa:Sob",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Sob",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_wthr_cold",
@@ -35,9 +37,11 @@
     "audio": "/audio/weather/l2_wthr_cold.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_cold_bedouin.mp3",
     "phonetic_arabic": "بَرِدْ",
-    "ipa_bedouin": "barid",
+    "ipa_bedouin": "xsampa:barid",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:barid",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_wthr_rain",
@@ -55,9 +59,11 @@
     "audio": "/audio/weather/l2_wthr_rain.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_rain_bedouin.mp3",
     "phonetic_arabic": "شِتَاْ",
-    "ipa_bedouin": "ʃitaː",
+    "ipa_bedouin": "xsampa:Sita",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Sita",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_wthr_sun",
@@ -75,9 +81,11 @@
     "audio": "/audio/weather/l2_wthr_sun.mp3",
     "phonetic_arabic": "شَمِسْ",
     "audio_bedouin": "/audio/weather/l2_wthr_sun_bedouin.mp3",
-    "ipa_bedouin": "ʃamis",
+    "ipa_bedouin": "xsampa:Samis",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:Samis",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_wthr_today",
@@ -98,8 +106,10 @@
     "phonetic_arabic": "كِيف الطَّءْص الْيُوم؟ْ",
     "phonetic_bedouin": "كِيف الطَّگْص الْيُوم؟ْ",
     "gender": "female",
-    "ipa_bedouin": "kiːf aːltˤːaɡsˤ aːljuːm",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin": "xsampa:kif el-tags el-jom",
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:kif el-ta?s el-jom",
+    "ipa_auto_generated": true
   },
   {
     "id": "l2_wthr_beautiful",
@@ -117,8 +127,10 @@
     "audio": "/audio/weather/l2_wthr_beautiful.mp3",
     "audio_bedouin": "/audio/weather/l2_wthr_beautiful_bedouin.mp3",
     "phonetic_arabic": "الْجَوّ حِلُوْ",
-    "ipa_bedouin": "aːld͡ʒawː ħiluː",
+    "ipa_bedouin": "xsampa:el-dZaww hilu",
     "gender": "female",
-    "ipa_bedouin_auto_generated": true
+    "ipa_bedouin_auto_generated": true,
+    "ipa": "xsampa:el-dZaww hilu",
+    "ipa_auto_generated": true
   }
 ]
