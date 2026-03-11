@@ -121,3 +121,64 @@ h4 {
     display: none;
   }
 }
+
+/* Button Utilities */
+.btn-link {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--color-primary-dark);
+}
+
+.btn-primary-large {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--spacing-4) var(--spacing-8);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0 var(--color-primary-dark);
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-md);
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.btn-outline {
+  background: white;
+  color: var(--color-text);
+  border: 2px solid #eee;
+  padding: var(--spacing-4) var(--spacing-8);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  cursor: pointer;
+}
