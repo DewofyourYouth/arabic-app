@@ -7,7 +7,7 @@ echo "Installing Node.js..."
 brew install node
 
 echo "Navigating to project root..."
-cd $CI_WORKSPACE
+cd ../../../
 
 echo "Installing project dependencies..."
 npm install
