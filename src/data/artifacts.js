@@ -35,8 +35,7 @@ export const CITIES = [
     hebrewName: 'ואדי רם',
     label: 'Start Here',
     hebrewLabel: 'התחל כאן',
-    x: 60,
-    y: 80,
+    coordinates: { levant: { x: 60, y: 80 } },
     artifact: {
       image: artifactWadiRum,
       name: 'Dallah (Coffee Pot)',
@@ -51,8 +50,7 @@ export const CITIES = [
     hebrewName: 'אילת',
     label: 'Red Sea Port',
     hebrewLabel: 'נמל הים האדום',
-    x: 40,
-    y: 80,
+    coordinates: { levant: { x: 40, y: 80 } },
     artifact: {
       image: eilatArtifact,
       name: 'Coral Reef',
@@ -67,8 +65,7 @@ export const CITIES = [
     hebrewName: 'עקבה',
     label: 'Red Sea Gateway',
     hebrewLabel: 'שער הים האדום',
-    x: 45,
-    y: 82,
+    coordinates: { levant: { x: 45, y: 82 } },
     artifact: {
       image: aqabaArtifact,
       name: 'Coral Diving Mask',
@@ -83,8 +80,7 @@ export const CITIES = [
     hebrewName: 'פטרה',
     label: 'The Treasury',
     hebrewLabel: 'האוצר',
-    x: 55,
-    y: 65,
+    coordinates: { levant: { x: 55, y: 65 } },
     artifact: {
       image: artifactPetra,
       name: 'Nabatean Coin',
@@ -99,7 +95,7 @@ export const CITIES = [
     hebrewName: 'באר שבע',
     label: 'Negev Capital', 
     hebrewLabel: 'בירת הנגב',
-    x: 35, y: 48, 
+    coordinates: { levant: { x: 35, y: 48 } }, 
     artifact: { 
       image: artifactBeerSheba, 
       name: 'Abraham\'s Well', 
@@ -114,7 +110,7 @@ export const CITIES = [
     hebrewName: 'ג׳רש',
     label: 'Roman Ruins', 
     hebrewLabel: 'עתיקות רומיות',
-    x: 70, y: 25, 
+    coordinates: { levant: { x: 70, y: 25 } }, 
     artifact: { 
       image: jerashArtifact, 
       name: 'Roman Column Fragment', 
@@ -129,7 +125,7 @@ export const CITIES = [
     hebrewName: 'ביירות',
     label: 'Coastal Gem', 
     hebrewLabel: 'פנינת החוף',
-    x: 46, y: 8, 
+    coordinates: { levant: { x: 46, y: 8 } }, 
     artifact: { 
       image: beirutArtifact, 
       name: 'Cedar Tree', 
@@ -144,7 +140,7 @@ export const CITIES = [
     hebrewName: 'טריפולי',
     label: 'Northern Port', 
     hebrewLabel: 'הנמל הצפוני',
-    x: 47, y: 4, 
+    coordinates: { levant: { x: 47, y: 4 } }, 
     artifact: { 
       image: tripoliArtifact, 
       name: 'Crusader Citadel', 
@@ -159,7 +155,7 @@ export const CITIES = [
     hebrewName: 'צידון',
     label: 'Sea Castle', 
     hebrewLabel: 'מבצר הים',
-    x: 45, y: 11, 
+    coordinates: { levant: { x: 45, y: 11 } }, 
     artifact: { 
       image: sidonArtifact, 
       name: 'Phoenician Harbor', 
@@ -174,7 +170,7 @@ export const CITIES = [
     hebrewName: 'צור',
     label: 'Purple Dye', 
     hebrewLabel: 'ארגמן צורי',
-    x: 44, y: 14, 
+    coordinates: { levant: { x: 44, y: 14 } }, 
     artifact: { 
       image: tyreArtifact, 
       name: 'Royal Purple Shell', 
@@ -189,7 +185,7 @@ export const CITIES = [
     hebrewName: 'מצדה',
     label: 'Desert Fortress', 
     hebrewLabel: 'מבצר המדבר',
-    x: 48, y: 47, 
+    coordinates: { levant: { x: 48, y: 47 } }, 
     artifact: { 
       image: masadaArtifact, 
       name: 'Roman Scroll', 
@@ -204,7 +200,7 @@ export const CITIES = [
     hebrewName: 'רבת עמון',
     label: 'The Amphitheater', 
     hebrewLabel: 'האמפיתיאטרון',
-    x: 70, y: 35, 
+    coordinates: { levant: { x: 70, y: 35 } }, 
     artifact: { 
       image: artifactAmman, 
       name: 'Roman Dagger', 
@@ -219,7 +215,7 @@ export const CITIES = [
     hebrewName: 'חברון',
     label: 'Ancient City', 
     hebrewLabel: 'עיר האבות',
-    x: 45, y: 44, 
+    coordinates: { levant: { x: 45, y: 44 } }, 
     artifact: { 
       image: hebronArtifact, 
       name: 'Tomb of the Patriarchs', 
@@ -234,7 +230,7 @@ export const CITIES = [
     hebrewName: 'חיפה',
     label: 'Bahai Gardens', 
     hebrewLabel: 'הגנים הבהאיים',
-    x: 42, y: 20, 
+    coordinates: { levant: { x: 42, y: 20 } }, 
     artifact: { 
       image: haifaArtifact, 
       name: 'Mount Carmel Flora', 
@@ -249,7 +245,7 @@ export const CITIES = [
     hebrewName: 'טבריה',
     label: 'Sea of Galilee', 
     hebrewLabel: 'הכנרת',
-    x: 48, y: 21, 
+    coordinates: { levant: { x: 48, y: 21 } }, 
     artifact: { 
       image: tiberiasArtifact, 
       name: 'St. Peter\'s Fish', 
@@ -264,7 +260,7 @@ export const CITIES = [
     hebrewName: 'יריחו',
     label: 'Ancient Oasis', 
     hebrewLabel: 'נווה מדבר עתיק',
-    x: 50, y: 37, 
+    coordinates: { levant: { x: 50, y: 37 } }, 
     artifact: { 
       image: artifactJericho, 
       name: 'Date Palm', 
@@ -279,7 +275,7 @@ export const CITIES = [
     hebrewName: 'שכם',
     label: 'Olive Soap', 
     hebrewLabel: 'סבון שמן זית',
-    x: 48, y: 31, 
+    coordinates: { levant: { x: 48, y: 31 } }, 
     artifact: { 
       image: nablusSoapArtifact, 
       name: 'Nabulsi Soap', 
@@ -294,7 +290,7 @@ export const CITIES = [
     hebrewName: 'רמאללה',
     label: 'Cultural Hub', 
     hebrewLabel: 'מרכז תרבותי',
-    x: 45, y: 37, 
+    coordinates: { levant: { x: 45, y: 37 } }, 
     artifact: { 
       image: ramallahArtifact, 
       name: 'Debke Scarf', 
@@ -309,7 +305,7 @@ export const CITIES = [
     hebrewName: 'עכו',
     label: 'Crusader Halls', 
     hebrewLabel: 'אולמות האבירים',
-    x: 43, y: 17, 
+    coordinates: { levant: { x: 43, y: 17 } }, 
     artifact: { 
       image: akkoArtifact, 
       name: 'Knight\'s Helmet', 
@@ -324,7 +320,7 @@ export const CITIES = [
     hebrewName: 'א-סוּוַיְדָא',
     label: 'Black Basalt', 
     hebrewLabel: 'בזלת שחורה',
-    x: 80, y: 18, 
+    coordinates: { levant: { x: 80, y: 18 } }, 
     artifact: { 
       image: suwaydaArtifact, 
       name: 'Basalt Stone', 
@@ -339,7 +335,7 @@ export const CITIES = [
     hebrewName: 'גבל',
     label: 'Oldest Port', 
     hebrewLabel: 'הנמל העתיק ביותר',
-    x: 46, y: 6, 
+    coordinates: { levant: { x: 46, y: 6 } }, 
     artifact: { 
       image: byblosArtifact, 
       name: 'Phoenician Alphabet', 
@@ -354,7 +350,7 @@ export const CITIES = [
     hebrewName: 'דמשק',
     label: 'City of Jasmine', 
     hebrewLabel: 'עיר היסמין',
-    x: 68, y: 13, 
+    coordinates: { levant: { x: 68, y: 13 } }, 
     artifact: { 
       image: damascusArtifact, 
       name: 'Damascus Steel', 
@@ -369,7 +365,7 @@ export const CITIES = [
     hebrewName: 'תדמור',
     label: 'Desert Oasis', 
     hebrewLabel: 'נווה מדבר',
-    x: 85, y: 10, 
+    coordinates: { levant: { x: 85, y: 10 } }, 
     artifact: { 
       image: palmyraArtifact, 
       name: 'Temple Columns', 
@@ -384,7 +380,7 @@ export const CITIES = [
     hebrewName: 'חומס',
     label: 'Historic City', 
     hebrewLabel: 'עיר היסטורית',
-    x: 62, y: 5, 
+    coordinates: { levant: { x: 62, y: 5 } }, 
     artifact: { 
       image: homsArtifact, 
       name: 'Crusader Castle', 
@@ -399,7 +395,7 @@ export const CITIES = [
     hebrewName: 'בעלבכ',
     label: 'Temple of Jupiter', 
     hebrewLabel: 'מקדש יופיטר',
-    x: 65, y: 8, 
+    coordinates: { levant: { x: 65, y: 8 } }, 
     artifact: { 
       image: baalbekArtifact, 
       name: 'Keystone Fragment', 
@@ -414,7 +410,7 @@ export const CITIES = [
     hebrewName: 'חלב',
     label: 'The Citadel', 
     hebrewLabel: 'המצודה',
-    x: 75, y: 2, 
+    coordinates: { levant: { x: 75, y: 2 } }, 
     artifact: { 
       image: aleppoArtifact, 
       name: 'Aleppo Soap', 
@@ -429,7 +425,7 @@ export const CITIES = [
     hebrewName: 'ירושלים',
     label: 'Old City Walls', 
     hebrewLabel: 'חומות העיר העתיקה',
-    x: 45, y: 38, 
+    coordinates: { levant: { x: 45, y: 38 } }, 
     artifact: { 
       image: artifactJerusalem, 
       name: 'City Key', 
@@ -444,7 +440,7 @@ export const CITIES = [
     hebrewName: 'מידבא',
     label: 'Mosaic City', 
     hebrewLabel: 'עיר הפסיפסים',
-    x: 68, y: 40, 
+    coordinates: { levant: { x: 68, y: 40 } }, 
     artifact: { 
       image: madabaArtifact, 
       name: 'Byzantine Mosaic', 
@@ -459,7 +455,7 @@ export const CITIES = [
     hebrewName: 'כרך',
     label: 'Crusader Castle', 
     hebrewLabel: 'מבצר כרך',
-    x: 62, y: 51, 
+    coordinates: { levant: { x: 62, y: 51 } }, 
     artifact: { 
       image: karakArtifact, 
       name: 'Castle Key', 

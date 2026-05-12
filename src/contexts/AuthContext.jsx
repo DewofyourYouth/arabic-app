@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { auth, signInWithGoogle, /* signInWithApple, */ signInGuest } from '../lib/firebase';
+import { auth, signInWithGoogle, signInWithApple, signInGuest } from '../lib/firebase';
 import { trackSignUp } from '../lib/firebase';
 import { onAuthStateChanged, signOut as firebaseSignOut } from 'firebase/auth';
 
@@ -89,7 +89,7 @@ export function AuthProvider({ children }) {
   const value = {
     currentUser,
     signInWithGoogle,
-    // signInWithApple,
+    signInWithApple,
     signInGuest,
     signInLocalGuest,
     logOut

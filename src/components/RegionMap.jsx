@@ -1,15 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { useData } from '../contexts/DataContext';
-import mapImage from '../assets/map_levant_stylized.png';
-import LocationModal from './LocationModal';
-
-
-
 import { useSettings } from '../contexts/SettingsContext';
-
 import { CITIES } from '../data/artifacts';
-
-// ... (keep styles and other imports)
+import { MAPS } from '../data/mapsData';
+import LocationModal from './LocationModal';
 
 // CSS for Animations
 const animationKeyframes = `
@@ -20,35 +14,40 @@ const animationKeyframes = `
 }
 `;
 
-const LevantMap = ({ onCitySelect, onViewPath }) => {
+const RegionMap = ({ mapId = 'levant', onCitySelect }) => {
   const { settings } = useSettings();
   const { locations } = useData();
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [hoveredCityId, setHoveredCityId] = useState(null);
   const [showLabels, setShowLabels] = useState(false);
 
-  // Merge CITIES with dynamic location tracking data
+  const mapConfig = MAPS[mapId];
+
+  // Map configuration validation
+  if (!mapConfig) {
+      return <div style={{ padding: '20px', textAlign: 'center' }}>Map configuration '{mapId}' not found.</div>;
+  }
+
+  // Filter and merge CITIES with dynamic location tracking data, and extract coordinates for this specific map
   const mappedCities = useMemo(() => {
-    return CITIES.map(city => {
-      // Find dynamic data if exists
-      const locData = locations?.find(l => l.id === city.id);
+    return CITIES
+      .filter(city => mapConfig.cities.includes(city.id) && city.coordinates && city.coordinates[mapId])
+      .map(city => {
+        // Find dynamic data if exists
+        const locData = locations?.find(l => l.id === city.id);
 
-      // If found, use its unlocked status. If not, it's considered "Locked/Unknown"
-      // Exception: The first location 'wadi_rum' is always unlocked if logic fails, 
-      // but 'locations' in DataContext handles that.
+        const isUnlocked = locData ? locData.isUnlocked : false;
 
-      const isUnlocked = locData ? locData.isUnlocked : false;
-      // "Next" logic: if it's the first locked item? 
-      // For now simple boolean.
-
-      return {
-        ...city,
-        ...locData, // Merge dynamic stats (progress, isMastered)
-        isUnlocked,
-        isPlaceholder: !locData // If no data, it's just a map point
-      };
-    });
-  }, [locations]);
+        return {
+          ...city,
+          ...locData, // Merge dynamic stats (progress, isMastered)
+          isUnlocked,
+          isPlaceholder: !locData, // If no data, it's just a map point
+          x: city.coordinates[mapId].x, // Use map-specific coordinates
+          y: city.coordinates[mapId].y
+        };
+      });
+  }, [locations, mapConfig, mapId]);
 
   // Handle click on a city pin
   const handleCityClick = (city) => {
@@ -63,9 +62,6 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
   };
 
   const handleViewArtifact = (artifact) => {
-    // Logic to show artifact in detailed view?
-    // For now, just close modal or maybe we need a separate Artifact View
-    // Let's implement a simple artifact alert or pass it up
     alert(`Viewing Artifact: ${artifact.name}`);
   };
 
@@ -76,7 +72,7 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
       flex: 1,
       minHeight: 0, /* Important for flex child scrubbing */
       backgroundColor: 'var(--color-background)',
-      backgroundImage: `url(${mapImage})`,
+      backgroundImage: `url(${mapConfig.image})`,
       backgroundSize: '100% 100%', /* Stretch to fit container to ensure alignment */
       backgroundPosition: 'center',
       borderRadius: 'var(--radius-lg)',
@@ -107,7 +103,7 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
         textTransform: 'uppercase', letterSpacing: '3px', fontSize: '1.5rem',
         textShadow: '0 2px 4px rgba(255,255,255,0.8)', zIndex: 10
       }}>
-        {settings.nativeLanguage === 'hebrew' ? 'מסע ברחבי הלבנט' : 'Journey Through The Levant'}
+        {settings.nativeLanguage === 'hebrew' ? mapConfig.hebrewName : mapConfig.name}
       </h2>
 
       {/* Render Cities */}
@@ -197,4 +193,4 @@ const LevantMap = ({ onCitySelect, onViewPath }) => {
   );
 };
 
-export default LevantMap;
+export default RegionMap;

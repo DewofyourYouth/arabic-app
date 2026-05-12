@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Papa from 'papaparse';
-import { db } from '../lib/firebase';
-import { doc, getDoc, writeBatch } from 'firebase/firestore';
+import { parseVocabCSV } from '../utils/csvUtils';
+import { bulkUploadVocab } from '../utils/dbUtils';
 
 const AdminBulkImport = ({ onBack }) => {
   const [file, setFile] = useState(null);
@@ -17,94 +16,33 @@ const AdminBulkImport = ({ onBack }) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
         setFile(selectedFile);
-        parseCSV(selectedFile);
+        parseFile(selectedFile);
     }
   };
 
-  const parseCSV = (file) => {
+  const parseFile = async (file) => {
     setStatus('parsing');
     setErrors([]);
     setLogs([]);
     
-    Papa.parse(file, {
-        header: true,
-        skipEmptyLines: true,
-        complete: async (results) => {
-            if (results.errors.length > 0) {
-                setErrors(results.errors.map(e => `CSV Error on row ${e.row}: ${e.message}`));
-                setStatus('error');
-                return;
-            }
-
-            const rows = results.data;
-            addLog(`Parsed ${rows.length} rows.`);
-
-            // Basic Validation
-            const validRows = [];
-            const validationErrors = [];
-
-            // Helper to clean keys
-            const cleanRow = (row) => {
-                const cleaned = {};
-                Object.keys(row).forEach(key => {
-                    cleaned[key.trim()] = row[key]?.trim();
-                });
-                return cleaned;
-            };
-
-            for (let i = 0; i < rows.length; i++) {
-                const rawRow = rows[i];
-                const row = cleanRow(rawRow); // Handle sloppy CSV spaces
-                
-                // Required Fields
-                if (!row.id || !row.arabic || !row.english) {
-                    validationErrors.push(`Row ${i + 2}: Missing required fields (id, arabic, or english).`);
-                    continue;
-                }
-
-                // Type Check
-                if (!['word', 'verb', 'phrase'].includes(row.type)) {
-                   // Default to 'word' if missing, or error? Let's default.
-                   if (!row.type) row.type = 'word';
-                }
-
-                // Construct Doc
-                const docData = {
-                    id: row.id,
-                    level: parseInt(row.level) || 1,
-                    type: row.type || 'word',
-                    topic: row.topic || 'general',
-                    arabic: row.arabic,
-                    transliteration: row.transliteration || '',
-                    english: row.english,
-                    tags: row.tags ? row.tags.split(',').map(t => t.trim()) : [],
-                    lastUpdated: new Date().toISOString()
-                };
-
-                // Optional verb fields
-                if (row.type === 'verb') {
-                    // Start simple. If user wants conjugations, they might need JSON format or complex cols.
-                    // For CSV, usually we just import the base form, then use Editor to add conjugations.
-                    // Or we support columns like `past_he`, `pres_he` etc.
-                    // Let's stick to base fields for now to unblock migration.
-                }
-
-                validRows.push(docData);
-            }
-
-            if (validationErrors.length > 0) {
-                setErrors(prev => [...prev, ...validationErrors]);
-            }
-            
+    try {
+        const { validRows, validationErrors } = await parseVocabCSV(file, addLog);
+        if (validationErrors && validationErrors.length > 0) {
+            setErrors(validationErrors);
+        }
+        if (validRows && validRows.length > 0) {
             setPreviewData(validRows);
             setStatus('ready');
-            addLog(`Ready to import ${validRows.length} items.`);
-        },
-        error: (error) => {
-            setErrors([`Parse Error: ${error.message}`]);
+        } else if (validationErrors && validationErrors.length > 0) {
+            setStatus('error');
+        } else {
+            setErrors(['No valid rows found to import.']);
             setStatus('error');
         }
-    });
+    } catch (err) {
+        setErrors([`Parse Error: ${err.message}`]);
+        setStatus('error');
+    }
   };
 
   const handleUpload = async () => {
@@ -114,39 +52,10 @@ const AdminBulkImport = ({ onBack }) => {
       setUploadProgress(0);
       
       try {
-          // Check for existing ID conflicts first? 
-          // Firestore sets overwrite by default. This is usually what we want for "Updates".
-          // If user wants to avoid overwrites, we'd need a check. 
-          // Let's assume OVERWRITE is the desired behavior for "Bulk Update".
-          
-          const batches = [];
-          let batch = writeBatch(db);
-          let count = 0;
-
-          for (const item of previewData) {
-              const ref = doc(db, 'vocab', item.id);
-              batch.set(ref, item, { merge: true }); // Merge to preserve fields not in CSV (like existing audio URLs)
-              count++;
-
-              if (count % 450 === 0) { // Safety limit 500
-                  batches.push(batch);
-                  batch = writeBatch(db);
-              }
-          }
-          if (count % 450 !== 0) batches.push(batch);
-          
-          addLog(`Split into ${batches.length} batches.`);
-
-          for (let i = 0; i < batches.length; i++) {
-              await batches[i].commit();
-              setUploadProgress(Math.round(((i + 1) / batches.length) * 100));
-              addLog(`Committed batch ${i+1}/${batches.length}`);
-          }
-
+          await bulkUploadVocab(previewData, setUploadProgress, addLog);
           setStatus('done');
           addLog("Import Complete! 🎉");
           addLog("Remember to go to 'Publish' tab to push these changes to users.");
-
       } catch (err) {
           console.error(err);
           setErrors([`Upload Error: ${err.message}`]);

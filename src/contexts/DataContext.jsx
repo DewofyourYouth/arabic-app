@@ -190,6 +190,14 @@ export function DataProvider({ children }) {
         }
       } catch (err) {
         console.error("Error syncing user data:", err);
+        // Provide fallback data so the app doesn't crash
+        setUserData({
+          profile: { displayName: currentUser.displayName || 'Guest' },
+          stats: { totalXP: 0, currentLevel: 1, currentStreak: 0 },
+          progress: {},
+          artifacts: [],
+          hasCompletedOnboarding: false
+        });
       } finally {
         setLoading(false);
       }
@@ -206,8 +214,8 @@ export function DataProvider({ children }) {
     setUserData(prev => ({
       ...prev,
       stats: {
-        ...prev.stats,
-        totalXP: (prev.stats?.totalXP || 0) + amount
+        ...(prev?.stats || {}),
+        totalXP: (prev?.stats?.totalXP || 0) + amount
       }
     }));
 
@@ -221,9 +229,13 @@ export function DataProvider({ children }) {
       localStorage.setItem(`guest_data_${currentUser.uid}`, JSON.stringify(newData));
     } else {
       const userRef = doc(db, 'users', currentUser.uid);
-      await updateDoc(userRef, {
-        'stats.totalXP': increment(amount)
-      });
+      try {
+        await updateDoc(userRef, {
+          'stats.totalXP': increment(amount)
+        });
+      } catch (err) {
+        console.error("Firebase write error (updateUserXP):", err);
+      }
     }
   };
 
@@ -244,11 +256,11 @@ export function DataProvider({ children }) {
     setUserData(prev => ({
       ...prev,
       stats: {
-        ...prev.stats,
-        totalXP: (prev.stats?.totalXP || 0) + xpEarned
+        ...(prev?.stats || {}),
+        totalXP: (prev?.stats?.totalXP || 0) + xpEarned
       },
       progress: {
-        ...prev.progress,
+        ...(prev?.progress || {}),
         [nodeId]: completionData
       }
     }));
@@ -269,10 +281,14 @@ export function DataProvider({ children }) {
       localStorage.setItem(key, JSON.stringify(data));
     } else {
       const userRef = doc(db, 'users', currentUser.uid);
-      await updateDoc(userRef, {
-        'stats.totalXP': increment(xpEarned),
-        [`progress.${nodeId}`]: completionData
-      });
+      try {
+        await updateDoc(userRef, {
+          'stats.totalXP': increment(xpEarned),
+          [`progress.${nodeId}`]: completionData
+        });
+      } catch (err) {
+        console.error("Firebase write error (completeLesson):", err);
+      }
     }
   };
 
@@ -288,9 +304,13 @@ export function DataProvider({ children }) {
       localStorage.setItem(key, JSON.stringify(data));
     } else {
       const userRef = doc(db, 'users', currentUser.uid);
-      await updateDoc(userRef, {
-        hasCompletedOnboarding: true
-      });
+      try {
+        await updateDoc(userRef, {
+          hasCompletedOnboarding: true
+        });
+      } catch (err) {
+        console.error("Firebase write error (completeOnboarding):", err);
+      }
     }
   };
 
@@ -455,6 +475,8 @@ export function DataProvider({ children }) {
           const userRef = doc(db, 'users', currentUser.uid);
           updateDoc(userRef, {
             artifacts: arrayUnion(...newArtifacts)
+          }).catch(err => {
+            console.error("Firebase write error (sync artifacts):", err);
           });
         }
       }
