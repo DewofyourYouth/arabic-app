@@ -7,7 +7,6 @@ const SETTINGS_KEY = 'haki_settings_v1';
 const defaultSettings = {
   showArabicScript: true,
   dialect: 'bedouin', // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
-  dialect: 'bedouin', // 'urban' (Ah-weh) or 'bedouin' (Gah-weh)
   nativeLanguage: 'english' // 'english' or 'hebrew'
 };
 
